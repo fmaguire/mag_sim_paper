@@ -1,27 +1,55 @@
 ---
-title: "Manuscript Title"
+title: "Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands"
 keywords:
   - markdown
   - publishing
   - manubot
-lang: en-US
+lang: en-CA
 author_info:
   -
-    github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+    github: fmaguire
+    name: Finlay Maguire*
+    initials: FM
+    orcid: 0000-0002-1203-9514
+    twitter: fmaguire
+    email: finlaymaguire@gmail.com
     affiliations:
-      - Department of Something, University of Whatever
-    funders: Grant XXXXXXXX
+      - Faculty of Computer Science, Dalhousie University
+    funders:
+      - Genome Canada
+      - Donald Hill Family Fellowship
   -
-    github: janeroe
-    name: Jane Roe
-    initials: JR
+    github: imasianxd
+    name: Baofeng Jia*
+    initials: BJ
     orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+    email: jjia@sfu.ca
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Department of Biochemistry and Molecular Biology, Simon Fraser University
+  -
+    name: Kristen Gray
+    initials: KG
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: kristen.leanne252@gmail.com
+    affiliations:
+      - Department of Biochemistry and Molecular Biology, Simon Fraser University
+  -
+    name: Venus Lau
+    initials: VL
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: venus_lau@sfu.ca 
+    affiliations:
+      - Department of Biochemistry and Molecular Biology, Simon Fraser University
+  -
+    name: Robert G. Beiko
+    initials: RGB
+    email: rbeiko@dal.ca
+    affiliations:
+      - Faculty of Computer Science, Dalhousie University
+  -
+    name: Fiona S.L. Brinkman
+    initials: FSLB
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: fionabrinkman@sfu.ca
+    affiliations:
+      - Department of Biochemistry and Molecular Biology, Simon Fraser University

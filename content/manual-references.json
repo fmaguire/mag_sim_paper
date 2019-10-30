@@ -1,21 +1,25 @@
 [
 {
-  "id": "url:https://github.com/manubot/rootstock",
-  "type": "webpage",
-  "URL": "https://github.com/manubot/rootstock",
-  "title": "manubot/rootstock GitHub repository",
+  "id": "url:sickle",
+  "type": "software",
+  "URL": "https://github.com/najoshi/sickle",
+  "title": "Sickle: A sliding-window, adaptive, quality-based trimming tool for FastQ files",
   "container-title": "GitHub",
   "issued": {
     "date-parts": [
       [
-        2019
+        2011
       ]
     ]
   },
   "author": [
     {
-      "given": "Daniel",
-      "family": "Himmelstein"
+      "given": "NA",
+      "family": "Joshi"
+    },
+    {
+      "given": "JN",
+      "family": "Fass"
     }
   ]
 }
