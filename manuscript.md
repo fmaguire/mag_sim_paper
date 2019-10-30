@@ -23,9 +23,9 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/ddd7cbbed6ed4780f8b0047e1f4383e36a657174/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/69cab5a771ef1ceadfd2863fc47da49aa01d31ab/))
 was automatically generated
-from [fmaguire/mag_sim_paper@ddd7cbb](https://github.com/fmaguire/mag_sim_paper/tree/ddd7cbbed6ed4780f8b0047e1f4383e36a657174)
+from [fmaguire/mag_sim_paper@69cab5a](https://github.com/fmaguire/mag_sim_paper/tree/69cab5a771ef1ceadfd2863fc47da49aa01d31ab)
 on October 30, 2019.
 </em></small>
 
@@ -220,13 +220,13 @@ In terms of assembler, megahit resulted in the highest median chromosomal covera
 In terms of binning tool, CONCOCT performed very poorly with a median 26% coverage for top hit per bin, followed by maxbin2 (83.1%), and metabat2 (88.5%).
 It is perhaps unsuprising that the best performing binner in terms of bin top hit coverage was the metabinner DAS-TOOL that combines predictions from the other 3 binners (94.3% median top hit chromosome coverage per bin, (@fig:1topcoverage)).
 
-![Chromosomal coverages of most prevalent genome in each bin across binners and metagenome assemblies](images/1a_top_coverage.png){#fig:1topcoverage}
+![Chromosomal coverages of most prevalent genome in each bin across binners and metagenome assemblies](images/1a_top_coverage.png){#fig:1topcoverage width="5in"}
 
 Bin purity, i.e. the number of genomes present in a bin at >5% coverage, was largely equivalent across assemblers (see Fig. (@fig:1purity)), with a very marginally higher purity for IDBA.
 In terms of binning tool, however, maxbin2 proved an outlier with nearly twice as many bins containing multiple species as the next binner.
 The remaining binning tools were largely equivalent, producing chimeric bins at approximately the same rates.
 
-![Distribution of bin purities. Showing the number of genomes with >5% chromosomal coverage across the bins and methods](images/1b_purity.png){#fig:1purity}
+![Distribution of bin purities. Showing the number of genomes with >5% chromosomal coverage across the bins and methods](images/1b_purity.png){#fig:1purity width="5in"}
 
 Regardless of method, a very small proportion of plasmids were correctly binned in the bin that mostly contained chromosomal contigs from the same source genome.
 Specifically, between 1.5% (IDBA-UD assembly with DAS Tool bins) and 29.2% (metaSPAdes with CONCOCT bins) were correctly binned at over 50% coverage.
@@ -235,7 +235,7 @@ IDBA-UD performed worst with 17.1% of plasmids recovered, and megahit recovered 
 If the plasmid was successfully assembled it was placed in a bin by maxbin2 and CONCOCT, although a much smaller fraction correctly binned (typically less than 1/3rd).
 Interestingly, metabat2 and DAS tool binners were a lot more conservative in assigning plasmid contigs to bins, however, of those assigned to bins nearly all were correctly binned (see Fig. (@fig:2plasmids)).
 
-![Plasmid Coverage](images/2_plasmid_coverage.png){#fig:2plasmids}
+![Plasmid Coverage](images/2_plasmid_coverage.png){#fig:2plasmids width="5in"}
 
 GIs displayed a similar pattern of assembly and correct binning performance as plasmids (see Fig. (@fig:3gis)).
 These sequences were assembled uniformly badly (37.8-44.1%) with metaSPAdes outperforming the other two assembly approaches.
@@ -243,29 +243,29 @@ For CONCOCT and maxbin2 binning tools all GIs that were assembled were assigned 
 DAS Tool, metabat2 and CONCOCT didn't display the same precipitious drop-off between those assembled and those correctly binned as was observed for plasmids.
 In terms of overall correct binning with the chromosomes from the same genome the metaSPAdes assembly with CONCOCT (44.1%) and maxbin2 (43.3%) binners performed best.
 
-![Genomic Island Coverage](images/3_gi_coverage.png){#fig:3gis}
+![Genomic Island Coverage](images/3_gi_coverage.png){#fig:3gis width="5in"}
 
 Switching over to gene content, we first explored the ability to find open reading frames (ORFs) within MAGs. Overall, the total number of predicted ORFs in MAGs followed a similar trend fo the chromosomal coverage and purity (@fig:13geneContent). Of the 4 binning tools, CONCOCT performed the worst, finding <30% of the number of ORFs in our reference genomes. Metabat2 performed second worst at ~80%. DASTool recovered a similar number to our reference and Maxbin2 seemed to predicted 7-46% more genes. The Assembler method did not significantly impact the number of genes predited with the exception of Maxbin2 in which idba_ud was the closest to reference and metaspades predicted 46% more ORFs. 
 
-![Predicted Gene Content](images/13geneContent.png){#fig:13geneContent}
+![Predicted Gene Content](images/13geneContent.png){#fig:13geneContent width="5in"}
 
 With respect to AMR genes, in total, MAGs were only able to recover between 40-53% of the AMR genes predicted in our reference genomes across all assembler-binner pairs (Fig. (@fig:4MAGBinTotal)). We then took the best assembler-binner pair (MegaHit-DasTools) and examined the AMR genes recovered in detail. We noticed that, for majority of the bins (85%), MAGs were able to correctly recover either 100% or 0% of the AMR genes (Median value 100%) that are contained in the reference chromosome assigned to that bin. However, MAGs were not able to correctly recover any of the AMR genes that were present on plasmids (Fig. (@fig:5MAGDMBinTotal), Fig. (@fig:6AMRGenePercentRecovery)). Lastly, we asked the question of where reference replicon AMR genes went in the MAGs. For chromosome, majority (81%) of the AMR genes was found in a bin of the MAG. A small portion (12%) was left unbinned and 7% were not found in MAGs at all. On the other hand, for plasmid born AMR genes, all of the recovered genes (n=20) were identified in the unbinned fraction of our MAG (Fig. (@fig:7LocationOfReferenceGenomeAMR)).  
 
-![Total AMR Genes Detected Across Tools](images/4MAGBinTotal.png){#fig:4MAGBinTotal}
-![Total AMR Genes Detected In Best Pair](images/5MAGBinTotal.png){#fig:5MAGDMBinTotal}
-![AMR Gene Percent Recovery](images/6AMRGenePercentRecovery.png){#fig:6AMRGenePercentRecovery}
-![Location of Reference AMR Genes](images/7LocationOfReferenceGenomeAMR.png){#fig:7LocationOfReferenceGenomeAMR}
+![Total AMR Genes Detected Across Tools](images/4MAGBinTotal.png){#fig:4MAGBinTotal width="5in"} 
+![Total AMR Genes Detected In Best Pair](images/5MAGBinTotal.png){#fig:5MAGDMBinTotal width="5in"}
+![AMR Gene Percent Recovery](images/6AMRGenePercentRecovery.png){#fig:6AMRGenePercentRecovery width="5in"}
+![Location of Reference AMR Genes](images/7LocationOfReferenceGenomeAMR.png){#fig:7LocationOfReferenceGenomeAMR width="5in"}
 
 Aside from AMR genes, we also examined virulence factors in our dataset. The number of VF varied dramatically across assembler-binner combinations. Maxbin2 and metabat2 binned MAGs, regardless of assembly method, predicted over 20,000 virulence genes, roughly 50x more than our reference genome. The DasTool-megahit MAG predicted just under 250 VFs, which represent 61% of the number of VFs in our reference replicons (Fig. (@fig:8vfBinTotal)). Furthermore, each bin’s percent recovery of predicted VF compared to the number in their assigned reference chromosome varied much more compared to AMR genes. The %recovered value ranges from 0% to 112% (Median 0). (Fig. (@fig:9vfDMBinTotal), Fig. (@fig:10VFGenePercentRecovery)). Finally, we examined the location of reference chromosomal VF genes in our MAG bins. 63% of VF genes were found in a MAG bin, 19% were found in the unbinned portion and 18% were not found al all. There were no VF predicted on reference plasmids (Fig. (@fig:11LocationOfReferenceGenomeVF)).  
 
-![Total VF Genes Detected Across Tools](images/8vfBinTotal.png){#fig:8vfBinTotal}
-![Total VF Genes Detected In Best Pair](images/9vfDMBinTotal.png){#fig:9vfDMBinTotal}
-![VF Gene Percent Recovery](images/10VFGenePercentRecovery.png){#fig:10VFGenePercentRecovery}
-![Location of Reference VF Genes](images/11LocationOfReferenceGenomeVF.png){#fig:11LocationOfReferenceGenomeVF}
+![Total VF Genes Detected Across Tools](images/8vfBinTotal.png){#fig:8vfBinTotal width="5in"}
+![Total VF Genes Detected In Best Pair](images/9vfDMBinTotal.png){#fig:9vfDMBinTotal width="5in"}
+![VF Gene Percent Recovery](images/10VFGenePercentRecovery.png){#fig:10VFGenePercentRecovery width="5in"}
+![Location of Reference VF Genes](images/11LocationOfReferenceGenomeVF.png){#fig:11LocationOfReferenceGenomeVF width="5in"}
 
 Lastly, we looked at the ability for MAGs to predict subcellular localization of proteins using PSORTb. Overall, the localization distribution of predicted proteins were very similar in MAGs compared to the reference genome (Fig. (@fig:12subcellularLocalization)).
 
-![Distribution of Predicted Protein Subcellular Localization](images/12subcellularLocalization.png){#fig:12subcellularLocalization}
+![Distribution of Predicted Protein Subcellular Localization](images/12subcellularLocalization.png){#fig:12subcellularLocalization width="5in"} 
 
 
 
