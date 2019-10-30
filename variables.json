@@ -2,43 +2,91 @@
   "date": "October 30, 2019",
   "authors": [
     {
-      "github": "johndoe",
-      "name": "John Doe",
-      "initials": "JD",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "twitter": "johndoe",
-      "email": "john.doe@something.com",
+      "github": "fmaguire",
+      "name": "Finlay Maguire*",
+      "initials": "FM",
+      "orcid": "0000-0002-1203-9514",
+      "twitter": "fmaguire",
+      "email": "finlaymaguire@gmail.com",
       "affiliations": [
-        "Department of Something, University of Whatever"
+        "Faculty of Computer Science, Dalhousie University"
       ],
-      "funders": "Grant XXXXXXXX",
+      "funders": [
+        "Genome Canada",
+        "Donald Hill Family Fellowship"
+      ],
       "affiliation_numbers": [
         1
       ]
     },
     {
-      "github": "janeroe",
-      "name": "Jane Roe",
-      "initials": "JR",
+      "github": "imasianxd",
+      "name": "Baofeng Jia*",
+      "initials": "BJ",
       "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "email": "jane.roe@whatever.edu",
+      "email": "jjia@sfu.ca",
       "affiliations": [
-        "Department of Something, University of Whatever",
-        "Department of Whatever, University of Something"
+        "Department of Biochemistry and Molecular Biology, Simon Fraser University"
       ],
       "affiliation_numbers": [
-        1,
+        2
+      ]
+    },
+    {
+      "name": "Kristen Gray",
+      "initials": "KG",
+      "orcid": "XXXX-XXXX-XXXX-XXXX",
+      "email": "kristen.leanne252@gmail.com",
+      "affiliations": [
+        "Department of Biochemistry and Molecular Biology, Simon Fraser University"
+      ],
+      "affiliation_numbers": [
+        2
+      ]
+    },
+    {
+      "name": "Venus Lau",
+      "initials": "VL",
+      "orcid": "XXXX-XXXX-XXXX-XXXX",
+      "email": "venus_lau@sfu.ca",
+      "affiliations": [
+        "Department of Biochemistry and Molecular Biology, Simon Fraser University"
+      ],
+      "affiliation_numbers": [
+        2
+      ]
+    },
+    {
+      "name": "Robert G. Beiko",
+      "initials": "RGB",
+      "email": "rbeiko@dal.ca",
+      "affiliations": [
+        "Faculty of Computer Science, Dalhousie University"
+      ],
+      "affiliation_numbers": [
+        1
+      ]
+    },
+    {
+      "name": "Fiona S.L. Brinkman",
+      "initials": "FSLB",
+      "orcid": "XXXX-XXXX-XXXX-XXXX",
+      "email": "fionabrinkman@sfu.ca",
+      "affiliations": [
+        "Department of Biochemistry and Molecular Biology, Simon Fraser University"
+      ],
+      "affiliation_numbers": [
         2
       ]
     }
   ],
   "affiliations": [
     {
-      "affiliation": "Department of Something, University of Whatever",
+      "affiliation": "Faculty of Computer Science, Dalhousie University",
       "affiliation_number": 1
     },
     {
-      "affiliation": "Department of Whatever, University of Something",
+      "affiliation": "Department of Biochemistry and Molecular Biology, Simon Fraser University",
       "affiliation_number": 2
     }
   ],
@@ -47,16 +95,19 @@
     "repo_slug": "fmaguire/mag_sim_paper",
     "repo_owner": "fmaguire",
     "repo_name": "mag_sim_paper",
-    "commit": "54e3ed90410444ae010718b52066f964ed3d24de",
-    "triggering_commit": "54e3ed90410444ae010718b52066f964ed3d24de",
-    "build_url": "https://travis-ci.com/fmaguire/mag_sim_paper/builds/134255744",
-    "job_url": "https://travis-ci.com/fmaguire/mag_sim_paper/jobs/251168223",
-    "manuscript_url": "https://fmaguire.github.io/mag_sim_paper/v/54e3ed90410444ae010718b52066f964ed3d24de/"
+    "commit": "ddd7cbbed6ed4780f8b0047e1f4383e36a657174",
+    "triggering_commit": "ddd7cbbed6ed4780f8b0047e1f4383e36a657174",
+    "build_url": "https://travis-ci.com/fmaguire/mag_sim_paper/builds/134255947",
+    "job_url": "https://travis-ci.com/fmaguire/mag_sim_paper/jobs/251168715",
+    "manuscript_url": "https://fmaguire.github.io/mag_sim_paper/v/ddd7cbbed6ed4780f8b0047e1f4383e36a657174/"
   },
   "manuscript_stats": {
     "reference_counts": {
-      "total": 0
+      "doi": 51,
+      "pmid": 2,
+      "url": 1,
+      "total": 54
     },
-    "word_count": 236
+    "word_count": 4599
   }
 }
