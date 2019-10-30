@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/fmaguire/mag_sim_paper/tree/gh-pages) branch hosts the contents of this directory at https://fmaguire.github.io/mag_sim_paper/.
-The permalink for this webpage version is https://fmaguire.github.io/mag_sim_paper/v/69cab5a771ef1ceadfd2863fc47da49aa01d31ab/.
+The permalink for this webpage version is https://fmaguire.github.io/mag_sim_paper/v/9660a84426547dd29d7a536108b05bccde360af0/.
 To redirect to the permalink for the latest manuscript version at anytime, use the link https://fmaguire.github.io/mag_sim_paper/v/freeze/.
 
 ## Files
@@ -36,4 +36,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`69cab5a771ef1ceadfd2863fc47da49aa01d31ab`](https://github.com/fmaguire/mag_sim_paper/commit/69cab5a771ef1ceadfd2863fc47da49aa01d31ab).
+[`9660a84426547dd29d7a536108b05bccde360af0`](https://github.com/fmaguire/mag_sim_paper/commit/9660a84426547dd29d7a536108b05bccde360af0).
