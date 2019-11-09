@@ -23,9 +23,9 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/e1272f98d66d66d1466d80f5ec8c74194d007511/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/1758038b6418315361532a1d5561e45a9a43a276/))
 was automatically generated
-from [fmaguire/mag_sim_paper@e1272f9](https://github.com/fmaguire/mag_sim_paper/tree/e1272f98d66d66d1466d80f5ec8c74194d007511)
+from [fmaguire/mag_sim_paper@1758038](https://github.com/fmaguire/mag_sim_paper/tree/1758038b6418315361532a1d5561e45a9a43a276)
 on November 9, 2019.
 </em></small>
 
@@ -249,7 +249,7 @@ In other words if a bin is identifiably 70% species A and 30% species B we consi
 Ideally, we wish to generate a single bin for each source genome comprised of the entire genome and no contigs from other genomes.
 Some genomes are cleanly and accurately binned regardless of the assembler and binning method used (See Fig. (@fig:supspeciescov)).
 Specifically, greater than 90% of _Streptomyces parvulus_ (minimum 91.8%) and _Clostridium baratii_ (minimum 96.4%) chromosomes are represented in individual bins across all methods.
-However, no other genomes were consistently recovered by all methods for more than a 3rd of the chromosomes.
+However, no other genomes were consistently recovered by all methods for more than 1/3rd of the chromosomes.
 The 3 _Streptococcus_ genomes were particularly problematic, likely due to their similarity, with the best recovery for each ranging from 1.7% to 47.49%.
 
 ![Top Species Coverage](images/s1_species_top_coverage.png){#fig:supspeciescov}
