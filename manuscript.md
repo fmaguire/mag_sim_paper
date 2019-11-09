@@ -23,9 +23,9 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/706b04175739fdae8daa532aea49430b843bbe00/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/e1272f98d66d66d1466d80f5ec8c74194d007511/))
 was automatically generated
-from [fmaguire/mag_sim_paper@706b041](https://github.com/fmaguire/mag_sim_paper/tree/706b04175739fdae8daa532aea49430b843bbe00)
+from [fmaguire/mag_sim_paper@e1272f9](https://github.com/fmaguire/mag_sim_paper/tree/e1272f98d66d66d1466d80f5ec8c74194d007511)
 on November 9, 2019.
 </em></small>
 
@@ -171,13 +171,13 @@ All genomes were selected from the set of completed RefSeq genomes as of April 2
 Genomic islands for these genomes were previously predicted using IslandPath-DIMOB [@M1pdcdMy] and collated into the IslandViewer database (http://www.pathogenomics.sfu.ca/islandviewer) [@4eEyIkDg].
 Plasmid sequences and numbers were recovered for each genome using the linked genbank Project IDs.
 
-30 genomes were arbitrarily chosen to exemplify the following criteria:
-    - 10 with high numbers of plasmids
-    - 10 with a very high proportion (\>10%) of chromosomes corresponding to composition detected GIs.
-    - 10 with a very low proportion (\<1%) of chromosomes corresponding to composition detected GIs.
+30 genomes were manually selected to exemplify the following criteria:
+    - 10 genomes with high numbers of plasmids
+    - 10 genomes with a very high proportion (\>10%) of chromosomes corresponding to GIs detected by compositional features.
+    - 10 genomes with a very low proportion (\<1%) of chromosomes corresponding to GIs detected by compositional features.
 
 The data used to select the taxa is listed in Supplemental Table 1 and the details of the selected subset taxa are listed in Supplemental Table 2 with their NCBI accessions.
-The sequences themselves are in `data/sequences/sequences.tar.bz2`
+The sequences themselves are in `data/sequences/sequences.tar.bz2` of the linked analysis repository above.
 
 In accordance to the recommendation in the CAMI challenge [@lsbnKJf8] the genomes were randomly assigned a relative abundance following a log-normal distribituion (\mu = 1, \sigma = 2).
 Plasmid copy number estimates could not be accurately found for all organisms, therefore, plasmids were randomly assigned a copy number regime: low (1-20), medium (20-100), or high (500-1000) at a 2:1:1 rate.
@@ -195,47 +195,50 @@ The selection of relative abundance and metagenome simulation itself was perform
 Reads were trimmed using sickle (v1.33) [@1CBlSILo4] resulting in 25,682,644 surviving read pairs.
 The trimmed reads were then assembled using 3 different metagenomic assemblers: metaSPAdes (v3.13.0)[@KP5SjPXN] , IDBA-UD (v1.1.3) [@a4mT7fuU], and megahit (v1.1.3) [@1EUV0Ejkr]).
 The resulting assemblies were summarised using metaQUAST (v5.0.2) [@TeRvtMCl].
-The assemblies were indexed and reads mapped back using Bowtie 2 (v2.3.4.3) [@PiS0h6Mu].
+The assemblies were then indexed and reads mapped back using Bowtie 2 (v2.3.4.3) [@PiS0h6Mu].
 
-Samtools (v1.9) were then used to sort the read mappings and the read coverage calculated using the MetaBAT 2 accessory script (jgi\_summarize\_bam\_contig\_depths. 
-The 3 metagenome assemblies were then separately binned using CONCOCT (v0.4.2) [@WRoCf6pg], MetaBAT 2 (v2.13) [@b2WO18xh], and MaxBin 2 (v2.2.6) [@sG4CX8Uj]. 
-As per the specified manual instructions CONCOCT used a slightly different approach to estimate read coverage.
-The supplied accessory scripts were also used to cut contigs into 10 kilobase fragments (cut\_up\_fasta.py) and read coverage calculated for the fragments (concoct\_coverage\_table.py).
+Samtools (v1.9) was used to sort the read mappings and the read coverage calculated using the MetaBAT 2 accessory script (jgi\_summarize\_bam\_contig\_depths). 
+The 3 metagenome assemblies were then separately binned using MetaBAT 2 (v2.13) [@b2WO18xh], and MaxBin 2 (v2.2.6) [@sG4CX8Uj]. 
+MAGs were also recovered using CONCOCT (v0.4.2) [@WRoCf6pg] following the recommended protocol in the user manual
+Briefly, the supplied CONCOCT accessory scripts were used to cut contigs into 10 kilobase fragments (cut\_up\_fasta.py) and read coverage calculated for the fragments (concoct\_coverage\_table.py).
 These fragment coverages were then used to bin the 10kb fragments before the clustered fragments were merged (merge\_cutup\_clustering.py) to create the final CONCOCT MAG bins (extra\_fasta\_bins.py)
-Finally, for each metagenome assembly the predicted bins from these 3 binners were combined using DAS Tool (v1.1.1) [@DfIRBmdF].
+Finally, for each metagenome assembly the predicted bins from these 3 binners (Maxbin2, MetaBAT 2, and CONCOCT) were combined using the DAS Tool (v1.1.1) meta-binner [@DfIRBmdF].
 This resulted in 12 separate sets of MAGs (one set for each assembler and binner pair).
 
 ### MAG assessment
 
 #### Chromosomal Coverage
 
-The MAG assessment for chromosomal coverage was performed by creating a BLASTN 2.9.0+ [@nEsJGUWa] database 
-consisting of all the chromosomes of the input reference genomes.
+The MAG assessment for chromosomal coverage was performed by creating a BLASTN 2.9.0+ [@nEsJGUWa] database consisting of all the chromosomes of the input reference genomes.
 Each MAG contig was then used as a query against this database and the coverage of the underlying chromosomes tallied by merging the overlapping aligning regions and summing the total length of aligned MAG contigs.
 The most represented genome in each MAG was assigned as the "identity" of that MAG for further analyses.
-Coverages less than 5% were filtered out and the number of different genomes that a MAG contain contigs aligning to were tallied.
+Coverages less than 5% were filtered out and the number of different genomes that contigs from a given MAG aligned to were tallied.
 Finally, the overall proportion of chromosomes that were not present in any MAG were tallied for each binner and assembler.
 
 #### Plasmid and GI Coverage
 
 Plasmid and GI coverage were assessed in the same way as one another.
-Firstly, each a BLASTN database was generated for each set of MAG contigs.
+Firstly, a BLASTN database was generated for each set of MAG contigs.
 Then each MAG database was searched for plasmid and GI sequences.
 Any plasmid or GI with greater than 50% coverage in a MAG was retained.
 All plasmids or GIs which could be found in the unbinned contigs or the MAGs was recorded as having been successfully assembled.
 The subset of these which were found in the binned MAGs was then seperately tallied.
-Finally, we evaluated the proportion of plasmids or GIs which were binned correctly in the bin which was maximally composed of chromosomes from the same source gneome.
-This was determined using the bin "IDs" from the chromosomal coverage analysis.
+Finally, we evaluated the proportion of plasmids or GIs which were binned correctly in the bin which was maximally composed of chromosomes from the same source genome.
+This was determined using the bin "identities" from the chromosomal coverage analysis.
 
 ### Antimicrobial Resistance and Virulence Factors Assessment
 #### Detection of AMR/VF Genes
-For each of the 12 MAGs, and the reference chromosome and plasmids, AMR genes were predicted using Resistance Gene Identifier (RGI v5.0.0; default parameters) and the Comprehensive Antibiotic Resistance Database (CARD v3.0.2) [@1ByMfX8Y1]. Virulence factors were predicted using BLASTX against the Virulence Factors Database (VFDB; obtained on Aug 26, 2019) with an e-value cut-off of 0.001. [@pYB1SP5]. Each MAG was then assigned to a reference chromosome and plasmid using the above mentioned mapping criteria for downstream analysis.
+For each of the 12 MAGs sets, and the reference chromosome and plasmids, AMR genes were predicted using Resistance Gene Identifier (RGI v5.0.0; default parameters) and the Comprehensive Antibiotic Resistance Database (CARD v3.0.2) [@1ByMfX8Y1]. 
+Virulence factors were predicted using BLASTX against the Virulence Factors Database (VFDB; obtained on Aug 26, 2019) with an e-value cut-off of 0.001 [@pYB1SP5]. 
+Each MAG was then assigned to a reference chromosome and plasmid using the above mentioned mapping criteria for downstream analysis.
 
 #### AMR/VF Gene Recovery
-The ability for MAGs to properly recover AMR and VF genes was assessed using only the megahit-DasTool assembler-binner combination as it was the best performing pair. For each bin, we counted the total number of AMR/VF genes recovered then compared this to the number predicted in their assigned reference chromosome and plasmids to determine MAG’s gene recovery ability. We then mapped the location of reference replicon’s predicted genes to the bins to determined the location of those genes in MAGs. 
+For each MAG sets, we counted the total number of AMR/VF genes recovered then compared this to the number predicted in their assigned reference chromosome and plasmids to determine MAG’s gene recovery ability. 
+We then mapped the location of reference replicon’s predicted genes to the bins to determined the location of those genes in MAGs. 
 
 #### Protein subcellular localization predictions
-The MAG bins from megahit-DasTool assembler-binner combination was inputted into prodigal [@lX665mdh] to predict open reading frames (ORFs) using the default parameter. The list of predicted proteins is inputted into PSORTb v3.0 with default parameters [@19bHWbO47]. 
+The MAG bins from megahit-DasTool assembler-binner combination was inputted into prodigal [@lX665mdh] to predict open reading frames (ORFs) using the default parameters. 
+The list of predicted proteins was inputted into PSORTb v3.0 with default parameters [@19bHWbO47]. 
 
 
 ## Results {#results}

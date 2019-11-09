@@ -95,11 +95,11 @@
     "repo_slug": "fmaguire/mag_sim_paper",
     "repo_owner": "fmaguire",
     "repo_name": "mag_sim_paper",
-    "commit": "706b04175739fdae8daa532aea49430b843bbe00",
-    "triggering_commit": "706b04175739fdae8daa532aea49430b843bbe00",
-    "build_url": "https://travis-ci.com/fmaguire/mag_sim_paper/builds/135779356",
-    "job_url": "https://travis-ci.com/fmaguire/mag_sim_paper/jobs/254783262",
-    "manuscript_url": "https://fmaguire.github.io/mag_sim_paper/v/706b04175739fdae8daa532aea49430b843bbe00/"
+    "commit": "e1272f98d66d66d1466d80f5ec8c74194d007511",
+    "triggering_commit": "e1272f98d66d66d1466d80f5ec8c74194d007511",
+    "build_url": "https://travis-ci.com/fmaguire/mag_sim_paper/builds/135779884",
+    "job_url": "https://travis-ci.com/fmaguire/mag_sim_paper/jobs/254784526",
+    "manuscript_url": "https://fmaguire.github.io/mag_sim_paper/v/e1272f98d66d66d1466d80f5ec8c74194d007511/"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -108,6 +108,6 @@
       "url": 1,
       "total": 59
     },
-    "word_count": 4736
+    "word_count": 4730
   }
 }
