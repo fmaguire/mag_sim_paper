@@ -6,7 +6,7 @@ author-meta:
 - Venus Lau
 - Robert G. Beiko
 - Fiona S.L. Brinkman
-date-meta: '2019-11-05'
+date-meta: '2019-11-09'
 keywords:
 - markdown
 - publishing
@@ -23,10 +23,10 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/79a85426ab2728098d1754c775dc98018bad8ed6/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/706b04175739fdae8daa532aea49430b843bbe00/))
 was automatically generated
-from [fmaguire/mag_sim_paper@79a8542](https://github.com/fmaguire/mag_sim_paper/tree/79a85426ab2728098d1754c775dc98018bad8ed6)
-on November 5, 2019.
+from [fmaguire/mag_sim_paper@706b041](https://github.com/fmaguire/mag_sim_paper/tree/706b04175739fdae8daa532aea49430b843bbe00)
+on November 9, 2019.
 </em></small>
 
 ## Authors
@@ -110,19 +110,54 @@ This indicates the importance of read based approaches for thorough evalaution o
 
 ## Introduction {#intro}
 
-Metagenomics, the untargeted sequencing of all DNA within a sample, has become the dominant approach for characterising viral and microbial communities over the last 17 years [@8PLOeAH6; @7RV1Ygsv]. By targeting all genomic contents, these methods allow researchers to profile the functional potential and the taxonomic composition of a sample. This is in contrast to barcoding based approaches such as 16S or 18S rRNA sequencing which only provide taxonomic information [@Trbw5ZnC] (although you can attempt to predict functional potential from taxonomic data [@93ojQnSg; @L09Dmaq3]). One of many areas where metagenomics has been very useful is in the analysis of antimicrobial resistance (AMR). Using these approaches has been instrumental in developing our understanding of the distribution and evolutionary history of AMR genes [@rwhLEYRY; @QSe5BqFk; @2xaXclNM]. It has also formed a very useful tool for pathogen tracking in public health outbreak analyses [@khJQfjDf]
+Metagenomics, the untargeted sequencing of all DNA within a sample, has become the dominant approach for characterising viral and microbial communities over the last 17 years [@8PLOeAH6; @7RV1Ygsv]. 
+By sampling from the total genomic content these methods allow researchers to profile the functional potential and the taxonomic composition of a sample. 
+This is in contrast to bar-coding based approaches such as 16S or 18S rRNA sequencing which only provide taxonomic information [@Trbw5ZnC] (although you can attempt to predict functional potential from taxonomic data [@93ojQnSg; @L09Dmaq3]). 
+One of many areas where metagenomics has been very useful is in the analysis of antimicrobial resistance (AMR) and pathogen virulence. 
+These approaches have been instrumental in developing our understanding of the distribution and evolutionary history of AMR genes [@rwhLEYRY; @QSe5BqFk; @2xaXclNM]. 
+It has also formed a key tool for pathogen tracking in public health outbreak analyses [@khJQfjDf]
 
-While 3rd generation long-read technology has begun to be adopted in metagenomics analyses [@U4vhNZoB; @1759XyDVi] the majority of analyses still involve high-throughput 2nd generation sequencing. These 2nd generation platforms such as Illumina's MiSeq provide high numbers (10s-100s of millions) of relatively short reads (150-250bp) randomly sampled from the underlying DNA in the sample. This sampling is therefore in proportion to the relative abundance of different organisms (i.e. more abundant organisms will be more represented in the reads). There are 2 main approaches to the analysis of 2nd generation metagenomic data: read homology and metagenome assembly. Read-based approaches involve using reference databases and BLAST based sequence similarity search tools (e.g. DIAMOND [@4R96QRcV]), read mapping (e.g. Bowtie 2 [@PiS0h6Mu]), Hidden Markov Models (e.g. HMMER3 [@77xWEk9S]) or k-mer hashing (e.g. CLARK [@OoKZ0WcH]). These read-based approaches allow analysis of all reads with detectable similarity to the genes you are interested even if the organism is relatively under-represented in the dataset. However, read-based methods are reliant on quality of the reference database (i.e. you don't detect things you don't already know about) and does not provide any information about the genomic organisation of the genes.
+While 3rd generation long-read technology has begun to be adopted in metagenomics analyses [@U4vhNZoB; @1759XyDVi] the majority of analyses still involve high-throughput 2nd generation sequencing. 
+These 2nd generation platforms such as Illumina's MiSeq provide high numbers (10s-100s of millions) of relatively short reads (150-250bp) randomly sampled from the underlying DNA in the sample. 
+This sampling is therefore in proportion to the relative abundance of different organisms (i.e. more abundant organisms will be more represented in the reads). 
+There are 2 main approaches for the analysis of 2nd generation metagenomic data: read homology and metagenome assembly. 
+Read-based approaches involve using reference databases and BLAST-based sequence similarity search tools (e.g. DIAMOND [@4R96QRcV]), read mapping (e.g. Bowtie 2 [@PiS0h6Mu]), Hidden Markov Models (e.g. HMMER3 [@77xWEk9S]) or k-mer hashing (e.g. CLARK [@OoKZ0WcH]). 
+These read-based approaches allow analysis of all reads with detectable similarity to genes of interest even if the organism is relatively under-represented in the dataset. 
+However, read-based methods are reliant on quality of the reference database (i.e. you don't detect things you don't already know about) and does not provide any information about the genomic organisation of the genes.
+This lack of contextual information is particularly problematic in the study of AMR genes and virulence factors as the genomic context plays a role in function [@17Dww6tOF], selective pressures [@1BcFmOfCH], and how liable the sequence is to lateral gene transfer (LGT) [@SACLvb9k].
 
-In order to get more data about the relative genomic context and organisation of your genes of interest it is possible (although computationally demanding) to assemble the short reads into longer fragments of DNA (contigs). This approach has been used successfully in even very early metagenomic analysis papers [@F7RexqdF]. There are a variety of specialised de Bruijn graph assemblers developed to handle the particular challenges of this type of assembly (such as metaSPAdes [@KP5SjPXN] , IDBA-UD [@a4mT7fuU], and megahit [@1EUV0Ejkr]) each with a range of different strengths and weaknesses [@f0X2CPKM]. While metagenomic assembly does provide longer stretches of DNA incorporating information about multiple genes without further analysis it still leaves you with a large collection of DNA fragments with no obvious groupings.
+In order to get more data about the relative genomic context and organisation of your genes of interest it is possible (although computationally demanding) to assemble the short reads into longer fragments of DNA (contigs). 
+This approach has been used successfully in even very early metagenomic analysis papers [@F7RexqdF]. 
+There are a variety of specialised _de Bruijn_ graph assemblers developed to handle the particular challenges of this type of assembly (such as metaSPAdes [@KP5SjPXN] , IDBA-UD [@a4mT7fuU], and megahit [@1EUV0Ejkr]) each with a range of different strengths and weaknesses [@f0X2CPKM]. 
+While metagenomic assembly does provide longer stretches of DNA incorporating information about multiple genes without further analysis it still leaves you with a large collection of DNA fragments with no obvious groupings. 
 
-An increasingly common way to deal with this is to attempt to group these assembled contigs into bins all derived from the same underlying genome in the sample. These resulting bins are known as metagenome assembled genomes (MAGs). This binning is typically performed by grouping all the contigs with similar abundance and similar sequence composition into the same bin. A range of tools have been released to perform this binning including CONCOCT [@WRoCf6pg], MetaBAT 2 [@b2WO18xh], and MaxBin 2 [@sG4CX8Uj]. There is also the metabinning tool DAS Tool [@DfIRBmdF] which combines predictions from multiple binning tools together. These MAG approaches have been used to great effect in unveiling huge amounts of previously uncharacterised genomic diversity [@4rsFboY4; @wrBRBdFb; @Rk2NATlI].
+An increasingly common way to deal with this is to attempt to group these assembled contigs into bins all derived from the same underlying genome in the sample. 
+These resulting bins are known as metagenome assembled genomes (MAGs). 
+This binning is typically performed by grouping all the contigs with similar abundance and similar sequence composition into the same bin. 
+A range of tools have been released to perform this binning including CONCOCT [@WRoCf6pg], MetaBAT 2 [@b2WO18xh], and MaxBin 2 [@sG4CX8Uj]. 
+There is also the meta-binning tool DAS Tool [@DfIRBmdF] which combines predictions from multiple binning tools together. 
+These MAG approaches have been used to great effect in unveiling huge amounts of previously uncharacterised genomic diversity [@4rsFboY4; @wrBRBdFb; @Rk2NATlI].
 
-Unfortunately, only a relatively small proportion of reads are successfully assembled and binned in large complex metagenome datasets e.g. 24.2-36.4% of reads from permafrost [@buqrbdBh] and soil metagenomes [@d5Hh0941]. Additionally, a large number of detected genomes are not reconstructed at all with only ~23% of all detected genomes recovered in the soil metagenome [@d5Hh0941]. There have been attempts to benchmark and compare these tools such as the Critical Assessment of Metagenome Interpretation (CAMI) challenge's (https://data.cami-challenge.org/) Assessment of Metagenome BinnERs (AMBER) [@Y8sHlHi] however these only investigate the completeness and purity of recovered MAGs relative to true genomes in the sample. They don't attempt to assess whether there are specific components of the underlying genomes that are disproportionately lost. Two such genomic elements of great importance to the study and lateral gene transfer of AMR are genomic islands and plasmid sequences.
+Unfortunately, there is loss of information at both the metagenomic assembly step (e.g. repetitive DNA sequences that are difficult to correctly assemble with short reads) [@UWOTvAMZ,@12zFifp5x] and in binning.
+This compounded data loss means that only a relatively small proportion of reads are actually successfully assembled and binned in large complex metagenome datasets e.g. 24.2-36.4% of reads from permafrost [@buqrbdBh] and soil metagenomes [@d5Hh0941]. 
+Additionally, a large number of detected genomes are not reconstructed at all, only ~23% of all detected genomes were recovered in some examples [@d5Hh0941]. 
+There have been attempts to benchmark and compare the assembly and binning tools such as the Critical Assessment of Metagenome Interpretation (CAMI) challenge's (https://data.cami-challenge.org/) Assessment of Metagenome BinnERs (AMBER) [@Y8sHlHi] however these largely investigate the overall completeness and purity of recovered MAGs relative to the known genomes in the evaluation samples.
+To our best knowledge, there hasn't been a specific assessment of the impact of metagenomic assembly and binning on the loss of specific genomic elements.
+Two such genomic elements of great importance to the study and LGT of AMR and virulence factors are genomic islands and plasmid sequences.
 
-Genomic islands (GIs) are clusters of genes known or predicted to have been acquired through lateral gene transfer (LGT) events. These include integrons, transposons, integrative and conjugative elements (ICEs) and prophages (integrated phages) [@DET3tBYj; @1Af4oXwEX]. They have been shown to disproportionately encode virulence factors [@LxGqo7iq] and are a major mechanism of LGT of AMR genes [@x7HhCKyS; @17U91060Y]. However, these GIs often have different nucleotide composition compared to the rest of the genome [@DET3tBYj], which is exploited by tools such as SIGI-HMM [@19UeQywMr] and IslandPath-DIMOB [@M1pdcdMy] to detect GIs. Additionally, GIs may exist as multiple copies within a genome [@5g9Xc4ot] leading to potential difficulties in correctly assembling these regions in metagenome assemblies as well as likely biases in the calculation of coverage statistics. Similarly, plasmids are a major source of the dissemination and transistion of AMR genes throughout microbial ecosystems [@X9j9vETu; @x7HhCKyS]. They also exist at variable copy number [@qtpTcNWp; @Z1irb7eF] and with markedly different sequence composition to the genome they are associated with [@QK9dmRUA; @ps1aOiRU]
+Genomic islands (GIs) are clusters of genes known or predicted to have been acquired through LGT events. 
+These include integrons, transposons, integrative and conjugative elements (ICEs) and prophages (integrated phages) [@DET3tBYj; @1Af4oXwEX]. 
+They have been shown to disproportionately encode virulence factors [@LxGqo7iq] and are a major mechanism of LGT of AMR genes [@x7HhCKyS; @17U91060Y]. 
+However, these GIs often have different nucleotide composition compared to the rest of the genome [@DET3tBYj], which is exploited by tools such as SIGI-HMM [@19UeQywMr] and IslandPath-DIMOB [@M1pdcdMy] to detect GIs. 
+GIs may exist as multiple copies within a genome [@5g9Xc4ot] leading to potential difficulties in correctly assembling these regions in metagenome assemblies as well as likely biases in the calculation of coverage statistics. 
+Similarly, plasmids, circular or linear extrachromosomal self-replicating pieces of DNA, are a major source of the dissemination of AMR genes throughout microbial ecosystems [@X9j9vETu; @x7HhCKyS]. 
+Due to their research priority, lots of work has identified the difficulty of assembling these sequences correctly from short-read data [@12zFifp5x,@bkwNETh8].
+This is largely due to containing repetitive sequences, having variable copy number [@qtpTcNWp; @Z1irb7eF] and often markedly different sequence composition to the genome they are associated with [@QK9dmRUA; @ps1aOiRU]. 
 
-As MAG binning is performed on the basis of sequence composition and coverage this suggests that these sequences are liable to being incorrectly binned or lost in the process of recovering MAGs. Due to the importance of these genomic components in the function and spread of pathogenic traits such as AMR and virulence it is vital that we assess the impact of assembly and binning on the representation of these elements. This is particularly important with the increasing popularity of MAG approaches within microbial and public health research. Therefore, to address this issue we performed an analysis of GI and plasmid recovery accuracy across a range of assembly and binning approaches using a simulated medium complexity metagenome comprised of GI and plasmid rich taxa.
+As MAG binning is performed on the basis of sequence composition and coverage this suggests that these sequences are liable to being incorrectly binned or lost in the process of recovering MAGs. 
+Due to the importance of these genomic components in the function and spread of pathogenic traits such as AMR and virulence it is vital that we assess the impact of metagenome assembly and binning on the representation of these specific elements. 
+This is particularly important with the increasing popularity of MAG approaches within microbial and public health research. 
+Therefore, to address this issue we performed an analysis of GI and plasmid recovery accuracy across a broad-set of current state-of-the-art short-read metagenome assembly and binning approaches using a simulated medium complexity metagenome comprised of GI- and plasmid-rich taxa.
 
 
 ## Materials and Methods {#methods}

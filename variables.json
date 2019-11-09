@@ -1,5 +1,5 @@
 {
-  "date": "November 5, 2019",
+  "date": "November 9, 2019",
   "authors": [
     {
       "github": "fmaguire",
@@ -95,19 +95,19 @@
     "repo_slug": "fmaguire/mag_sim_paper",
     "repo_owner": "fmaguire",
     "repo_name": "mag_sim_paper",
-    "commit": "79a85426ab2728098d1754c775dc98018bad8ed6",
-    "triggering_commit": "79a85426ab2728098d1754c775dc98018bad8ed6",
-    "build_url": "https://travis-ci.com/fmaguire/mag_sim_paper/builds/135072622",
-    "job_url": "https://travis-ci.com/fmaguire/mag_sim_paper/jobs/253114378",
-    "manuscript_url": "https://fmaguire.github.io/mag_sim_paper/v/79a85426ab2728098d1754c775dc98018bad8ed6/"
+    "commit": "706b04175739fdae8daa532aea49430b843bbe00",
+    "triggering_commit": "706b04175739fdae8daa532aea49430b843bbe00",
+    "build_url": "https://travis-ci.com/fmaguire/mag_sim_paper/builds/135779356",
+    "job_url": "https://travis-ci.com/fmaguire/mag_sim_paper/jobs/254783262",
+    "manuscript_url": "https://fmaguire.github.io/mag_sim_paper/v/706b04175739fdae8daa532aea49430b843bbe00/"
   },
   "manuscript_stats": {
     "reference_counts": {
-      "doi": 51,
+      "doi": 56,
       "pmid": 2,
       "url": 1,
-      "total": 54
+      "total": 59
     },
-    "word_count": 4613
+    "word_count": 4736
   }
 }
