@@ -6,7 +6,7 @@ author-meta:
 - Venus Lau
 - Robert G. Beiko
 - Fiona S.L. Brinkman
-date-meta: '2019-11-30'
+date-meta: '2019-12-02'
 keywords:
 - markdown
 - publishing
@@ -23,10 +23,10 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/7e38bfe7451ad212364df4c92f778ca3a2fa8048/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/1ac9a88a7499455bd9d9d30b59f77ddeb6ce6296/))
 was automatically generated
-from [fmaguire/mag_sim_paper@7e38bfe](https://github.com/fmaguire/mag_sim_paper/tree/7e38bfe7451ad212364df4c92f778ca3a2fa8048)
-on November 30, 2019.
+from [fmaguire/mag_sim_paper@1ac9a88](https://github.com/fmaguire/mag_sim_paper/tree/1ac9a88a7499455bd9d9d30b59f77ddeb6ce6296)
+on December 2, 2019.
 </em></small>
 
 ## Authors
@@ -228,13 +228,13 @@ This was determined using the bin "identities" from the chromosomal coverage ana
 
 ### Antimicrobial Resistance and Virulence Factors Assessment
 #### Detection of AMR/VF Genes
-For each of the 12 MAGs sets, and the reference chromosome and plasmids, AMR genes were predicted using Resistance Gene Identifier (RGI v5.0.0; default parameters) and the Comprehensive Antibiotic Resistance Database (CARD v3.0.2) [@1ByMfX8Y1]. 
-Virulence factors were predicted using BLASTX against the Virulence Factors Database (VFDB; obtained on Aug 26, 2019) with an e-value cut-off of 0.001 [@pYB1SP5]. 
-Each MAG was then assigned to a reference chromosome and plasmid using the above mentioned mapping criteria for downstream analysis.
+For each of the 12 MAGs sets, and the reference chromosome and plasmids, AMR genes were predicted using Resistance Gene Identifier (RGI v5.0.0; default parameters) and the Comprehensive Antibiotic Resistance Database (CARD v3.0.3) [@1ByMfX8Y1]. 
+Virulence factors were predicted using BLASTX against the Virulence Factors Database (VFDB; obtained on Aug 26, 2019) with an e-value cut-off of 0.001 and percent identity > 90 [@pYB1SP5]. 
+Each MAG was then assigned to a reference chromosome using the above mentioned mapping criteria for downstream analysis.
 
 #### AMR/VF Gene Recovery
-For each MAG sets, we counted the total number of AMR/VF genes recovered then compared this to the number predicted in their assigned reference chromosome and plasmids to determine MAG’s gene recovery ability. 
-We then mapped the location of reference replicon’s predicted genes to the bins to determined the location of those genes in MAGs. 
+For each MAG sets, we counted the total number of AMR/VF genes recovered in each assembly and each MAG and compared this number to the number predicted in their assigned reference chromosome and plasmids to determine MAG’s gene recovery ability. 
+We the assessed the ability for MAGs to correctly bin genes of chromosomal, plasmid and GI origin by mapping the location of the reference replicon's predicted genes to the location of the same genes in the MAGs. 
 
 #### Protein subcellular localization predictions
 The MAG bins from megahit-DasTool assembler-binner combination was inputted into prodigal [@lX665mdh] to predict open reading frames (ORFs) using the default parameters. 
@@ -282,47 +282,75 @@ DAS Tool, metabat2 and CONCOCT didn't display the same precipitious drop-off bet
 In terms of overall correct binning with the chromosomes from the same genome the metaSPAdes assembly with CONCOCT (44.1%) and maxbin2 (43.3%) binners performed best.
 
 ![Genomic Island Coverage](images/3_gi_coverage.png){#fig:3gis width="5in"}
-![Predicted Gene Content](images/13geneContent.png){#fig:13geneContent width="8in"}
 
-Switching over to gene content, we first explored the ability to find open reading frames (ORFs) within MAGs. Overall, the total number of predicted ORFs in MAGs followed a similar trend fo the chromosomal coverage and purity (@fig:13geneContent). Of the 4 binning tools, CONCOCT performed the worst, finding <30% of the number of ORFs in our reference genomes. Metabat2 performed second worst at ~80%. DASTool recovered a similar number to our reference and Maxbin2 seemed to predicted 7-46% more genes. The Assembler method did not significantly impact the number of genes predited with the exception of Maxbin2 in which idba_ud was the closest to reference and metaspades predicted 46% more ORFs. 
+In term of gene content, we first explored the ability to find open reading frames (ORFs) within MAGs. 
+Overall, the total number of predicted ORFs in MAGs followed a similar trend fo the chromosomal coverage and purity (@fig:4geneContent). 
+Of the 4 binning tools, CONCOCT performed the worst, finding <30% of the number of ORFs in our reference genomes. Metabat2 performed second worst at ~80%. DASTool recovered a similar number to our reference and Maxbin2 seemed to predicted 7-46% more genes. The Assembler method did not significantly impact the number of genes predited with the exception of Maxbin2 in which idba_ud was the closest to reference and metaspades predicted 46% more ORFs. 
 
+![Predicted Gene Content](images/4geneContent.png){#fig:4geneContent width="8in"}
 
-![Total AMR Genes Detected Across Tools](images/4MAGBinTotal.png){#fig:4MAGBinTotal width="8in"} 
-![Total AMR Genes Detected In Best Pair](images/5MAGBinTotal.png){#fig:5MAGDMBinTotal width="15in"}
-![AMR Gene Percent Recovery](images/6AMRGenePercentRecovery.png){#fig:6AMRGenePercentRecovery width="15in"}
-![Location of Reference AMR Genes](images/7LocationOfReferenceGenomeAMR.png){#fig:7LocationOfReferenceGenomeAMR width="15in"}
+First, we focused on the ability of MAGs to recover clinically relevant AMR genes (@fig:5AMRGenePercentRecoveryStage). After the assembly stage, we were only able to recover between ~49-55% of the AMR genes predicted in our reference genomes regardless of the assembly tool used, with metaspades performing marginally better than the others. 
+Binning the contigs resulted in a ~1-15% loss in AMR gene recovery with concoct-metaSPAdes pair performing the best at 1% loss and dasTool-megahit performing the worst at 15% reduction of AMR genes recovered. 
+Only 24% - 40% of all AMR genes were correctly binned with maxbin2-idba_ud performing the worst (24%) and concoct-metaSPAdes performing the best (40%). 
+Moreover, focusing on only the genes that are correctly binned with respect to the reference replicon assigned to that bin (@fig:6AMRGenePercentRecoveryCorrectlyBinned). 
+MAGs was able to correctly bin only 30%-53% of all chromosomally located AMR genes (n=120), 0-45% of genomic island located AMR genes (n=11) and none of the plasmid located AMR genes (n=20). 
+Majority of the remaining genes was left unbinned and some were incorrectly binned. 
 
-With respect to AMR genes, in total, MAGs were only able to recover between 40-53% of the AMR genes predicted in our reference genomes across all assembler-binner pairs (Fig. (@fig:4MAGBinTotal)). We then took the best assembler-binner pair (MegaHit-DasTools) and examined the AMR genes recovered in detail. We noticed that, for majority of the bins (85%), MAGs were able to correctly recover either 100% or 0% of the AMR genes (Median value 100%) that are contained in the reference chromosome assigned to that bin. However, MAGs were not able to correctly recover any of the AMR genes that were present on plasmids (Fig. (@fig:5MAGDMBinTotal), Fig. (@fig:6AMRGenePercentRecovery)). Lastly, we asked the question of where reference replicon AMR genes went in the MAGs. For chromosome, majority (81%) of the AMR genes was found in a bin of the MAG. A small portion (12%) was left unbinned and 7% were not found in MAGs at all. On the other hand, for plasmid born AMR genes, all of the recovered genes (n=20) were identified in the unbinned fraction of our MAG (Fig. (@fig:7LocationOfReferenceGenomeAMR)).  
+![Antimicrobial resistance gene recovery](images/5AMRGenePercentRecoveryStage.png){#fig:5AMRGenePercentRecoveryStage width="15in"}
+![Location distribution of antimicrobial resistance genes that are correctly binned](images/6AMRGenePercentRecoveryCorrectlyBinned.png){#fig:6AMRGenePercentRecoveryCorrectlyBinned width="15in"}
 
-![Total VF Genes Detected Across Tools](images/8vfBinTotal.png){#fig:8vfBinTotal width="8in"}
-![Total VF Genes Detected In Best Pair](images/9vfDMBinTotal.png){#fig:9vfDMBinTotal width="15in"}
-![VF Gene Percent Recovery](images/10VFGenePercentRecovery.png){#fig:10VFGenePercentRecovery width="15in"}
-![Location of Reference VF Genes](images/11LocationOfReferenceGenomeVF.png){#fig:11LocationOfReferenceGenomeVF width="15in"}
+Aside from AMR genes, we also examined virulence factors in our dataset using the virluence factor database (@fig:7VFGenePercentRecoveryStage).
+We saw a similar trend as AMR genes. There was minor differences between the aseembler used in the amount of VF recovered after the assembly stage, with about 56-64% of VF genes recovered. Megahit was able to produce marginally better recovery with VFs. 
+Similarly to AMR genes, binning the contigs again reduced the recovery between 4-26%, with dasTool-megahit performing the worst (26%) and concoct-metaSPAdes performing the best (4%). 
+Unlike AMR genes, majority of the binned VF genes were correctly assigned to the right bin. Concoct-metaSPAdes again performed best 43% of all VFs correctly assigned. 
+Again looking at the location of the VFs that were correctly assigned (@fig:8VFGenePercentRecoveryStage). MAGs was able to correctly bin majority (73%-98%) of all chromosomally located VF genes (n=757), 0-16% of genomic island located VF genes (n=809) and again none of the plasmid located VF genes (n=3). 
 
-Aside from AMR genes, we also examined virulence factors in our dataset. The number of VF varied dramatically across assembler-binner combinations. Maxbin2 and metabat2 binned MAGs, regardless of assembly method, predicted over 20,000 virulence genes, roughly 50x more than our reference genome. The DasTool-megahit MAG predicted just under 250 VFs, which represent 61% of the number of VFs in our reference replicons (Fig. (@fig:8vfBinTotal)). Furthermore, each bin’s percent recovery of predicted VF compared to the number in their assigned reference chromosome varied much more compared to AMR genes. The %recovered value ranges from 0% to 112% (Median 0). (Fig. (@fig:9vfDMBinTotal), Fig. (@fig:10VFGenePercentRecovery)). Finally, we examined the location of reference chromosomal VF genes in our MAG bins. 63% of VF genes were found in a MAG bin, 19% were found in the unbinned portion and 18% were not found al all. There were no VF predicted on reference plasmids (Fig. (@fig:11LocationOfReferenceGenomeVF)).  
-
-![Distribution of Predicted Protein Subcellular Localization](images/12subcellularLocalization.png){#fig:12subcellularLocalization width="15in"} 
-
-Lastly, we looked at the ability for MAGs to predict subcellular localization of proteins using PSORTb. Overall, the localization distribution of predicted proteins were very similar in MAGs compared to the reference genome (Fig. (@fig:12subcellularLocalization)).
-
-
+![Virulence factor gene recovery](images/7VFGenePercentRecoveryStage.png){#fig:7VFGenePercentRecoveryStage width="15in"}
+![Location distribution of virulence factor genes that are correctly binned](images/8VFGenePercentRecoveryStage.png){#fig:8VFGenePercentRecoveryStage width="15in"}
 
 
 ## Discussion {#discussion}
 
 In this paper, we evaluated the ability and accuracy of metagenome-assembled genomes (MAGs) to correctly recover mobile genetic elements (i.e. genomic islands and plasmids) from metagenomic samples across different tools used to assemble and bin MAGs. 
 
-Overall, the best assembler-binner pair was megahit-DASTOOL in term of both chromosomal coverage (94.3%) and bin purity (1). Looking at genomes with the lowest coverage, the 3 Streptococcus genomes were particularly problematic, likely due to their similarity, with the best recovery for each ranging from 1.7% to 47.49%. This suggest that MAGs might not be able to distinguish between closely related species (COMMENT: Point 1, MAGs cannot distinguish closely related species). While CONCOCT performed significantly worse compared to the other binners, we did notice that CONCOCT seems to display a trend of generating lots of small partial bins. Perhaps CONCOCT bins might be able to distinguish between closely related species to a higher resolution (COMMENT: Small partial bins… what does it mean overall. is this assumption correct? Would it be able to distinguish closely related species?)
+Overall, the best assembler-binner pair was megahit-DASTOOL in term of both chromosomal coverage (94.3%) and bin purity (1). 
+Looking at genomes with the lowest coverage, the 3 Streptococcus genomes were particularly problematic, likely due to their similarity, with the best recovery for each ranging from 1.7% to 47.49%. 
+This suggest that MAGs might not be able to distinguish between closely related species. 
+While CONCOCT performed significantly worse compared to the other binners in chromosomal coverage and bin purity, we did notice that CONCOCT seems to display a trend of generating lots of small partial bins. 
+Perhaps CONCOCT bins might be able to distinguish between closely related species to a higher resolution (COMMENT: Small partial bins… what does it mean overall. is this assumption correct? Would it be able to distinguish closely related species?)
 
-While the overall recovery of chromosomes was okay, we were interested in MAG’s ability to correctly bin mobile genetic elements due to their importance in the functions and spread of pathogenic traits such as AMR and virulence. In term of plasmids, a very small proportion of plasmids were correctly binned regardless of the method (<33% at best). Similarly, the same trend exists for genomic islands (<43.3%). This poor result is not unexpected as genomic islands and plasmids have divergent composition features relative to the chromosomes. Furthermore, the difference between the percentages suggest that binning plasmids are harder than GIs. This difference might be due to the problem of plasmid assembly. Therefore, the binning efficiency might improve if we use an assembler targeted at assembling plasmids [@12zFifp5x].
-
-Looking at predicted gene content, our best assembler-binner pair produced a similar number of predicted ORFs as our reference genomes. (interestingly we still missed a bunch of AMR genes. perhaps theses predicted ORFs are fragmented? idk need ideas)
+While the overall recovery of chromosomes were okay, we were interested in MAG’s ability to correctly bin mobile genetic elements due to their importance in the functions and spread of pathogenic traits such as AMR and virulence.
+In term of plasmids, a very small proportion of plasmids were correctly binned regardless of the method (<33% at best). 
+Similarly, the same trend exists for genomic islands (<43.3%). 
+This poor result is not unexpected as genomic islands and plasmids have divergent composition features relative to the chromosomes. 
+Furthermore, the difference between the percentages suggest that binning plasmids are harder than GIs. This difference might be due to the problem of plasmid assembly. 
+Therefore, the binning efficiency might improve if we use an assembler targeted at assembling plasmids [@12zFifp5x].
 
 Due to the importance of mobile genetic elements to disseminate clinically relevant antimicrobial resistance genes and virulence factors, we explored whether or not MAGs can be used to provide useful lateral gene transfer insights. 
 
-With respect to AMR genes, MAGs were able to recover roughly half of all AMR genes present in our reference genome. The correct bins were assigned for majority of the chromosomally located AMR genes (81%). The accuracy of chromosomal AMR genes were as expected given the accuracy of MAGs to recover chromosomes as discussed previously. However, while MAGs were able to detect all of plasmid-born AMR genes, none of these were placed in any of the bins. We specifically included a few high threat AMR genes in our dataset: namely KPC and OXA, which are plasmid borne carbapenemases of increasing prevalence in the clinics that are rendering our last resort antibiotics useless. These genes were successfully detected from the metagenomics assembly, but they were not assigned to a bin. This could mean a limited ability for MAGs to be used in the public health research to pinpoint the lateral transfer of AMR genes and to conduct epidemiological analysis (COMMENT: does this make sense?). 
+With respect to AMR genes, MAGs were able to recover roughly 40% of all AMR genes present in our reference genome. 
+We noted a sharp drop in the number of AMR genes detected between assemblies and MAGs, suggesting that the these genes were left in the unbinned portion. 
+Overall, CONCOCT-metaSPAdes combination, while did not recover the highest amount of AMR genes at the assembly stage, performed the best in correctly binning an AMR gene to the right species. 
+It should be noted that CONCOCT seems to generated a lot of small partial bins. 
+This might led to a better seperation between closely related sequence compositions resulting in the improved recovery we saw. 
+Regardless of tools, chromosomally located AMR genes were recovered best and were able to be correctly binned. 
+The accuracy of these were as expected given the accuracy of MAGs to recover chromosomes as discussed previously. 
+With respect to mobile elements, the ability of MAGs to recovery genomic island located AMR genes varied across tools but the recovery accuracy is slightly worse than chromosomally localed AMR genes. 
+However it should be noted that there were only 11 GI located AMR genes in our reference genome. 
+While MAGs were able to detect all 20 plasmid-born AMR genes, none of these were placed in any of the bins. 
+We specifically included a few high threat mobile element located AMR genes in our dataset: namely KPC and OXA carbapenemases that are of increasing prevalence in the clinics capable of rendering our last resort antibiotics useless. 
+These genes were successfully detected from the metagenomics assembly, but they were not assigned to any bin. 
+This could mean a limited ability for MAGs to be used in the public health research to pinpoint the lateral transfer of AMR genes and to conduct epidemiological analysis (COMMENT: does this make sense?). 
 
-Virulence factors had shown a similar trend as AMR genes, recovering ~60% of virulence factors present in the reference genome. Interestingly, while the detection of virulence factors is better than AMR genes, the binning accuracy was worse, with more being present in the unbinned fraction. Previous studies has found that VFs are disproportionally present on GIs[@LxGqo7iq], which might be the reason to why the binning accuracy was worse compared to AMR genes. 
+Virulence factors had shown a similar trend as AMR genes, recovering ~63% of virulence factors present in the reference genome. 
+There still is an sharp decline in the number of VF detected between assemblies and MAGs and CONCOCT-metaSPAdes again produced the highest binning accuracy. 
+MAGs were also able to correctly bin majority (73%-98%) of chromosomally located VF genes to the right species. 
+However, MAGs performed much worse in correctly recovering GI located and plasmid located VFs, with <16% of GI VFs (n=809) correctly recovered and none of the plasmid VFs (n=3). 
+This drastic reduction in recovery accuracy of mobile elements, especially GI, isn't unexpected. 
+Previous studies has found that VFs are disproportionally present on GIs[@LxGqo7iq], which might be the reason to why the recovery accuracy was worse compared to AMR genes. 
+
+Looking at the total amount of predicted gene content, our best assembler-binner pair produced a similar number of predicted ORFs as our reference genomes. 
+Interestingly, we still missed upwards of around half of AMR genes VFs. Perhaps theses predicted ORFs are fragmented, resulting in an ability to detect these genes in MAGs.
 
 Lastly, previous works have shown that AMR genes that are on mobile genetic elements disproportionally encode secrete proteins. Given that the recovery of plasmid-borne genes were not great, we asked if MAGs would affect the ability to predict the subcellular localization of proteins. We found that the proportion of predicted localizations were very similar between MAGs and our reference genomes, suggesting that there is not a significant penalty to use MAGs as input for protein localization predictions. 
 
@@ -336,3 +364,7 @@ Using a simulated medium complexity metagenome, this study had shown that MAGs p
 
 ![Top Species Coverage](images/s1_species_top_coverage.png){#fig:supspeciescov}
 
+
+![Distribution of Predicted Protein Subcellular Localization](images/12subcellularLocalization.png){#fig:12subcellularLocalization width="15in"} 
+
+We looked at the ability for MAGs to predict subcellular localization of proteins using PSORTb. Overall, the localization distribution of predicted proteins were very similar in MAGs compared to the reference genome (Fig. (@fig:12subcellularLocalization)).
