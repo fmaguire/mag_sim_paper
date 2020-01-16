@@ -23,9 +23,9 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/85c8724e7627fae6d04b53dc2c423ea092f856b6/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/12f1633a445fca4a45d0de9a8084d82e4f1bdedd/))
 was automatically generated
-from [fmaguire/mag_sim_paper@85c8724](https://github.com/fmaguire/mag_sim_paper/tree/85c8724e7627fae6d04b53dc2c423ea092f856b6)
+from [fmaguire/mag_sim_paper@12f1633](https://github.com/fmaguire/mag_sim_paper/tree/12f1633a445fca4a45d0de9a8084d82e4f1bdedd)
 on January 16, 2020.
 </em></small>
 
@@ -165,21 +165,23 @@ Therefore, to address this issue we performed an analysis of GI and plasmid reco
 
 ## Materials and Methods {#methods}
 
-All analyses presented in this paper can be reproduced and inspected with the associated github repository (https://github.
-com/fmaguire/MAG_gi_plasmid_analysis).
-The specific code version used for this paper is also archived under DOI:XXXYYY.
+All analyses presented in this paper can be reproduced and inspected with the associated github repository [github.com/fmaguire/MAG_gi_plasmid_analysis](github.com/fmaguire/MAG_gi_plasmid_analysis) and data repository [osf.io/nrejs/](osf.io/nrejs/).
 
 ### Metagenome Simulation
 
 All genomes were selected from the set of completed RefSeq genomes as of April 2019.
-Genomic islands for these genomes were previously predicted using IslandPath-DIMOB [@M1pdcdMy] and collated into the IslandViewer database (http://www.pathogenomics.sfu.ca/islandviewer) [@4eEyIkDg].
+Genomic islands for these genomes were previously predicted using IslandPath-DIMOB [@M1pdcdMy] and collated into the IslandViewer database [www.pathogenomics.sfu.ca/islandviewer](www.pathogenomics.sfu.ca/islandviewer) [@4eEyIkDg].
 Plasmid sequences and numbers were recovered for each genome using the linked GenBank Project IDs.
 Thirty genomes were manually selected to exemplify the following criteria: 
+
 	1) 10 genomes with high numbers of plasmids.
+
 	2) 10 genomes with a very high proportion (>10%) of chromosomes corresponding to GIs detected by compositional features.
+
 	3) 10 genomes with a very low proportion (<1%) of chromosomes corresponding to GIs detected by compositional features.
+
 The data used to select the taxa is listed in Supplemental Table 1 and the details of the selected subset taxa are listed in Supplemental Table 2 with their NCBI accessions.
-The sequences themselves are in data/sequences/sequences.tar.bz2 of the linked analysis repository above.
+The sequences themselves are available in the data repository [osf.io/nrejs/](osf.io/nrejs/) under "data/sequences".
 
 In accordance to the recommendation in the CAMI challenge [@lsbnKJf8] the genomes were randomly assigned a relative abundance following a log-normal distribution (μ = 1, σ = 2).
 Plasmid copy number estimates could not be accurately found for all organisms, therefore, plasmids were randomly assigned a copy number regime: low (1-20), medium (20-100), or high (500-1000) at a 2:1:1 rate.
@@ -189,12 +191,12 @@ Finally, the effective plasmid relative abundance was determined by multiplying 
 The full set of randomly assigned relative abundances and copy numbers can be found in Supplemental Table 3.
 Sequences were then concatenated into a single FASTA file with the appropriate relative abundance.
 MiSeq v3 250bp paired-end reads with a mean fragment length of 1000bp (standard deviation of 50bp) were then simulated using art_illumina (v2016.06.05) [@znONJtTo] at a fold coverage of 2.9 resulting in a simulate metagenome of 31,174,411 read pairs.
-The selection of relative abundance and metagenome simulation itself was performed using the data_simluation/simulate_metagenome.py script.
+The selection of relative abundance and metagenome simulation itself was performed using the "data_simluation/simulate_metagenome.py" script.
 
 ### Metagenome Assembled Genome Recovery
 
 Reads were trimmed using sickle (v1.33) [@1CBlSILo4] resulting in 25,682,644 surviving read pairs.
-The trimmed reads were then assembled using 3 different metagenomic assemblers: metaSPAdes (v3.13.0)[@KP5SjPXN] , IDBA-UD (v1.1.3) [@a4mT7fuU], and megahit (v1.1.3) [@1EUV0Ejkr]).
+The trimmed reads were then assembled using 3 different metagenomic assemblers: metaSPAdes (v3.13.0)[@KP5SjPXN], IDBA-UD (v1.1.3) [@a4mT7fuU], and megahit (v1.1.3) [@1EUV0Ejkr]).
 The resulting assemblies were summarised using metaQUAST (v5.0.2) [@TeRvtMCl].
 The assemblies were then indexed and reads mapped back using Bowtie 2 (v2.3.4.3) [@PiS0h6Mu].
 
@@ -205,7 +207,6 @@ Briefly, the supplied CONCOCT accessory scripts were used to cut contigs into 10
 These fragment coverages were then used to bin the 10kb fragments before the clustered fragments were merged (merge\_cutup\_clustering.py) to create the final CONCOCT MAG bins (extra\_fasta\_bins.py).
 Finally, for each metagenome assembly the predicted bins from these three binners (Maxbin2, MetaBAT 2, and CONCOCT) were combined using the DAS Tool (v1.1.1) meta-binner [@DfIRBmdF].
 This resulted in 12 separate sets of MAGs (one set for each assembler and binner pair).
-
 
 ### MAG assessment
 
@@ -232,19 +233,22 @@ This was determined using the bin “identities” from the chromosomal coverage
 
 #### Detection of AMR/VF Genes
 
-For each of the 12 MAGs sets, and the reference chromosome and plasmids, prodigal [@lX665mdh] was used to predict open reading frames (ORFs) using the default parameters. AMR genes were predicted using Resistance Gene Identifier (RGI v5.0.0; default parameters) and the Comprehensive Antibiotic Resistance Database (CARD v3.0.3) [@1ByMfX8Y1].
-Virulence factors were predicted using the predicted ORFs and BLASTX 2.9.0+ [@nEsJGUWa] against the Virulence Factors Database (VFDB; obtained on Aug 26, 2019) with an e-value cut-o of 0.001 and percent identity > 90 [@pYB1SP5].
+For each of the 12 MAGs sets, and the reference chromosome and plasmids, prodigal [@lX665mdh] was used to predict open reading frames (ORFs) using the default parameters. 
+AMR genes were predicted using Resistance Gene Identifier (RGI v5.0.0; default parameters) and the Comprehensive Antibiotic Resistance Database (CARD v3.0.3) [@1ByMfX8Y1].
+Virulence factors were predicted using the predicted ORFs and BLASTX 2.9.0+ [@nEsJGUWa] against the Virulence Factors Database (VFDB; obtained on Aug 26, 2019) with an e-value cut-off of 0.001 and a minimum identity of 90% [@pYB1SP5].
 Each MAG was then assigned to a reference chromosome using the above mentioned mapping criteria for downstream analysis.
 
 #### AMR/VF Gene Recovery
 
-For each MAG sets, we counted the total number of AMR/VF genes recovered in each assembly and each MAG and compared this number to the number predicted in their assigned reference chromosome and plasmids to determine MAG’s gene recovery ability.
- We the assessed the ability for MAGs to correctly bin genes of chromosomal, plasmid and GI origin by mapping the location of the reference replicon’s predicted genes to the location of the same genes in the MAGs.
+For each MAG set, we counted the total number of AMR/VF genes recovered in each assembly and each MAG and compared this number to the number predicted in their assigned reference chromosome and plasmids.
+We then assessed the ability for MAGs to correctly bin AMR/VF genes of chromosomal, plasmid and GI origin by mapping the location of the reference replicon’s predicted genes to the location of the same genes in the MAGs.
 
 #### Protein subcellular localization predictions
 
-The MAG bins from megahit-DAS Tool assembler-binner combination was inputted into prodigal [@lX665mdh] to predict open reading frames (ORFs) using the default parameters. 
-The list of predicted proteins was inputted into PSORTb v3.0 with default parameters [@19bHWbO47]. 
+We then sought to assess what the impact of a proteins predicted subcellular localization was on its recovery and binning in MAGs.
+The MAG bins from megahit-DAS Tool assembler-binner combination was selected (as generally best performing) and ORFs predicted using prodigal [@lX665mdh] as above.
+Subcellular localisation of these proteins were then predicted using PSORTb v3.0 with default parameters and the appropriate Gram setting for that bin's assigned taxa [@19bHWbO47]. 
+
 
 
 
