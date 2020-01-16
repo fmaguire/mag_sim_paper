@@ -6,7 +6,7 @@ author-meta:
 - Venus Lau
 - Robert G. Beiko
 - Fiona S.L. Brinkman
-date-meta: '2019-12-04'
+date-meta: '2020-01-16'
 keywords:
 - markdown
 - publishing
@@ -23,10 +23,10 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/3864f5f9a434085fc724e17a18f3d33c694a6c5d/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/01a16fc4fb7acdc45237b95f160d425ae9deadf7/))
 was automatically generated
-from [fmaguire/mag_sim_paper@3864f5f](https://github.com/fmaguire/mag_sim_paper/tree/3864f5f9a434085fc724e17a18f3d33c694a6c5d)
-on December 4, 2019.
+from [fmaguire/mag_sim_paper@01a16fc](https://github.com/fmaguire/mag_sim_paper/tree/01a16fc4fb7acdc45237b95f160d425ae9deadf7)
+on January 16, 2020.
 </em></small>
 
 ## Authors
@@ -88,24 +88,31 @@ Please note the current author order is chronological and does not reflect the f
 
 **final numbers to add**
 
-Metagenomic methods, in which all the DNA in sample is simultanously sequenced, is an increasingly popular method in the life sciences.
-They have a major advantage over genomic or phenotypic methods as they do not require time-intensive and bias-inducing culturing steps.
+Metagenomic methods, in which all the DNA in a sample is simultanously sequenced, is an increasingly popular method in the life sciences.
+These approaches have advantages over genomic or phenotypic methods as they do not require time-intensive and bias-inducing culturing steps.
 This means a much greater diversity can be profiled with minimal _a priori_ assumptions.
-Due to this strength, metagenomics is emerging as a key tool in public health microbiology for surveillance of virulence and antimicrobial resistance (AMR) genes.
-The most important sequences for surveillance purposes are those associated with mobile genetic elements such as plasmids and genomic islands (GIs).
-Unfortunately, metagenomic data, even when assembled, results in complex mixed set of DNA fragments rather than nicely resolved individual genomes.
+Due to this strength, metagenomics is emerging as a key tool in public health microbiology for the surveillance of virulence and antimicrobial resistance (AMR) genes.
+A particular priority is identifying associations between these genes and mobile genetic elements such as plasmids and genomic islands (GIs) as they facilitae the evolution and transmission of these traits.
+Unfortunately, metagenomic data, even when assembled, results in a mixed set of DNA contigs from multiple organisms rather than resolved individual genomes.
 Recently, methods have been developed that attempt to group these fragments into bins likely to have been derived from the same underlying genome.
 These bins are commonly known as metagenome-assembled genomes (MAGs). 
 MAG based approaches have been used to great effect in revealing huge amounts of previously uncharacterised microbial diversity.
-These methods perform this grouping using aspects of the sequence composition and the relative abundance of that sequence in the dataset.
-Unfortunately, plasmids are often represented at different copy numbers than the corresponding chromosomes. 
-Additionally, both plasmids and genomic islands often feature significantly different sequence composition than the rest of the source genome as a whole.
-Due to this we hypothesise these types of sequences will be highly under-represented in MAG based approaches.
+These methods typically achieve this by grouping sequences with similar sequence composition and relative abundance in the metagenome.
+Unfortunately, plasmids are often found at different copy numbers than their host genome.
+Both plasmids and genomic islands also often feature significantly different sequence composition than the rest of the genome.
+Due to these features, we hypothesise these types of sequences will be highly under-represented in MAG based approaches.
 
-To evaluate this we generated a simulated metagenomic dataset comprised of genomes with large numbers of plasmids and considerable proportion of chrosomomal DNA consisting of GIs at varying relative abundances.
-MAGs were then recovered from this data using a variety of different established MAG pipelines and parameterisations and correct binning of plasmid and GI sequences calculated relative to the genomes as a whole.
-We show that regardless of the MAG approach used, plasmid and GI dominated sequences will systematically be left unbinned or incorrectly binned.
-This indicates the importance of read based approaches for thorough evalaution of resistome complements in metagenomic data.
+To evaluate this we generated a simulated metagenomic dataset comprised of 30 genomes with up to 16.65% of chrosomomal DNA consisting of GIs and 65 associated plasmids.
+MAGs were then recovered from this data using 12 different MAG pipelines.
+The recovery and correct binning of mobile genetic elements was then evaluated for each pipeline.
+Across all pipelines, 81.9-94.3% of chromosomes were recovered and binned. 
+However, only 37.8-44.1% of GIs and 1.5-29.2% of plasmids were recovered and correctly binned at >50% coverage.
+In terms of AMR and VF genes associated with MGEs, 0-45% of GI-associated AMR genes and 0-16% of GI-associated VF genes were correctly assigned.
+More strikingly, 0% of plasmid-borne VF or AMR genes were recovered.
+
+This work shows that regardless of the MAG recovery approach used, plasmid and GI dominated sequences will disproportionately be left unbinned or incorrectly binned.
+From a public health perspective, this means MAG approaches are unsuited for analysis of mobile genes, especially vital groups such as AMR and VF genes.
+This underlines the utility of read-based and long-read approaches to thorougly evaluate the resistome in metagenomic data.
 
 
 ## Introduction {#intro}
@@ -179,9 +186,9 @@ Plasmid sequences and numbers were recovered for each genome using the linked ge
 The data used to select the taxa is listed in Supplemental Table 1 and the details of the selected subset taxa are listed in Supplemental Table 2 with their NCBI accessions.
 The sequences themselves are in `data/sequences/sequences.tar.bz2` of the linked analysis repository above.
 
-In accordance to the recommendation in the CAMI challenge [@lsbnKJf8] the genomes were randomly assigned a relative abundance following a log-normal distribituion (\mu = 1, \sigma = 2).
+In accordance to the recommendation in the CAMI challenge [@lsbnKJf8] the genomes were randomly assigned a relative abundance following a log-normal distribituion (μ = 1, σ = 2).
 Plasmid copy number estimates could not be accurately found for all organisms, therefore, plasmids were randomly assigned a copy number regime: low (1-20), medium (20-100), or high (500-1000) at a 2:1:1 rate.
-Within each regime the exact copy number was selected using an appropriately scaled gamma distribution (\alpha = 4, \beta = 1) or the minimum edge of the regime.
+Within each regime the exact copy number was selected using an appropriately scaled gamma distribution (α = 4, β = 1) or the minimum edge of the regime.
 Finally, the effective plasmid relative abundance was determined by multiplying the plasmid copy number with the genome relative abundance.
 The full set of randomly assigned relative abundances and copy numbers can be found in Supplemental Table 3.
 
