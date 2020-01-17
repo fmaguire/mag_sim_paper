@@ -23,9 +23,9 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/63af282a017817051a5f03480ad02cbe9d87bd12/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/38da54c1439afd126048c7dfb8e5bb04bb729c41/))
 was automatically generated
-from [fmaguire/mag_sim_paper@63af282](https://github.com/fmaguire/mag_sim_paper/tree/63af282a017817051a5f03480ad02cbe9d87bd12)
+from [fmaguire/mag_sim_paper@38da54c](https://github.com/fmaguire/mag_sim_paper/tree/38da54c1439afd126048c7dfb8e5bb04bb729c41)
 on January 17, 2020.
 </em></small>
 
@@ -398,10 +398,12 @@ Indeed, this is one of the reasons why the huge amount of redundancy in metageno
 
 ## Conclusions {#conclusions}
 
-Using a simulated medium complexity metagenome, this study had shown that MAGs provides a great tool to study a bacterial species’ chromosomal elements but presented difficulties in the recovery of mobile genetic elements from metagenomic samples.
-These mobile genetic elements are liable to being incorrectly binned or lost in this process.
-Due to the importance of these mobile genomic components in the function and spread of pathogenic traits such as AMR and virulence, it is vital that we utilize a combination of MAGs and other methods (e.g. read-based methods) in public health metagenomic researches.
-This would allow both the detection of the sample microbial diversity and the thorough evaluation of resistome in metagenomic data to provide meaningful epidemiological information.
+Using a simulated medium complexity metagenome, this study had shown that MAG based approaches provides a useful tool to study a bacterial species’ chromosomal elements but have severe limitations in the recovery of MGEs.
+The majority of these mobile genetic elements will both fail to assemble or be correctly binned.
+The consequence of this is the disproportionate loss of key public health priority genes like VF and AMR genes.
+This is particularly acute as the VF and AMR genes found on these poorly recovered MGEs are generally considered as the most important due to their propensity for lateral gene transfer between unrelated bacteria.
+Therefore, it is vital that we utilize a combination of MAGs and other methods (e.g. read-based methods) in public health metagenomic research.
+Without this, MAG-based methods are insufficient to thoroughly profile the resistome and provide vital epidemiological data for metagenomic data.
 
 
 ## Supplementals {#supplementals}
