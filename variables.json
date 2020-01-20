@@ -1,5 +1,5 @@
 {
-  "date": "January 17, 2020",
+  "date": "January 20, 2020",
   "authors": [
     {
       "github": "fmaguire",
@@ -95,11 +95,11 @@
     "repo_slug": "fmaguire/mag_sim_paper",
     "repo_owner": "fmaguire",
     "repo_name": "mag_sim_paper",
-    "commit": "38da54c1439afd126048c7dfb8e5bb04bb729c41",
-    "triggering_commit": "38da54c1439afd126048c7dfb8e5bb04bb729c41",
-    "build_url": "https://travis-ci.com/fmaguire/mag_sim_paper/builds/144856187",
-    "job_url": "https://travis-ci.com/fmaguire/mag_sim_paper/jobs/276562722",
-    "manuscript_url": "https://fmaguire.github.io/mag_sim_paper/v/38da54c1439afd126048c7dfb8e5bb04bb729c41/"
+    "commit": "04eb558308a0ef0dc27d5dc6b8ed21ef311f1cfc",
+    "triggering_commit": "04eb558308a0ef0dc27d5dc6b8ed21ef311f1cfc",
+    "build_url": "https://travis-ci.com/fmaguire/mag_sim_paper/builds/145277115",
+    "job_url": "https://travis-ci.com/fmaguire/mag_sim_paper/jobs/277726243",
+    "manuscript_url": "https://fmaguire.github.io/mag_sim_paper/v/04eb558308a0ef0dc27d5dc6b8ed21ef311f1cfc/"
   },
   "manuscript_stats": {
     "reference_counts": {
