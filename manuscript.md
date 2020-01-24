@@ -6,7 +6,7 @@ author-meta:
 - Venus Lau
 - Robert G. Beiko
 - Fiona S.L. Brinkman
-date-meta: '2020-01-20'
+date-meta: '2020-01-24'
 keywords:
 - markdown
 - publishing
@@ -23,10 +23,10 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/04eb558308a0ef0dc27d5dc6b8ed21ef311f1cfc/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/a9f44e07ce1a0f52820132149a6ecace9264a152/))
 was automatically generated
-from [fmaguire/mag_sim_paper@04eb558](https://github.com/fmaguire/mag_sim_paper/tree/04eb558308a0ef0dc27d5dc6b8ed21ef311f1cfc)
-on January 20, 2020.
+from [fmaguire/mag_sim_paper@a9f44e0](https://github.com/fmaguire/mag_sim_paper/tree/a9f44e07ce1a0f52820132149a6ecace9264a152)
+on January 24, 2020.
 </em></small>
 
 ## Authors
