@@ -6,7 +6,7 @@ author-meta:
 - Venus Lau
 - Robert G. Beiko
 - Fiona S.L. Brinkman
-date-meta: '2020-01-24'
+date-meta: '2020-01-25'
 keywords:
 - markdown
 - publishing
@@ -23,10 +23,10 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/0df083cc3856a40443ed89f7e7c3fdcd6f059066/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/aa6e1845def873c68dad2649b56df3174dfe15ef/))
 was automatically generated
-from [fmaguire/mag_sim_paper@0df083c](https://github.com/fmaguire/mag_sim_paper/tree/0df083cc3856a40443ed89f7e7c3fdcd6f059066)
-on January 24, 2020.
+from [fmaguire/mag_sim_paper@aa6e184](https://github.com/fmaguire/mag_sim_paper/tree/aa6e1845def873c68dad2649b56df3174dfe15ef)
+on January 25, 2020.
 </em></small>
 
 ## Authors
@@ -346,6 +346,9 @@ However, 0-16% of GI located VF genes (n=809) and again none of the plasmid loca
 ![Percent of correctly binned VF genes Recovered in each genomic region. Metagenome assembled genomes (MAGs) were again best at recovering chromosomally located VF genes (light blue), able to correctly bin majority of chromosomally located VFs. GIs recovered again performed very poorly (light green) and again none of the plasmid located AMR genes (orange) was correctly binned.](images/vf_localization_recovery.png){#fig:VFGenePercentRecoveryStage}
 
 ### Comparisons of Rates of Loss
+
+Combining the performance metrics for Figs. @fig:plasmids, @fig:gis, @fig:AMRGenePercentRecoveryStage, and @fig:VFGenePercentRecoveryStage to compare the rates of loss of different components emphasises some of the observed patterns (see Fig. @fig:rateofloss).
+This highlights that genomic components (GIs and plasmids) and plasmids in particular are lost at a higher rate than individual gene types during MAG recovery.
 
 ![Comparison of rates of loss for different genomic components and gene types across assemblers and binning tools. Each line represents a different component as indicated by the legend with assemblers indicated by row and binning tool by column. This shows that regardless of approach genomic components (GIs and plasmids) are lost at a higher rate than individual VF or AMR genes.](images/rate_of_loss.png){#fig:rateofloss}
 
