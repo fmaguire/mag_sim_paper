@@ -23,9 +23,9 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/aa6e1845def873c68dad2649b56df3174dfe15ef/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/2438984bbe10963783dfbf7131d1c77eb740bf41/))
 was automatically generated
-from [fmaguire/mag_sim_paper@aa6e184](https://github.com/fmaguire/mag_sim_paper/tree/aa6e1845def873c68dad2649b56df3174dfe15ef)
+from [fmaguire/mag_sim_paper@2438984](https://github.com/fmaguire/mag_sim_paper/tree/2438984bbe10963783dfbf7131d1c77eb740bf41)
 on January 25, 2020.
 </em></small>
 
