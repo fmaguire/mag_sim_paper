@@ -1,5 +1,5 @@
 {
-  "date": "January 25, 2020",
+  "date": "February 3, 2020",
   "authors": [
     {
       "github": "fmaguire",
@@ -26,7 +26,7 @@
       "orcid": "XXXX-XXXX-XXXX-XXXX",
       "email": "jjia@sfu.ca",
       "affiliations": [
-        "Department of Biochemistry and Molecular Biology, Simon Fraser University"
+        "Department of Molecular Biology and Biochemistry, Simon Fraser University"
       ],
       "affiliation_numbers": [
         2
@@ -35,22 +35,22 @@
     {
       "name": "Kristen Gray",
       "initials": "KG",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
+      "orcid": "0000-0002-1962-189X",
       "email": "kristen.leanne252@gmail.com",
       "affiliations": [
-        "Department of Biochemistry and Molecular Biology, Simon Fraser University"
+        "Department of Molecular Biology and Biochemistry, Simon Fraser University"
       ],
       "affiliation_numbers": [
         2
       ]
     },
     {
-      "name": "Venus Lau",
-      "initials": "VL",
+      "name": "Wing Yin Venus Lau",
+      "initials": "WYVL",
       "orcid": "XXXX-XXXX-XXXX-XXXX",
       "email": "venus_lau@sfu.ca",
       "affiliations": [
-        "Department of Biochemistry and Molecular Biology, Simon Fraser University"
+        "Department of Molecular Biology and Biochemistry, Simon Fraser University"
       ],
       "affiliation_numbers": [
         2
@@ -73,7 +73,7 @@
       "orcid": "XXXX-XXXX-XXXX-XXXX",
       "email": "fionabrinkman@sfu.ca",
       "affiliations": [
-        "Department of Biochemistry and Molecular Biology, Simon Fraser University"
+        "Department of Molecular Biology and Biochemistry, Simon Fraser University"
       ],
       "affiliation_numbers": [
         2
@@ -86,7 +86,7 @@
       "affiliation_number": 1
     },
     {
-      "affiliation": "Department of Biochemistry and Molecular Biology, Simon Fraser University",
+      "affiliation": "Department of Molecular Biology and Biochemistry, Simon Fraser University",
       "affiliation_number": 2
     }
   ],
@@ -95,19 +95,19 @@
     "repo_slug": "fmaguire/mag_sim_paper",
     "repo_owner": "fmaguire",
     "repo_name": "mag_sim_paper",
-    "commit": "2438984bbe10963783dfbf7131d1c77eb740bf41",
-    "triggering_commit": "2438984bbe10963783dfbf7131d1c77eb740bf41",
-    "build_url": "https://travis-ci.com/fmaguire/mag_sim_paper/builds/146032918",
-    "job_url": "https://travis-ci.com/fmaguire/mag_sim_paper/jobs/279961261",
-    "manuscript_url": "https://fmaguire.github.io/mag_sim_paper/v/2438984bbe10963783dfbf7131d1c77eb740bf41/"
+    "commit": "ed642d1265ab160264b8d3fc1b02b051ba881b8b",
+    "triggering_commit": "ed642d1265ab160264b8d3fc1b02b051ba881b8b",
+    "build_url": "https://travis-ci.com/fmaguire/mag_sim_paper/builds/147280220",
+    "job_url": "https://travis-ci.com/fmaguire/mag_sim_paper/jobs/283164940",
+    "manuscript_url": "https://fmaguire.github.io/mag_sim_paper/v/ed642d1265ab160264b8d3fc1b02b051ba881b8b/"
   },
   "manuscript_stats": {
     "reference_counts": {
-      "doi": 56,
-      "pmid": 3,
+      "doi": 55,
+      "pmid": 2,
       "url": 1,
-      "total": 60
+      "total": 58
     },
-    "word_count": 5938
+    "word_count": 5695
   }
 }
