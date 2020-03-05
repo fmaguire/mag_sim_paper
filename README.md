@@ -4,7 +4,6 @@
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://fmaguire.github.io/mag_sim_paper/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://fmaguire.github.io/mag_sim_paper/manuscript.pdf)
-[![Build Status](https://travis-ci.com/fmaguire/mag_sim_paper.svg?branch=master)](https://travis-ci.com/fmaguire/mag_sim_paper)
 
 Repository to contain the manuscript for the analyses conducted in this [repo](https://github.com/fmaguire/MAG_gi_plasmid_analysis).
 

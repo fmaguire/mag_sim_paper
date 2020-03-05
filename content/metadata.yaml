@@ -25,21 +25,21 @@ author_info:
     orcid: XXXX-XXXX-XXXX-XXXX
     email: jjia@sfu.ca
     affiliations:
-      - Department of Biochemistry and Molecular Biology, Simon Fraser University
+      - Department of Molecular Biology and Biochemistry, Simon Fraser University
   -
     name: Kristen Gray
     initials: KG
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: 0000-0002-1962-189X
     email: kristen.leanne252@gmail.com
     affiliations:
-      - Department of Biochemistry and Molecular Biology, Simon Fraser University
+      - Department of Molecular Biology and Biochemistry, Simon Fraser University
   -
-    name: Venus Lau
-    initials: VL
+    name: Wing Yin Venus Lau
+    initials: WYVL
     orcid: XXXX-XXXX-XXXX-XXXX
     email: venus_lau@sfu.ca 
     affiliations:
-      - Department of Biochemistry and Molecular Biology, Simon Fraser University
+      - Department of Molecular Biology and Biochemistry, Simon Fraser University
   -
     name: Robert G. Beiko
     initials: RGB
@@ -52,4 +52,4 @@ author_info:
     orcid: XXXX-XXXX-XXXX-XXXX
     email: fionabrinkman@sfu.ca
     affiliations:
-      - Department of Biochemistry and Molecular Biology, Simon Fraser University
+      - Department of Molecular Biology and Biochemistry, Simon Fraser University
