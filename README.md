@@ -7,13 +7,12 @@
 
 Repository to contain the manuscript for the analyses conducted in this [repo](https://github.com/fmaguire/MAG_gi_plasmid_analysis).
 
-
 ## Manuscript description
 
 <!-- usage note: edit this section. -->
 
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+A simulated evaluation of metagenome-assembled genome methods abilities to recover AMR sequences.
+
 
 ## Manubot
 
