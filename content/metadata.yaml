@@ -5,7 +5,7 @@ keywords:
   - publishing
   - manubot
 lang: en-CA
-author_info:
+authors:
   -
     github: fmaguire
     name: Finlay Maguire*
@@ -22,7 +22,6 @@ author_info:
     github: imasianxd
     name: Baofeng Jia*
     initials: BJ
-    orcid: XXXX-XXXX-XXXX-XXXX
     email: jjia@sfu.ca
     affiliations:
       - Department of Molecular Biology and Biochemistry, Simon Fraser University
@@ -36,7 +35,6 @@ author_info:
   -
     name: Wing Yin Venus Lau
     initials: WYVL
-    orcid: XXXX-XXXX-XXXX-XXXX
     email: venus_lau@sfu.ca 
     affiliations:
       - Department of Molecular Biology and Biochemistry, Simon Fraser University
@@ -49,7 +47,6 @@ author_info:
   -
     name: Fiona S.L. Brinkman
     initials: FSLB
-    orcid: XXXX-XXXX-XXXX-XXXX
     email: fionabrinkman@sfu.ca
     affiliations:
       - Department of Molecular Biology and Biochemistry, Simon Fraser University
