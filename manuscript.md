@@ -55,8 +55,6 @@ header-includes: '<!--
 
   <meta name="citation_author_institution" content="Department of Molecular Biology and Biochemistry, Simon Fraser University" />
 
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-
   <meta name="citation_author" content="Kristen Gray" />
 
   <meta name="citation_author_institution" content="Department of Molecular Biology and Biochemistry, Simon Fraser University" />
@@ -67,8 +65,6 @@ header-includes: '<!--
 
   <meta name="citation_author_institution" content="Department of Molecular Biology and Biochemistry, Simon Fraser University" />
 
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-
   <meta name="citation_author" content="Robert G. Beiko" />
 
   <meta name="citation_author_institution" content="Faculty of Computer Science, Dalhousie University" />
@@ -76,8 +72,6 @@ header-includes: '<!--
   <meta name="citation_author" content="Fiona S.L. Brinkman" />
 
   <meta name="citation_author_institution" content="Department of Molecular Biology and Biochemistry, Simon Fraser University" />
-
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
 
   <link rel="canonical" href="https://fmaguire.github.io/mag_sim_paper/" />
 
@@ -91,11 +85,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/892ad16ec511abd598629b5d83126706f8e5766b/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/97c2da0c3e298ce482adbcc2dbda9d5fb42c99fe/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/892ad16ec511abd598629b5d83126706f8e5766b/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/97c2da0c3e298ce482adbcc2dbda9d5fb42c99fe/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/892ad16ec511abd598629b5d83126706f8e5766b/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/97c2da0c3e298ce482adbcc2dbda9d5fb42c99fe/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
