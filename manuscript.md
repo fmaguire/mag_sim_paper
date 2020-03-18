@@ -91,11 +91,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/f5cb636616d77157c880ea2b2a700403921403ba/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/892ad16ec511abd598629b5d83126706f8e5766b/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/f5cb636616d77157c880ea2b2a700403921403ba/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/892ad16ec511abd598629b5d83126706f8e5766b/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/f5cb636616d77157c880ea2b2a700403921403ba/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/892ad16ec511abd598629b5d83126706f8e5766b/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
