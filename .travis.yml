@@ -2,22 +2,21 @@ dist: trusty
 sudo: false
 language: generic
 services:
-      - docker
+  - docker
 branches:
-      only:
-        - master
+  only:
+    - master
 install:
-    - source ci/install.sh
+  - source ci/install.sh
 script:
-    - bash build/build.sh
+  - bash build/build.sh
 cache:
-    directories:
-        - ci/cache
+  directories:
+    - ci/cache
 deploy:
-    provider: script
-    script: bash ci/deploy.sh
-    skip_cleanup: true
-    on:
-        branch: master
-        condition: $TRAVIS_EVENT_TYPE = "push" && (-v MANUBOT_SSH_PRIVATE_KEY || "${!encrypted_*}" != "")
-
+  provider: script
+  script: bash ci/deploy.sh
+  skip_cleanup: true
+  on:
+    branch: master
+    condition: $TRAVIS_EVENT_TYPE = "push" && (-v MANUBOT_SSH_PRIVATE_KEY || "${!encrypted_*}" != "")
