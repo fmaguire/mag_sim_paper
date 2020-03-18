@@ -1,113 +1,140 @@
 {
-  "date": "February 3, 2020",
-  "authors": [
-    {
-      "github": "fmaguire",
-      "name": "Finlay Maguire*",
-      "initials": "FM",
-      "orcid": "0000-0002-1203-9514",
-      "twitter": "fmaguire",
-      "email": "finlaymaguire@gmail.com",
-      "affiliations": [
-        "Faculty of Computer Science, Dalhousie University"
-      ],
-      "funders": [
-        "Genome Canada",
-        "Donald Hill Family Fellowship"
-      ],
-      "affiliation_numbers": [
-        1
-      ]
-    },
-    {
-      "github": "imasianxd",
-      "name": "Baofeng Jia*",
-      "initials": "BJ",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "email": "jjia@sfu.ca",
-      "affiliations": [
-        "Department of Molecular Biology and Biochemistry, Simon Fraser University"
-      ],
-      "affiliation_numbers": [
-        2
-      ]
-    },
-    {
-      "name": "Kristen Gray",
-      "initials": "KG",
-      "orcid": "0000-0002-1962-189X",
-      "email": "kristen.leanne252@gmail.com",
-      "affiliations": [
-        "Department of Molecular Biology and Biochemistry, Simon Fraser University"
-      ],
-      "affiliation_numbers": [
-        2
-      ]
-    },
-    {
-      "name": "Wing Yin Venus Lau",
-      "initials": "WYVL",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "email": "venus_lau@sfu.ca",
-      "affiliations": [
-        "Department of Molecular Biology and Biochemistry, Simon Fraser University"
-      ],
-      "affiliation_numbers": [
-        2
-      ]
-    },
-    {
-      "name": "Robert G. Beiko",
-      "initials": "RGB",
-      "email": "rbeiko@dal.ca",
-      "affiliations": [
-        "Faculty of Computer Science, Dalhousie University"
-      ],
-      "affiliation_numbers": [
-        1
-      ]
-    },
-    {
-      "name": "Fiona S.L. Brinkman",
-      "initials": "FSLB",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "email": "fionabrinkman@sfu.ca",
-      "affiliations": [
-        "Department of Molecular Biology and Biochemistry, Simon Fraser University"
-      ],
-      "affiliation_numbers": [
-        2
-      ]
-    }
-  ],
-  "affiliations": [
-    {
-      "affiliation": "Faculty of Computer Science, Dalhousie University",
-      "affiliation_number": 1
-    },
-    {
-      "affiliation": "Department of Molecular Biology and Biochemistry, Simon Fraser University",
-      "affiliation_number": 2
-    }
-  ],
-  "ci_source": {
-    "provider": "travis",
-    "repo_slug": "fmaguire/mag_sim_paper",
-    "repo_owner": "fmaguire",
-    "repo_name": "mag_sim_paper",
-    "commit": "ed642d1265ab160264b8d3fc1b02b051ba881b8b",
-    "triggering_commit": "ed642d1265ab160264b8d3fc1b02b051ba881b8b",
-    "build_url": "https://travis-ci.com/fmaguire/mag_sim_paper/builds/147280220",
-    "job_url": "https://travis-ci.com/fmaguire/mag_sim_paper/jobs/283164940",
-    "manuscript_url": "https://fmaguire.github.io/mag_sim_paper/v/ed642d1265ab160264b8d3fc1b02b051ba881b8b/"
+  "pandoc": {
+    "title": "Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands",
+    "keywords": [
+      "markdown",
+      "publishing",
+      "manubot"
+    ],
+    "lang": "en-CA",
+    "date-meta": "2020-03-18",
+    "author-meta": [
+      "Finlay Maguire*",
+      "Baofeng Jia*",
+      "Kristen Gray",
+      "Wing Yin Venus Lau",
+      "Robert G. Beiko",
+      "Fiona S.L. Brinkman"
+    ],
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands\" />\n<meta name=\"citation_title\" content=\"Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands\" />\n<meta property=\"og:title\" content=\"Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands\" />\n<meta property=\"twitter:title\" content=\"Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands\" />\n<meta name=\"dc.date\" content=\"2020-03-18\" />\n<meta name=\"citation_publication_date\" content=\"2020-03-18\" />\n<meta name=\"dc.language\" content=\"en-CA\" />\n<meta name=\"citation_language\" content=\"en-CA\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Finlay Maguire*\" />\n<meta name=\"citation_author_institution\" content=\"Faculty of Computer Science, Dalhousie University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1203-9514\" />\n<meta name=\"twitter:creator\" content=\"@fmaguire\" />\n<meta name=\"citation_author\" content=\"Baofeng Jia*\" />\n<meta name=\"citation_author_institution\" content=\"Department of Molecular Biology and Biochemistry, Simon Fraser University\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"Kristen Gray\" />\n<meta name=\"citation_author_institution\" content=\"Department of Molecular Biology and Biochemistry, Simon Fraser University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1962-189X\" />\n<meta name=\"citation_author\" content=\"Wing Yin Venus Lau\" />\n<meta name=\"citation_author_institution\" content=\"Department of Molecular Biology and Biochemistry, Simon Fraser University\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"Robert G. Beiko\" />\n<meta name=\"citation_author_institution\" content=\"Faculty of Computer Science, Dalhousie University\" />\n<meta name=\"citation_author\" content=\"Fiona S.L. Brinkman\" />\n<meta name=\"citation_author_institution\" content=\"Department of Molecular Biology and Biochemistry, Simon Fraser University\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://fmaguire.github.io/mag_sim_paper/\" />\n<meta property=\"og:url\" content=\"https://fmaguire.github.io/mag_sim_paper/\" />\n<meta property=\"twitter:url\" content=\"https://fmaguire.github.io/mag_sim_paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://fmaguire.github.io/mag_sim_paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://fmaguire.github.io/mag_sim_paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://fmaguire.github.io/mag_sim_paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://fmaguire.github.io/mag_sim_paper/v/f5cb636616d77157c880ea2b2a700403921403ba/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://fmaguire.github.io/mag_sim_paper/v/f5cb636616d77157c880ea2b2a700403921403ba/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://fmaguire.github.io/mag_sim_paper/v/f5cb636616d77157c880ea2b2a700403921403ba/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "bibliography": [
+      "content/manual-references.json"
+    ],
+    "manubot-output-bibliography": "output/references.json",
+    "manubot-output-citekeys": "output/citations.tsv",
+    "manubot-requests-cache-path": "ci/cache/requests-cache",
+    "manubot-clear-requests-cache": false
   },
-  "manuscript_stats": {
-    "reference_counts": {
-      "doi": 55,
-      "pmid": 2,
-      "url": 1,
-      "total": 58
+  "manubot": {
+    "date": "March 18, 2020",
+    "authors": [
+      {
+        "github": "fmaguire",
+        "name": "Finlay Maguire*",
+        "initials": "FM",
+        "orcid": "0000-0002-1203-9514",
+        "twitter": "fmaguire",
+        "email": "finlaymaguire@gmail.com",
+        "affiliations": [
+          "Faculty of Computer Science, Dalhousie University"
+        ],
+        "funders": [
+          "Genome Canada",
+          "Donald Hill Family Fellowship"
+        ],
+        "affiliation_numbers": [
+          1
+        ]
+      },
+      {
+        "github": "imasianxd",
+        "name": "Baofeng Jia*",
+        "initials": "BJ",
+        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "email": "jjia@sfu.ca",
+        "affiliations": [
+          "Department of Molecular Biology and Biochemistry, Simon Fraser University"
+        ],
+        "affiliation_numbers": [
+          2
+        ]
+      },
+      {
+        "name": "Kristen Gray",
+        "initials": "KG",
+        "orcid": "0000-0002-1962-189X",
+        "email": "kristen.leanne252@gmail.com",
+        "affiliations": [
+          "Department of Molecular Biology and Biochemistry, Simon Fraser University"
+        ],
+        "affiliation_numbers": [
+          2
+        ]
+      },
+      {
+        "name": "Wing Yin Venus Lau",
+        "initials": "WYVL",
+        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "email": "venus_lau@sfu.ca",
+        "affiliations": [
+          "Department of Molecular Biology and Biochemistry, Simon Fraser University"
+        ],
+        "affiliation_numbers": [
+          2
+        ]
+      },
+      {
+        "name": "Robert G. Beiko",
+        "initials": "RGB",
+        "email": "rbeiko@dal.ca",
+        "affiliations": [
+          "Faculty of Computer Science, Dalhousie University"
+        ],
+        "affiliation_numbers": [
+          1
+        ]
+      },
+      {
+        "name": "Fiona S.L. Brinkman",
+        "initials": "FSLB",
+        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "email": "fionabrinkman@sfu.ca",
+        "affiliations": [
+          "Department of Molecular Biology and Biochemistry, Simon Fraser University"
+        ],
+        "affiliation_numbers": [
+          2
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "affiliation": "Faculty of Computer Science, Dalhousie University",
+        "affiliation_number": 1
+      },
+      {
+        "affiliation": "Department of Molecular Biology and Biochemistry, Simon Fraser University",
+        "affiliation_number": 2
+      }
+    ],
+    "ci_source": {
+      "provider": "github",
+      "repo_slug": "fmaguire/mag_sim_paper",
+      "repo_owner": "fmaguire",
+      "repo_name": "mag_sim_paper",
+      "commit": "f5cb636616d77157c880ea2b2a700403921403ba",
+      "triggering_commit": "f5cb636616d77157c880ea2b2a700403921403ba",
+      "build_url": "https://github.com/fmaguire/mag_sim_paper/commit/f5cb636616d77157c880ea2b2a700403921403ba/checks",
+      "job_url": "https://github.com/fmaguire/mag_sim_paper/runs/run2"
     },
-    "word_count": 5695
+    "html_url": "https://fmaguire.github.io/mag_sim_paper/",
+    "pdf_url": "https://fmaguire.github.io/mag_sim_paper/manuscript.pdf",
+    "html_url_versioned": "https://fmaguire.github.io/mag_sim_paper/v/f5cb636616d77157c880ea2b2a700403921403ba/",
+    "pdf_url_versioned": "https://fmaguire.github.io/mag_sim_paper/v/f5cb636616d77157c880ea2b2a700403921403ba/manuscript.pdf",
+    "manubot_version": "0.3.1",
+    "rootstock_commit": "6859ada7a28a72cd0ed728e085955f23fadc2b9a",
+    "manuscript_stats": {
+      "word_count": 6370
+    }
   }
 }
