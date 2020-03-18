@@ -85,11 +85,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/97c2da0c3e298ce482adbcc2dbda9d5fb42c99fe/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/de2b54013b940e42fae0d1d43829de633a52093b/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/97c2da0c3e298ce482adbcc2dbda9d5fb42c99fe/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/de2b54013b940e42fae0d1d43829de633a52093b/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/97c2da0c3e298ce482adbcc2dbda9d5fb42c99fe/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/de2b54013b940e42fae0d1d43829de633a52093b/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -126,7 +126,6 @@ on .
 </em></small>
 
 ## Authors
-Please note the current author order is chronological and does not reflect the final order.
 
 
 
