@@ -85,11 +85,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/de2b54013b940e42fae0d1d43829de633a52093b/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/ca1efecdee5dca3ea9c5b94a6550f453d5fbd1b1/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/de2b54013b940e42fae0d1d43829de633a52093b/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/ca1efecdee5dca3ea9c5b94a6550f453d5fbd1b1/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/de2b54013b940e42fae0d1d43829de633a52093b/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/ca1efecdee5dca3ea9c5b94a6550f453d5fbd1b1/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -121,14 +121,56 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/ca1efecdee5dca3ea9c5b94a6550f453d5fbd1b1/))
 was automatically generated
-on .
+from [fmaguire/mag_sim_paper@ca1efec](https://github.com/fmaguire/mag_sim_paper/tree/ca1efecdee5dca3ea9c5b94a6550f453d5fbd1b1)
+on March 18, 2020.
 </em></small>
 
 ## Authors
 
 
 
++ **Finlay Maguire***<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0002-1203-9514](https://orcid.org/0000-0002-1203-9514)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [fmaguire](https://github.com/fmaguire)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [fmaguire](https://twitter.com/fmaguire)<br>
+  <small>
+     Faculty of Computer Science, Dalhousie University
+     · Funded by ['Genome Canada', 'Donald Hill Family Fellowship']
+  </small>
+
++ **Baofeng Jia***<br>
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [imasianxd](https://github.com/imasianxd)<br>
+  <small>
+     Department of Molecular Biology and Biochemistry, Simon Fraser University
+  </small>
+
++ **Kristen Gray**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0002-1962-189X](https://orcid.org/0000-0002-1962-189X)<br>
+  <small>
+     Department of Molecular Biology and Biochemistry, Simon Fraser University
+  </small>
+
++ **Wing Yin Venus Lau**<br><br>
+  <small>
+     Department of Molecular Biology and Biochemistry, Simon Fraser University
+  </small>
+
++ **Robert G. Beiko**<br><br>
+  <small>
+     Faculty of Computer Science, Dalhousie University
+  </small>
+
++ **Fiona S.L. Brinkman**<br><br>
+  <small>
+     Department of Molecular Biology and Biochemistry, Simon Fraser University
+  </small>
 
 
 
