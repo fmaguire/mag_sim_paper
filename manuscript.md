@@ -8,7 +8,7 @@ author-meta:
 - Fiona S.L. Brinkman
 bibliography:
 - content/manual-references.json
-date-meta: '2020-03-29'
+date-meta: '2020-03-30'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta name="dc.date" content="2020-03-29" />
+  <meta name="dc.date" content="2020-03-30" />
 
-  <meta name="citation_publication_date" content="2020-03-29" />
+  <meta name="citation_publication_date" content="2020-03-30" />
 
   <meta name="dc.language" content="en-CA" />
 
@@ -85,11 +85,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/e760c7d5b40b64f1d18715c7dcc93c4a1e142a95/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/6e1c9094caa7f0837fc815e0b60d56cefdfe5031/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/e760c7d5b40b64f1d18715c7dcc93c4a1e142a95/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/6e1c9094caa7f0837fc815e0b60d56cefdfe5031/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/e760c7d5b40b64f1d18715c7dcc93c4a1e142a95/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/6e1c9094caa7f0837fc815e0b60d56cefdfe5031/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -121,10 +121,10 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/e760c7d5b40b64f1d18715c7dcc93c4a1e142a95/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/6e1c9094caa7f0837fc815e0b60d56cefdfe5031/))
 was automatically generated
-from [fmaguire/mag_sim_paper@e760c7d](https://github.com/fmaguire/mag_sim_paper/tree/e760c7d5b40b64f1d18715c7dcc93c4a1e142a95)
-on March 29, 2020.
+from [fmaguire/mag_sim_paper@6e1c909](https://github.com/fmaguire/mag_sim_paper/tree/6e1c9094caa7f0837fc815e0b60d56cefdfe5031)
+on March 30, 2020.
 </em></small>
 
 ## Authors
@@ -178,18 +178,18 @@ on March 29, 2020.
 
 # Motivation
 
-Metagenomic methods emerges as a key tool in public-health microbiology for surveillance of virulence and antimicrobial resistance (AMR) genes. 
-Metagenomic data, even when assembled, results in a complex, mixed set of DNA fragments rather than nicely resolved individual genomes. 
-Recently, metagenome-assembled genomes (MAGs) emerged as approaches that attempt to group these DNA fragments into bins that are likely derived from the same underlying genome. 
-The most important sequences for surveillance purposes are those associated with mobile genetic elements (MGEs) such as plasmids and genomic islands (GIs). 
-we hypothesise that due to the different copy number and sequence composition of plasmids and GIs compared to their corresponding chromosomes, these types of sequences will be highly under-represented in MAG-based approaches.
+Metagenomic methods have emerged as a key tool in public-health microbiology for surveillance of virulence factor (VF) and antimicrobial resistance (AMR) genes. 
+However, metagenomic data, even when assembled, typically results in complex, mixed sets DNA sequence fragments rather than fully resolved individual genomes. 
+Recently, metagenome-assembled genomes (MAGs) have emerged as a promising approach that groups sequences into bins that are likely derived from the same underlying genome. 
+However, MAGs have not been well assessed for their ability to identify some of the key sequences of interest for infectious disease surveillance purposes: AMR and VFs associated with mobile genetic elements (MGEs) such as plasmids and genomic islands (GIs). 
+We hypothesized that due to the different copy number and sequence composition of plasmids and GIs compared to core genome sequence, such sequences will be under-represented in MAG-based approaches.
 
 # Results
 
 To evaluate the impact of MAG recovery methods on recovery of AMR genes and MGEs, we generated a simulated metagenomic dataset comprised of 30 genomes with up to 16.65% of the chrosomomal DNA consisting of GIs and 65 associated plasmids. 
 MAGs were then recovered from this data using 12 different MAG pipelines and evaluated for recovery accuracies. 
 Across all pipelines, 81.9-94.3% of chromosomes were recovered and binned. However, only 37.8-44.1% of GIs and 1.5-29.2% of plasmids were recovered and correctly binned at >50% coverage. 
-In terms of AMR and virulence factor (VF) genes associated with MGEs, 0-45% of GI-associated AMR genes and 0-16% of GI-associated VF genes were correctly assigned. 
+In terms of AMR and VF genes associated with MGEs, 0-45% of GI-associated AMR genes and 0-16% of GI-associated VF genes were correctly assigned. 
 More strikingly, 0% of plasmid-borne VF or AMR genes were recovered.
 This work shows that regardless of the MAG recovery approach used, plasmid and GI dominated sequences will disproportionately be left unbinned or incorrectly binned. 
 From a public-health perspective, this means MAG approaches are unsuited for analysis of mobile genes, especially vital groups such as AMR and VF genes. 
