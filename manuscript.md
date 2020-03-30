@@ -85,11 +85,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/650ad9b1cf52ce09a6c0b5e1c18328ec96922bc9/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/31f1a2cf426b3bbfd35255d757d46393fb9faf3a/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/650ad9b1cf52ce09a6c0b5e1c18328ec96922bc9/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/31f1a2cf426b3bbfd35255d757d46393fb9faf3a/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/650ad9b1cf52ce09a6c0b5e1c18328ec96922bc9/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/31f1a2cf426b3bbfd35255d757d46393fb9faf3a/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -121,9 +121,9 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/650ad9b1cf52ce09a6c0b5e1c18328ec96922bc9/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/31f1a2cf426b3bbfd35255d757d46393fb9faf3a/))
 was automatically generated
-from [fmaguire/mag_sim_paper@650ad9b](https://github.com/fmaguire/mag_sim_paper/tree/650ad9b1cf52ce09a6c0b5e1c18328ec96922bc9)
+from [fmaguire/mag_sim_paper@31f1a2c](https://github.com/fmaguire/mag_sim_paper/tree/31f1a2cf426b3bbfd35255d757d46393fb9faf3a)
 on March 30, 2020.
 </em></small>
 
@@ -200,7 +200,7 @@ This underlines the utility of read-based and long-read approaches to thoroughly
 
 Metagenomics, the sequencing of fragments of DNA from within an environmental sample, is widely used for characterising viral and microbial communities [@doi:10.1073/pnas.202488399; @doi:10.1038/nbt.3935]. 
 By randomly sampling from the total genomic content these methods allow researchers to simultaneously profile the functional potential and the taxonomic identity of a large proportion of the organisms in a sample. 
-Metagenomic techniques are now bein used to profile antimicrobial resistance (AMR) and pathogen virulence. 
+Metagenomic techniques are now being used to profile antimicrobial resistance (AMR) and pathogen virulence. 
 These approaches have been instrumental in developing our understanding of the distribution and evolutionary history of AMR genes [@doi:10.1016/j.cell.2014.08.032; @doi:10.1016/j.mib.2007.08.009; @doi:10.1038/nature10388], as well as tracking pathogen outbreaks [@doi:10.1001/jama.2013.3231].
 
 While long-read DNA sequencing technology (e.g., Oxford Nanopore [@doi:10.1111/1755-0998.12324], PacBio [@doi:10.1126/science.1162986]) is now being used for metagenomic sequencing [@doi:10.1093/gigascience/giz043; @doi:10.1186/s12866-019-1500-0],  high-throughput sequencing of relatively short reads (150-250bp) in platforms such as the Illumina MiSeq currently dominate metagenomic analyses.
