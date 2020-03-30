@@ -85,11 +85,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/6e1c9094caa7f0837fc815e0b60d56cefdfe5031/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/650ad9b1cf52ce09a6c0b5e1c18328ec96922bc9/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/6e1c9094caa7f0837fc815e0b60d56cefdfe5031/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/650ad9b1cf52ce09a6c0b5e1c18328ec96922bc9/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/6e1c9094caa7f0837fc815e0b60d56cefdfe5031/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/650ad9b1cf52ce09a6c0b5e1c18328ec96922bc9/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -121,9 +121,9 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/6e1c9094caa7f0837fc815e0b60d56cefdfe5031/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/650ad9b1cf52ce09a6c0b5e1c18328ec96922bc9/))
 was automatically generated
-from [fmaguire/mag_sim_paper@6e1c909](https://github.com/fmaguire/mag_sim_paper/tree/6e1c9094caa7f0837fc815e0b60d56cefdfe5031)
+from [fmaguire/mag_sim_paper@650ad9b](https://github.com/fmaguire/mag_sim_paper/tree/650ad9b1cf52ce09a6c0b5e1c18328ec96922bc9)
 on March 30, 2020.
 </em></small>
 
@@ -209,10 +209,10 @@ These read-based approaches allow analysis of all reads with detectable similari
 Since these reads are shorter than most genes, however, read-based methods provide very little information about the genomic organisation of genes.
 This lack of contextual information is particularly problematic in the study of AMR genes and virulence factors as the genomic context plays a role in function [@doi:10.1128/AAC.01710-09], selective pressures [@doi:10.1016/j.tim.2006.02.006], and then likelihood of lateral gene transfer (LGT) [@doi:10.1111/j.1574-6976.2011.00273.x].
 
-Sequence assembly is often used to genereate information about genomic context [@doi:10.1038/nature02340]. 
+Sequence assembly is often used to generate information about genomic context [@doi:10.1038/nature02340]. 
 de Bruijn graph-based assemblers have been developed to handle the particular challenges of this type of data including metaSPAdes [@doi:10.1101/gr.213959.116] , IDBA-UD [@doi:10.1093/bioinformatics/bts174], and megahit [@doi:10.1093/bioinformatics/btv033].
-A crucial challenge in metagenomic analysis is that reads from different origanisms must be distentangled to avoid hybrid assemblies.
-A common way to deal with this challenge is to assign all contigs from a given source genomes to a cluster or "bin" based on similarities in the relative abudance and sequence composition.
+A crucial challenge in metagenomic analysis is that reads from different organisms must be disentangled to avoid hybrid assemblies.
+A common way to deal with this challenge is to assign all contigs from a given source genomes to a cluster or "bin" based on similarities in the relative abundance and sequence composition.
 These resulting bins are often known as metagenome-assembled genomes (MAGs). 
 This binning is typically performed by grouping all the contigs with similar abundance and similar sequence composition into the same bin. 
 A range of tools have been released to perform this binning including CONCOCT [@doi:10.1093/bioinformatics/btw290], MetaBAT 2 [@doi:10.7287/peerj.preprints.27522v1], and MaxBin 2 [@doi:10.1093/bioinformatics/btv638]. 
@@ -227,7 +227,7 @@ However, to our best knowledge, there hasn't been a specific assessment of the i
 In particular, the impact on mobile genetic elements (MGEs), such as genomic islands (GIs) and plasmids, which can be of great health and research importance, has not been evaluated.
 
 Genomic islands (GIs) are clusters of genes that are known or predicted to have been acquired through LGT events. 
-GIs can arise following the integation of MGEs, such as integrons, transposons, integrative and conjugative elements (ICEs) and prophages (integrated phages) [@doi:10.1038/nrmicro2350; @doi:10.1038/nrg3962]; they disproportionately encode virulence factors [@doi:10.1371/journal.pone.0008094] and are a major mechanism of LGT of AMR genes [@doi:10.3389/fmicb.2016.00173; @doi:10.1016/j.plasmid.2015.01.001]. 
+GIs can arise following the integration of MGEs, such as integrons, transposons, integrative and conjugative elements (ICEs) and prophages (integrated phages) [@doi:10.1038/nrmicro2350; @doi:10.1038/nrg3962]; they disproportionately encode virulence factors [@doi:10.1371/journal.pone.0008094] and are a major mechanism of LGT of AMR genes [@doi:10.3389/fmicb.2016.00173; @doi:10.1016/j.plasmid.2015.01.001]. 
 GIs often have different nucleotide composition compared to the rest of the genome [@doi:10.1038/nrmicro2350].
 This compositional difference is exploited by tools designed to detect GIs such as SIGI-HMM [@doi:10.1186/1471-2105-5-22] and IslandPath-DIMOB [@doi:10.1093/bioinformatics/bty095]. 
 GIs may exist as multiple copies within a genome [@doi:10.1093/bib/bby042] leading to potential difficulties in correctly assembling these regions in metagenome assemblies as well as likely biases in the calculation of coverage statistics. 
@@ -238,7 +238,7 @@ This is largely attributable to their repetitive sequences, variable copy number
 Plasmids are of great research importance, these elements are a major source of the lateral dissemination of AMR genes throughout microbial ecosystems [@pmid:26603922; @doi:10.3389/fmicb.2016.00173]. 
 Due to these reasons, the correct assembly of DNA sequence of plasmid origin has proven to be difficult from short read data [@doi:10.1099/mgen.0.000128,@doi:10.1099/mgen.0.000206].
 
-GIs and plasmids pose significant challenges in MAG recovery due to their unusual sequence compositon and relative abundance; as these MGEs are key to the function and spread of pathogenic traits such as AMR and virulence, it is vital that we assess the impact of metagenome assembly and binning on the representation of these specific elements. 
+GIs and plasmids pose significant challenges in MAG recovery due to their unusual sequence composition and relative abundance; as these MGEs are key to the function and spread of pathogenic traits such as AMR and virulence, it is vital that we assess the impact of metagenome assembly and binning on the representation of these specific elements. 
 This is particularly important with the increasing popularity of MAG approaches within microbial and public-health research. 
 Therefore, to address this issue we performed an analysis of GI and plasmid recovery accuracy across a set of state-of-the-art short-read metagenome assembly and binning approaches using a simulated metagenome comprised of GI- and plasmid-rich taxa.
 
@@ -317,7 +317,7 @@ Finally, we evaluated the proportion of plasmids or GIs that were correctly assi
 
 #### Detection of AMR/VF Genes
 
-For the reference genomes, as well as 12 sets of MAGs prodigal [@doi:10.1186/1471-2105-11-119] was used to predict open reading frames (ORFs) using the default parameters. 
+For the reference genomes, as well as 12 sets of MAGs, prodigal [@doi:10.1186/1471-2105-11-119] was used to predict open reading frames (ORFs) using the default parameters. 
 AMR genes were predicted using Resistance Gene Identifier (RGI v5.0.0; default parameters) and the Comprehensive Antibiotic Resistance Database (CARD v3.0.3) [@doi:10.1093/nar/gkw1004].
 Virulence factors were predicted using the predicted ORFs and BLASTX 2.9.0+ [@doi:10.1186/1471-2105-10-421] against the Virulence Factor Database (VFDB; obtained on Aug 26, 2019) with an e-value cut-off of 0.001 and a minimum identity of 90% [@doi:10.1093/nar/gky1080].
 Each MAG was then assigned to a reference chromosome using the above mentioned mapping criteria for downstream analysis.
@@ -330,7 +330,7 @@ We then assessed the ability for MAGs to correctly bin AMR/VF genes of chromosom
 #### Protein subcellular localization predictions
 
 We then sought to assess what the impact of a protein's predicted subcellular localization was on its recovery and binning in MAGs.
-The MAG bins from megahit-DAS Tool assembler-binner combination was selected (as generally best performing) and ORFs predicted using prodigal [@doi:10.1186/1471-2105-11-119] as above.
+The MAG bins from megahit-DAS Tool assembler-binner combination were selected (as generally best performing) and ORFs predicted using prodigal [@doi:10.1186/1471-2105-11-119] as above.
 Subcellular localisation of these proteins were then predicted using PSORTb v3.0 with default parameters and the appropriate Gram setting for that bin's assigned taxa [@doi:10.1093/bioinformatics/btq249]. 
 
 
@@ -349,7 +349,7 @@ Some genomes are cleanly and accurately binned regardless of the assembler and b
 Specifically, greater than 90% of _Streptomyces parvulus_ (minimum 91.8%) and _Clostridium baratii_ (minimum 96.4%) chromosomes are represented in individual bins across all methods.
 However, no other genomes were consistently recovered at >30% chromosomal coverage across methods.
 The three _Streptococcus_ genomes were particularly problematic with the best recovery for each ranging from 1.7% to 47.49%.
-Contrary to what might be expected the number of closely relatives to a given genome in the metagenome did not clearly affect the MAG coverage (Fig. @fig:coverphylo).
+Contrary to what might be expected, the number of close relatives to a given genome in the metagenome did not clearly affect the MAG coverage (Fig. @fig:coverphylo).
 
 
 ![Top genome coverage for input genomes across MAG binners. Each dot represents the coverage of a specified genome when it comprised the plurality of the sequences in a bin. The binning tool is indicated by the colour of the dot as per the legend. Genomes such as _Clostridium baratti_ were accurately recovered across all binner-assembler combinations whereas genomes such as _Streptococcus macedonicus_ were systematically poorly recovered.](images/top_hits_per_bin.png){#fig:speciescov}
@@ -358,7 +358,7 @@ In terms of the impact of different metagenome assemblers, megahit resulted in t
 In terms of binning tool, CONCOCT performed very poorly with a median 26% coverage for top hit per bin, followed by maxbin2 (83.1%), and MetaBAT2 (88.5%).
 It is perhaps unsurprising that the best-performing binner in terms of bin top hit coverage was the metabinner DASTool that combines predictions from the other 3 binners (94.3% median top hit chromosome coverage per bin; (Fig. @fig:chromcover)).
 
-![Chromosomal coverages of most prevalent genome in each bin across binners and metagenome assemblies. Of the 3 assemblers (y-axis), megahit resulted in the highest median chromosomal coverage (x-axis) across all binners (colored bars) at 81.9% with metaSPAdes performing the worst (76.8%). Of the 4 binners, CONCOCT (blue) performed poorly with a median coverage, followed by maxbin2 (yellow), MetaBAT2 (red) and DASTool (green) performing the best. Diamonds in the figure represents outliers (greater or lower than the interquartile range marked by the error bars) and box represents the lower quartile, median, and upper quartile respectively.](images/bin_coverage.png){#fig:chromcover}
+![Chromosomal coverage of most prevalent genome in each bin across binners and metagenome assemblies. Of the 3 assemblers (y-axis), megahit resulted in the highest median chromosomal coverage (x-axis) across all binners (colored bars) at 81.9% with metaSPAdes performing the worst (76.8%). Of the 4 binners, CONCOCT (blue) performed poorly with a median coverage, followed by maxbin2 (yellow), MetaBAT2 (red) and DASTool (green) performing the best. Diamonds in the figure represent outliers (greater or lower than the interquartile range marked by the error bars) and box represents the lower quartile, median, and upper quartile respectively.](images/bin_coverage.png){#fig:chromcover}
 
 Bin purity, i.e. the number of genomes present in a bin at >5% coverage, was largely equivalent across assemblers, with a very marginally higher purity for IDBA.
 In terms of binning tools, however, maxbin2 proved an exception with nearly twice as many bins containing multiple species as the next binner (Fig. @fig:purity).
@@ -366,7 +366,7 @@ The remaining binning tools were largely equivalent, producing chimeric bins at 
 Unlike coverage, purity was strongly affected by the number of close relatives in the metagenome to a given input genome. 
 Specifically, the closer the nearest relative the less pure the bin (Fig. @fig:purityphylo).
 
-![Distribution of bin purity across assemblers and binners. The total number of genomes present in a bin at >5% coverage (y-axis) was largely equivalent across assemblers (x-axis). In term of binning tools, maxbin2 (orange) produced nearly twice as many bins containing multiple species compared to CONCOCT (blue), MetaBAT2 (red) and DASTool (green), which all produced chimeric bins at roughly the same rate. Similar to above, outliers outside the interquartile range marked by the error bars are shown as diamonds.](images/bin_purity.png){#fig:purity}
+![Distribution of bin purity across assemblers and binners. The total number of genomes present in a bin at >5% coverage (y-axis) was largely equivalent across assemblers (x-axis). In terms of binning tools, maxbin2 (orange) produced nearly twice as many bins containing multiple species compared to CONCOCT (blue), MetaBAT2 (red) and DASTool (green), which all produced chimeric bins at roughly the same rate. Similar to above, outliers outside the interquartile range marked by the error bars are shown as diamonds.](images/bin_purity.png){#fig:purity}
 
 #### Plasmids
 
@@ -454,15 +454,15 @@ While there was variability in performance, AMR genes located on GIs were correc
 This variability might be explained by the fact that there were only 11 AMR genes located on GIs in our reference genomes.
 All 20 of the plasmid-borne AMR genes were assembled, but none were placed into MAG bins.
 We included high-threat MGEs-associated AMR genes such as the KPC and OXA carbapenemases. 
-We intended on a systematic review of which AMR genes are more or less likely end up correctly binned, however, MAGs was not able to correctly bin enough AMR genes on plasmids or GIs to allow this. 
+We intended on a systematic review of which AMR genes are more or less likely to end up correctly binned, however, MAGs was not able to correctly bin enough AMR genes on plasmids or GIs to allow this. 
 
 Virulence factors showed a similar trend to the AMR genes, with a recovery of ~63% of virulence factors present in the reference genomes.
 There still is a sharp decline in the number of VF detected between assemblies and MAGs and CONCOCT-metaSPAdes again produced the highest binning accuracy.
 A majority (73%-98%) of chromosomally located VF genes were also able to be correctly binned to the right species for the MAGs.
 However, the MAG approach performed much worse in correctly recovering GI located and plasmid located VFs, with <16% of GI VFs (n=809) correctly recovered and none of the plasmid VFs (n=3).
 This drastic reduction in recovery accuracy of mobile elements, especially GIs, is expected.
-Previous studies have found that VFs are disproportionally present on GIs[@doi:10.1371/journal.pone.0008094], which might be the reason why the recovery accuracy was worse compared to AMR genes.
-Together, this and the AMR gene results suggests that MAG-based methods might be of limited utility in public health research focused on the transmission and dissemination of AMR genes and VFs. 
+Previous studies have found that VFs are disproportionately present on GIs[@doi:10.1371/journal.pone.0008094], which might be the reason why the recovery accuracy was worse compared to AMR genes.
+Together, this and the AMR gene results suggest that MAG-based methods might be of limited utility in public health research focused on the transmission and dissemination of AMR genes and VFs. 
 
 One potential caveat is that some AMR genes and VFs successfully assembled in the MAGs may no longer be annotated as such due to issues with ORF prediction (see suppl. discussion & Fig. @fig:geneContent). 
 Previous studies have observed that ORF predictions in draft genomes are more fragmented, which can lead to downstream over- or under-annotation with functional labels depending on the approach used [@doi:10.1186/1471-2164-13-14]. 
