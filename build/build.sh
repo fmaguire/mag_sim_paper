@@ -74,6 +74,7 @@ if [ "${BUILD_PDF:-}" != "false" ] && [ -n "$DOCKER_EXISTS" ]; then
   rm -rf output/images
 fi
 
+BUILD_DOCX=true
 # Create DOCX output (if BUILD_DOCX environment variable equals "true")
 if [ "${BUILD_DOCX:-}" = "true" ]; then
   echo >&2 "Exporting Word Docx manuscript"
