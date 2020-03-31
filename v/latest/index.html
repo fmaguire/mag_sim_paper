@@ -10,7 +10,7 @@
   <meta name="author" content="Wing Yin Venus Lau" />
   <meta name="author" content="Robert G. Beiko" />
   <meta name="author" content="Fiona S.L. Brinkman" />
-  <meta name="dcterms.date" content="2020-03-30" />
+  <meta name="dcterms.date" content="2020-03-31" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands</title>
   <style>
@@ -33,8 +33,8 @@
   <meta name="citation_title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
   <meta property="og:title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
-  <meta name="dc.date" content="2020-03-30" />
-  <meta name="citation_publication_date" content="2020-03-30" />
+  <meta name="dc.date" content="2020-03-31" />
+  <meta name="citation_publication_date" content="2020-03-31" />
   <meta name="dc.language" content="en-CA" />
   <meta name="citation_language" content="en-CA" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -62,9 +62,9 @@
   <meta name="citation_fulltext_html_url" content="https://fmaguire.github.io/mag_sim_paper/" />
   <meta name="citation_pdf_url" content="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/31f1a2cf426b3bbfd35255d757d46393fb9faf3a/" />
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/31f1a2cf426b3bbfd35255d757d46393fb9faf3a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/31f1a2cf426b3bbfd35255d757d46393fb9faf3a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/1675e27b875fe3cb515201d43bb67168cd7820c8/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/1675e27b875fe3cb515201d43bb67168cd7820c8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/1675e27b875fe3cb515201d43bb67168cd7820c8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,10 +78,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://fmaguire.github.io/mag_sim_paper/v/31f1a2cf426b3bbfd35255d757d46393fb9faf3a/">permalink</a>)
+(<a href="https://fmaguire.github.io/mag_sim_paper/v/1675e27b875fe3cb515201d43bb67168cd7820c8/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/fmaguire/mag_sim_paper/tree/31f1a2cf426b3bbfd35255d757d46393fb9faf3a">fmaguire/mag_sim_paper@31f1a2c</a>
-on March 30, 2020.
+from <a href="https://github.com/fmaguire/mag_sim_paper/tree/1675e27b875fe3cb515201d43bb67168cd7820c8">fmaguire/mag_sim_paper@1675e27</a>
+on March 31, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -129,16 +129,16 @@ Recently, metagenome-assembled genomes (MAGs) have emerged as a promising approa
 However, MAGs have not been well assessed for their ability to identify some of the key sequences of interest for infectious disease surveillance purposes: AMR and VFs associated with mobile genetic elements (MGEs) such as plasmids and genomic islands (GIs).
 We hypothesized that due to the different copy number and sequence composition of plasmids and GIs compared to core genome sequence, such sequences will be under-represented in MAG-based approaches.</p>
 <h1 id="results">Results</h1>
-<p>To evaluate the impact of MAG recovery methods on recovery of AMR genes and MGEs, we generated a simulated metagenomic dataset comprised of 30 genomes with up to 16.65% of the chrosomomal DNA consisting of GIs and 65 associated plasmids.
+<p>To evaluate the impact of MAG recovery methods on recovery of AMR genes and MGEs, we generated a simulated metagenomic dataset comprised of 30 genomes with up to 16.65% of the chromosomal DNA consisting of GIs and 65 associated plasmids.
 MAGs were then recovered from this data using 12 different MAG pipelines and evaluated for recovery accuracies.
 Across all pipelines, 81.9-94.3% of chromosomes were recovered and binned. However, only 37.8-44.1% of GIs and 1.5-29.2% of plasmids were recovered and correctly binned at &gt;50% coverage.
 In terms of AMR and VF genes associated with MGEs, 0-45% of GI-associated AMR genes and 0-16% of GI-associated VF genes were correctly assigned.
 More strikingly, 0% of plasmid-borne VF or AMR genes were recovered.
 This work shows that regardless of the MAG recovery approach used, plasmid and GI dominated sequences will disproportionately be left unbinned or incorrectly binned.
-From a public-health perspective, this means MAG approaches are unsuited for analysis of mobile genes, especially vital groups such as AMR and VF genes.
+From a public-health perspective, this means MAG approaches are less suited for analysis of mobile genes, especially key groups such as AMR and VF genes.
 This underlines the utility of read-based and long-read approaches to thoroughly evaluate the resistome in metagenomic data.</p>
 <h2 id="intro">Introduction</h2>
-<p>Metagenomics, the sequencing of fragments of DNA from within an environmental sample, is widely used for characterising viral and microbial communities <span class="citation" data-cites="8PLOeAH6 7RV1Ygsv">[<a href="#ref-8PLOeAH6" role="doc-biblioref">1</a>,<a href="#ref-7RV1Ygsv" role="doc-biblioref">2</a>]</span>.
+<p>Metagenomics, the sequencing of fragments of DNA from within an environmental sample, is widely used for characterising microbial communities <span class="citation" data-cites="8PLOeAH6 7RV1Ygsv">[<a href="#ref-8PLOeAH6" role="doc-biblioref">1</a>,<a href="#ref-7RV1Ygsv" role="doc-biblioref">2</a>]</span>.
 By randomly sampling from the total genomic content these methods allow researchers to simultaneously profile the functional potential and the taxonomic identity of a large proportion of the organisms in a sample.
 Metagenomic techniques are now being used to profile antimicrobial resistance (AMR) and pathogen virulence.
 These approaches have been instrumental in developing our understanding of the distribution and evolutionary history of AMR genes <span class="citation" data-cites="rwhLEYRY QSe5BqFk 2xaXclNM">[<a href="#ref-rwhLEYRY" role="doc-biblioref">3</a>,<a href="#ref-QSe5BqFk" role="doc-biblioref">4</a>,<a href="#ref-2xaXclNM" role="doc-biblioref">5</a>]</span>, as well as tracking pathogen outbreaks <span class="citation" data-cites="khJQfjDf">[<a href="#ref-khJQfjDf" role="doc-biblioref">6</a>]</span>.</p>
