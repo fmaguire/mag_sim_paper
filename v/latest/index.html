@@ -62,9 +62,9 @@
   <meta name="citation_fulltext_html_url" content="https://fmaguire.github.io/mag_sim_paper/" />
   <meta name="citation_pdf_url" content="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/1675e27b875fe3cb515201d43bb67168cd7820c8/" />
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/1675e27b875fe3cb515201d43bb67168cd7820c8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/1675e27b875fe3cb515201d43bb67168cd7820c8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/6cc889b2ab608c6a1d95f355656f8cf043512f17/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/6cc889b2ab608c6a1d95f355656f8cf043512f17/" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/6cc889b2ab608c6a1d95f355656f8cf043512f17/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +78,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://fmaguire.github.io/mag_sim_paper/v/1675e27b875fe3cb515201d43bb67168cd7820c8/">permalink</a>)
+(<a href="https://fmaguire.github.io/mag_sim_paper/v/6cc889b2ab608c6a1d95f355656f8cf043512f17/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/fmaguire/mag_sim_paper/tree/1675e27b875fe3cb515201d43bb67168cd7820c8">fmaguire/mag_sim_paper@1675e27</a>
+from <a href="https://github.com/fmaguire/mag_sim_paper/tree/6cc889b2ab608c6a1d95f355656f8cf043512f17">fmaguire/mag_sim_paper@6cc889b</a>
 on March 31, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -122,13 +122,13 @@ Department of Molecular Biology and Biochemistry, Simon Fraser University
 </small></p></li>
 </ul>
 <h2 id="abstract">Abstract</h2>
-<h1 id="motivation">Motivation</h1>
+<h3 id="motivation">Motivation</h3>
 <p>Metagenomic methods have emerged as a key tool in public-health microbiology for surveillance of virulence factor (VF) and antimicrobial resistance (AMR) genes.
 However, metagenomic data, even when assembled, typically results in complex, mixed sets DNA sequence fragments rather than fully resolved individual genomes.
 Recently, metagenome-assembled genomes (MAGs) have emerged as a promising approach that groups sequences into bins that are likely derived from the same underlying genome.
 However, MAGs have not been well assessed for their ability to identify some of the key sequences of interest for infectious disease surveillance purposes: AMR and VFs associated with mobile genetic elements (MGEs) such as plasmids and genomic islands (GIs).
 We hypothesized that due to the different copy number and sequence composition of plasmids and GIs compared to core genome sequence, such sequences will be under-represented in MAG-based approaches.</p>
-<h1 id="results">Results</h1>
+<h3 id="results">Results</h3>
 <p>To evaluate the impact of MAG recovery methods on recovery of AMR genes and MGEs, we generated a simulated metagenomic dataset comprised of 30 genomes with up to 16.65% of the chromosomal DNA consisting of GIs and 65 associated plasmids.
 MAGs were then recovered from this data using 12 different MAG pipelines and evaluated for recovery accuracies.
 Across all pipelines, 81.9-94.3% of chromosomes were recovered and binned. However, only 37.8-44.1% of GIs and 1.5-29.2% of plasmids were recovered and correctly binned at &gt;50% coverage.
@@ -182,11 +182,11 @@ Therefore, to address this issue we performed an analysis of GI and plasmid reco
 Genomic islands for these genomes were previously predicted using IslandPath-DIMOB <span class="citation" data-cites="M1pdcdMy">[<a href="#ref-M1pdcdMy" role="doc-biblioref">38</a>]</span> and collated into the IslandViewer database <a href="www.pathogenomics.sfu.ca/islandviewer">www.pathogenomics.sfu.ca/islandviewer</a> <span class="citation" data-cites="4eEyIkDg">[<a href="#ref-4eEyIkDg" role="doc-biblioref">47</a>]</span>.
 Plasmid sequences were recovered for each genome using the linked GenBank Project IDs.
 Thirty genomes were manually selected to satisfy the following criteria:</p>
-<pre><code>1) 10 genomes with 1-10 plasmids.
-
-2) 10 genomes with &gt;10% of chromosomal DNA predicted to reside in GIs.
-
-3) 10 genomes with &lt;1% of chromosomal DNA predicted to reside in GIs.</code></pre>
+<ol type="1">
+<li><p>10 genomes with 1-10 plasmids.</p></li>
+<li><p>10 genomes with &gt;10% of chromosomal DNA predicted to reside in GIs.</p></li>
+<li><p>10 genomes with &lt;1% of chromosomal DNA predicted to reside in GIs.</p></li>
+</ol>
 <p>The data used to select the taxa is listed in Supplemental Table 1 and the details of the selected subset taxa are listed in Supplemental Table 2 with their NCBI accessions.
 The sequences themselves are available in the data repository <a href="osf.io/nrejs/">osf.io/nrejs/</a> under “data/sequences”.</p>
 <p>In accordance with the recommendation in the CAMI challenge <span class="citation" data-cites="lsbnKJf8">[<a href="#ref-lsbnKJf8" role="doc-biblioref">48</a>]</span> the genomes were randomly assigned a relative abundance following a log-normal distribution (μ = 1, σ = 2).
@@ -427,6 +427,7 @@ This highlights that genomic components (GIs and plasmids) and plasmids in parti
 <img src="images/rate_of_loss.png" alt="" /><figcaption><span>Figure 13:</span> Comparison of rates of loss for different genomic components and gene types across assemblers and binning tools. Each line represents a different component as indicated by the legend with assemblers indicated by row and binning tool by column. This shows that regardless of approach genomic components (GIs and plasmids) are lost at a higher rate than individual VF or AMR genes.</figcaption>
 </figure>
 </div>
+<h2 id="references">References</h2>
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
 <div id="ref-8PLOeAH6">
 <p>1. <strong>Genomic analysis of uncultured marine viral communities</strong><br />
