@@ -85,11 +85,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/1675e27b875fe3cb515201d43bb67168cd7820c8/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/6cc889b2ab608c6a1d95f355656f8cf043512f17/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/1675e27b875fe3cb515201d43bb67168cd7820c8/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/6cc889b2ab608c6a1d95f355656f8cf043512f17/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/1675e27b875fe3cb515201d43bb67168cd7820c8/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/6cc889b2ab608c6a1d95f355656f8cf043512f17/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -121,9 +121,9 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/1675e27b875fe3cb515201d43bb67168cd7820c8/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/6cc889b2ab608c6a1d95f355656f8cf043512f17/))
 was automatically generated
-from [fmaguire/mag_sim_paper@1675e27](https://github.com/fmaguire/mag_sim_paper/tree/1675e27b875fe3cb515201d43bb67168cd7820c8)
+from [fmaguire/mag_sim_paper@6cc889b](https://github.com/fmaguire/mag_sim_paper/tree/6cc889b2ab608c6a1d95f355656f8cf043512f17)
 on March 31, 2020.
 </em></small>
 
@@ -176,7 +176,7 @@ on March 31, 2020.
 
 ## Abstract {#abstract}
 
-# Motivation
+### Motivation
 
 Metagenomic methods have emerged as a key tool in public-health microbiology for surveillance of virulence factor (VF) and antimicrobial resistance (AMR) genes. 
 However, metagenomic data, even when assembled, typically results in complex, mixed sets DNA sequence fragments rather than fully resolved individual genomes. 
@@ -184,7 +184,7 @@ Recently, metagenome-assembled genomes (MAGs) have emerged as a promising approa
 However, MAGs have not been well assessed for their ability to identify some of the key sequences of interest for infectious disease surveillance purposes: AMR and VFs associated with mobile genetic elements (MGEs) such as plasmids and genomic islands (GIs). 
 We hypothesized that due to the different copy number and sequence composition of plasmids and GIs compared to core genome sequence, such sequences will be under-represented in MAG-based approaches.
 
-# Results
+### Results
 
 To evaluate the impact of MAG recovery methods on recovery of AMR genes and MGEs, we generated a simulated metagenomic dataset comprised of 30 genomes with up to 16.65% of the chromosomal DNA consisting of GIs and 65 associated plasmids. 
 MAGs were then recovered from this data using 12 different MAG pipelines and evaluated for recovery accuracies. 
@@ -254,11 +254,11 @@ Genomic islands for these genomes were previously predicted using IslandPath-DIM
 Plasmid sequences were recovered for each genome using the linked GenBank Project IDs.
 Thirty genomes were manually selected to satisfy the following criteria: 
 
-	1) 10 genomes with 1-10 plasmids.
+1) 10 genomes with 1-10 plasmids.
 
-	2) 10 genomes with >10% of chromosomal DNA predicted to reside in GIs.
+2) 10 genomes with >10% of chromosomal DNA predicted to reside in GIs.
 
-	3) 10 genomes with <1% of chromosomal DNA predicted to reside in GIs.
+3) 10 genomes with <1% of chromosomal DNA predicted to reside in GIs.
 
 The data used to select the taxa is listed in Supplemental Table 1 and the details of the selected subset taxa are listed in Supplemental Table 2 with their NCBI accessions.
 The sequences themselves are available in the data repository [osf.io/nrejs/](osf.io/nrejs/) under "data/sequences".
@@ -523,6 +523,9 @@ Combining the performance metrics for Figs. @fig:plasmids, @fig:gis, @fig:AMRGen
 This highlights that genomic components (GIs and plasmids) and plasmids in particular are lost at a higher rate than individual gene types during MAG recovery.
 
 ![Comparison of rates of loss for different genomic components and gene types across assemblers and binning tools. Each line represents a different component as indicated by the legend with assemblers indicated by row and binning tool by column. This shows that regardless of approach genomic components (GIs and plasmids) are lost at a higher rate than individual VF or AMR genes.](images/rate_of_loss.png){#fig:rateofloss}
+
+
+## References {#references}
 
 
 
