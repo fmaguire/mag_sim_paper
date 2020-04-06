@@ -62,9 +62,9 @@
   <meta name="citation_fulltext_html_url" content="https://fmaguire.github.io/mag_sim_paper/" />
   <meta name="citation_pdf_url" content="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/603dd96d329668179ae5fe0620e208b847e16aad/" />
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/603dd96d329668179ae5fe0620e208b847e16aad/" />
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/603dd96d329668179ae5fe0620e208b847e16aad/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/a4c6e8908399e42cbc5c612e7b75b72176747e68/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/a4c6e8908399e42cbc5c612e7b75b72176747e68/" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/a4c6e8908399e42cbc5c612e7b75b72176747e68/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +78,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://fmaguire.github.io/mag_sim_paper/v/603dd96d329668179ae5fe0620e208b847e16aad/">permalink</a>)
+(<a href="https://fmaguire.github.io/mag_sim_paper/v/a4c6e8908399e42cbc5c612e7b75b72176747e68/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/fmaguire/mag_sim_paper/tree/603dd96d329668179ae5fe0620e208b847e16aad">fmaguire/mag_sim_paper@603dd96</a>
+from <a href="https://github.com/fmaguire/mag_sim_paper/tree/a4c6e8908399e42cbc5c612e7b75b72176747e68">fmaguire/mag_sim_paper@a4c6e89</a>
 on April 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -263,8 +263,8 @@ In terms of binning tool, CONCOCT performed very poorly with a median 26% covera
 It is perhaps unsurprising that the best-performing binner in terms of bin top hit coverage was the metabinner DASTool that combines predictions from the other 3 binners (94.3% median top hit chromosome coverage per bin; (Fig. <a href="#fig:chromcoverpurity">2</a> A)).</p>
 <div id="fig:chromcoverpurity" class="fignos">
 <figure>
-<img src="images/bin_cover_purity_combined.png" alt="" /><figcaption><span>Figure 2:</span> Overall binning performance for every combination of metagenome assembler (as indicated by pane titles) and MAG binning tool (x-axis and legend colours). Diamonds in the plots represent outliers (greater or lower than the interquartile range marked by the error bars) and the boxes represents the lower quartile, median, and upper quartile respectively. (A) Chromosomal coverage of most prevalent genome in each bin across binners and metagenome assemblies. Of the 3 assemblers, megahit resulted in the highest median chromosomal coverage (y-axis) across all binners (colored bars) at 81.9% with metaSPAdes performing the worst (76.8%). Of the 4 binners, CONCOCT (blue) performed poorly with a median coverage, followed by maxbin2 (yellow), MetaBAT2 (red) and DASTool (green) performing the best.
-(B) Distribution of bin purity across assemblers and binners. The total number of genomes present in a bin at &gt;5% coverage (y-axis) was largely equivalent across assemblers (x-axis). In terms of binning tools, maxbin2 (orange) produced nearly twice as many bins containing multiple species compared to CONCOCT (blue), MetaBAT2 (red) and DASTool (green), which all produced chimeric bins at roughly the same rate.</figcaption>
+<img src="images/bin_cover_purity_combined.png" alt="" /><figcaption><span>Figure 2:</span> Overall binning performance for every combination of metagenome assembler (as indicated by pane titles) and MAG binning tool (x-axis and legend colours). Diamonds in the plots represent outliers (greater or lower than the interquartile range marked by the error bars) and the boxes represents the lower quartile, median, and upper quartile respectively. <strong>(A)</strong> Chromosomal coverage of most prevalent genome in each bin across binners and metagenome assemblies. Of the 3 assemblers, megahit resulted in the highest median chromosomal coverage (y-axis) across all binners (colored bars) at 81.9% with metaSPAdes performing the worst (76.8%). Of the 4 binners, CONCOCT (blue) performed poorly with a median coverage, followed by maxbin2 (yellow), MetaBAT2 (red) and DASTool (green) performing the best.
+<strong>(B)</strong> Distribution of bin purity across assemblers and binners. The total number of genomes present in a bin at &gt;5% coverage (y-axis) was largely equivalent across assemblers (x-axis). In terms of binning tools, maxbin2 (orange) produced nearly twice as many bins containing multiple species compared to CONCOCT (blue), MetaBAT2 (red) and DASTool (green), which all produced chimeric bins at roughly the same rate.</figcaption>
 </figure>
 </div>
 <p>Bin purity, i.e. the number of genomes present in a bin at &gt;5% coverage, was largely equivalent across assemblers, with a very marginally higher purity for IDBA.
@@ -302,7 +302,7 @@ Overall, only 24% - 40% of all AMR genes were correctly binned.
 This was lowest with the maxbin2-IDBA-UDA pair (24%) and highest in the CONCOCT-metaSPAdes pipe (40%).</p>
 <div id="fig:AMRGenePercentRecoveryStageContext" class="fignos">
 <figure>
-<img src="images/amr_recovery_combined.png" alt="" /><figcaption><span>Figure 5:</span> Recovery of AMR genes across assemblers, binners, and genomic context. (A) The proportion of reference AMR genes recovered (y-axis) was largely similar across assembly tools (panels as indicated by title) at roughly 50% with metaSPAdes performing marginally better overall. Binning tools (x-axis) resulted in a small reduction in AMR genes recovered (orange), however only 24-40% of all AMR genes were correctly binned (green). metaSPAdes-CONCOCT was the best performing MAG binning pipeline. (B) Percent of correctly binned AMR genes recovered by genomic context. MAG methods were best at recovering chromosomally located AMR genes (light blue) regardless of metagenomic assembler or binning tool used. Recovery of AMR genes in GIs showed a bigger variation between tools (light green). None of the 12 evaluated MAG recovery methods were able to recover plasmid located AMR genes (orange).</figcaption>
+<img src="images/amr_recovery_combined.png" alt="" /><figcaption><span>Figure 5:</span> Recovery of AMR genes across assemblers, binners, and genomic context. <strong>(A)</strong> The proportion of reference AMR genes recovered (y-axis) was largely similar across assembly tools (panels as indicated by title) at roughly 50% with metaSPAdes performing marginally better overall. Binning tools (x-axis) resulted in a small reduction in AMR genes recovered (orange), however only 24-40% of all AMR genes were correctly binned (green). metaSPAdes-CONCOCT was the best performing MAG binning pipeline. <strong>(B)</strong> Percent of correctly binned AMR genes recovered by genomic context. MAG methods were best at recovering chromosomally located AMR genes (light blue) regardless of metagenomic assembler or binning tool used. Recovery of AMR genes in GIs showed a bigger variation between tools (light green). None of the 12 evaluated MAG recovery methods were able to recover plasmid located AMR genes (orange).</figcaption>
 </figure>
 </div>
 <p>Moreover, focusing on only the AMR genes that were correctly binned (Fig. <a href="#fig:AMRGenePercentRecoveryStageContext">5</a> B) we can evaluate the impact of different genomic contexts (i.e. chromosomal, plasmid, GI).
@@ -316,7 +316,7 @@ Unlike AMR genes, the majority of VF genes assigned to a bin were assigned to th
 Overall, CONCOCT-metaSPAdes again performed best with 43% of all VFs correctly assigned.</p>
 <div id="fig:VFGenePercentRecoveryStageCombined" class="fignos">
 <figure>
-<img src="images/vf_recovery_combined.png" alt="" /><figcaption><span>Figure 6:</span> Recovery of VF genes across assemblers, binners, and genomic context. (A) Percent of reference virulence factor (VF) genes recovered across assemblers and binners. The proportion of reference VF genes recovered (y-axis) exhibited a similar trend as AMR genes. Recovery was greatest after the assembling stage (blue), with megahit performing best. Binning tools resulted in a larger reduction in VF genes recovered (orange) compared to AMR genes. However, in majority of cases, VF genes that are binned are correctly binned (green). metaSPAdes-CONCOCT was again the best performing pair. (B) Percent of correctly binned VF genes recovered in each genomic region. Metagenome assembled genomes (MAGs) were again best at recovering chromosomally located VF genes (light blue), able to correctly bin majority of chromosomally located VFs. GIs recovered again performed very poorly (light green) and again none of the plasmid located AMR genes (orange) was correctly binned.</figcaption>
+<img src="images/vf_recovery_combined.png" alt="" /><figcaption><span>Figure 6:</span> Recovery of VF genes across assemblers, binners, and genomic context. <strong>(A)</strong> Percent of reference virulence factor (VF) genes recovered across assemblers and binners. The proportion of reference VF genes recovered (y-axis) exhibited a similar trend as AMR genes. Recovery was greatest after the assembling stage (blue), with megahit performing best. Binning tools resulted in a larger reduction in VF genes recovered (orange) compared to AMR genes. However, in majority of cases, VF genes that are binned are correctly binned (green). metaSPAdes-CONCOCT was again the best performing pair. <strong>(B)</strong> Percent of correctly binned VF genes recovered in each genomic region. Metagenome assembled genomes (MAGs) were again best at recovering chromosomally located VF genes (light blue), able to correctly bin majority of chromosomally located VFs. GIs recovered again performed very poorly (light green) and again none of the plasmid located AMR genes (orange) was correctly binned.</figcaption>
 </figure>
 </div>
 <p>As with AMR genes, the genomic context (chromosome, plasmid, GI) of a given VF largely determined how well it was binned (Fig. <a href="#fig:VFGenePercentRecoveryStageCombined">6</a> B).
