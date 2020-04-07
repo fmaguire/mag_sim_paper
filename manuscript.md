@@ -8,7 +8,7 @@ author-meta:
 - Fiona S.L. Brinkman
 bibliography:
 - content/manual-references.json
-date-meta: '2020-04-06'
+date-meta: '2020-04-07'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta name="dc.date" content="2020-04-06" />
+  <meta name="dc.date" content="2020-04-07" />
 
-  <meta name="citation_publication_date" content="2020-04-06" />
+  <meta name="citation_publication_date" content="2020-04-07" />
 
   <meta name="dc.language" content="en-CA" />
 
@@ -85,11 +85,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/a4c6e8908399e42cbc5c612e7b75b72176747e68/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/ae9814411f98f5369b1d4dc65e63c660735f95da/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/a4c6e8908399e42cbc5c612e7b75b72176747e68/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/ae9814411f98f5369b1d4dc65e63c660735f95da/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/a4c6e8908399e42cbc5c612e7b75b72176747e68/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/ae9814411f98f5369b1d4dc65e63c660735f95da/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -121,10 +121,10 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/a4c6e8908399e42cbc5c612e7b75b72176747e68/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/ae9814411f98f5369b1d4dc65e63c660735f95da/))
 was automatically generated
-from [fmaguire/mag_sim_paper@a4c6e89](https://github.com/fmaguire/mag_sim_paper/tree/a4c6e8908399e42cbc5c612e7b75b72176747e68)
-on April 6, 2020.
+from [fmaguire/mag_sim_paper@ae98144](https://github.com/fmaguire/mag_sim_paper/tree/ae9814411f98f5369b1d4dc65e63c660735f95da)
+on April 7, 2020.
 </em></small>
 
 ## Authors
@@ -174,73 +174,49 @@ on April 6, 2020.
 
 
 
-## Abstract {#abstract}
+## Introductory Paragraph {#abstract}
 
-### Motivation
-
-Metagenomic methods have emerged as a key tool in public-health microbiology for surveillance of virulence factor (VF) and antimicrobial resistance (AMR) genes. 
-However, metagenomic data, even when assembled, typically results in complex, mixed sets DNA sequence fragments rather than fully resolved individual genomes. 
-Recently, metagenome-assembled genomes (MAGs) have emerged as a promising approach that groups sequences into bins that are likely derived from the same underlying genome. 
-However, MAGs have not been well assessed for their ability to identify some of the key sequences of interest for infectious disease surveillance purposes: AMR and VFs associated with mobile genetic elements (MGEs) such as plasmids and genomic islands (GIs). 
-We hypothesized that due to the different copy number and sequence composition of plasmids and GIs compared to core genome sequence, such sequences will be under-represented in MAG-based approaches.
-
-### Results
-
-To evaluate the impact of MAG recovery methods on recovery of AMR genes and MGEs, we generated a simulated metagenomic dataset comprised of 30 genomes with up to 16.65% of the chromosomal DNA consisting of GIs and 65 associated plasmids. 
-MAGs were then recovered from this data using 12 different MAG pipelines and evaluated for recovery accuracies. 
-Across all pipelines, 81.9-94.3% of chromosomes were recovered and binned. However, only 37.8-44.1% of GIs and 1.5-29.2% of plasmids were recovered and correctly binned at >50% coverage. 
-In terms of AMR and VF genes associated with MGEs, 0-45% of GI-associated AMR genes and 0-16% of GI-associated VF genes were correctly assigned. 
-More strikingly, 0% of plasmid-borne VF or AMR genes were recovered.
-This work shows that regardless of the MAG recovery approach used, plasmid and GI dominated sequences will disproportionately be left unbinned or incorrectly binned. 
-From a public-health perspective, this means MAG approaches are less suited for analysis of mobile genes, especially key groups such as AMR and VF genes. 
-This underlines the utility of read-based and long-read approaches to thoroughly evaluate the resistome in metagenomic data.
+Metagenomic methods are a key tool in the life sciences as they allow simultaneous characterisation of the DNA in a sample without time-consuming and bias-inducing culturing.
+Metagenome-assembled genome (MAG) binning methods have emerged as a promising approach to recover individual resolved genomes from metagenomes.
+However, MAG binning has not been well assessed for its ability to recover key sequences of clinical and biological significance such as mobile genetic elements (MGEs) like plasmids and genomic islands (GIs) with associated antimicrobial resistance (AMR) and virulence factor (VF) genes.
+The variable copy number and sequence composition of these MGEs relative to the host genome makes them potentially problematic for MAG methods. 
+To evaluate this we simulated a low-complexity metagenome comprising 30 GI-rich (up to 16.5%) and plasmid associated (65) bacterial genomes.
+MAGs were then recovered using 12 current MAG pipelines and evaluated for recovery of MGE-associated AMR/VF genes.
+Here we show that while 81.9-94.3% of chromosomes could be correctly recovered and binned the same was true for only 37.8-44.1% of GIs and 1.5-29.2% of plasmid sequences.
+More strikingly, no plasmid-borne VF or AMR genes were recovered and only 0-45% of GI-associated AMR genes or 0-16% of GI-associated VF genes.
+Therefore, regardless of method, MAGs are not well suited for the analysis of mobile genes, especially key groups of public-health importance like AMR and VF genes, and should be paired with read-based and long-read approaches.
 
 
 ## Introduction {#intro}
 
-Metagenomics, the sequencing of fragments of DNA from within an environmental sample, is widely used for characterising microbial communities [@doi:10.1073/pnas.202488399; @doi:10.1038/nbt.3935]. 
-By randomly sampling from the total genomic content these methods allow researchers to simultaneously profile the functional potential and the taxonomic identity of a large proportion of the organisms in a sample. 
-Metagenomic techniques are now being used to profile antimicrobial resistance (AMR) and pathogen virulence. 
+Metagenomics, the sequencing of fragments of DNA from within an environmental sample, is widely used to chracterise the functional potential and identity of microbial communities [@doi:10.1073/pnas.202488399; @doi:10.1038/nbt.3935]. 
 These approaches have been instrumental in developing our understanding of the distribution and evolutionary history of AMR genes [@doi:10.1016/j.cell.2014.08.032; @doi:10.1016/j.mib.2007.08.009; @doi:10.1038/nature10388], as well as tracking pathogen outbreaks [@doi:10.1001/jama.2013.3231].
-
-While long-read DNA sequencing technology (e.g., Oxford Nanopore [@doi:10.1111/1755-0998.12324], PacBio [@doi:10.1126/science.1162986]) is now being used for metagenomic sequencing [@doi:10.1093/gigascience/giz043; @doi:10.1186/s12866-019-1500-0],  high-throughput sequencing of relatively short reads (150-250bp) in platforms such as the Illumina MiSeq currently dominate metagenomic analyses.
-Inference of taxonomic and functional diversity can be assessed directly from sequenced reads using reference databases and BLAST-based sequence similarity search tools (e.g. DIAMOND [@doi:10.1038/nmeth.3176]), read mapping (e.g. Bowtie 2 [@doi:10.1038/nmeth.1923]), Hidden Markov Models (e.g. HMMER3 [@doi:10.1093/bioinformatics/btt403]) or k-mer hashing (e.g. CLARK [@doi:10.1186/s12864-015-1419-2]). 
-These read-based approaches allow analysis of all reads with detectable similarity to genes of interest even if the organism has relatively low abundance in the sample.
+Although long-read DNA technology (e.g., Oxford Nanopore [@doi:10.1111/1755-0998.12324], PacBio [@doi:10.1126/science.1162986]) are now being used for metagenomic sequencing [@doi:10.1093/gigascience/giz043; @doi:10.1186/s12866-019-1500-0],  high-throughput sequencing of relatively short reads (150-250bp) in platforms such as the Illumina MiSeq still dominate metagenomics.
+These reads can be directly analysed using reference databases and a variety of homology search tools (e.g., [@doi:10.1038/nmeth.3176; @doi:10.1038/nmeth.1923; @doi:10.1093/bioinformatics/btt403; @doi:10.1186/s12864-015-1419-2]).
 Since these reads are shorter than most genes, however, read-based methods provide very little information about the genomic organisation of genes.
 This lack of contextual information is particularly problematic in the study of AMR genes and virulence factors as the genomic context plays a role in function [@doi:10.1128/AAC.01710-09], selective pressures [@doi:10.1016/j.tim.2006.02.006], and then likelihood of lateral gene transfer (LGT) [@doi:10.1111/j.1574-6976.2011.00273.x].
 
-Sequence assembly is often used to generate information about genomic context [@doi:10.1038/nature02340]. 
-de Bruijn graph-based assemblers have been developed to handle the particular challenges of this type of data including metaSPAdes [@doi:10.1101/gr.213959.116] , IDBA-UD [@doi:10.1093/bioinformatics/bts174], and megahit [@doi:10.1093/bioinformatics/btv033].
-A crucial challenge in metagenomic analysis is that reads from different organisms must be disentangled to avoid hybrid assemblies.
-A common way to deal with this challenge is to assign all contigs from a given source genomes to a cluster or "bin" based on similarities in the relative abundance and sequence composition.
-These resulting bins are often known as metagenome-assembled genomes (MAGs). 
-This binning is typically performed by grouping all the contigs with similar abundance and similar sequence composition into the same bin. 
-A range of tools have been released to perform this binning including CONCOCT [@doi:10.1093/bioinformatics/btw290], MetaBAT 2 [@doi:10.7287/peerj.preprints.27522v1], and MaxBin 2 [@doi:10.1093/bioinformatics/btv638]. 
-There is also the meta-binning tool DAS Tool [@doi:10.1038/s41564-018-0171-1] which combines predictions from multiple binning tools together. 
-These MAG approaches have been used to great effect in unveiling huge amounts of previously uncharacterised genomic diversity [@doi:10.1038/nature14486; @doi:10.1038/s41564-017-0012-7; @doi:10.1101/489443].
-
-There is loss of information at both the metagenomic assembly and binning steps.
-This compounded data loss means that only a relatively small proportion of reads are successfully assembled and binned in large complex metagenome datasets, for example, 24.2-36.4% of reads from permafrost [@doi:10.1038/s41586-018-0338-1] and soil metagenomes [@doi:10.1038/s41564-019-0449-y]. 
-Additionally, a large number of detected genomes are not reconstructed at all with ~23% of all detected genomes recovered in some examples [@doi:10.1038/s41564-019-0449-y]. 
-The Critical Assessment of Metagenome Interpretation (CAMI) challenge's (https://data.cami-challenge.org/) Assessment of Metagenome BinnERs (AMBER) [@doi:10.1093/gigascience/giy069] assesses the global completeness and purity of recovered MAGs across methods.
-However, to our best knowledge, there hasn't been a specific assessment of the impact of metagenomic assembly and binning on the loss of specific genomic elements.
-In particular, the impact on mobile genetic elements (MGEs), such as genomic islands (GIs) and plasmids, which can be of great health and research importance, has not been evaluated.
+Sequence assembly using specialised metagenomic de Bruijn graph assemblers (e.g., metaSPAdes [@doi:10.1101/gr.213959.116], IDBA-UD [@doi:10.1093/bioinformatics/bts174], and megahit [@doi:10.1093/bioinformatics/btv033]) are often used to try to recover information about genomic context [@doi:10.1038/nature02340].
+To disentangle the resulting mix of longer fragments, there has been a move to group these contigs based on the idea that those from the same source genome will have similar relative abundance and sequence composition.
+These resulting groups or "bins" are known as metagenome-assembled genomes (MAGs). 
+A range of tools have been released to perform this binning including CONCOCT [@doi:10.1093/bioinformatics/btw290], MetaBAT 2 [@doi:10.7287/peerj.preprints.27522v1], MaxBin 2 [@doi:10.1093/bioinformatics/btv638], and a tool which combines their predictions: DAS Tool [@doi:10.1038/s41564-018-0171-1].
+These MAG binning methods have been used to great effect in unveiling previously uncharacterised genomic diversity [@doi:10.1038/nature14486; @doi:10.1038/s41564-017-0012-7; @doi:10.1101/489443] but metagenomic assembly and binning results in the loss of some information.
+This compounded data loss means as little as 24.2-36.4% of reads [@doi:10.1038/s41586-018-0338-1; @doi:10.1038/s41564-019-0449-y] and ~23% of genomes [@doi:10.1038/s41564-019-0449-y] are successfully assembled and binned in some metagenome analyses.
+The Critical Assessment of Metagenome Interpretation (CAMI) challenge's (https://data.cami-challenge.org/) Assessment of Metagenome BinnERs (AMBER) [@doi:10.1093/gigascience/giy069] benchmarks different MAG recovery methods in terms of global completeness and purity of recovered.
+However, to the best of our knowledge, there hasn't been a specific assessment of MAG-based recovery of mobile genetic elements (MGEs) like genomic islands (GIs) and plasmids despite their health and research importance.
 
 Genomic islands (GIs) are clusters of genes that are known or predicted to have been acquired through LGT events. 
 GIs can arise following the integration of MGEs, such as integrons, transposons, integrative and conjugative elements (ICEs) and prophages (integrated phages) [@doi:10.1038/nrmicro2350; @doi:10.1038/nrg3962]; they disproportionately encode virulence factors [@doi:10.1371/journal.pone.0008094] and are a major mechanism of LGT of AMR genes [@doi:10.3389/fmicb.2016.00173; @doi:10.1016/j.plasmid.2015.01.001]. 
-GIs often have different nucleotide composition compared to the rest of the genome [@doi:10.1038/nrmicro2350].
-This compositional difference is exploited by tools designed to detect GIs such as SIGI-HMM [@doi:10.1186/1471-2105-5-22] and IslandPath-DIMOB [@doi:10.1093/bioinformatics/bty095]. 
-GIs may exist as multiple copies within a genome [@doi:10.1093/bib/bby042] leading to potential difficulties in correctly assembling these regions in metagenome assemblies as well as likely biases in the calculation of coverage statistics. 
+GIs often have different nucleotide composition compared to the rest of the genome [@doi:10.1038/nrmicro2350], a trait exploited by tools designed to detect GIs such as SIGI-HMM [@doi:10.1186/1471-2105-5-22] and IslandPath-DIMOB [@doi:10.1093/bioinformatics/bty095]. 
+GIs may also exist as multiple copies within a genome [@doi:10.1093/bib/bby042] leading to potential assembly difficulties and biases in the calculation of coverage statistics.
 
-Plasmids are circular or linear extrachromosomal self-replicating pieces of DNA. 
-Similar to GIs, plasmids's sequence composition are markley different compared to the genome they are associated with [@doi:10.1093/bioinformatics/btq299; @doi:10.1093/molbev/msp281]. 
-This is largely attributable to their repetitive sequences, variable copy number, and different selection pressures [@doi:10.1038/s41559-016-0010; @doi:10.1128/AAC.00235-15].
-Plasmids are of great research importance, these elements are a major source of the lateral dissemination of AMR genes throughout microbial ecosystems [@pmid:26603922; @doi:10.3389/fmicb.2016.00173]. 
-Due to these reasons, the correct assembly of DNA sequence of plasmid origin has proven to be difficult from short read data [@doi:10.1099/mgen.0.000128,@doi:10.1099/mgen.0.000206].
+Plasmids are circular or linear extrachromosomal self-replicating pieces of DNA with variable copy numbers and repetitive sequences [@doi:10.1038/s41559-016-0010; @doi:10.1128/AAC.00235-15].
+Similar to GIs, the sequence composition of plasmids are often markedly different to the genome with which they are associated [@doi:10.1093/bioinformatics/btq299; @doi:10.1093/molbev/msp281]. 
+Plasmids are of great research importance as they are a major source of the lateral dissemination of AMR genes throughout microbial ecosystems [@pmid:26603922; @doi:10.3389/fmicb.2016.00173]. 
 
-GIs and plasmids pose significant challenges in MAG recovery due to their unusual sequence composition and relative abundance; as these MGEs are key to the function and spread of pathogenic traits such as AMR and virulence, it is vital that we assess the impact of metagenome assembly and binning on the representation of these specific elements. 
-This is particularly important with the increasing popularity of MAG approaches within microbial and public-health research. 
-Therefore, to address this issue we performed an analysis of GI and plasmid recovery accuracy across a set of state-of-the-art short-read metagenome assembly and binning approaches using a simulated metagenome comprised of GI- and plasmid-rich taxa.
+These varying composition and relative abundance features mean that GIs and plasmids pose significant challenges in MAG recovery.
+As these MGEs are key to the function and spread of pathogenic traits such as AMR and virulence, and with MAG approaches are becoming increasingly popular within microbial and public-health research, it is both timely and vital that we assess the impact of metagenome assembly and binning on the recovery of these elements. 
+Therefore, to address this issue we performed an analysis of GI and plasmid recovery accuracy across a set of 12 state-of-the-art short-read metagenome assembly and binning approaches using a simulated metagenome comprised of GI- and plasmid-rich taxa.
 
 
 ## Materials and Methods {#methods}
