@@ -10,7 +10,7 @@
   <meta name="author" content="Wing Yin Venus Lau" />
   <meta name="author" content="Robert G. Beiko" />
   <meta name="author" content="Fiona S.L. Brinkman" />
-  <meta name="dcterms.date" content="2020-04-06" />
+  <meta name="dcterms.date" content="2020-04-07" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands</title>
   <style>
@@ -33,8 +33,8 @@
   <meta name="citation_title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
   <meta property="og:title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
-  <meta name="dc.date" content="2020-04-06" />
-  <meta name="citation_publication_date" content="2020-04-06" />
+  <meta name="dc.date" content="2020-04-07" />
+  <meta name="citation_publication_date" content="2020-04-07" />
   <meta name="dc.language" content="en-CA" />
   <meta name="citation_language" content="en-CA" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -62,9 +62,9 @@
   <meta name="citation_fulltext_html_url" content="https://fmaguire.github.io/mag_sim_paper/" />
   <meta name="citation_pdf_url" content="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/a4c6e8908399e42cbc5c612e7b75b72176747e68/" />
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/a4c6e8908399e42cbc5c612e7b75b72176747e68/" />
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/a4c6e8908399e42cbc5c612e7b75b72176747e68/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/ae9814411f98f5369b1d4dc65e63c660735f95da/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/ae9814411f98f5369b1d4dc65e63c660735f95da/" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/ae9814411f98f5369b1d4dc65e63c660735f95da/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,10 +78,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://fmaguire.github.io/mag_sim_paper/v/a4c6e8908399e42cbc5c612e7b75b72176747e68/">permalink</a>)
+(<a href="https://fmaguire.github.io/mag_sim_paper/v/ae9814411f98f5369b1d4dc65e63c660735f95da/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/fmaguire/mag_sim_paper/tree/a4c6e8908399e42cbc5c612e7b75b72176747e68">fmaguire/mag_sim_paper@a4c6e89</a>
-on April 6, 2020.
+from <a href="https://github.com/fmaguire/mag_sim_paper/tree/ae9814411f98f5369b1d4dc65e63c660735f95da">fmaguire/mag_sim_paper@ae98144</a>
+on April 7, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -121,65 +121,46 @@ Faculty of Computer Science, Dalhousie University
 Department of Molecular Biology and Biochemistry, Simon Fraser University
 </small></p></li>
 </ul>
-<h2 id="abstract">Abstract</h2>
-<h3 id="motivation">Motivation</h3>
-<p>Metagenomic methods have emerged as a key tool in public-health microbiology for surveillance of virulence factor (VF) and antimicrobial resistance (AMR) genes.
-However, metagenomic data, even when assembled, typically results in complex, mixed sets DNA sequence fragments rather than fully resolved individual genomes.
-Recently, metagenome-assembled genomes (MAGs) have emerged as a promising approach that groups sequences into bins that are likely derived from the same underlying genome.
-However, MAGs have not been well assessed for their ability to identify some of the key sequences of interest for infectious disease surveillance purposes: AMR and VFs associated with mobile genetic elements (MGEs) such as plasmids and genomic islands (GIs).
-We hypothesized that due to the different copy number and sequence composition of plasmids and GIs compared to core genome sequence, such sequences will be under-represented in MAG-based approaches.</p>
-<h3 id="results">Results</h3>
-<p>To evaluate the impact of MAG recovery methods on recovery of AMR genes and MGEs, we generated a simulated metagenomic dataset comprised of 30 genomes with up to 16.65% of the chromosomal DNA consisting of GIs and 65 associated plasmids.
-MAGs were then recovered from this data using 12 different MAG pipelines and evaluated for recovery accuracies.
-Across all pipelines, 81.9-94.3% of chromosomes were recovered and binned. However, only 37.8-44.1% of GIs and 1.5-29.2% of plasmids were recovered and correctly binned at &gt;50% coverage.
-In terms of AMR and VF genes associated with MGEs, 0-45% of GI-associated AMR genes and 0-16% of GI-associated VF genes were correctly assigned.
-More strikingly, 0% of plasmid-borne VF or AMR genes were recovered.
-This work shows that regardless of the MAG recovery approach used, plasmid and GI dominated sequences will disproportionately be left unbinned or incorrectly binned.
-From a public-health perspective, this means MAG approaches are less suited for analysis of mobile genes, especially key groups such as AMR and VF genes.
-This underlines the utility of read-based and long-read approaches to thoroughly evaluate the resistome in metagenomic data.</p>
+<h2 id="abstract">Introductory Paragraph</h2>
+<p>Metagenomic methods are a key tool in the life sciences as they allow simultaneous characterisation of the DNA in a sample without time-consuming and bias-inducing culturing.
+Metagenome-assembled genome (MAG) binning methods have emerged as a promising approach to recover individual resolved genomes from metagenomes.
+However, MAG binning has not been well assessed for its ability to recover key sequences of clinical and biological significance such as mobile genetic elements (MGEs) like plasmids and genomic islands (GIs) with associated antimicrobial resistance (AMR) and virulence factor (VF) genes.
+The variable copy number and sequence composition of these MGEs relative to the host genome makes them potentially problematic for MAG methods.
+To evaluate this we simulated a low-complexity metagenome comprising 30 GI-rich (up to 16.5%) and plasmid associated (65) bacterial genomes.
+MAGs were then recovered using 12 current MAG pipelines and evaluated for recovery of MGE-associated AMR/VF genes.
+Here we show that while 81.9-94.3% of chromosomes could be correctly recovered and binned the same was true for only 37.8-44.1% of GIs and 1.5-29.2% of plasmid sequences.
+More strikingly, no plasmid-borne VF or AMR genes were recovered and only 0-45% of GI-associated AMR genes or 0-16% of GI-associated VF genes.
+Therefore, regardless of method, MAGs are not well suited for the analysis of mobile genes, especially key groups of public-health importance like AMR and VF genes, and should be paired with read-based and long-read approaches.</p>
 <h2 id="intro">Introduction</h2>
-<p>Metagenomics, the sequencing of fragments of DNA from within an environmental sample, is widely used for characterising microbial communities <span class="citation" data-cites="8PLOeAH6 7RV1Ygsv">[<a href="#ref-8PLOeAH6" role="doc-biblioref">1</a>,<a href="#ref-7RV1Ygsv" role="doc-biblioref">2</a>]</span>.
-By randomly sampling from the total genomic content these methods allow researchers to simultaneously profile the functional potential and the taxonomic identity of a large proportion of the organisms in a sample.
-Metagenomic techniques are now being used to profile antimicrobial resistance (AMR) and pathogen virulence.
-These approaches have been instrumental in developing our understanding of the distribution and evolutionary history of AMR genes <span class="citation" data-cites="rwhLEYRY QSe5BqFk 2xaXclNM">[<a href="#ref-rwhLEYRY" role="doc-biblioref">3</a>,<a href="#ref-QSe5BqFk" role="doc-biblioref">4</a>,<a href="#ref-2xaXclNM" role="doc-biblioref">5</a>]</span>, as well as tracking pathogen outbreaks <span class="citation" data-cites="khJQfjDf">[<a href="#ref-khJQfjDf" role="doc-biblioref">6</a>]</span>.</p>
-<p>While long-read DNA sequencing technology (e.g., Oxford Nanopore <span class="citation" data-cites="19dz2SKIf">[<a href="#ref-19dz2SKIf" role="doc-biblioref">7</a>]</span>, PacBio <span class="citation" data-cites="QbXTukk0">[<a href="#ref-QbXTukk0" role="doc-biblioref">8</a>]</span>) is now being used for metagenomic sequencing <span class="citation" data-cites="U4vhNZoB 1759XyDVi">[<a href="#ref-U4vhNZoB" role="doc-biblioref">9</a>,<a href="#ref-1759XyDVi" role="doc-biblioref">10</a>]</span>, high-throughput sequencing of relatively short reads (150-250bp) in platforms such as the Illumina MiSeq currently dominate metagenomic analyses.
-Inference of taxonomic and functional diversity can be assessed directly from sequenced reads using reference databases and BLAST-based sequence similarity search tools (e.g. DIAMOND <span class="citation" data-cites="4R96QRcV">[<a href="#ref-4R96QRcV" role="doc-biblioref">11</a>]</span>), read mapping (e.g. Bowtie 2 <span class="citation" data-cites="PiS0h6Mu">[<a href="#ref-PiS0h6Mu" role="doc-biblioref">12</a>]</span>), Hidden Markov Models (e.g. HMMER3 <span class="citation" data-cites="77xWEk9S">[<a href="#ref-77xWEk9S" role="doc-biblioref">13</a>]</span>) or k-mer hashing (e.g. CLARK <span class="citation" data-cites="OoKZ0WcH">[<a href="#ref-OoKZ0WcH" role="doc-biblioref">14</a>]</span>).
-These read-based approaches allow analysis of all reads with detectable similarity to genes of interest even if the organism has relatively low abundance in the sample.
+<p>Metagenomics, the sequencing of fragments of DNA from within an environmental sample, is widely used to chracterise the functional potential and identity of microbial communities <span class="citation" data-cites="8PLOeAH6 7RV1Ygsv">[<a href="#ref-8PLOeAH6" role="doc-biblioref">1</a>,<a href="#ref-7RV1Ygsv" role="doc-biblioref">2</a>]</span>.
+These approaches have been instrumental in developing our understanding of the distribution and evolutionary history of AMR genes <span class="citation" data-cites="rwhLEYRY QSe5BqFk 2xaXclNM">[<a href="#ref-rwhLEYRY" role="doc-biblioref">3</a>,<a href="#ref-QSe5BqFk" role="doc-biblioref">4</a>,<a href="#ref-2xaXclNM" role="doc-biblioref">5</a>]</span>, as well as tracking pathogen outbreaks <span class="citation" data-cites="khJQfjDf">[<a href="#ref-khJQfjDf" role="doc-biblioref">6</a>]</span>.
+Although long-read DNA technology (e.g., Oxford Nanopore <span class="citation" data-cites="19dz2SKIf">[<a href="#ref-19dz2SKIf" role="doc-biblioref">7</a>]</span>, PacBio <span class="citation" data-cites="QbXTukk0">[<a href="#ref-QbXTukk0" role="doc-biblioref">8</a>]</span>) are now being used for metagenomic sequencing <span class="citation" data-cites="U4vhNZoB 1759XyDVi">[<a href="#ref-U4vhNZoB" role="doc-biblioref">9</a>,<a href="#ref-1759XyDVi" role="doc-biblioref">10</a>]</span>, high-throughput sequencing of relatively short reads (150-250bp) in platforms such as the Illumina MiSeq still dominate metagenomics.
+These reads can be directly analysed using reference databases and a variety of homology search tools (e.g., <span class="citation" data-cites="4R96QRcV PiS0h6Mu 77xWEk9S OoKZ0WcH">[<a href="#ref-4R96QRcV" role="doc-biblioref">11</a>,<a href="#ref-PiS0h6Mu" role="doc-biblioref">12</a>,<a href="#ref-77xWEk9S" role="doc-biblioref">13</a>,<a href="#ref-OoKZ0WcH" role="doc-biblioref">14</a>]</span>).
 Since these reads are shorter than most genes, however, read-based methods provide very little information about the genomic organisation of genes.
 This lack of contextual information is particularly problematic in the study of AMR genes and virulence factors as the genomic context plays a role in function <span class="citation" data-cites="17Dww6tOF">[<a href="#ref-17Dww6tOF" role="doc-biblioref">15</a>]</span>, selective pressures <span class="citation" data-cites="1BcFmOfCH">[<a href="#ref-1BcFmOfCH" role="doc-biblioref">16</a>]</span>, and then likelihood of lateral gene transfer (LGT) <span class="citation" data-cites="SACLvb9k">[<a href="#ref-SACLvb9k" role="doc-biblioref">17</a>]</span>.</p>
-<p>Sequence assembly is often used to generate information about genomic context <span class="citation" data-cites="F7RexqdF">[<a href="#ref-F7RexqdF" role="doc-biblioref">18</a>]</span>.
-de Bruijn graph-based assemblers have been developed to handle the particular challenges of this type of data including metaSPAdes <span class="citation" data-cites="KP5SjPXN">[<a href="#ref-KP5SjPXN" role="doc-biblioref">19</a>]</span> , IDBA-UD <span class="citation" data-cites="a4mT7fuU">[<a href="#ref-a4mT7fuU" role="doc-biblioref">20</a>]</span>, and megahit <span class="citation" data-cites="1EUV0Ejkr">[<a href="#ref-1EUV0Ejkr" role="doc-biblioref">21</a>]</span>.
-A crucial challenge in metagenomic analysis is that reads from different organisms must be disentangled to avoid hybrid assemblies.
-A common way to deal with this challenge is to assign all contigs from a given source genomes to a cluster or “bin” based on similarities in the relative abundance and sequence composition.
-These resulting bins are often known as metagenome-assembled genomes (MAGs).
-This binning is typically performed by grouping all the contigs with similar abundance and similar sequence composition into the same bin.
-A range of tools have been released to perform this binning including CONCOCT <span class="citation" data-cites="WRoCf6pg">[<a href="#ref-WRoCf6pg" role="doc-biblioref">22</a>]</span>, MetaBAT 2 <span class="citation" data-cites="b2WO18xh">[<a href="#ref-b2WO18xh" role="doc-biblioref">23</a>]</span>, and MaxBin 2 <span class="citation" data-cites="sG4CX8Uj">[<a href="#ref-sG4CX8Uj" role="doc-biblioref">24</a>]</span>.
-There is also the meta-binning tool DAS Tool <span class="citation" data-cites="DfIRBmdF">[<a href="#ref-DfIRBmdF" role="doc-biblioref">25</a>]</span> which combines predictions from multiple binning tools together.
-These MAG approaches have been used to great effect in unveiling huge amounts of previously uncharacterised genomic diversity <span class="citation" data-cites="4rsFboY4 wrBRBdFb Rk2NATlI">[<a href="#ref-4rsFboY4" role="doc-biblioref">26</a>,<a href="#ref-wrBRBdFb" role="doc-biblioref">27</a>,<a href="#ref-Rk2NATlI" role="doc-biblioref">28</a>]</span>.</p>
-<p>There is loss of information at both the metagenomic assembly and binning steps.
-This compounded data loss means that only a relatively small proportion of reads are successfully assembled and binned in large complex metagenome datasets, for example, 24.2-36.4% of reads from permafrost <span class="citation" data-cites="buqrbdBh">[<a href="#ref-buqrbdBh" role="doc-biblioref">29</a>]</span> and soil metagenomes <span class="citation" data-cites="d5Hh0941">[<a href="#ref-d5Hh0941" role="doc-biblioref">30</a>]</span>.
-Additionally, a large number of detected genomes are not reconstructed at all with ~23% of all detected genomes recovered in some examples <span class="citation" data-cites="d5Hh0941">[<a href="#ref-d5Hh0941" role="doc-biblioref">30</a>]</span>.
-The Critical Assessment of Metagenome Interpretation (CAMI) challenge’s (https://data.cami-challenge.org/) Assessment of Metagenome BinnERs (AMBER) <span class="citation" data-cites="Y8sHlHi">[<a href="#ref-Y8sHlHi" role="doc-biblioref">31</a>]</span> assesses the global completeness and purity of recovered MAGs across methods.
-However, to our best knowledge, there hasn’t been a specific assessment of the impact of metagenomic assembly and binning on the loss of specific genomic elements.
-In particular, the impact on mobile genetic elements (MGEs), such as genomic islands (GIs) and plasmids, which can be of great health and research importance, has not been evaluated.</p>
+<p>Sequence assembly using specialised metagenomic de Bruijn graph assemblers (e.g., metaSPAdes <span class="citation" data-cites="KP5SjPXN">[<a href="#ref-KP5SjPXN" role="doc-biblioref">18</a>]</span>, IDBA-UD <span class="citation" data-cites="a4mT7fuU">[<a href="#ref-a4mT7fuU" role="doc-biblioref">19</a>]</span>, and megahit <span class="citation" data-cites="1EUV0Ejkr">[<a href="#ref-1EUV0Ejkr" role="doc-biblioref">20</a>]</span>) are often used to try to recover information about genomic context <span class="citation" data-cites="F7RexqdF">[<a href="#ref-F7RexqdF" role="doc-biblioref">21</a>]</span>.
+To disentangle the resulting mix of longer fragments, there has been a move to group these contigs based on the idea that those from the same source genome will have similar relative abundance and sequence composition.
+These resulting groups or “bins” are known as metagenome-assembled genomes (MAGs).
+A range of tools have been released to perform this binning including CONCOCT <span class="citation" data-cites="WRoCf6pg">[<a href="#ref-WRoCf6pg" role="doc-biblioref">22</a>]</span>, MetaBAT 2 <span class="citation" data-cites="b2WO18xh">[<a href="#ref-b2WO18xh" role="doc-biblioref">23</a>]</span>, MaxBin 2 <span class="citation" data-cites="sG4CX8Uj">[<a href="#ref-sG4CX8Uj" role="doc-biblioref">24</a>]</span>, and a tool which combines their predictions: DAS Tool <span class="citation" data-cites="DfIRBmdF">[<a href="#ref-DfIRBmdF" role="doc-biblioref">25</a>]</span>.
+These MAG binning methods have been used to great effect in unveiling previously uncharacterised genomic diversity <span class="citation" data-cites="4rsFboY4 wrBRBdFb Rk2NATlI">[<a href="#ref-4rsFboY4" role="doc-biblioref">26</a>,<a href="#ref-wrBRBdFb" role="doc-biblioref">27</a>,<a href="#ref-Rk2NATlI" role="doc-biblioref">28</a>]</span> but metagenomic assembly and binning results in the loss of some information.
+This compounded data loss means as little as 24.2-36.4% of reads <span class="citation" data-cites="buqrbdBh d5Hh0941">[<a href="#ref-buqrbdBh" role="doc-biblioref">29</a>,<a href="#ref-d5Hh0941" role="doc-biblioref">30</a>]</span> and ~23% of genomes <span class="citation" data-cites="d5Hh0941">[<a href="#ref-d5Hh0941" role="doc-biblioref">30</a>]</span> are successfully assembled and binned in some metagenome analyses.
+The Critical Assessment of Metagenome Interpretation (CAMI) challenge’s (https://data.cami-challenge.org/) Assessment of Metagenome BinnERs (AMBER) <span class="citation" data-cites="Y8sHlHi">[<a href="#ref-Y8sHlHi" role="doc-biblioref">31</a>]</span> benchmarks different MAG recovery methods in terms of global completeness and purity of recovered.
+However, to the best of our knowledge, there hasn’t been a specific assessment of MAG-based recovery of mobile genetic elements (MGEs) like genomic islands (GIs) and plasmids despite their health and research importance.</p>
 <p>Genomic islands (GIs) are clusters of genes that are known or predicted to have been acquired through LGT events.
 GIs can arise following the integration of MGEs, such as integrons, transposons, integrative and conjugative elements (ICEs) and prophages (integrated phages) <span class="citation" data-cites="DET3tBYj 1Af4oXwEX">[<a href="#ref-DET3tBYj" role="doc-biblioref">32</a>,<a href="#ref-1Af4oXwEX" role="doc-biblioref">33</a>]</span>; they disproportionately encode virulence factors <span class="citation" data-cites="LxGqo7iq">[<a href="#ref-LxGqo7iq" role="doc-biblioref">34</a>]</span> and are a major mechanism of LGT of AMR genes <span class="citation" data-cites="x7HhCKyS 17U91060Y">[<a href="#ref-x7HhCKyS" role="doc-biblioref">35</a>,<a href="#ref-17U91060Y" role="doc-biblioref">36</a>]</span>.
-GIs often have different nucleotide composition compared to the rest of the genome <span class="citation" data-cites="DET3tBYj">[<a href="#ref-DET3tBYj" role="doc-biblioref">32</a>]</span>.
-This compositional difference is exploited by tools designed to detect GIs such as SIGI-HMM <span class="citation" data-cites="19UeQywMr">[<a href="#ref-19UeQywMr" role="doc-biblioref">37</a>]</span> and IslandPath-DIMOB <span class="citation" data-cites="M1pdcdMy">[<a href="#ref-M1pdcdMy" role="doc-biblioref">38</a>]</span>.
-GIs may exist as multiple copies within a genome <span class="citation" data-cites="5g9Xc4ot">[<a href="#ref-5g9Xc4ot" role="doc-biblioref">39</a>]</span> leading to potential difficulties in correctly assembling these regions in metagenome assemblies as well as likely biases in the calculation of coverage statistics.</p>
-<p>Plasmids are circular or linear extrachromosomal self-replicating pieces of DNA.
-Similar to GIs, plasmids’s sequence composition are markley different compared to the genome they are associated with <span class="citation" data-cites="QK9dmRUA ps1aOiRU">[<a href="#ref-QK9dmRUA" role="doc-biblioref">40</a>,<a href="#ref-ps1aOiRU" role="doc-biblioref">41</a>]</span>.
-This is largely attributable to their repetitive sequences, variable copy number, and different selection pressures <span class="citation" data-cites="qtpTcNWp Z1irb7eF">[<a href="#ref-qtpTcNWp" role="doc-biblioref">42</a>,<a href="#ref-Z1irb7eF" role="doc-biblioref">43</a>]</span>.
-Plasmids are of great research importance, these elements are a major source of the lateral dissemination of AMR genes throughout microbial ecosystems <span class="citation" data-cites="X9j9vETu x7HhCKyS">[<a href="#ref-x7HhCKyS" role="doc-biblioref">35</a>,<a href="#ref-X9j9vETu" role="doc-biblioref">44</a>]</span>.
-Due to these reasons, the correct assembly of DNA sequence of plasmid origin has proven to be difficult from short read data <span class="citation" data-cites="12zFifp5x">[<a href="#ref-12zFifp5x" role="doc-biblioref">45</a>]</span>.</p>
-<p>GIs and plasmids pose significant challenges in MAG recovery due to their unusual sequence composition and relative abundance; as these MGEs are key to the function and spread of pathogenic traits such as AMR and virulence, it is vital that we assess the impact of metagenome assembly and binning on the representation of these specific elements.
-This is particularly important with the increasing popularity of MAG approaches within microbial and public-health research.
-Therefore, to address this issue we performed an analysis of GI and plasmid recovery accuracy across a set of state-of-the-art short-read metagenome assembly and binning approaches using a simulated metagenome comprised of GI- and plasmid-rich taxa.</p>
+GIs often have different nucleotide composition compared to the rest of the genome <span class="citation" data-cites="DET3tBYj">[<a href="#ref-DET3tBYj" role="doc-biblioref">32</a>]</span>, a trait exploited by tools designed to detect GIs such as SIGI-HMM <span class="citation" data-cites="19UeQywMr">[<a href="#ref-19UeQywMr" role="doc-biblioref">37</a>]</span> and IslandPath-DIMOB <span class="citation" data-cites="M1pdcdMy">[<a href="#ref-M1pdcdMy" role="doc-biblioref">38</a>]</span>.
+GIs may also exist as multiple copies within a genome <span class="citation" data-cites="5g9Xc4ot">[<a href="#ref-5g9Xc4ot" role="doc-biblioref">39</a>]</span> leading to potential assembly difficulties and biases in the calculation of coverage statistics.</p>
+<p>Plasmids are circular or linear extrachromosomal self-replicating pieces of DNA with variable copy numbers and repetitive sequences <span class="citation" data-cites="qtpTcNWp Z1irb7eF">[<a href="#ref-qtpTcNWp" role="doc-biblioref">40</a>,<a href="#ref-Z1irb7eF" role="doc-biblioref">41</a>]</span>.
+Similar to GIs, the sequence composition of plasmids are often markedly different to the genome with which they are associated <span class="citation" data-cites="QK9dmRUA ps1aOiRU">[<a href="#ref-QK9dmRUA" role="doc-biblioref">42</a>,<a href="#ref-ps1aOiRU" role="doc-biblioref">43</a>]</span>.
+Plasmids are of great research importance as they are a major source of the lateral dissemination of AMR genes throughout microbial ecosystems <span class="citation" data-cites="X9j9vETu x7HhCKyS">[<a href="#ref-x7HhCKyS" role="doc-biblioref">35</a>,<a href="#ref-X9j9vETu" role="doc-biblioref">44</a>]</span>.</p>
+<p>These varying composition and relative abundance features mean that GIs and plasmids pose significant challenges in MAG recovery.
+As these MGEs are key to the function and spread of pathogenic traits such as AMR and virulence, and with MAG approaches are becoming increasingly popular within microbial and public-health research, it is both timely and vital that we assess the impact of metagenome assembly and binning on the recovery of these elements.
+Therefore, to address this issue we performed an analysis of GI and plasmid recovery accuracy across a set of 12 state-of-the-art short-read metagenome assembly and binning approaches using a simulated metagenome comprised of GI- and plasmid-rich taxa.</p>
 <h2 id="methods">Materials and Methods</h2>
 <p>All analyses presented in this paper can be reproduced and inspected with the associated github repository <a href="github.com/fmaguire/MAG_gi_plasmid_analysis">github.com/fmaguire/MAG_gi_plasmid_analysis</a> and data repository <a href="osf.io/nrejs/">osf.io/nrejs/</a>.</p>
 <h3 id="metagenome-simulation">Metagenome Simulation</h3>
 <p>All genomes were selected from the set of completed RefSeq genomes as of April 2019.
-Genomic islands for these genomes were previously predicted using IslandPath-DIMOB <span class="citation" data-cites="M1pdcdMy">[<a href="#ref-M1pdcdMy" role="doc-biblioref">38</a>]</span> and collated into the IslandViewer database <a href="www.pathogenomics.sfu.ca/islandviewer">www.pathogenomics.sfu.ca/islandviewer</a> <span class="citation" data-cites="4eEyIkDg">[<a href="#ref-4eEyIkDg" role="doc-biblioref">47</a>]</span>.
+Genomic islands for these genomes were previously predicted using IslandPath-DIMOB <span class="citation" data-cites="M1pdcdMy">[<a href="#ref-M1pdcdMy" role="doc-biblioref">38</a>]</span> and collated into the IslandViewer database <a href="www.pathogenomics.sfu.ca/islandviewer">www.pathogenomics.sfu.ca/islandviewer</a> <span class="citation" data-cites="4eEyIkDg">[<a href="#ref-4eEyIkDg" role="doc-biblioref">45</a>]</span>.
 Plasmid sequences were recovered for each genome using the linked GenBank Project IDs.
 Thirty genomes were manually selected to satisfy the following criteria:</p>
 <ol type="1">
@@ -189,18 +170,18 @@ Thirty genomes were manually selected to satisfy the following criteria:</p>
 </ol>
 <p>The data used to select the taxa is listed in Supplemental Table 1 and the details of the selected subset taxa are listed in Supplemental Table 2 with their NCBI accessions.
 The sequences themselves are available in the data repository <a href="osf.io/nrejs/">osf.io/nrejs/</a> under “data/sequences”.</p>
-<p>In accordance with the recommendation in the CAMI challenge <span class="citation" data-cites="lsbnKJf8">[<a href="#ref-lsbnKJf8" role="doc-biblioref">48</a>]</span> the genomes were randomly assigned a relative abundance following a log-normal distribution (μ = 1, σ = 2).
+<p>In accordance with the recommendation in the CAMI challenge <span class="citation" data-cites="lsbnKJf8">[<a href="#ref-lsbnKJf8" role="doc-biblioref">46</a>]</span> the genomes were randomly assigned a relative abundance following a log-normal distribution (μ = 1, σ = 2).
 Plasmid copy number estimates could not be accurately found for all organisms, therefore, plasmids were randomly assigned a copy number regime: low (1-20), medium (20-100), or high (500-1000) at a 2:1:1 rate.
 Within each regime, the exact copy number was selected using an appropriately scaled gamma distribution (α = 4, β = 1) truncated to the regime range.</p>
 <p>Finally, the effective plasmid relative abundance was determined by multiplying the plasmid copy number with the genome relative abundance.
 The full set of randomly assigned relative abundances and copy numbers can be found in Supplemental Table 3.
 Sequences were then concatenated into a single FASTA file with the appropriate relative abundance.
-MiSeq v3 250bp paired-end reads with a mean fragment length of 1000bp (standard deviation of 50bp) were then simulated using art_illumina (v2016.06.05) <span class="citation" data-cites="znONJtTo">[<a href="#ref-znONJtTo" role="doc-biblioref">49</a>]</span> resulting in a simulated metagenome of 31,174,411 read pairs.
+MiSeq v3 250bp paired-end reads with a mean fragment length of 1000bp (standard deviation of 50bp) were then simulated using art_illumina (v2016.06.05) <span class="citation" data-cites="znONJtTo">[<a href="#ref-znONJtTo" role="doc-biblioref">47</a>]</span> resulting in a simulated metagenome of 31,174,411 read pairs.
 The selection of relative abundance and metagenome simulation itself was performed using the “data_simluation/simulate_metagenome.py” script.</p>
 <h3 id="metagenome-assembled-genome-recovery">Metagenome Assembled Genome Recovery</h3>
-<p>Reads were trimmed using sickle (v1.33) <span class="citation" data-cites="1CBlSILo4">[<a href="#ref-1CBlSILo4" role="doc-biblioref">50</a>]</span> resulting in 25,682,644 surviving read pairs.
-The trimmed reads were then assembled using 3 different metagenomic assemblers: metaSPAdes (v3.13.0) <span class="citation" data-cites="KP5SjPXN">[<a href="#ref-KP5SjPXN" role="doc-biblioref">19</a>]</span>, IDBA-UD (v1.1.3) <span class="citation" data-cites="a4mT7fuU">[<a href="#ref-a4mT7fuU" role="doc-biblioref">20</a>]</span>, and megahit (v1.1.3) <span class="citation" data-cites="1EUV0Ejkr">[<a href="#ref-1EUV0Ejkr" role="doc-biblioref">21</a>]</span>).
-The resulting assemblies were summarised using metaQUAST (v5.0.2) <span class="citation" data-cites="TeRvtMCl">[<a href="#ref-TeRvtMCl" role="doc-biblioref">51</a>]</span>.
+<p>Reads were trimmed using sickle (v1.33) <span class="citation" data-cites="1CBlSILo4">[<a href="#ref-1CBlSILo4" role="doc-biblioref">48</a>]</span> resulting in 25,682,644 surviving read pairs.
+The trimmed reads were then assembled using 3 different metagenomic assemblers: metaSPAdes (v3.13.0) <span class="citation" data-cites="KP5SjPXN">[<a href="#ref-KP5SjPXN" role="doc-biblioref">18</a>]</span>, IDBA-UD (v1.1.3) <span class="citation" data-cites="a4mT7fuU">[<a href="#ref-a4mT7fuU" role="doc-biblioref">19</a>]</span>, and megahit (v1.1.3) <span class="citation" data-cites="1EUV0Ejkr">[<a href="#ref-1EUV0Ejkr" role="doc-biblioref">20</a>]</span>).
+The resulting assemblies were summarised using metaQUAST (v5.0.2) <span class="citation" data-cites="TeRvtMCl">[<a href="#ref-TeRvtMCl" role="doc-biblioref">49</a>]</span>.
 The assemblies were then indexed and reads mapped back using Bowtie 2 (v2.3.4.3) <span class="citation" data-cites="PiS0h6Mu">[<a href="#ref-PiS0h6Mu" role="doc-biblioref">12</a>]</span>.</p>
 <p>Samtools (v1.9) was used to sort the read mappings and the read coverage calculated using the MetaBAT2 accessory script (jgi_summarize_bam_contig_depths).
 The three metagenome assemblies were then separately binned using MetaBAT2 (v2.13) <span class="citation" data-cites="b2WO18xh">[<a href="#ref-b2WO18xh" role="doc-biblioref">23</a>]</span>, and MaxBin 2 (v2.2.6) <span class="citation" data-cites="sG4CX8Uj">[<a href="#ref-sG4CX8Uj" role="doc-biblioref">24</a>]</span>.
@@ -211,16 +192,16 @@ Finally, for each metagenome assembly the predicted bins from these three binner
 This resulted in 12 separate sets of MAGs (one set for each assembler and binner pair).</p>
 <h3 id="mag-assessment">MAG assessment</h3>
 <h4 id="chromosomal-coverage">Chromosomal Coverage</h4>
-<p>The MAG assessment for chromosomal coverage was performed by creating a BLASTN 2.9.0+ <span class="citation" data-cites="nEsJGUWa">[<a href="#ref-nEsJGUWa" role="doc-biblioref">52</a>]</span> database consisting of all the chromosomes of the input reference genomes.
+<p>The MAG assessment for chromosomal coverage was performed by creating a BLASTN 2.9.0+ <span class="citation" data-cites="nEsJGUWa">[<a href="#ref-nEsJGUWa" role="doc-biblioref">50</a>]</span> database consisting of all the chromosomes of the input reference genomes.
 Each MAG contig was then used as a query against this database and the coverage of the underlying chromosomes tallied by merging the overlapping aligning regions and summing the total length of aligned MAG contigs.
 The most represented genome in each MAG was assigned as the “identity” of that MAG for further analyses.
 Coverages less than 5% were filtered out and the number of different genomes that contigs from a given MAG aligned to were tallied.
 Finally, the overall proportion of chromosomes that were not present in any MAG was tallied for each binner and assembler.</p>
 <p>In order to investigate the impact of close relatives in the metagenome on ability to bin chromosomes we generated a phylogenetic tree for all the input genomes.
-Specifically, single copy universal bacterial proteins were identified in the reference genomes using BUSCO v4.0.2 with the Bacteria Odb10 data <span class="citation" data-cites="S53q1T30">[<a href="#ref-S53q1T30" role="doc-biblioref">53</a>]</span>.
-The 86 of these proteins that were found in every reference genome were concatenated and aligned using MAFFT v7.427 <span class="citation" data-cites="L3vmZEmK">[<a href="#ref-L3vmZEmK" role="doc-biblioref">54</a>]</span> and masked with trimal v1.4.1-3 <span class="citation" data-cites="GCsU1nyf">[<a href="#ref-GCsU1nyf" role="doc-biblioref">55</a>]</span>.
-A maximum-likelihood phylogeny was then inferred with IQ-Tree v1.6.12 <span class="citation" data-cites="JOWSuu8G">[<a href="#ref-JOWSuu8G" role="doc-biblioref">56</a>]</span> with the in-built ModelFinder determined partitioning <span class="citation" data-cites="P9j0gC8x">[<a href="#ref-P9j0gC8x" role="doc-biblioref">57</a>]</span>.
-Pairwise branch distances were then extracted from the resulting tree using ETE3 v3.1.1 <span class="citation" data-cites="5F7ii9Ji">[<a href="#ref-5F7ii9Ji" role="doc-biblioref">58</a>]</span> and regressed using a linear model against coverage and contamination in seaborn v0.10.0 <span class="citation" data-cites="LeLYF4iC">[<a href="#ref-LeLYF4iC" role="doc-biblioref">59</a>]</span>.</p>
+Specifically, single copy universal bacterial proteins were identified in the reference genomes using BUSCO v4.0.2 with the Bacteria Odb10 data <span class="citation" data-cites="S53q1T30">[<a href="#ref-S53q1T30" role="doc-biblioref">51</a>]</span>.
+The 86 of these proteins that were found in every reference genome were concatenated and aligned using MAFFT v7.427 <span class="citation" data-cites="L3vmZEmK">[<a href="#ref-L3vmZEmK" role="doc-biblioref">52</a>]</span> and masked with trimal v1.4.1-3 <span class="citation" data-cites="GCsU1nyf">[<a href="#ref-GCsU1nyf" role="doc-biblioref">53</a>]</span>.
+A maximum-likelihood phylogeny was then inferred with IQ-Tree v1.6.12 <span class="citation" data-cites="JOWSuu8G">[<a href="#ref-JOWSuu8G" role="doc-biblioref">54</a>]</span> with the in-built ModelFinder determined partitioning <span class="citation" data-cites="P9j0gC8x">[<a href="#ref-P9j0gC8x" role="doc-biblioref">55</a>]</span>.
+Pairwise branch distances were then extracted from the resulting tree using ETE3 v3.1.1 <span class="citation" data-cites="5F7ii9Ji">[<a href="#ref-5F7ii9Ji" role="doc-biblioref">56</a>]</span> and regressed using a linear model against coverage and contamination in seaborn v0.10.0 <span class="citation" data-cites="LeLYF4iC">[<a href="#ref-LeLYF4iC" role="doc-biblioref">57</a>]</span>.</p>
 <h4 id="plasmid-and-gi-coverage">Plasmid and GI Coverage</h4>
 <p>Plasmid and GI coverage were assessed in the same way.
 Firstly, a BLASTN database was generated for each set of MAG contigs.
@@ -230,17 +211,17 @@ The subset of these that were found in the binned MAGs was then separately talli
 Finally, we evaluated the proportion of plasmids or GIs that were correctly assigned to the bin that was maximally composed of chromosomes from the same source genome.</p>
 <h3 id="antimicrobial-resistance-and-virulence-factors-assessment">Antimicrobial Resistance and Virulence Factors Assessment</h3>
 <h4 id="detection-of-amrvf-genes">Detection of AMR/VF Genes</h4>
-<p>For the reference genomes, as well as 12 sets of MAGs, prodigal <span class="citation" data-cites="lX665mdh">[<a href="#ref-lX665mdh" role="doc-biblioref">60</a>]</span> was used to predict open reading frames (ORFs) using the default parameters.
-AMR genes were predicted using Resistance Gene Identifier (RGI v5.0.0; default parameters) and the Comprehensive Antibiotic Resistance Database (CARD v3.0.3) <span class="citation" data-cites="1ByMfX8Y1">[<a href="#ref-1ByMfX8Y1" role="doc-biblioref">61</a>]</span>.
-Virulence factors were predicted using the predicted ORFs and BLASTX 2.9.0+ <span class="citation" data-cites="nEsJGUWa">[<a href="#ref-nEsJGUWa" role="doc-biblioref">52</a>]</span> against the Virulence Factor Database (VFDB; obtained on Aug 26, 2019) with an e-value cut-off of 0.001 and a minimum identity of 90% <span class="citation" data-cites="pYB1SP5">[<a href="#ref-pYB1SP5" role="doc-biblioref">62</a>]</span>.
+<p>For the reference genomes, as well as 12 sets of MAGs, prodigal <span class="citation" data-cites="lX665mdh">[<a href="#ref-lX665mdh" role="doc-biblioref">58</a>]</span> was used to predict open reading frames (ORFs) using the default parameters.
+AMR genes were predicted using Resistance Gene Identifier (RGI v5.0.0; default parameters) and the Comprehensive Antibiotic Resistance Database (CARD v3.0.3) <span class="citation" data-cites="1ByMfX8Y1">[<a href="#ref-1ByMfX8Y1" role="doc-biblioref">59</a>]</span>.
+Virulence factors were predicted using the predicted ORFs and BLASTX 2.9.0+ <span class="citation" data-cites="nEsJGUWa">[<a href="#ref-nEsJGUWa" role="doc-biblioref">50</a>]</span> against the Virulence Factor Database (VFDB; obtained on Aug 26, 2019) with an e-value cut-off of 0.001 and a minimum identity of 90% <span class="citation" data-cites="pYB1SP5">[<a href="#ref-pYB1SP5" role="doc-biblioref">60</a>]</span>.
 Each MAG was then assigned to a reference chromosome using the above mentioned mapping criteria for downstream analysis.</p>
 <h4 id="amrvf-gene-recovery">AMR/VF Gene Recovery</h4>
 <p>For each MAG set, we counted the total number of AMR/VF genes recovered in each metagenomic assembly and each MAG and compared this to the number predicted in their assigned reference chromosome and plasmids.
 We then assessed the ability for MAGs to correctly bin AMR/VF genes of chromosomal, plasmid and GI origin by mapping the location of the reference replicon’s predicted genes to the location of the same genes in the MAGs.</p>
 <h4 id="protein-subcellular-localization-predictions">Protein subcellular localization predictions</h4>
 <p>We then sought to assess what the impact of a protein’s predicted subcellular localization was on its recovery and binning in MAGs.
-The MAG bins from megahit-DAS Tool assembler-binner combination were selected (as generally best performing) and ORFs predicted using prodigal <span class="citation" data-cites="lX665mdh">[<a href="#ref-lX665mdh" role="doc-biblioref">60</a>]</span> as above.
-Subcellular localisation of these proteins were then predicted using PSORTb v3.0 with default parameters and the appropriate Gram setting for that bin’s assigned taxa <span class="citation" data-cites="19bHWbO47">[<a href="#ref-19bHWbO47" role="doc-biblioref">63</a>]</span>.</p>
+The MAG bins from megahit-DAS Tool assembler-binner combination were selected (as generally best performing) and ORFs predicted using prodigal <span class="citation" data-cites="lX665mdh">[<a href="#ref-lX665mdh" role="doc-biblioref">58</a>]</span> as above.
+Subcellular localisation of these proteins were then predicted using PSORTb v3.0 with default parameters and the appropriate Gram setting for that bin’s assigned taxa <span class="citation" data-cites="19bHWbO47">[<a href="#ref-19bHWbO47" role="doc-biblioref">61</a>]</span>.</p>
 <h2 id="results">Results</h2>
 <h3 id="recovery-of-genomic-elements">Recovery of Genomic Elements</h3>
 <h4 id="chromosomes">Chromosomes</h4>
@@ -336,8 +317,8 @@ Potentially, CONCOCT binning could be used to distinguish closely related specie
 Partial MGEs may be useful for some research, but for researchers interested in selective pressures and lateral gene transfer this may lead to inaccurate inferences.</p>
 <p>This poor result is not unexpected as genomic islands and plasmids have known divergent compositional features and are often repetitive with variable copy numbers relative to the chromosome.
 Furthermore, the difference between the percentages suggests that binning plasmids is harder than binning GIs.
-This difference might be attributed to the known difficulties in assembly of plasmids from short-read data <span class="citation" data-cites="1EFAqjrRj">[<a href="#ref-1EFAqjrRj" role="doc-biblioref">64</a>]</span>.
-Therefore, binning efficiency might improve if we use DNA sequencing and assembly methods optimised for recovering plasmids <span class="citation" data-cites="12zFifp5x">[<a href="#ref-12zFifp5x" role="doc-biblioref">45</a>]</span> (such as SCAPP <span class="citation" data-cites="5bpLJeyh">[<a href="#ref-5bpLJeyh" role="doc-biblioref">65</a>]</span>).</p>
+This difference might be attributed to the known difficulties in assembly of plasmids from short-read data <span class="citation" data-cites="1EFAqjrRj">[<a href="#ref-1EFAqjrRj" role="doc-biblioref">62</a>]</span>.
+Therefore, binning efficiency might improve if we use DNA sequencing and assembly methods optimised for recovering plasmids <span class="citation" data-cites="12zFifp5x">[<a href="#ref-12zFifp5x" role="doc-biblioref">63</a>]</span> (such as SCAPP <span class="citation" data-cites="5bpLJeyh">[<a href="#ref-5bpLJeyh" role="doc-biblioref">64</a>]</span>).</p>
 <p>Due to the importance of MGEs in the dissemination of clinically relevant AMR genes and VFs, we explored whether or not MAG approaches can be used to provide useful insight into the LGT of these genes.
 With respect to AMR genes, MAG methods were able to recover roughly 40% of all AMR genes present in our reference genomes.
 We noted a sharp drop in the number of AMR genes detected between assemblies and MAGs, suggesting that many of these genes were left in the unbinned portion.
@@ -356,13 +337,13 @@ This drastic reduction in recovery accuracy of mobile elements, especially GIs, 
 Previous studies have found that VFs are disproportionately present on GIs<span class="citation" data-cites="LxGqo7iq">[<a href="#ref-LxGqo7iq" role="doc-biblioref">34</a>]</span>, which might be the reason why the recovery accuracy was worse compared to AMR genes.
 Together, this and the AMR gene results suggest that MAG-based methods might be of limited utility in public health research focused on the transmission and dissemination of AMR genes and VFs.</p>
 <p>One potential caveat is that some AMR genes and VFs successfully assembled in the MAGs may no longer be annotated as such due to issues with ORF prediction (see suppl. discussion &amp; Fig. <a href="#fig:geneContent">7</a>).
-Previous studies have observed that ORF predictions in draft genomes are more fragmented, which can lead to downstream over- or under-annotation with functional labels depending on the approach used <span class="citation" data-cites="1EZyZrHhJ">[<a href="#ref-1EZyZrHhJ" role="doc-biblioref">66</a>]</span>.
+Previous studies have observed that ORF predictions in draft genomes are more fragmented, which can lead to downstream over- or under-annotation with functional labels depending on the approach used <span class="citation" data-cites="1EZyZrHhJ">[<a href="#ref-1EZyZrHhJ" role="doc-biblioref">65</a>]</span>.
 Similarly, if the ORFs predicted in the MAGs differ in sequence or degree of fragmentation from the corresponding ORFs predicted in the original reference genomes (or are no longer predicted at all), this could impact recovery of AMR/VF predictions, even though the sequences themselves may be partially or fully present in the assembly.</p>
 <p>It should also be noted that while CONCOCT performed the best in terms of recovery of both chromosomes and MGEs, it created many relatively clean but fragmentary partial MAGs.
 While this might be ideal for some users, caution should be taken in using CONCOCT when assuming a bin represents a whole genome.</p>
 <p>With the recovery of plasmids, GIs, VFs, and AMR genes the same pattern was observed, a progressive loss of data in each analytical step.
 The process of metagenomic assembly itself generally resulted in the loss of most of these elements/genes regardless of the assembly method used.
-With repetitive DNA sequence particularly difficult to correctly assemble from short reads <span class="citation" data-cites="UWOTvAMZ">[<a href="#ref-UWOTvAMZ" role="doc-biblioref">67</a>]</span>.
+With repetitive DNA sequence particularly difficult to correctly assemble from short reads <span class="citation" data-cites="UWOTvAMZ">[<a href="#ref-UWOTvAMZ" role="doc-biblioref">66</a>]</span>.
 Across binning tools, the binning process resulted in further loss with a large proportion of MGEs and genes left unbinned.
 Finally, only a very small proportion of these elements/genes were generally correctly binned with the appropriate host chromosomes.
 This follows the well known, but rarely explicitly stated, idea that the more analysis you perform the more of the original data gets lost.
@@ -373,7 +354,7 @@ The majority of these MGEs will either both fail to assemble or be incorrectly b
 The consequence of this is the disproportionate loss of key public health priority genes like VF and AMR genes.
 This is particularly acute as the VF and AMR genes found on these poorly recovered MGEs are generally considered the most important due to their propensity for lateral gene transfer between unrelated bacteria.
 Therefore, it is vital that we utilize a combination of MAGs and other methods (e.g. read-based methods) in public health metagenomic research when short-read sequencing is used.
-For example, targeted AMR <span class="citation" data-cites="1FgkF8i4W">[<a href="#ref-1FgkF8i4W" role="doc-biblioref">68</a>]</span>, plasmid specialised assembly approaches <span class="citation" data-cites="5bpLJeyh">[<a href="#ref-5bpLJeyh" role="doc-biblioref">65</a>]</span>, and read-based sequence homology search <span class="citation" data-cites="4R96QRcV">[<a href="#ref-4R96QRcV" role="doc-biblioref">11</a>]</span>.
+For example, targeted AMR <span class="citation" data-cites="1FgkF8i4W">[<a href="#ref-1FgkF8i4W" role="doc-biblioref">67</a>]</span>, plasmid specialised assembly approaches <span class="citation" data-cites="5bpLJeyh">[<a href="#ref-5bpLJeyh" role="doc-biblioref">64</a>]</span>, and read-based sequence homology search <span class="citation" data-cites="4R96QRcV">[<a href="#ref-4R96QRcV" role="doc-biblioref">11</a>]</span>.
 Without this, MAG-based methods are insufficient to thoroughly profile the resistome and provide vital epidemiological data for metagenomic data.</p>
 <h2 id="supplementals">Supplementals</h2>
 <h3 id="recovery-of-specific-gene-content">Recovery of Specific Gene Content</h3>
@@ -517,29 +498,29 @@ Hatch W. Stokes, Michael R. Gillings<br />
 <em>FEMS Microbiology Reviews</em> (2011-09) <a href="https://doi.org/fw543p">https://doi.org/fw543p</a><br />
 DOI: <a href="https://doi.org/10.1111/j.1574-6976.2011.00273.x">10.1111/j.1574-6976.2011.00273.x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21517914">21517914</a></p>
 </div>
-<div id="ref-F7RexqdF">
-<p>18. <strong>Community structure and metabolism through reconstruction of microbial genomes from the environment</strong><br />
-Gene W. Tyson, Jarrod Chapman, Philip Hugenholtz, Eric E. Allen, Rachna J. Ram, Paul M. Richardson, Victor V. Solovyev, Edward M. Rubin, Daniel S. Rokhsar, Jillian F. Banfield<br />
-<em>Nature</em> (2004-02-01) <a href="https://doi.org/b85j5j">https://doi.org/b85j5j</a><br />
-DOI: <a href="https://doi.org/10.1038/nature02340">10.1038/nature02340</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/14961025">14961025</a></p>
-</div>
 <div id="ref-KP5SjPXN">
-<p>19. <strong>metaSPAdes: a new versatile metagenomic assembler</strong><br />
+<p>18. <strong>metaSPAdes: a new versatile metagenomic assembler</strong><br />
 Sergey Nurk, Dmitry Meleshko, Anton Korobeynikov, Pavel A. Pevzner<br />
 <em>Genome Research</em> (2017-05) <a href="https://doi.org/f97jkv">https://doi.org/f97jkv</a><br />
 DOI: <a href="https://doi.org/10.1101/gr.213959.116">10.1101/gr.213959.116</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28298430">28298430</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5411777">PMC5411777</a></p>
 </div>
 <div id="ref-a4mT7fuU">
-<p>20. <strong>IDBA-UD: a de novo assembler for single-cell and metagenomic sequencing data with highly uneven depth</strong><br />
+<p>19. <strong>IDBA-UD: a de novo assembler for single-cell and metagenomic sequencing data with highly uneven depth</strong><br />
 Y. Peng, H. C. M. Leung, S. M. Yiu, F. Y. L. Chin<br />
 <em>Bioinformatics</em> (2012-04-11) <a href="https://doi.org/f3z7hv">https://doi.org/f3z7hv</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/bts174">10.1093/bioinformatics/bts174</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22495754">22495754</a></p>
 </div>
 <div id="ref-1EUV0Ejkr">
-<p>21. <strong>MEGAHIT: an ultra-fast single-node solution for large and complex metagenomics assembly via succinct de Bruijn graph</strong><br />
+<p>20. <strong>MEGAHIT: an ultra-fast single-node solution for large and complex metagenomics assembly via succinct de Bruijn graph</strong><br />
 Dinghua Li, Chi-Man Liu, Ruibang Luo, Kunihiko Sadakane, Tak-Wah Lam<br />
 <em>Bioinformatics</em> (2015-05-15) <a href="https://doi.org/f7fb5z">https://doi.org/f7fb5z</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btv033">10.1093/bioinformatics/btv033</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25609793">25609793</a></p>
+</div>
+<div id="ref-F7RexqdF">
+<p>21. <strong>Community structure and metabolism through reconstruction of microbial genomes from the environment</strong><br />
+Gene W. Tyson, Jarrod Chapman, Philip Hugenholtz, Eric E. Allen, Rachna J. Ram, Paul M. Richardson, Victor V. Solovyev, Edward M. Rubin, Daniel S. Rokhsar, Jillian F. Banfield<br />
+<em>Nature</em> (2004-02-01) <a href="https://doi.org/b85j5j">https://doi.org/b85j5j</a><br />
+DOI: <a href="https://doi.org/10.1038/nature02340">10.1038/nature02340</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/14961025">14961025</a></p>
 </div>
 <div id="ref-WRoCf6pg">
 <p>22. <strong>COCACOLA: binning metagenomic contigs using sequence COmposition, read CoverAge, CO-alignment and paired-end read LinkAge</strong><br />
@@ -649,29 +630,29 @@ Claire Bertelli, Keith E Tilley, Fiona SL Brinkman<br />
 <em>Briefings in Bioinformatics</em> (2019-09) <a href="https://doi.org/gdnhfv">https://doi.org/gdnhfv</a><br />
 DOI: <a href="https://doi.org/10.1093/bib/bby042">10.1093/bib/bby042</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29868902">29868902</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6917214">PMC6917214</a></p>
 </div>
-<div id="ref-QK9dmRUA">
-<p>40. <strong>cBar: a computer program to distinguish plasmid-derived from chromosome-derived sequence fragments in metagenomics data</strong><br />
-Fengfeng Zhou, Ying Xu<br />
-<em>Bioinformatics</em> (2010-08-15) <a href="https://doi.org/cn7486">https://doi.org/cn7486</a><br />
-DOI: <a href="https://doi.org/10.1093/bioinformatics/btq299">10.1093/bioinformatics/btq299</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20538725">20538725</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2916713">PMC2916713</a></p>
-</div>
-<div id="ref-ps1aOiRU">
-<p>41. <strong>Modal Codon Usage: Assessing the Typical Codon Usage of a Genome</strong><br />
-J. J. Davis, G. J. Olsen<br />
-<em>Molecular Biology and Evolution</em> (2009-12-17) <a href="https://doi.org/bhsmq5">https://doi.org/bhsmq5</a><br />
-DOI: <a href="https://doi.org/10.1093/molbev/msp281">10.1093/molbev/msp281</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20018979">20018979</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2839124">PMC2839124</a></p>
-</div>
 <div id="ref-qtpTcNWp">
-<p>42. <strong>Multicopy plasmids potentiate the evolution of antibiotic resistance in bacteria</strong><br />
+<p>40. <strong>Multicopy plasmids potentiate the evolution of antibiotic resistance in bacteria</strong><br />
 Alvaro San Millan, Jose Antonio Escudero, Danna R. Gifford, Didier Mazel, R. Craig MacLean<br />
 <em>Nature Ecology &amp; Evolution</em> (2016-11-07) <a href="https://doi.org/bs76">https://doi.org/bs76</a><br />
 DOI: <a href="https://doi.org/10.1038/s41559-016-0010">10.1038/s41559-016-0010</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28812563">28812563</a></p>
 </div>
 <div id="ref-Z1irb7eF">
-<p>43. <strong>Small-Plasmid-Mediated Antibiotic Resistance Is Enhanced by Increases in Plasmid Copy Number and Bacterial Fitness</strong><br />
+<p>41. <strong>Small-Plasmid-Mediated Antibiotic Resistance Is Enhanced by Increases in Plasmid Copy Number and Bacterial Fitness</strong><br />
 Alvaro San Millan, Alfonso Santos-Lopez, Rafael Ortega-Huedo, Cristina Bernabe-Balas, Sean P. Kennedy, Bruno Gonzalez-Zorn<br />
 <em>Antimicrobial Agents and Chemotherapy</em> (2015-06) <a href="https://doi.org/f7k8bk">https://doi.org/f7k8bk</a><br />
 DOI: <a href="https://doi.org/10.1128/aac.00235-15">10.1128/aac.00235-15</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25824216">25824216</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4432117">PMC4432117</a></p>
+</div>
+<div id="ref-QK9dmRUA">
+<p>42. <strong>cBar: a computer program to distinguish plasmid-derived from chromosome-derived sequence fragments in metagenomics data</strong><br />
+Fengfeng Zhou, Ying Xu<br />
+<em>Bioinformatics</em> (2010-08-15) <a href="https://doi.org/cn7486">https://doi.org/cn7486</a><br />
+DOI: <a href="https://doi.org/10.1093/bioinformatics/btq299">10.1093/bioinformatics/btq299</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20538725">20538725</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2916713">PMC2916713</a></p>
+</div>
+<div id="ref-ps1aOiRU">
+<p>43. <strong>Modal Codon Usage: Assessing the Typical Codon Usage of a Genome</strong><br />
+J. J. Davis, G. J. Olsen<br />
+<em>Molecular Biology and Evolution</em> (2009-12-17) <a href="https://doi.org/bhsmq5">https://doi.org/bhsmq5</a><br />
+DOI: <a href="https://doi.org/10.1093/molbev/msp281">10.1093/molbev/msp281</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20018979">20018979</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2839124">PMC2839124</a></p>
 </div>
 <div id="ref-X9j9vETu">
 <p>44. <strong>Understanding the mechanisms and drivers of antimicrobial resistance.</strong><br />
@@ -679,145 +660,139 @@ Alison H Holmes, Luke SP Moore, Arnfinn Sundsfjord, Martin Steinbakk, Sadie Regm
 <em>Lancet (London, England)</em> (2015-11-18) <a href="https://www.ncbi.nlm.nih.gov/pubmed/26603922">https://www.ncbi.nlm.nih.gov/pubmed/26603922</a><br />
 DOI: <a href="https://doi.org/10.1016/s0140-6736(15)00473-0">10.1016/s0140-6736(15)00473-0</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26603922">26603922</a></p>
 </div>
-<div id="ref-12zFifp5x">
-<p>45. <strong>On the (im)possibility of reconstructing plasmids from whole-genome short-read sequencing data</strong><br />
-Sergio Arredondo-Alonso, Rob J. Willems, Willem van Schaik, Anita C. Schürch<br />
-<em>Microbial Genomics</em> (2017-10-01) <a href="https://doi.org/gf6b63">https://doi.org/gf6b63</a><br />
-DOI: <a href="https://doi.org/10.1099/mgen.0.000128">10.1099/mgen.0.000128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29177087">29177087</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5695206">PMC5695206</a></p>
-</div>
-<div id="ref-bkwNETh8">
-<p>46. <strong>MOB-suite: software tools for clustering, reconstruction and typing of plasmids from draft assemblies</strong><br />
-James Robertson, John H. E. Nash<br />
-<em>Microbial Genomics</em> (2018-08-01) <a href="https://doi.org/ggcm6q">https://doi.org/ggcm6q</a><br />
-DOI: <a href="https://doi.org/10.1099/mgen.0.000206">10.1099/mgen.0.000206</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30052170">30052170</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6159552">PMC6159552</a></p>
-</div>
 <div id="ref-4eEyIkDg">
-<p>47. <strong>IslandViewer 3: more flexible, interactive genomic island discovery, visualization and analysis: Figure 1.</strong><br />
+<p>45. <strong>IslandViewer 3: more flexible, interactive genomic island discovery, visualization and analysis: Figure 1.</strong><br />
 Bhavjinder K. Dhillon, Matthew R. Laird, Julie A. Shay, Geoffrey L. Winsor, Raymond Lo, Fazmin Nizam, Sheldon K. Pereira, Nicholas Waglechner, Andrew G. McArthur, Morgan G. I. Langille, Fiona S. L. Brinkman<br />
 <em>Nucleic Acids Research</em> (2015-07-01) <a href="https://doi.org/f7n2xs">https://doi.org/f7n2xs</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/gkv401">10.1093/nar/gkv401</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25916842">25916842</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4489224">PMC4489224</a></p>
 </div>
 <div id="ref-lsbnKJf8">
-<p>48. <strong>Critical Assessment of Metagenome Interpretation—a benchmark of metagenomics software</strong><br />
+<p>46. <strong>Critical Assessment of Metagenome Interpretation—a benchmark of metagenomics software</strong><br />
 Alexander Sczyrba, Peter Hofmann, Peter Belmann, David Koslicki, Stefan Janssen, Johannes Dröge, Ivan Gregor, Stephan Majda, Jessika Fiedler, Eik Dahms, … Alice C McHardy<br />
 <em>Nature Methods</em> (2017-10-02) <a href="https://doi.org/gbzspt">https://doi.org/gbzspt</a><br />
 DOI: <a href="https://doi.org/10.1038/nmeth.4458">10.1038/nmeth.4458</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28967888">28967888</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5903868">PMC5903868</a></p>
 </div>
 <div id="ref-znONJtTo">
-<p>49. <strong>ART: a next-generation sequencing read simulator</strong><br />
+<p>47. <strong>ART: a next-generation sequencing read simulator</strong><br />
 Weichun Huang, Leping Li, Jason R. Myers, Gabor T. Marth<br />
 <em>Bioinformatics</em> (2012-02-15) <a href="https://doi.org/fzf84c">https://doi.org/fzf84c</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btr708">10.1093/bioinformatics/btr708</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22199392">22199392</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3278762">PMC3278762</a></p>
 </div>
 <div id="ref-1CBlSILo4">
-<p>50. <strong>Sickle: A sliding-window, adaptive, quality-based trimming tool for FastQ files</strong><br />
+<p>48. <strong>Sickle: A sliding-window, adaptive, quality-based trimming tool for FastQ files</strong><br />
 NA Joshi, JN Fass<br />
 <em>GitHub</em> (2011) <a href="https://github.com/najoshi/sickle">https://github.com/najoshi/sickle</a></p>
 </div>
 <div id="ref-TeRvtMCl">
-<p>51. <strong>MetaQUAST: evaluation of metagenome assemblies</strong><br />
+<p>49. <strong>MetaQUAST: evaluation of metagenome assemblies</strong><br />
 Alla Mikheenko, Vladislav Saveliev, Alexey Gurevich<br />
 <em>Bioinformatics</em> (2016-04-01) <a href="https://doi.org/f8jdjj">https://doi.org/f8jdjj</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btv697">10.1093/bioinformatics/btv697</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26614127">26614127</a></p>
 </div>
 <div id="ref-nEsJGUWa">
-<p>52. <strong>BLAST+: architecture and applications</strong><br />
+<p>50. <strong>BLAST+: architecture and applications</strong><br />
 Christiam Camacho, George Coulouris, Vahram Avagyan, Ning Ma, Jason Papadopoulos, Kevin Bealer, Thomas L Madden<br />
 <em>BMC Bioinformatics</em> (2009) <a href="https://doi.org/cnjxgz">https://doi.org/cnjxgz</a><br />
 DOI: <a href="https://doi.org/10.1186/1471-2105-10-421">10.1186/1471-2105-10-421</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20003500">20003500</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2803857">PMC2803857</a></p>
 </div>
 <div id="ref-S53q1T30">
-<p>53. <strong>BUSCO: assessing genome assembly and annotation completeness with single-copy orthologs</strong><br />
+<p>51. <strong>BUSCO: assessing genome assembly and annotation completeness with single-copy orthologs</strong><br />
 Felipe A. Simão, Robert M. Waterhouse, Panagiotis Ioannidis, Evgenia V. Kriventseva, Evgeny M. Zdobnov<br />
 <em>Bioinformatics</em> (2015-10-01) <a href="https://doi.org/gfznpw">https://doi.org/gfznpw</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btv351">10.1093/bioinformatics/btv351</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26059717">26059717</a></p>
 </div>
 <div id="ref-L3vmZEmK">
-<p>54. <strong>Parallelization of MAFFT for large-scale multiple sequence alignments</strong><br />
+<p>52. <strong>Parallelization of MAFFT for large-scale multiple sequence alignments</strong><br />
 Tsukasa Nakamura, Kazunori D Yamada, Kentaro Tomii, Kazutaka Katoh<br />
 <em>Bioinformatics</em> (2018-07-15) <a href="https://doi.org/gc4th3">https://doi.org/gc4th3</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/bty121">10.1093/bioinformatics/bty121</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29506019">29506019</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6041967">PMC6041967</a></p>
 </div>
 <div id="ref-GCsU1nyf">
-<p>55. <strong>trimAl: a tool for automated alignment trimming in large-scale phylogenetic analyses</strong><br />
+<p>53. <strong>trimAl: a tool for automated alignment trimming in large-scale phylogenetic analyses</strong><br />
 S. Capella-Gutierrez, J. M. Silla-Martinez, T. Gabaldon<br />
 <em>Bioinformatics</em> (2009-06-08) <a href="https://doi.org/bjhdh7">https://doi.org/bjhdh7</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btp348">10.1093/bioinformatics/btp348</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19505945">19505945</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2712344">PMC2712344</a></p>
 </div>
 <div id="ref-JOWSuu8G">
-<p>56. <strong>IQ-TREE: A Fast and Effective Stochastic Algorithm for Estimating Maximum-Likelihood Phylogenies</strong><br />
+<p>54. <strong>IQ-TREE: A Fast and Effective Stochastic Algorithm for Estimating Maximum-Likelihood Phylogenies</strong><br />
 Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, Bui Quang Minh<br />
 <em>Molecular Biology and Evolution</em> (2015-01) <a href="https://doi.org/f3srtd">https://doi.org/f3srtd</a><br />
 DOI: <a href="https://doi.org/10.1093/molbev/msu300">10.1093/molbev/msu300</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25371430">25371430</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4271533">PMC4271533</a></p>
 </div>
 <div id="ref-P9j0gC8x">
-<p>57. <strong>PartitionFinder: Combined Selection of Partitioning Schemes and Substitution Models for Phylogenetic Analyses</strong><br />
+<p>55. <strong>PartitionFinder: Combined Selection of Partitioning Schemes and Substitution Models for Phylogenetic Analyses</strong><br />
 R. Lanfear, B. Calcott, S. Y. W. Ho, S. Guindon<br />
 <em>Molecular Biology and Evolution</em> (2012-01-20) <a href="https://doi.org/fzgsw3">https://doi.org/fzgsw3</a><br />
 DOI: <a href="https://doi.org/10.1093/molbev/mss020">10.1093/molbev/mss020</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22319168">22319168</a></p>
 </div>
 <div id="ref-5F7ii9Ji">
-<p>58. <strong>ETE 3: Reconstruction, Analysis, and Visualization of Phylogenomic Data</strong><br />
+<p>56. <strong>ETE 3: Reconstruction, Analysis, and Visualization of Phylogenomic Data</strong><br />
 Jaime Huerta-Cepas, François Serra, Peer Bork<br />
 <em>Molecular Biology and Evolution</em> (2016-06) <a href="https://doi.org/gfzpph">https://doi.org/gfzpph</a><br />
 DOI: <a href="https://doi.org/10.1093/molbev/msw046">10.1093/molbev/msw046</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26921390">26921390</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4868116">PMC4868116</a></p>
 </div>
 <div id="ref-LeLYF4iC">
-<p>59. <strong>mwaskom/seaborn: v0.10.0 (January 2020)</strong><br />
+<p>57. <strong>mwaskom/seaborn: v0.10.0 (January 2020)</strong><br />
 Michael Waskom, Olga Botvinnik, Joel Ostblom, Saulius Lukauskas, Paul Hobson, MaozGelbart, David C Gemperline, Tom Augspurger, Yaroslav Halchenko, John B. Cole, … Constantine Evans<br />
 <em>Zenodo</em> (2020-01-24) <a href="https://doi.org/ggkff7">https://doi.org/ggkff7</a><br />
 DOI: <a href="https://doi.org/10.5281/zenodo.3629446">10.5281/zenodo.3629446</a></p>
 </div>
 <div id="ref-lX665mdh">
-<p>60. <strong>Prodigal: prokaryotic gene recognition and translation initiation site identification</strong><br />
+<p>58. <strong>Prodigal: prokaryotic gene recognition and translation initiation site identification</strong><br />
 Doug Hyatt, Gwo-Liang Chen, Philip F LoCascio, Miriam L Land, Frank W Larimer, Loren J Hauser<br />
 <em>BMC Bioinformatics</em> (2010-03-08) <a href="https://doi.org/cktxnm">https://doi.org/cktxnm</a><br />
 DOI: <a href="https://doi.org/10.1186/1471-2105-11-119">10.1186/1471-2105-11-119</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20211023">20211023</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2848648">PMC2848648</a></p>
 </div>
 <div id="ref-1ByMfX8Y1">
-<p>61. <strong>CARD 2017: expansion and model-centric curation of the comprehensive antibiotic resistance database</strong><br />
+<p>59. <strong>CARD 2017: expansion and model-centric curation of the comprehensive antibiotic resistance database</strong><br />
 Baofeng Jia, Amogelang R. Raphenya, Brian Alcock, Nicholas Waglechner, Peiyao Guo, Kara K. Tsang, Briony A. Lago, Biren M. Dave, Sheldon Pereira, Arjun N. Sharma, … Andrew G. McArthur<br />
 <em>Nucleic Acids Research</em> (2017-01-04) <a href="https://doi.org/f9wbjs">https://doi.org/f9wbjs</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/gkw1004">10.1093/nar/gkw1004</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27789705">27789705</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5210516">PMC5210516</a></p>
 </div>
 <div id="ref-pYB1SP5">
-<p>62. <strong>VFDB 2019: a comparative pathogenomic platform with an interactive web interface</strong><br />
+<p>60. <strong>VFDB 2019: a comparative pathogenomic platform with an interactive web interface</strong><br />
 Bo Liu, Dandan Zheng, Qi Jin, Lihong Chen, Jian Yang<br />
 <em>Nucleic Acids Research</em> (2019-01-08) <a href="https://doi.org/gf4zfr">https://doi.org/gf4zfr</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/gky1080">10.1093/nar/gky1080</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30395255">30395255</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6324032">PMC6324032</a></p>
 </div>
 <div id="ref-19bHWbO47">
-<p>63. <strong>PSORTb 3.0: improved protein subcellular localization prediction with refined localization subcategories and predictive capabilities for all prokaryotes</strong><br />
+<p>61. <strong>PSORTb 3.0: improved protein subcellular localization prediction with refined localization subcategories and predictive capabilities for all prokaryotes</strong><br />
 Nancy Y. Yu, James R. Wagner, Matthew R. Laird, Gabor Melli, Sébastien Rey, Raymond Lo, Phuong Dao, S. Cenk Sahinalp, Martin Ester, Leonard J. Foster, Fiona S. L. Brinkman<br />
 <em>Bioinformatics</em> (2010-07-01) <a href="https://doi.org/bz3q2w">https://doi.org/bz3q2w</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btq249">10.1093/bioinformatics/btq249</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20472543">20472543</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2887053">PMC2887053</a></p>
 </div>
 <div id="ref-1EFAqjrRj">
-<p>64. <strong>On the (im)possibility of reconstructing plasmids from whole-genome short-read sequencing data.</strong><br />
+<p>62. <strong>On the (im)possibility of reconstructing plasmids from whole-genome short-read sequencing data.</strong><br />
 Sergio Arredondo-Alonso, Rob J Willems, Willem van Schaik, Anita C Schürch<br />
 <em>Microbial genomics</em> (2017-08-18) <a href="https://www.ncbi.nlm.nih.gov/pubmed/29177087">https://www.ncbi.nlm.nih.gov/pubmed/29177087</a><br />
 DOI: <a href="https://doi.org/10.1099/mgen.0.000128">10.1099/mgen.0.000128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29177087">29177087</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5695206">PMC5695206</a></p>
 </div>
+<div id="ref-12zFifp5x">
+<p>63. <strong>On the (im)possibility of reconstructing plasmids from whole-genome short-read sequencing data</strong><br />
+Sergio Arredondo-Alonso, Rob J. Willems, Willem van Schaik, Anita C. Schürch<br />
+<em>Microbial Genomics</em> (2017-10-01) <a href="https://doi.org/gf6b63">https://doi.org/gf6b63</a><br />
+DOI: <a href="https://doi.org/10.1099/mgen.0.000128">10.1099/mgen.0.000128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29177087">29177087</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5695206">PMC5695206</a></p>
+</div>
 <div id="ref-5bpLJeyh">
-<p>65. <strong>SCAPP: An algorithm for improved plasmid assembly in metagenomes</strong><br />
+<p>64. <strong>SCAPP: An algorithm for improved plasmid assembly in metagenomes</strong><br />
 David Pellow, Maraike Probst, Ori Furman, Alvah Zorea, Arik Segal, Itzik Mizrahi, Ron Shamir<br />
 <em>bioRxiv</em> (2020-01-14) <a href="https://doi.org/ggkt4f">https://doi.org/ggkt4f</a><br />
 DOI: <a href="https://doi.org/10.1101/2020.01.12.903252">10.1101/2020.01.12.903252</a></p>
 </div>
 <div id="ref-1EZyZrHhJ">
-<p>66. <strong>Gene fragmentation in bacterial draft genomes: extent, consequences and mitigation</strong><br />
+<p>65. <strong>Gene fragmentation in bacterial draft genomes: extent, consequences and mitigation</strong><br />
 Jonathan L Klassen, Cameron R Currie<br />
 <em>BMC Genomics</em> (2012) <a href="https://doi.org/fzg6gg">https://doi.org/fzg6gg</a><br />
 DOI: <a href="https://doi.org/10.1186/1471-2164-13-14">10.1186/1471-2164-13-14</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22233127">22233127</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3322347">PMC3322347</a></p>
 </div>
 <div id="ref-UWOTvAMZ">
-<p>67. <strong>Benchmarking of methods for identification of antimicrobial resistance genes in bacterial whole genome data</strong><br />
+<p>66. <strong>Benchmarking of methods for identification of antimicrobial resistance genes in bacterial whole genome data</strong><br />
 Philip T. L. C. Clausen, Ea Zankari, Frank M. Aarestrup, Ole Lund<br />
 <em>Journal of Antimicrobial Chemotherapy</em> (2016-09) <a href="https://doi.org/f85vbc">https://doi.org/f85vbc</a><br />
 DOI: <a href="https://doi.org/10.1093/jac/dkw184">10.1093/jac/dkw184</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27365186">27365186</a></p>
 </div>
 <div id="ref-1FgkF8i4W">
-<p>68. <strong>ARIBA: rapid antimicrobial resistance genotyping directly from sequencing reads</strong><br />
+<p>67. <strong>ARIBA: rapid antimicrobial resistance genotyping directly from sequencing reads</strong><br />
 Martin Hunt, Alison E Mather, Leonor Sánchez-Busó, Andrew J Page, Julian Parkhill, Jacqueline A Keane, Simon R Harris<br />
 <em>Microbial Genomics</em> (2017-10-01) <a href="https://doi.org/gf5fd9">https://doi.org/gf5fd9</a><br />
 DOI: <a href="https://doi.org/10.1099/mgen.0.000131">10.1099/mgen.0.000131</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29177089">29177089</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5695208">PMC5695208</a></p>
