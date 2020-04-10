@@ -8,7 +8,7 @@ author-meta:
 - Fiona S.L. Brinkman
 bibliography:
 - content/manual-references.json
-date-meta: '2020-04-07'
+date-meta: '2020-04-10'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta name="dc.date" content="2020-04-07" />
+  <meta name="dc.date" content="2020-04-10" />
 
-  <meta name="citation_publication_date" content="2020-04-07" />
+  <meta name="citation_publication_date" content="2020-04-10" />
 
   <meta name="dc.language" content="en-CA" />
 
@@ -85,11 +85,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/ae9814411f98f5369b1d4dc65e63c660735f95da/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/bd260b4cfb4576e4d7449883e713709f27a67e18/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/ae9814411f98f5369b1d4dc65e63c660735f95da/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/bd260b4cfb4576e4d7449883e713709f27a67e18/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/ae9814411f98f5369b1d4dc65e63c660735f95da/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/bd260b4cfb4576e4d7449883e713709f27a67e18/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -121,10 +121,10 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/ae9814411f98f5369b1d4dc65e63c660735f95da/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/bd260b4cfb4576e4d7449883e713709f27a67e18/))
 was automatically generated
-from [fmaguire/mag_sim_paper@ae98144](https://github.com/fmaguire/mag_sim_paper/tree/ae9814411f98f5369b1d4dc65e63c660735f95da)
-on April 7, 2020.
+from [fmaguire/mag_sim_paper@bd260b4](https://github.com/fmaguire/mag_sim_paper/tree/bd260b4cfb4576e4d7449883e713709f27a67e18)
+on April 10, 2020.
 </em></small>
 
 ## Authors
@@ -197,7 +197,7 @@ Since these reads are shorter than most genes, however, read-based methods provi
 This lack of contextual information is particularly problematic in the study of AMR genes and virulence factors as the genomic context plays a role in function [@doi:10.1128/AAC.01710-09], selective pressures [@doi:10.1016/j.tim.2006.02.006], and then likelihood of lateral gene transfer (LGT) [@doi:10.1111/j.1574-6976.2011.00273.x].
 
 Sequence assembly using specialised metagenomic de Bruijn graph assemblers (e.g., metaSPAdes [@doi:10.1101/gr.213959.116], IDBA-UD [@doi:10.1093/bioinformatics/bts174], and megahit [@doi:10.1093/bioinformatics/btv033]) are often used to try to recover information about genomic context [@doi:10.1038/nature02340].
-To disentangle the resulting mix of longer fragments, there has been a move to group these contigs based on the idea that those from the same source genome will have similar relative abundance and sequence composition.
+To disentangle the resulting mix of assembled fragments, there has been a move to group these contigs based on the idea that those from the same source genome will have similar relative abundance and sequence composition.
 These resulting groups or "bins" are known as metagenome-assembled genomes (MAGs). 
 A range of tools have been released to perform this binning including CONCOCT [@doi:10.1093/bioinformatics/btw290], MetaBAT 2 [@doi:10.7287/peerj.preprints.27522v1], MaxBin 2 [@doi:10.1093/bioinformatics/btv638], and a tool which combines their predictions: DAS Tool [@doi:10.1038/s41564-018-0171-1].
 These MAG binning methods have been used to great effect in unveiling previously uncharacterised genomic diversity [@doi:10.1038/nature14486; @doi:10.1038/s41564-017-0012-7; @doi:10.1101/489443] but metagenomic assembly and binning results in the loss of some information.
@@ -216,7 +216,7 @@ Plasmids are of great research importance as they are a major source of the late
 
 These varying composition and relative abundance features mean that GIs and plasmids pose significant challenges in MAG recovery.
 As these MGEs are key to the function and spread of pathogenic traits such as AMR and virulence, and with MAG approaches are becoming increasingly popular within microbial and public-health research, it is both timely and vital that we assess the impact of metagenome assembly and binning on the recovery of these elements. 
-Therefore, to address this issue we performed an analysis of GI and plasmid recovery accuracy across a set of 12 state-of-the-art short-read metagenome assembly and binning approaches using a simulated metagenome comprised of GI- and plasmid-rich taxa.
+Therefore, to address this issue we performed an analysis of GI and plasmid recovery accuracy across a set of 12 state-of-the-art short-read metagenome assembly and binning approaches using a 'best-case' low-complexity simulated metagenome comprised of GI- and plasmid-rich taxa.
 
 
 ## Materials and Methods {#methods}
@@ -394,61 +394,36 @@ However, 0-16% of GI-localised VF genes (n=809) and again none of the plasmid-as
 ### Comparisons of Rates of Loss
 
 We combined the performance metrics for Figs. @fig:plasmids, @fig:gis, @fig:AMRGenePercentRecoveryStage, and @fig:VFGenePercentRecoveryStage to compare the rates of loss of different components (see Fig. @fig:rateofloss).
-This highlighted that genomic components (GIs and plasmids) and plasmids in particular are lost at a higher rate than individual gene types during MAG recovery.
+This highlighted that genomic components (GIs and plasmids) and plasmids in particular are lost at a disproportionately higher rate than individual gene types during MAG recovery.
 
 
 
 ## Discussion {#discussion}
 
 In this paper, we evaluated the ability and accuracy of metagenome-assembled genome (MAGs) binning methods to correctly recover mobile genetic elements (i.e. genomic islands and plasmids) from metagenomic samples across different tools used to assemble and bin MAGs.
-
-Overall, the best assembler-binner pair was megahit-DASTOOL in terms of both chromosomal coverage (94.3%) and bin purity (1).
-Looking at genomes with the lowest coverage, the three Streptococcus genomes that were recovered poorly are likely due to their similarity (Fig. @fig:coverphylo, @fig:purityphylo).
-This supports the intuition that MAG recovery approaches struggle to distinguish closely related species.
-While CONCOCT performed significantly worse than other binners in terms of chromosomal coverage and bin purity, we did notice that CONCOCT was prone to generating many small partial bins.
-Potentially, CONCOCT binning could be used to distinguish closely related species but at a cost of more fragmented genomes.
-
-While the overall recovery and binning of chromosomes was likely sufficient for some use-cases, we were specifically interested in the ability of MAG methods to appropriately recover MGEs. This was due to the importance of MGEs in the function and spread of pathogen traits such as AMR and virulence, as well as our hypothesis that these sequences may prove difficult to bin. Regardless of the the metagenomic assembly approach or MAG binning method used, both plasmids and GIs were disproportionately lost compared to chromosomes in general. At best (with metaSPAdes and CONCOCT) 29.2% of plasmids and 44.1% of GIs were identifiable at >50% coverage in the correct bin (i.e. grouped with a bin that was mostly made up of contigs from the same genome). The >50% coverage requirement set a high bar and more GIs and plasmids were likely recovered in more incomplete forms. 
-Partial MGEs may be useful for some research, but for researchers interested in selective pressures and lateral gene transfer this may lead to inaccurate inferences. 
-
-This poor result is not unexpected as genomic islands and plasmids have known divergent compositional features and are often repetitive with variable copy numbers relative to the chromosome.
-Furthermore, the difference between the percentages suggests that binning plasmids is harder than binning GIs.
-This difference might be attributed to the known difficulties in assembly of plasmids from short-read data [@pmid:29177087].
+Overall, chromosomal sequences were binned well (up to 94.3% coverage and perfect bin purity by megahit-DASTool) with closely related genomes consistently badly binned across tools (e.g. Streptococcus species in Fig. @fig:coverphylo, @fig:purityphylo).
+However, given the increased used of MAG methods and the importance of MGEs in the function and spread of pathogen traits such as AMR and virulence it is particulraly striking that regardless of metagenomic assembly approach or MAG binning method used, both plasmids and GIs were disproportionately lost compared to chromosomes in general. 
+At best (with metaSPAdes and CONCOCT) 29.2% of plasmids and 44.1% of GIs were identifiable at >50% coverage in the correct bin (i.e. grouped with a bin that was mostly made up of contigs from the same genome). 
+This poor result is congruent with the intuition that the divergent compositional features and repetitive nature of these MGEs is problematic for MAG methods.
+The particularly poor plasmid binning performance is likely attributable to the known difficulties in assembly of plasmids from short-read data [@pmid:29177087].
 Therefore, binning efficiency might improve if we use DNA sequencing and assembly methods optimised for recovering plasmids [@doi:10.1099/mgen.0.000128] (such as SCAPP [@doi:10.1101/2020.01.12.903252]).
+While some MGEs were likely recovered in more partial forms (<50% coverage) use of these by researchers interested in selective pressures and lateral gene transfer could lead to inaccurate inferences. 
 
-Due to the importance of MGEs in the dissemination of clinically relevant AMR genes and VFs, we explored whether or not MAG approaches can be used to provide useful insight into the LGT of these genes.
-With respect to AMR genes, MAG methods were able to recover roughly 40% of all AMR genes present in our reference genomes.
-We noted a sharp drop in the number of AMR genes detected between assemblies and MAGs, suggesting that many of these genes were left in the unbinned portion.
-Overall, the CONCOCT-metaSPAdes combination, while it did not recover the highest amount of AMR genes at the assembly stage, performed the best in correctly binning an AMR gene to the right species.
-Regardless of tools, chromosomally located AMR genes were most frequently correctly binned (as expected from the relative performance of MAGs at recovering chromosomes).
-While there was variability in performance, AMR genes located on GIs were correctly binned slightly less well than chromosomally located AMR genes.
-This variability might be explained by the fact that there were only 11 AMR genes located on GIs in our reference genomes.
-All 20 of the plasmid-borne AMR genes were assembled, but none were placed into MAG bins.
-We included high-threat MGEs-associated AMR genes such as the KPC and OXA carbapenemases. 
-We intended on a systematic review of which AMR genes are more or less likely to end up correctly binned, however, MAGs was not able to correctly bin enough AMR genes on plasmids or GIs to allow this. 
-
-Virulence factors showed a similar trend to the AMR genes, with a recovery of ~63% of virulence factors present in the reference genomes.
-There still is a sharp decline in the number of VF detected between assemblies and MAGs and CONCOCT-metaSPAdes again produced the highest binning accuracy.
-A majority (73%-98%) of chromosomally located VF genes were also able to be correctly binned to the right species for the MAGs.
-However, the MAG approach performed much worse in correctly recovering GI located and plasmid located VFs, with <16% of GI VFs (n=809) correctly recovered and none of the plasmid VFs (n=3).
-This drastic reduction in recovery accuracy of mobile elements, especially GIs, is expected.
-Previous studies have found that VFs are disproportionately present on GIs[@doi:10.1371/journal.pone.0008094], which might be the reason why the recovery accuracy was worse compared to AMR genes.
-Together, this and the AMR gene results suggest that MAG-based methods might be of limited utility in public health research focused on the transmission and dissemination of AMR genes and VFs. 
-
+Given the growing use of MAG methods in infectious disease research and the importance of MGEs in the dissemination of clinically important AMR genes and VFs, we also specifically evaluated the binning of these gene classes.
+MAG methods were able to recover, at best, 40% of all AMR genes and ~63% of VF genes (CONCOCT-metaSPAdes) present in the reference genomes.
+While a majority of chromosomally located VF genes (73-98%) and AMR genes (%) were binned correctly only 16% of GI VFs (n=809), 0% of plasmid VFs (n=3), % of GI AMR genes (n=11), and 0% of plasmid AMR genes.
+This included critical high-thread MGE-associated AMR genes such as the KPC and OXA carbapenemases. 
 One potential caveat is that some AMR genes and VFs successfully assembled in the MAGs may no longer be annotated as such due to issues with ORF prediction (see suppl. discussion & Fig. @fig:geneContent). 
 Previous studies have observed that ORF predictions in draft genomes are more fragmented, which can lead to downstream over- or under-annotation with functional labels depending on the approach used [@doi:10.1186/1471-2164-13-14]. 
 Similarly, if the ORFs predicted in the MAGs differ in sequence or degree of fragmentation from the corresponding ORFs predicted in the original reference genomes (or are no longer predicted at all), this could impact recovery of AMR/VF predictions, even though the sequences themselves may be partially or fully present in the assembly.
 
-It should also be noted that while CONCOCT performed the best in terms of recovery of both chromosomes and MGEs, it created many relatively clean but fragmentary partial MAGs.
-While this might be ideal for some users, caution should be taken in using CONCOCT when assuming a bin represents a whole genome.
-
-With the recovery of plasmids, GIs, VFs, and AMR genes the same pattern was observed, a progressive loss of data in each analytical step.
-The process of metagenomic assembly itself generally resulted in the loss of most of these elements/genes regardless of the assembly method used.
-With repetitive DNA sequence particularly difficult to correctly assemble from short reads [@doi:10.1093/jac/dkw184,@doi:10.1099/mgen.0.000128].
-Across binning tools, the binning process resulted in further loss with a large proportion of MGEs and genes left unbinned.
-Finally, only a very small proportion of these elements/genes were generally correctly binned with the appropriate host chromosomes.
-This follows the well known, but rarely explicitly stated, idea that the more analysis you perform the more of the original data gets lost.
-Indeed, this is one of the reasons why the huge amount of redundancy in metagenomic sequencing is necessary (i.e. many more base-pairs of DNA must be sequenced than are in the underlying sample).
+There are 3 main limitations to this study: the drawbacks of metagenome simulation, the use of a single metagenome, and not evaluating whether using multiple replicates of a metagenome sample can help with recovery of these elements.
+Metagenome simulation is unlikely to perfectly emulate all the noise and biases present in real metagenomic sequencing results. 
+However, without a clear known ground truth and in the absence of an MGE/AMR focused mock metagenome simulation represents the most powerful technique for evaluation of bioinformatic analyses. 
+This is why it has been widely adopted in thorough benchmarking experiments such as the CAMI challenges [@doi:10.1093/gigascience/giy069;@doi:10.1186/s40168-019-0633-6].
+While multiple metagenomic samples may improve binning of MGEs [@doi:10.1126/sciadv.aax5727] most typical public-health and research MAG studies don't currently utilise this kind of approach.
+Finally, a single simulated metagenome was used to keep the evaluation and the issues with accurate binning of MGEs as clear as possible.
+As this simulated metagenome was relatively low-complexity (30 species) this was considered as a "best-case" evaluation, i.e., failure to recover elements for this dataset strongly indicates likely failure to recover them in any more complex metagenome.
 
 
 ## Conclusions {#conclusions}
