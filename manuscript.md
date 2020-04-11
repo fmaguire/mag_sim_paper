@@ -49,7 +49,7 @@ header-includes: '<!--
 
   <meta name="citation_author_orcid" content="0000-0002-1203-9514" />
 
-  <meta name="twitter:creator" content="@fmaguire" />
+  <meta name="twitter:creator" content="@finlaym" />
 
   <meta name="citation_author" content="Baofeng Jia*" />
 
@@ -85,11 +85,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/8808ad4c7f5e0dfa22dcb3589826ae9fe7f1c1fc/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/9acdc61372aeea747c3596a20a7f83cf15066541/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/8808ad4c7f5e0dfa22dcb3589826ae9fe7f1c1fc/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/9acdc61372aeea747c3596a20a7f83cf15066541/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/8808ad4c7f5e0dfa22dcb3589826ae9fe7f1c1fc/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/9acdc61372aeea747c3596a20a7f83cf15066541/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -121,9 +121,9 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/8808ad4c7f5e0dfa22dcb3589826ae9fe7f1c1fc/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/9acdc61372aeea747c3596a20a7f83cf15066541/))
 was automatically generated
-from [fmaguire/mag_sim_paper@8808ad4](https://github.com/fmaguire/mag_sim_paper/tree/8808ad4c7f5e0dfa22dcb3589826ae9fe7f1c1fc)
+from [fmaguire/mag_sim_paper@9acdc61](https://github.com/fmaguire/mag_sim_paper/tree/9acdc61372aeea747c3596a20a7f83cf15066541)
 on April 11, 2020.
 </em></small>
 
@@ -137,7 +137,7 @@ on April 11, 2020.
     · ![GitHub icon](images/github.svg){.inline_icon}
     [fmaguire](https://github.com/fmaguire)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [fmaguire](https://twitter.com/fmaguire)<br>
+    [finlaym](https://twitter.com/finlaym)<br>
   <small>
      Faculty of Computer Science, Dalhousie University
      · Funded by ['Genome Canada', 'Donald Hill Family Fellowship']
