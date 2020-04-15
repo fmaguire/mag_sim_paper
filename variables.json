@@ -7,7 +7,7 @@
       "manubot"
     ],
     "lang": "en-CA",
-    "date-meta": "2020-04-13",
+    "date-meta": "2020-04-15",
     "author-meta": [
       "Finlay Maguire*",
       "Baofeng Jia*",
@@ -16,7 +16,7 @@
       "Robert G. Beiko",
       "Fiona S.L. Brinkman"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands\" />\n<meta name=\"citation_title\" content=\"Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands\" />\n<meta property=\"og:title\" content=\"Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands\" />\n<meta property=\"twitter:title\" content=\"Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands\" />\n<meta name=\"dc.date\" content=\"2020-04-13\" />\n<meta name=\"citation_publication_date\" content=\"2020-04-13\" />\n<meta name=\"dc.language\" content=\"en-CA\" />\n<meta name=\"citation_language\" content=\"en-CA\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Finlay Maguire*\" />\n<meta name=\"citation_author_institution\" content=\"Faculty of Computer Science, Dalhousie University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1203-9514\" />\n<meta name=\"twitter:creator\" content=\"@finlaym\" />\n<meta name=\"citation_author\" content=\"Baofeng Jia*\" />\n<meta name=\"citation_author_institution\" content=\"Department of Molecular Biology and Biochemistry, Simon Fraser University\" />\n<meta name=\"citation_author\" content=\"Kristen Gray\" />\n<meta name=\"citation_author_institution\" content=\"Department of Molecular Biology and Biochemistry, Simon Fraser University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1962-189X\" />\n<meta name=\"citation_author\" content=\"Wing Yin Venus Lau\" />\n<meta name=\"citation_author_institution\" content=\"Department of Molecular Biology and Biochemistry, Simon Fraser University\" />\n<meta name=\"citation_author\" content=\"Robert G. Beiko\" />\n<meta name=\"citation_author_institution\" content=\"Faculty of Computer Science, Dalhousie University\" />\n<meta name=\"citation_author\" content=\"Fiona S.L. Brinkman\" />\n<meta name=\"citation_author_institution\" content=\"Department of Molecular Biology and Biochemistry, Simon Fraser University\" />\n<link rel=\"canonical\" href=\"https://fmaguire.github.io/mag_sim_paper/\" />\n<meta property=\"og:url\" content=\"https://fmaguire.github.io/mag_sim_paper/\" />\n<meta property=\"twitter:url\" content=\"https://fmaguire.github.io/mag_sim_paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://fmaguire.github.io/mag_sim_paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://fmaguire.github.io/mag_sim_paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://fmaguire.github.io/mag_sim_paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://fmaguire.github.io/mag_sim_paper/v/d1eb17d078e1b75c73e29ca979461643fede3760/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://fmaguire.github.io/mag_sim_paper/v/d1eb17d078e1b75c73e29ca979461643fede3760/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://fmaguire.github.io/mag_sim_paper/v/d1eb17d078e1b75c73e29ca979461643fede3760/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands\" />\n<meta name=\"citation_title\" content=\"Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands\" />\n<meta property=\"og:title\" content=\"Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands\" />\n<meta property=\"twitter:title\" content=\"Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands\" />\n<meta name=\"dc.date\" content=\"2020-04-15\" />\n<meta name=\"citation_publication_date\" content=\"2020-04-15\" />\n<meta name=\"dc.language\" content=\"en-CA\" />\n<meta name=\"citation_language\" content=\"en-CA\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Finlay Maguire*\" />\n<meta name=\"citation_author_institution\" content=\"Faculty of Computer Science, Dalhousie University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1203-9514\" />\n<meta name=\"twitter:creator\" content=\"@finlaym\" />\n<meta name=\"citation_author\" content=\"Baofeng Jia*\" />\n<meta name=\"citation_author_institution\" content=\"Department of Molecular Biology and Biochemistry, Simon Fraser University\" />\n<meta name=\"citation_author\" content=\"Kristen Gray\" />\n<meta name=\"citation_author_institution\" content=\"Department of Molecular Biology and Biochemistry, Simon Fraser University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1962-189X\" />\n<meta name=\"citation_author\" content=\"Wing Yin Venus Lau\" />\n<meta name=\"citation_author_institution\" content=\"Department of Molecular Biology and Biochemistry, Simon Fraser University\" />\n<meta name=\"citation_author\" content=\"Robert G. Beiko\" />\n<meta name=\"citation_author_institution\" content=\"Faculty of Computer Science, Dalhousie University\" />\n<meta name=\"citation_author\" content=\"Fiona S.L. Brinkman\" />\n<meta name=\"citation_author_institution\" content=\"Department of Molecular Biology and Biochemistry, Simon Fraser University\" />\n<link rel=\"canonical\" href=\"https://fmaguire.github.io/mag_sim_paper/\" />\n<meta property=\"og:url\" content=\"https://fmaguire.github.io/mag_sim_paper/\" />\n<meta property=\"twitter:url\" content=\"https://fmaguire.github.io/mag_sim_paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://fmaguire.github.io/mag_sim_paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://fmaguire.github.io/mag_sim_paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://fmaguire.github.io/mag_sim_paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://fmaguire.github.io/mag_sim_paper/v/009d332080a5a9193b59a342304c0e0b7d527a7e/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://fmaguire.github.io/mag_sim_paper/v/009d332080a5a9193b59a342304c0e0b7d527a7e/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://fmaguire.github.io/mag_sim_paper/v/009d332080a5a9193b59a342304c0e0b7d527a7e/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -26,7 +26,7 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "April 13, 2020",
+    "date": "April 15, 2020",
     "authors": [
       {
         "github": "fmaguire",
@@ -119,19 +119,19 @@
       "repo_slug": "fmaguire/mag_sim_paper",
       "repo_owner": "fmaguire",
       "repo_name": "mag_sim_paper",
-      "commit": "d1eb17d078e1b75c73e29ca979461643fede3760",
-      "triggering_commit": "d1eb17d078e1b75c73e29ca979461643fede3760",
-      "build_url": "https://github.com/fmaguire/mag_sim_paper/commit/d1eb17d078e1b75c73e29ca979461643fede3760/checks",
+      "commit": "009d332080a5a9193b59a342304c0e0b7d527a7e",
+      "triggering_commit": "009d332080a5a9193b59a342304c0e0b7d527a7e",
+      "build_url": "https://github.com/fmaguire/mag_sim_paper/commit/009d332080a5a9193b59a342304c0e0b7d527a7e/checks",
       "job_url": "https://github.com/fmaguire/mag_sim_paper/runs/run2"
     },
     "html_url": "https://fmaguire.github.io/mag_sim_paper/",
     "pdf_url": "https://fmaguire.github.io/mag_sim_paper/manuscript.pdf",
-    "html_url_versioned": "https://fmaguire.github.io/mag_sim_paper/v/d1eb17d078e1b75c73e29ca979461643fede3760/",
-    "pdf_url_versioned": "https://fmaguire.github.io/mag_sim_paper/v/d1eb17d078e1b75c73e29ca979461643fede3760/manuscript.pdf",
+    "html_url_versioned": "https://fmaguire.github.io/mag_sim_paper/v/009d332080a5a9193b59a342304c0e0b7d527a7e/",
+    "pdf_url_versioned": "https://fmaguire.github.io/mag_sim_paper/v/009d332080a5a9193b59a342304c0e0b7d527a7e/manuscript.pdf",
     "manubot_version": "0.3.1",
     "rootstock_commit": "6859ada7a28a72cd0ed728e085955f23fadc2b9a",
     "manuscript_stats": {
-      "word_count": 5518
+      "word_count": 5504
     }
   }
 }
