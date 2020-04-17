@@ -8,7 +8,7 @@ author-meta:
 - Fiona S.L. Brinkman
 bibliography:
 - content/manual-references.json
-date-meta: '2020-04-15'
+date-meta: '2020-04-17'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta name="dc.date" content="2020-04-15" />
+  <meta name="dc.date" content="2020-04-17" />
 
-  <meta name="citation_publication_date" content="2020-04-15" />
+  <meta name="citation_publication_date" content="2020-04-17" />
 
   <meta name="dc.language" content="en-CA" />
 
@@ -85,11 +85,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/009d332080a5a9193b59a342304c0e0b7d527a7e/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/bb43856b404d339599fc1f6c595fff7d0617e408/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/009d332080a5a9193b59a342304c0e0b7d527a7e/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/bb43856b404d339599fc1f6c595fff7d0617e408/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/009d332080a5a9193b59a342304c0e0b7d527a7e/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/bb43856b404d339599fc1f6c595fff7d0617e408/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -121,10 +121,10 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/009d332080a5a9193b59a342304c0e0b7d527a7e/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/bb43856b404d339599fc1f6c595fff7d0617e408/))
 was automatically generated
-from [fmaguire/mag_sim_paper@009d332](https://github.com/fmaguire/mag_sim_paper/tree/009d332080a5a9193b59a342304c0e0b7d527a7e)
-on April 15, 2020.
+from [fmaguire/mag_sim_paper@bb43856](https://github.com/fmaguire/mag_sim_paper/tree/bb43856b404d339599fc1f6c595fff7d0617e408)
+on April 17, 2020.
 </em></small>
 
 ## Authors
@@ -333,8 +333,8 @@ In terms of the impact of different metagenome assemblers, megahit resulted in t
 In terms of binning tools, CONCOCT performed very poorly with a median 26% coverage for top hit per bin, followed by maxbin2 (83.1%), and MetaBAT2 (88.5%).
 It is perhaps unsurprising that the best-performing binner in terms of bin top hit coverage was the metabinner DASTool that combines predictions from the other 3 binners (94.3% median top hit chromosome coverage per bin; (Fig. @fig:chromcoverpurity A)).
 
-![Overall binning performance for every combination of metagenome assembler (as indicated by pane titles) and MAG binning tool (x-axis and legend colours). Diamonds in the plots represent outliers (greater or lower than the interquartile range marked by the error bars) and the boxes represent the lower quartile, median, and upper quartile respectively. **(A)** Chromosomal coverage of the most prevalent genome in each bin across binners and metagenome assemblies. Of the 3 assemblers, megahit resulted in the highest median chromosomal coverage (y-axis) across all binners (colored bars) at 81.9% with metaSPAdes performing the worst (76.8%). Of the 4 binners, CONCOCT (blue) performed poorly with a median coverage, followed by maxbin2 (yellow), MetaBAT2 (red) and DASTool (green) performing the best. 
-**(B)** Distribution of bin purity across assemblers and binners. The total number of genomes present in a bin at >5% coverage (y-axis) was largely equivalent across assemblers (x-axis). For the binning tools, maxbin2 (orange) produced nearly twice as many bins containing multiple species compared to CONCOCT (blue), MetaBAT2 (red) and DASTool (green), which all produced chimeric bins at roughly the same rate.](images/bin_cover_purity_combined.png){#fig:chromcoverpurity}
+![Overall binning performance for every combination of metagenome assembler (as indicated by pane titles) and MAG binning tool (x-axis and legend colours). Diamonds in the plots represent outliers (greater or lower than the interquartile range marked by the error bars) and the boxes represent the lower quartile, median, and upper quartile respectively. **(A)** Chromosomal coverage of the most prevalent genome in each bin across binners and metagenome assemblies. Of the 3 assemblers, megahit resulted in the highest median chromosomal coverage (y-axis) across all binners (colored bars) at 81.9% with metaSPAdes performing the worst (76.8%). Of the 4 binners, CONCOCT (red) performed poorly with a median coverage, followed by maxbin2 (blue), MetaBAT2 (purple) and DASTool (green) performing the best. 
+**(B)** Distribution of bin purity across assemblers and binners. The total number of genomes present in a bin at >5% coverage (y-axis) was largely equivalent across assemblers (x-axis). For the binning tools, maxbin2 (blue) produced nearly twice as many bins containing multiple species compared to CONCOCT (red), MetaBAT2 (purple) and DASTool (green), which all produced chimeric bins at roughly the same rate.](images/bin_cover_purity_combined.png){#fig:chromcoverpurity}
 
 Bin purity, i.e. the number of genomes present in a bin at >5% coverage, was largely equivalent across assemblers, with a very marginally higher purity for IDBA.
 Across binning tools maxbin2 proved an exception with nearly twice as many bins containing multiple species as the next binner (Fig. @fig:chromcoverpurity B).
