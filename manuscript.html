@@ -10,9 +10,9 @@
   <meta name="author" content="Wing Yin Venus Lau" />
   <meta name="author" content="Robert G. Beiko" />
   <meta name="author" content="Fiona S.L. Brinkman" />
-  <meta name="dcterms.date" content="2020-04-17" />
+  <meta name="dcterms.date" content="2020-04-20" />
   <meta name="keywords" content="markdown, publishing, manubot" />
-  <title>Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands</title>
+  <title>Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -29,12 +29,12 @@
   Suggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
-  <meta name="citation_title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
-  <meta property="og:title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
-  <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
-  <meta name="dc.date" content="2020-04-17" />
-  <meta name="citation_publication_date" content="2020-04-17" />
+  <meta name="dc.title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
+  <meta name="citation_title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
+  <meta property="og:title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
+  <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
+  <meta name="dc.date" content="2020-04-20" />
+  <meta name="citation_publication_date" content="2020-04-20" />
   <meta name="dc.language" content="en-CA" />
   <meta name="citation_language" content="en-CA" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,6 +47,7 @@
   <meta name="twitter:creator" content="@finlaym" />
   <meta name="citation_author" content="Baofeng Jia*" />
   <meta name="citation_author_institution" content="Department of Molecular Biology and Biochemistry, Simon Fraser University" />
+  <meta name="twitter:creator" content="@bfjia" />
   <meta name="citation_author" content="Kristen Gray" />
   <meta name="citation_author_institution" content="Department of Molecular Biology and Biochemistry, Simon Fraser University" />
   <meta name="citation_author_orcid" content="0000-0002-1962-189X" />
@@ -62,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://fmaguire.github.io/mag_sim_paper/" />
   <meta name="citation_pdf_url" content="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/bb43856b404d339599fc1f6c595fff7d0617e408/" />
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/bb43856b404d339599fc1f6c595fff7d0617e408/" />
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/bb43856b404d339599fc1f6c595fff7d0617e408/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/8b1ccfa4d3747eee0881652965f00eb71b8ada67/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/8b1ccfa4d3747eee0881652965f00eb71b8ada67/" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/8b1ccfa4d3747eee0881652965f00eb71b8ada67/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,14 +75,14 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands</h1>
+<h1 class="title">Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands</h1>
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://fmaguire.github.io/mag_sim_paper/v/bb43856b404d339599fc1f6c595fff7d0617e408/">permalink</a>)
+(<a href="https://fmaguire.github.io/mag_sim_paper/v/8b1ccfa4d3747eee0881652965f00eb71b8ada67/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/fmaguire/mag_sim_paper/tree/bb43856b404d339599fc1f6c595fff7d0617e408">fmaguire/mag_sim_paper@bb43856</a>
-on April 17, 2020.
+from <a href="https://github.com/fmaguire/mag_sim_paper/tree/8b1ccfa4d3747eee0881652965f00eb71b8ada67">fmaguire/mag_sim_paper@8b1ccfa</a>
+on April 20, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -98,7 +99,9 @@ Faculty of Computer Science, Dalhousie University
 </small></p></li>
 <li><p><strong>Baofeng Jia</strong>*<br>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
-<a href="https://github.com/imasianxd">imasianxd</a><br>
+<a href="https://github.com/imasianxd">imasianxd</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/bfjia">bfjia</a><br>
 <small>
 Department of Molecular Biology and Biochemistry, Simon Fraser University
 </small></p></li>

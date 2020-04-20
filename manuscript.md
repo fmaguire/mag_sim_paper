@@ -8,7 +8,7 @@ author-meta:
 - Fiona S.L. Brinkman
 bibliography:
 - content/manual-references.json
-date-meta: '2020-04-17'
+date-meta: '2020-04-20'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -19,17 +19,17 @@ header-includes: '<!--
 
   <meta name="dc.format" content="text/html" />
 
-  <meta name="dc.title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
+  <meta name="dc.title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta name="citation_title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
+  <meta name="citation_title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta property="og:title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
+  <meta property="og:title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands" />
+  <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta name="dc.date" content="2020-04-17" />
+  <meta name="dc.date" content="2020-04-20" />
 
-  <meta name="citation_publication_date" content="2020-04-17" />
+  <meta name="citation_publication_date" content="2020-04-20" />
 
   <meta name="dc.language" content="en-CA" />
 
@@ -54,6 +54,8 @@ header-includes: '<!--
   <meta name="citation_author" content="Baofeng Jia*" />
 
   <meta name="citation_author_institution" content="Department of Molecular Biology and Biochemistry, Simon Fraser University" />
+
+  <meta name="twitter:creator" content="@bfjia" />
 
   <meta name="citation_author" content="Kristen Gray" />
 
@@ -85,11 +87,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/bb43856b404d339599fc1f6c595fff7d0617e408/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/8b1ccfa4d3747eee0881652965f00eb71b8ada67/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/bb43856b404d339599fc1f6c595fff7d0617e408/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/8b1ccfa4d3747eee0881652965f00eb71b8ada67/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/bb43856b404d339599fc1f6c595fff7d0617e408/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/8b1ccfa4d3747eee0881652965f00eb71b8ada67/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -111,7 +113,7 @@ manubot-clear-requests-cache: false
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
-title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands
+title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands
 ...
 
 
@@ -121,10 +123,10 @@ title: Metagenome-Assembled Genome Binning Methods Disproportionately Fail for P
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/bb43856b404d339599fc1f6c595fff7d0617e408/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/8b1ccfa4d3747eee0881652965f00eb71b8ada67/))
 was automatically generated
-from [fmaguire/mag_sim_paper@bb43856](https://github.com/fmaguire/mag_sim_paper/tree/bb43856b404d339599fc1f6c595fff7d0617e408)
-on April 17, 2020.
+from [fmaguire/mag_sim_paper@8b1ccfa](https://github.com/fmaguire/mag_sim_paper/tree/8b1ccfa4d3747eee0881652965f00eb71b8ada67)
+on April 20, 2020.
 </em></small>
 
 ## Authors
@@ -145,7 +147,9 @@ on April 17, 2020.
 
 + **Baofeng Jia***<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [imasianxd](https://github.com/imasianxd)<br>
+    [imasianxd](https://github.com/imasianxd)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [bfjia](https://twitter.com/bfjia)<br>
   <small>
      Department of Molecular Biology and Biochemistry, Simon Fraser University
   </small>
