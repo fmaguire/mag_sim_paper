@@ -1,5 +1,5 @@
 ---
-title: "Metagenome-Assembled Genome Binning Methods Disproportionately Fail for Plasmids and Genomic Islands"
+title: "Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands"
 keywords:
   - markdown
   - publishing
@@ -23,6 +23,7 @@ authors:
     name: Baofeng Jia*
     initials: BJ
     email: jjia@sfu.ca
+    twitter: bfjia
     affiliations:
       - Department of Molecular Biology and Biochemistry, Simon Fraser University
   -
