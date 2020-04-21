@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/27d1aafa2cd6f2dfd80705d953c07d172cc2884d/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/b35bbd85bd2690880a7d447feb2771b72def52fd/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/27d1aafa2cd6f2dfd80705d953c07d172cc2884d/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/b35bbd85bd2690880a7d447feb2771b72def52fd/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/27d1aafa2cd6f2dfd80705d953c07d172cc2884d/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/b35bbd85bd2690880a7d447feb2771b72def52fd/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/27d1aafa2cd6f2dfd80705d953c07d172cc2884d/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/b35bbd85bd2690880a7d447feb2771b72def52fd/))
 was automatically generated
-from [fmaguire/mag_sim_paper@27d1aaf](https://github.com/fmaguire/mag_sim_paper/tree/27d1aafa2cd6f2dfd80705d953c07d172cc2884d)
+from [fmaguire/mag_sim_paper@b35bbd8](https://github.com/fmaguire/mag_sim_paper/tree/b35bbd85bd2690880a7d447feb2771b72def52fd)
 on April 21, 2020.
 </em></small>
 
@@ -353,20 +353,21 @@ Previous studies have observed that ORF predictions in draft genomes are more fr
 
 In general, there are 3 main limitations to this study: the drawbacks of metagenome simulation, the use of a single metagenome, and not evaluating the utility of multiple metagenomic replicates in recovery of these elements.
 Metagenome simulation is unlikely to perfectly emulate all the noise and biases present in real metagenomic sequencing results. 
-However, assessment with real metagenomic data is even more problematic due to the lack of a clear known ground truth, so in the absence of an MGE/AMR-focused mock metagenomes, simulation represents the most powerful technique for evaluation of bioinformatic analyses. 
-This is why it has been widely adopted in thorough benchmarking experiments such as the CAMI challenges [@doi:10.1093/gigascience/giy069;@doi:10.1186/s40168-019-0633-6].
+However, assessment with real metagenomic data is even more problematic due to the lack of a clear known ground truth. 
+In the absence of an MGE/AMR-focused mock metagenomes, simulation represents the most powerful technique for evaluation of bioinformatic analyses. 
+This is why this approach has been widely adopted in thorough benchmarking experiments such as the CAMI challenges [@doi:10.1093/gigascience/giy069;@doi:10.1186/s40168-019-0633-6].
 In terms of multiple replicates, while there are indications this approach may improve binning of MGEs [@doi:10.1126/sciadv.aax5727], most typical public-health and research MAG studies don't currently utilise this kind of approach.
-Finally, a single simulated metagenome was used in order to keep the binning performance of MGEs as clear as possible.
+A single simulated metagenome was used in order to keep the binning performance of MGEs as clear as possible.
 Given the importance of this issue, there was a pragmatic decision to use this relatively low-complexity (30 species) metagenome as a "best-case" evaluation, i.e., failure to recover elements for this dataset strongly suggests they would not be recovered in a more complex metagenome.
 
 
 ## Conclusions {#conclusions}
 
-Using a simulated metagenome, this study has shown that MAG-based approaches provide a useful tool to study a bacterial species’ core chromosomal elements, but have severe limitations in the recovery of MGEs.
+This study has shown that MAG-based approaches provide a useful tool to study a bacterial species’ core chromosomal elements, but have severe limitations in the recovery of MGEs.
 The majority of these MGEs will either fail to be assembled or be incorrectly binned.
 The consequence of this is the disproportionate loss of key public-health MGE-associated VFs and AMR genes.
-As these genes have a much higher propensity for lateral gene transfer between unrelated bacteria it is critical to highlight that MAG approaches alone are insufficient to thoroughly profile them.
-Within public-health metagenomic research it is vital we utilize MAGs in conjunction with other methods (e.g. targeted AMR [@doi:10.1099/mgen.0.000131], plasmid specialised assembly approaches [@doi:10.1101/2020.01.12.903252], and read-based sequence homology search [@doi:10.1038/nmeth.3176]) before drawing biological or epidemiological conclusions.
+As many of these clinically relevant genes have a high propensity for lateral gene transfer between unrelated bacteria [@doi:10.1371/journal.pone.0008094;@doi:10.3389/fmicb.2016.00173] it is critical to highlight that MAG approaches alone are insufficient to thoroughly profile them.
+Within public-health metagenomic research it is vital we utilize MAGs in conjunction with other methods (e.g. targeted AMR [@doi:10.1099/mgen.0.000131], long-read sequencing, plasmid specialised assembly approaches [@doi:10.1101/2020.01.12.903252], and read-based sequence homology search [@doi:10.1038/nmeth.3176]) before drawing biological or epidemiological conclusions.
 
 
 ## Materials and Methods {#methods}
@@ -470,8 +471,10 @@ All analysis and plotting code used is available at [github.com/fmaguire/MAG_gi_
 
 This work was supported primarily by a Donald Hill Family Fellowship held by F.M.
 W.Y.V.L. and B.J. hold Canadian Institute of Health Research (CIHR) doctoral scholarships.
-K.G. is supported by a Natural Sciences and Engineering Research Council of Canada (NSERC) Collaborative Research and Training Experience (CREATE) scholarship.
-Additionally this work was partially supported by Simon Fraser University, as well as Genome Canada and NSERC grants to R.G.B. and F.S.L.B. 
+K.G. was supported by a Natural Sciences and Engineering Research Council of Canada (NSERC) Collaborative Research and Training Experience (CREATE) Bioinformatics scholarship.
+B.J, W.Y.V.L., and K.G. also held Simon Fraser University (SFU) Omics and Data Sciences fellowships.
+F.S.L.B. holds an SFU Distinguished Professorship and R.G.B. is a Professor and Associate Dean Research at Dalhousie University.
+Additionally, this work was partially supported by Genome Canada and NSERC grants to R.G.B. and F.S.L.B. 
 
 ## Author Information
 
@@ -490,12 +493,16 @@ Baofeng Jia, Kristen Gray, Wing Yin Venus Lau, & Fiona S.L. Brinkman
 ### Contributions
 
 F.M. and B.J. conceived and designed the study, performed MAG analyses, generated the figures, and wrote the manuscript.
-W.Y.V.L. and K.G. assisted in the analysis of genomic island and plasmid gene content analysis.
+W.Y.V.L. and K.G. provided key input on genomic island and subcellular localization analyses, respectively.
 All authors contributed to and approved the manuscript.
 
 ### Corresponding authors
 
 Correspondence to Finlay Maguire or Fiona S.L. Brinkman
+
+## Ethics declarations
+
+The authors declare no competing interests.
 
 
 ## Supplementary Information {#supplementals}
