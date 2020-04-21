@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/0607836c75ce8150b4b2a1600933531d2ffb989d/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/46725eb7bfb69cde1fed9e3d78fa65e5e4018e9a/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/0607836c75ce8150b4b2a1600933531d2ffb989d/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/46725eb7bfb69cde1fed9e3d78fa65e5e4018e9a/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/0607836c75ce8150b4b2a1600933531d2ffb989d/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/46725eb7bfb69cde1fed9e3d78fa65e5e4018e9a/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/0607836c75ce8150b4b2a1600933531d2ffb989d/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/46725eb7bfb69cde1fed9e3d78fa65e5e4018e9a/))
 was automatically generated
-from [fmaguire/mag_sim_paper@0607836](https://github.com/fmaguire/mag_sim_paper/tree/0607836c75ce8150b4b2a1600933531d2ffb989d)
+from [fmaguire/mag_sim_paper@46725eb](https://github.com/fmaguire/mag_sim_paper/tree/46725eb7bfb69cde1fed9e3d78fa65e5e4018e9a)
 on April 21, 2020.
 </em></small>
 
@@ -220,7 +220,7 @@ Since these reads are shorter than most genes, however, read-based methods provi
 This lack of contextual information is particularly problematic in the study of AMR genes and VFs as the genomic context plays a role in function [@doi:10.1128/AAC.01710-09], selective pressures [@doi:10.1016/j.tim.2006.02.006], and likelihood of lateral gene transfer (LGT) [@doi:10.1111/j.1574-6976.2011.00273.x].
 
 Sequence assembly using specialised metagenomic de Bruijn graph assemblers (e.g., metaSPAdes [@doi:10.1101/gr.213959.116], IDBA-UD [@doi:10.1093/bioinformatics/bts174], and megahit [@doi:10.1093/bioinformatics/btv033]) is often used to try to recover information about genomic context [@doi:10.1038/nature02340].
-To disentangle the resulting mix of assembled fragments, there has been a move to group these contigs based on the idea that those from the same source genome will have similar relative abundance and sequence composition [@10.1093/bib/bbx120].
+To disentangle the resulting mix of assembled fragments, there has been a move to group these contigs based on the idea that those from the same source genome will have similar relative abundance and sequence composition [@doi:10.1093/bib/bbx120].
 These resulting groups or "bins" are known as metagenome-assembled genomes (MAGs). 
 A range of tools have been released to perform this binning including CONCOCT [@doi:10.1093/bioinformatics/btw290], MetaBAT 2 [@doi:10.7287/peerj.preprints.27522v1], MaxBin 2 [@doi:10.1093/bioinformatics/btv638], and a tool which combines their predictions: DAS Tool [@doi:10.1038/s41564-018-0171-1].
 These MAG binning methods have been used in unveiling previously uncharacterised genomic diversity [@doi:10.1038/nature14486; @doi:10.1038/s41564-017-0012-7; @doi:10.1101/489443], but metagenomic assembly and binning results in the loss of some information.
@@ -231,7 +231,7 @@ However, to the best of our knowledge, there has not been a specific assessment 
 Genomic islands (GIs) are clusters of genes that are known or predicted to have been acquired through LGT events. 
 GIs can arise following the integration of MGEs, such as integrons, transposons, integrative and conjugative elements (ICEs) and prophages (integrated phages) [@doi:10.1038/nrmicro2350; @doi:10.1038/nrg3962].
 They are of high interest since VFs are disproportionately associated with mobile sequences [@doi:10.1371/journal.pone.0008094] as well as certain AMR genes [@doi:10.3389/fmicb.2016.00173; @doi:10.1016/j.plasmid.2015.01.001]. 
-GIs often have differing nucleotide composition compared to the rest of the genome [@doi:10.1038/nrmicro2350], a trait exploited by GI prediction tools such as SIGI-HMM [@doi:10.1186/1471-2105-5-22], IslandPath-DIMOB [@doi:10.1093/bioinformatics/bty095], and integrative tools like IslandViewer [@doi:10.1093/nar/gkv401].
+GIs often have differing nucleotide composition compared to the rest of the genome [@doi:10.1038/nrmicro2350], a trait exploited by GI prediction tools such as SIGI-HMM [@pmid:15113412], IslandPath-DIMOB [@doi:10.1093/bioinformatics/bty095], and integrative tools like IslandViewer [@doi:10.1093/nar/gkv401].
 GIs may also exist as multiple copies within a genome [@doi:10.1093/bib/bby042] leading to potential assembly difficulties and biases in the calculation of coverage statistics.
 
 Plasmids are circular or linear extrachromosomal self-replicating pieces of DNA with variable copy numbers and repetitive sequences [@doi:10.1038/s41559-016-0010; @doi:10.1128/AAC.00235-15].
@@ -457,26 +457,27 @@ Subcellular localisation of these proteins were then predicted using PSORTb v3.0
 
 
 
-### Data availability
+
+## Data availability
 
 All datasets used or generated in this study are available at osf.io/nrejs/
 
-### Code availability
+## Code availability
 
 All analysis and plotting code used is available at github.com/fmaguire/MAG_gi_plasmid_analysis
 
-### Acknowledgements
+## Acknowledgements
 
 This work was supported primarily by a Donald Hill Family Fellowship held by F.M.
 W.Y.V.L. and B.J. hold Canadian Institute of Health Research (CIHR) doctoral scholarships.
 K.G. is supported by a Natural Sciences and Engineering Research Council of Canada (NSERC) Collaborative Research and Training Experience (CREATE) scholarship.
 Additionally this work was partially supported by Simon Fraser University, as well as Genome Canada and NSERC grants to R.G.B. and F.S.L.B. 
 
-### Author Information
+## Author Information
 
 These authors contributed equally: Finlay Maguire & Baofeng Jia
 
-#### Affiliations
+### Affiliations
 
 _Faculty of Computer Science, Dalhousie University, Halifax, NS, Canada_
 
@@ -486,13 +487,13 @@ _Department of Molecular Biology and Biochemistry, Simon Fraser University, Burn
 
 Baofeng Jia, Kristen Gray, Wing Yin Venus Lau, & Fiona S.L. Brinkman
 
-#### Contributions
+### Contributions
 
 F.M. and B.J. conceived and designed the study, performed MAG analyses, generated the figures, and wrote the manuscript.
 W.Y.V.L. and K.G. assisted in the analysis of genomic island and plasmid gene content analysis.
 All authors contributed to and approved the manuscript.
 
-#### Corresponding authors
+### Corresponding authors
 
 Correspondence to Finlay Maguire or Fiona S.L. Brinkman
 
@@ -516,7 +517,7 @@ Regardless of different tools producing a different number of ORFs, the recovery
 
 By generating a phylogeny of universal single copy genes in our input genomes we analysed the relationship between the presence of closely related genomes and the ability of the different MAG-recovery methods to bin chromosomal sequences.
 Specifically, we regressed phylogenetic distance on this phylogeny with per-bin chromosomal coverage (Fig. @fig:coverphylo) and bin purity (Fig. @fig:purityphylo).
-This identified no clear relationship between chromosomal coverage and the phylogenetic distance to the nearest relative in the metagenome (Fig. @fig:coveragephylo), however, there did seem to be a negative correlation between phylogenetic distance to closest relative and the purity of a MAG bin (Fig. @fig:purityphylo).
+This identified no clear relationship between chromosomal coverage and the phylogenetic distance to the nearest relative in the metagenome (Fig. @fig:coverphylo), however, there did seem to be a negative correlation between phylogenetic distance to closest relative and the purity of a MAG bin (Fig. @fig:purityphylo).
 In other words, across all methods, a MAG bin was more likely to have multiple genomes present if there were close relatives.
 
 ![Relationship between phylogenetic distance to closest neighbour input genome on genomic coverage in MAG majority comprised of that taxa. Each dot represents the genomic coverage of a particular taxa and the branch distance on an 86-protein concatenated phylogeny between that taxa and its nearest neighbour. Rows indicate the binning software and columns the metagenomic assembler. Regression line is a simple linear model fitted in seaborn. ](images/best_coverage_phylo_dist.png){#fig:coverphylo}
