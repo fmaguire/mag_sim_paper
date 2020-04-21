@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/48bcddcf8e2f68ebb21e2b64eade259763bce847/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/7a55b0f3456371b0801a28b9e2fabb0e0ff7bc08/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/48bcddcf8e2f68ebb21e2b64eade259763bce847/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/7a55b0f3456371b0801a28b9e2fabb0e0ff7bc08/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/48bcddcf8e2f68ebb21e2b64eade259763bce847/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/7a55b0f3456371b0801a28b9e2fabb0e0ff7bc08/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/48bcddcf8e2f68ebb21e2b64eade259763bce847/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/7a55b0f3456371b0801a28b9e2fabb0e0ff7bc08/))
 was automatically generated
-from [fmaguire/mag_sim_paper@48bcddc](https://github.com/fmaguire/mag_sim_paper/tree/48bcddcf8e2f68ebb21e2b64eade259763bce847)
+from [fmaguire/mag_sim_paper@7a55b0f](https://github.com/fmaguire/mag_sim_paper/tree/7a55b0f3456371b0801a28b9e2fabb0e0ff7bc08)
 on April 21, 2020.
 </em></small>
 
@@ -257,7 +257,7 @@ Some genomes are cleanly and accurately binned regardless of the assembler and b
 Specifically, greater than 90% of _Streptomyces parvulus_ (minimum 91.8%) and _Clostridium baratii_ (minimum 96.4%) chromosomes are represented in individual bins across all methods.
 However, no other genomes were consistently recovered at >30% chromosomal coverage across methods.
 The three _Streptococcus_ genomes were particularly problematic with the best recovery for each ranging from 1.7% to 47.49%.
-Contrary to what might be expected, the number of close relatives to a given genome in the metagenome did not clearly affect the MAG coverage (Fig. @fig:coverphylo).
+Contrary to what might be expected, the number of close relatives to a given genome in the metagenome did not clearly affect the MAG coverage (Fig. [S1](#fig:coverphylo)).
 
 
 ![Top genome coverage for input genomes across MAG binners. Each dot represents the coverage of a specified genome when it comprised the plurality of the sequences in a bin. The binning tool is indicated by the colour of the dot as per the legend. Genomes such as _Clostridium baratti_ were accurately recovered across all binner-assembler combinations whereas genomes such as _Streptococcus macedonicus_ were systematically poorly recovered.](images/top_hits_per_bin.png){#fig:speciescov}
@@ -325,7 +325,7 @@ However, 0-16% of GI-localised VF genes (n=809) and again none of the plasmid-as
 
 ### Comparisons of Rates of Loss
 
-We combined the performance metrics for Figs. @fig:plasmids, @fig:gis, @fig:AMRGenePercentRecoveryStageContext, and @fig:VFGenePercentRecoveryStageCombined to compare the rates of loss of different components (see Fig. @fig:rateofloss).
+We combined the performance metrics for Figs. @fig:plasmids, @fig:gis, @fig:AMRGenePercentRecoveryStageContext, and @fig:VFGenePercentRecoveryStageCombined to compare the rates of loss of different components (see Fig. [S4](#fig:rateofloss)).
 This highlighted that genomic components (GIs and plasmids) and plasmids in particular are lost at a disproportionately higher rate than individual gene types during MAG recovery.
 
 
@@ -333,7 +333,7 @@ This highlighted that genomic components (GIs and plasmids) and plasmids in part
 ## Discussion {#discussion}
 
 In this paper, we evaluated the ability of metagenome-assembled genome (MAG) binning methods to correctly recover mobile genetic elements (MGEs; i.e. genomic islands and plasmids) from metagenomic samples.
-Overall, chromosomal sequences were binned well (up to 94.3% coverage, with perfect bin purity using megahit-DASTool) however closely related genomes were consistently cross-contaminated with other sequences (e.g. _Streptococcus_ species in Fig. @fig:coverphylo, @fig:purityphylo).
+Overall, chromosomal sequences were binned well (up to 94.3% coverage, with perfect bin purity using megahit-DASTool) however closely related genomes were consistently cross-contaminated with other sequences (e.g. _Streptococcus_ species in Fig. [S1](#fig:coverphylo), [S2](#fig:purityphylo)).
 Given the importance of MGEs in the function and spread of pathogenic traits, it is particularly noteworthy that regardless of MAG binning method, plasmids and GIs were disproportionately lost compared to core chromosomal regions. 
 At best (with metaSPAdes and CONCOCT) 29.2% of plasmids and 44.1% of GIs were identifiable at >50% coverage in the correct bin (i.e. grouped with a bin that was mostly made up of contigs from the same genome). 
 While some MGEs were likely recovered in more partial forms (<50% coverage), use of these by researchers interested in selective pressures and lateral gene transfer could lead to inaccurate inferences. 
@@ -348,7 +348,7 @@ The majority of these genes were correctly assembled across assemblers but were 
 At best across all binners, 40% of all AMR genes and ~63% of VF genes (CONCOCT-metaSPAdes) present in the reference genomes were assigned to the correct MAG.
 While a majority of chromosomally located VF genes (73-98%) and AMR genes (53%) were binned correctly, only 16% of GI VFs (n=809), 45% of GI AMR genes (n=11), and not a single plasmid associated VF (n=3) or AMR gene (n=20) were correctly binned.
 This included critical high-threat MGE-associated AMR genes such as the KPC and OXA carbapenemases. 
-One potential caveat of this is that some AMR genes and VFs may no longer be detectable in MAGs due to issues with ORF prediction (see suppl. discussion & Fig. @fig:geneContent). 
+One potential caveat of this is that some AMR genes and VFs may no longer be detectable in MAGs due to issues with ORF prediction (see suppl. discussion & Fig. [S3](#fig:geneContent)). 
 Previous studies have observed that ORF predictions in draft genomes are more fragmented, which can lead to downstream over- or under-annotation with functional labels depending on the approach used [@doi:10.1186/1471-2164-13-14]. 
 
 In general, there are 3 main limitations to this study: the drawbacks of metagenome simulation, the use of a single metagenome, and not evaluating the utility of multiple metagenomic replicates in recovery of these elements.
@@ -508,10 +508,21 @@ The authors declare no competing interests.
 
 ## Supplementary Information {#supplementals}
 
+### Impact of Related Genomes on MAG
+
+By generating a phylogeny of universal single copy genes in our input genomes we analysed the relationship between the presence of closely related genomes and the ability of the different MAG-recovery methods to bin chromosomal sequences.
+Specifically, we regressed phylogenetic distance on this phylogeny with per-bin chromosomal coverage (Fig. [S1](#fig:coverphylo)) and bin purity (Fig. [S2](#fig:purityphylo)).
+This identified no clear relationship between chromosomal coverage and the phylogenetic distance to the nearest relative in the metagenome (Fig. [S1](#fig:coverphylo)), however, there did seem to be a negative correlation between phylogenetic distance to closest relative and the purity of a MAG bin (Fig. [S2](#fig:purityphylo)).
+In other words, across all methods, a MAG bin was more likely to have multiple genomes present if there were close relatives.
+
+![Relationship between phylogenetic distance to closest neighbour input genome on genomic coverage in MAG majority comprised of that taxa. Each dot represents the genomic coverage of a particular taxa and the branch distance on an 86-protein concatenated phylogeny between that taxa and its nearest neighbour. Rows indicate the binning software and columns the metagenomic assembler. Regression line is a simple linear model fitted in seaborn. ](images/best_coverage_phylo_dist.png){#fig:coverphylo, tag="S1"}
+
+![Relationship between phylogenetic distance to closest neighbour input genome on bin purity.  Each dot shows the number of other input genomes detectable in a given MAG bin in relation to the branch distance on an 86-protein concatenated phylogeny between the majority taxa in that bin and its nearest neighbour.](images/purity_phylo_dist.png){#fig:purityphylo, tag="S2"}
+
 ### Recovery of Specific Gene Content
 
 We explored the ability of different approaches to find open reading frames (ORFs) within MAGs.
-Overall, the total number of predicted ORFs in MAGs followed a similar trend (Fig. @fig:geneContent) as the chromosomal coverage and purity (Fig. @fig:chromcoverpurity).
+Overall, the total number of predicted ORFs in MAGs followed a similar trend (Fig. [S3](#fig:geneContent)) as the chromosomal coverage and purity (Fig. @fig:chromcoverpurity).
 Of the four binning tools, CONCOCT performed the worst, finding <30% of the number of ORFs in our reference genomes used to construct the synthetic data.
 MetaBAT2 performed second worst at ~80%.
 DASTool recovered a similar number to our reference and Maxbin2 detected 7-46% more genes.
@@ -519,22 +530,12 @@ The Assembler method did not significantly impact the number of genes predicted 
 Given that there is reason to suspect that there are some issues with the ORF calling in the MAGs. i.e. some tools produced more predicted ORFs than reference, it could be the case that some of these sequences are present in the assemblies (with errors/gaps), but are not being identified as ORFs, or are broken into multiple ORFs, leading to issues downstream labeling them correctly as AMR/VF genes. 
 Regardless of different tools producing a different number of ORFs, the recovery of AMR/VF is pretty consistent regardless of how many ORFs are predicted.
 
-![Predicted Gene Content. The total number of open reading frames (ORF) predicted followed the same trend as chromosomal coverage and purity. The assemblers (colored bars) did not contribute to variability in the number of ORFs detected. Of the 4 binners, CONCOCT recovered \<30\% of our reference genome ORFs. DASTool and MetaBAT2 predicted a similar number as our reference genomes.](images/number_of_predicted_genes.png){#fig:geneContent tag="S1"}
+![Predicted Gene Content. The total number of open reading frames (ORF) predicted followed the same trend as chromosomal coverage and purity. The assemblers (colored bars) did not contribute to variability in the number of ORFs detected. Of the 4 binners, CONCOCT recovered \<30\% of our reference genome ORFs. DASTool and MetaBAT2 predicted a similar number as our reference genomes.](images/number_of_predicted_genes.png){#fig:geneContent, tag="S3"}
 
-### Impact of Related Genomes on MAG
-
-By generating a phylogeny of universal single copy genes in our input genomes we analysed the relationship between the presence of closely related genomes and the ability of the different MAG-recovery methods to bin chromosomal sequences.
-Specifically, we regressed phylogenetic distance on this phylogeny with per-bin chromosomal coverage (Fig. @fig:coverphylo) and bin purity (Fig. @fig:purityphylo).
-This identified no clear relationship between chromosomal coverage and the phylogenetic distance to the nearest relative in the metagenome (Fig. @fig:coverphylo), however, there did seem to be a negative correlation between phylogenetic distance to closest relative and the purity of a MAG bin (Fig. @fig:purityphylo).
-In other words, across all methods, a MAG bin was more likely to have multiple genomes present if there were close relatives.
-
-![Relationship between phylogenetic distance to closest neighbour input genome on genomic coverage in MAG majority comprised of that taxa. Each dot represents the genomic coverage of a particular taxa and the branch distance on an 86-protein concatenated phylogeny between that taxa and its nearest neighbour. Rows indicate the binning software and columns the metagenomic assembler. Regression line is a simple linear model fitted in seaborn. ](images/best_coverage_phylo_dist.png){#fig:coverphylo, tag="S2"}
-
-![Relationship between phylogenetic distance to closest neighbour input genome on bin purity.  Each dot shows the number of other input genomes detectable in a given MAG bin in relation to the branch distance on an 86-protein concatenated phylogeny between the majority taxa in that bin and its nearest neighbour.](images/purity_phylo_dist.png){#fig:purityphylo, tag="S3"}
 
 ### Comparisons of Rates of Loss
 
-Combining the performance metrics for Figs. @fig:plasmids, @fig:gis, @fig:AMRGenePercentRecoveryStageContext, and @fig:VFGenePercentRecoveryStageCombined to compare the rates of loss of different components emphasises some of the observed patterns (see Fig. @fig:rateofloss).
+Combining the performance metrics for Figs. @fig:plasmids, @fig:gis, @fig:AMRGenePercentRecoveryStageContext, and @fig:VFGenePercentRecoveryStageCombined to compare the rates of loss of different components emphasises some of the observed patterns (see Fig. [S4](#fig:rateofloss)).
 This highlights that genomic components (GIs and plasmids) and plasmids in particular are lost at a higher rate than individual gene types during MAG recovery.
 
 ![Comparison of rates of loss for different genomic components and gene types across assemblers and binning tools. Each line represents a different component as indicated by the legend with assemblers indicated by row and binning tool by column. This shows that regardless of approach genomic components (GIs and plasmids) are lost at a higher rate than individual VF or AMR genes.](images/rate_of_loss.png){#fig:rateofloss, tag="S4"}
