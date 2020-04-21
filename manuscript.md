@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/65cd895e28044fea992b1b9d9bc9ee12b0012ab7/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/0607836c75ce8150b4b2a1600933531d2ffb989d/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/65cd895e28044fea992b1b9d9bc9ee12b0012ab7/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/0607836c75ce8150b4b2a1600933531d2ffb989d/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/65cd895e28044fea992b1b9d9bc9ee12b0012ab7/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/0607836c75ce8150b4b2a1600933531d2ffb989d/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/65cd895e28044fea992b1b9d9bc9ee12b0012ab7/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/0607836c75ce8150b4b2a1600933531d2ffb989d/))
 was automatically generated
-from [fmaguire/mag_sim_paper@65cd895](https://github.com/fmaguire/mag_sim_paper/tree/65cd895e28044fea992b1b9d9bc9ee12b0012ab7)
+from [fmaguire/mag_sim_paper@0607836](https://github.com/fmaguire/mag_sim_paper/tree/0607836c75ce8150b4b2a1600933531d2ffb989d)
 on April 21, 2020.
 </em></small>
 
@@ -463,28 +463,33 @@ All datasets used or generated in this study are available at osf.io/nrejs/
 
 ### Code availability
 
-All code used is available at github.com/fmaguire/MAG_gi_plasmid_analysis
+All analysis and plotting code used is available at github.com/fmaguire/MAG_gi_plasmid_analysis
 
 ### Acknowledgements
 
-This work was supported primarily by a Donald Hill Family Fellowship held by FM
-Additionally, WYVL and BJ are supported by CIHR-CGSD and SFU graduate scholarships.
-KG is supported by an NSERC-CREATE and SFU graduate scholarship.
+This work was supported primarily by a Donald Hill Family Fellowship held by F.M.
+W.Y.V.L. and B.J. hold Canadian Institute of Health Research (CIHR) doctoral scholarships.
+K.G. is supported by a Natural Sciences and Engineering Research Council of Canada (NSERC) Collaborative Research and Training Experience (CREATE) scholarship.
+Additionally this work was partially supported by Simon Fraser University, as well as Genome Canada and NSERC grants to R.G.B. and F.S.L.B. 
 
 ### Author Information
+
+These authors contributed equally: Finlay Maguire & Baofeng Jia
 
 #### Affiliations
 
 _Faculty of Computer Science, Dalhousie University, Halifax, NS, Canada_
+
 Finlay Maguire, & Robert G. Beiko
 
 _Department of Molecular Biology and Biochemistry, Simon Fraser University, Burnaby, BC, Canada_
+
 Baofeng Jia, Kristen Gray, Wing Yin Venus Lau, & Fiona S.L. Brinkman
 
 #### Contributions
 
-FM and BJ conceived and designed the study, wrote the manuscript, and generated the figures. 
-FM, BJ, WYVL, and KG performed analyses.
+F.M. and B.J. conceived and designed the study, performed MAG analyses, generated the figures, and wrote the manuscript.
+W.Y.V.L. and K.G. assisted in the analysis of genomic island and plasmid gene content analysis.
 All authors contributed to and approved the manuscript.
 
 #### Corresponding authors
