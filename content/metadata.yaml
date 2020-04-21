@@ -15,13 +15,11 @@ authors:
     email: finlaymaguire@gmail.com
     affiliations:
       - Faculty of Computer Science, Dalhousie University
-    funders:
-      - Genome Canada
-      - Donald Hill Family Fellowship
   -
     github: imasianxd
     name: Baofeng Jia*
     initials: BJ
+    orcid: 0000-0002-4735-4709
     email: jjia@sfu.ca
     twitter: bfjia
     affiliations:
@@ -36,6 +34,7 @@ authors:
   -
     name: Wing Yin Venus Lau
     initials: WYVL
+    orcid: 0000-0003-3884-4009
     email: venus_lau@sfu.ca 
     affiliations:
       - Department of Molecular Biology and Biochemistry, Simon Fraser University
@@ -43,11 +42,13 @@ authors:
     name: Robert G. Beiko
     initials: RGB
     email: rbeiko@dal.ca
+    orcid: 0000-0002-5065-4980 
     affiliations:
       - Faculty of Computer Science, Dalhousie University
   -
     name: Fiona S.L. Brinkman
     initials: FSLB
-    email: fionabrinkman@sfu.ca
+    orcid: 0000-0002-0584-4099
+    email: brinkman@sfu.ca
     affiliations:
       - Department of Molecular Biology and Biochemistry, Simon Fraser University
