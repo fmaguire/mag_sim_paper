@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/7a55b0f3456371b0801a28b9e2fabb0e0ff7bc08/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/ed25800a9c5861afbd75a392c73e0d0f71f11614/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/7a55b0f3456371b0801a28b9e2fabb0e0ff7bc08/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/ed25800a9c5861afbd75a392c73e0d0f71f11614/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/7a55b0f3456371b0801a28b9e2fabb0e0ff7bc08/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/ed25800a9c5861afbd75a392c73e0d0f71f11614/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/7a55b0f3456371b0801a28b9e2fabb0e0ff7bc08/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/ed25800a9c5861afbd75a392c73e0d0f71f11614/))
 was automatically generated
-from [fmaguire/mag_sim_paper@7a55b0f](https://github.com/fmaguire/mag_sim_paper/tree/7a55b0f3456371b0801a28b9e2fabb0e0ff7bc08)
+from [fmaguire/mag_sim_paper@ed25800](https://github.com/fmaguire/mag_sim_paper/tree/ed25800a9c5861afbd75a392c73e0d0f71f11614)
 on April 21, 2020.
 </em></small>
 
@@ -273,7 +273,7 @@ Bin purity, i.e. the number of genomes present in a bin at >5% coverage, was lar
 Across binning tools maxbin2 proved an exception with nearly twice as many bins containing multiple species as the next binner (Fig. @fig:chromcoverpurity B).
 The remaining binning tools were largely equivalent, producing chimeric bins at approximately the same rates.
 Unlike coverage, purity was strongly affected by the number of close relatives in the metagenome to a given input genome. 
-Specifically, the closer the nearest relative the less pure the bin (Fig. @fig:purityphylo).
+Specifically, the closer the nearest relative the less pure the bin (Fig. [S2](#fig:purityphylo)).
 
 #### Plasmids
 
