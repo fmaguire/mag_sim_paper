@@ -8,7 +8,7 @@ author-meta:
 - Fiona S.L. Brinkman
 bibliography:
 - content/manual-references.json
-date-meta: '2020-04-20'
+date-meta: '2020-04-21'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta name="dc.date" content="2020-04-20" />
+  <meta name="dc.date" content="2020-04-21" />
 
-  <meta name="citation_publication_date" content="2020-04-20" />
+  <meta name="citation_publication_date" content="2020-04-21" />
 
   <meta name="dc.language" content="en-CA" />
 
@@ -55,6 +55,8 @@ header-includes: '<!--
 
   <meta name="citation_author_institution" content="Department of Molecular Biology and Biochemistry, Simon Fraser University" />
 
+  <meta name="citation_author_orcid" content="0000-0002-4735-4709" />
+
   <meta name="twitter:creator" content="@bfjia" />
 
   <meta name="citation_author" content="Kristen Gray" />
@@ -67,13 +69,19 @@ header-includes: '<!--
 
   <meta name="citation_author_institution" content="Department of Molecular Biology and Biochemistry, Simon Fraser University" />
 
+  <meta name="citation_author_orcid" content="0000-0003-3884-4009" />
+
   <meta name="citation_author" content="Robert G. Beiko" />
 
   <meta name="citation_author_institution" content="Faculty of Computer Science, Dalhousie University" />
 
+  <meta name="citation_author_orcid" content="0000-0002-5065-4980" />
+
   <meta name="citation_author" content="Fiona S.L. Brinkman" />
 
   <meta name="citation_author_institution" content="Department of Molecular Biology and Biochemistry, Simon Fraser University" />
+
+  <meta name="citation_author_orcid" content="0000-0002-0584-4099" />
 
   <link rel="canonical" href="https://fmaguire.github.io/mag_sim_paper/" />
 
@@ -87,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/8b1ccfa4d3747eee0881652965f00eb71b8ada67/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/4f0ff78746d733053b44f8875ba28477ae5ce80b/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/8b1ccfa4d3747eee0881652965f00eb71b8ada67/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/4f0ff78746d733053b44f8875ba28477ae5ce80b/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/8b1ccfa4d3747eee0881652965f00eb71b8ada67/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/4f0ff78746d733053b44f8875ba28477ae5ce80b/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -123,10 +131,10 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/8b1ccfa4d3747eee0881652965f00eb71b8ada67/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/4f0ff78746d733053b44f8875ba28477ae5ce80b/))
 was automatically generated
-from [fmaguire/mag_sim_paper@8b1ccfa](https://github.com/fmaguire/mag_sim_paper/tree/8b1ccfa4d3747eee0881652965f00eb71b8ada67)
-on April 20, 2020.
+from [fmaguire/mag_sim_paper@4f0ff78](https://github.com/fmaguire/mag_sim_paper/tree/4f0ff78746d733053b44f8875ba28477ae5ce80b)
+on April 21, 2020.
 </em></small>
 
 ## Authors
@@ -142,10 +150,11 @@ on April 20, 2020.
     [finlaym](https://twitter.com/finlaym)<br>
   <small>
      Faculty of Computer Science, Dalhousie University
-     · Funded by ['Genome Canada', 'Donald Hill Family Fellowship']
   </small>
 
 + **Baofeng Jia***<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0002-4735-4709](https://orcid.org/0000-0002-4735-4709)
     · ![GitHub icon](images/github.svg){.inline_icon}
     [imasianxd](https://github.com/imasianxd)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
@@ -161,24 +170,32 @@ on April 20, 2020.
      Department of Molecular Biology and Biochemistry, Simon Fraser University
   </small>
 
-+ **Wing Yin Venus Lau**<br><br>
++ **Wing Yin Venus Lau**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0003-3884-4009](https://orcid.org/0000-0003-3884-4009)<br>
   <small>
      Department of Molecular Biology and Biochemistry, Simon Fraser University
   </small>
 
-+ **Robert G. Beiko**<br><br>
++ **Robert G. Beiko**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0002-5065-4980](https://orcid.org/0000-0002-5065-4980)<br>
   <small>
      Faculty of Computer Science, Dalhousie University
   </small>
 
-+ **Fiona S.L. Brinkman**<br><br>
++ **Fiona S.L. Brinkman**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0002-0584-4099](https://orcid.org/0000-0002-0584-4099)<br>
   <small>
      Department of Molecular Biology and Biochemistry, Simon Fraser University
   </small>
 
 
 
-## Introductory Paragraph {#abstract}
+* authors contributed equally.
+
+## Abstract {#abstract}
 
 Metagenomic methods are a key, and increasingly popular, tool in the life sciences, as they enable simultaneous characterization of all microbes in a community without time-consuming and bias-inducing culturing. 
 Metagenome-assembled genome (MAG) binning methods have emerged as a promising approach to recover individual resolved genomes from metagenomic data.
@@ -193,7 +210,7 @@ We therefore conclude that short-read MAGs are particularly not well suited for 
 We propose that microbiome researchers should instead utilise unassembled read-based and/or long-read approaches to more accurately analyze metagenomic data.
 
 
-
+## Main {#main}
 
 Metagenomics, the sequencing of DNA from within an environmental sample, is widely used to characterise the functional potential and identity of microbial communities [@doi:10.1073/pnas.202488399; @doi:10.1038/nbt.3935]. 
 These approaches have been instrumental in developing our understanding of the distribution and evolutionary history of AMR genes [@doi:10.1016/j.cell.2014.08.032; @doi:10.1016/j.mib.2007.08.009; @doi:10.1038/nature10388], as well as tracking pathogen outbreaks [@doi:10.1001/jama.2013.3231].
@@ -225,94 +242,6 @@ These varying composition and relative abundance features mean that GIs and plas
 As these MGEs are key to the function and spread of pathogenic traits such as AMR and virulence, and with MAG approaches becoming increasingly popular within microbial and public-health research, it is both timely and vital that we assess the impact of metagenome assembly and binning on the recovery of these elements. 
 Therefore, to address this issue we performed an analysis of GI and plasmid (and associated AMR/VF genes) recovery accuracy across a set of 12 state-of-the-art methods for short-read metagenome assemblies.
 We show that short-read MAG-based analyses are not suitable for trhe study of mobile sequences, and find that unassembled read-based methods perform significantly better.
-
-
-## Materials and Methods {#methods}
-
-In keeping with FAIR principles (Findable, Accessible, Interoperable, Reusable data), all analyses presented in this paper can be reproduced and inspected with the associated github repository [github.com/fmaguire/MAG_gi_plasmid_analysis](github.com/fmaguire/MAG_gi_plasmid_analysis) and data repository [osf.io/nrejs/](osf.io/nrejs/).
-
-### Metagenome Simulation
-
-Thirty RefSeq genomes were selected using IslandPath-DIMOB [@doi:10.1093/bioinformatics/bty095] GI prediction data collated into the IslandViewer database [www.pathogenomics.sfu.ca/islandviewer](www.pathogenomics.sfu.ca/islandviewer) [@doi:10.1093/nar/gkv401] (Supplemental Table 1).
-The selected genomes and associated plasmids (listed in Supplemental Table 2 and desposited at osf.io/nrejs/ under "data/sequences") were manually selected to satisfy the following criteria:
-
-1) 10 genomes with 1-10 plasmids.
-
-2) 10 genomes with >10% of chromosomal DNA predicted to reside in GIs.
-
-3) 10 genomes with <1% of chromosomal DNA predicted to reside in GIs.
-
-In accordance with the recommendation in the CAMI challenge [@doi:10.1038/nmeth.4458] the genomes were randomly assigned a relative abundance following a log-normal distribution (μ = 1, σ = 2).
-Plasmid copy number estimates could not be accurately found for all organisms. Therefore, plasmids were randomly assigned a copy number regime: low (1-20), medium (20-100), or high (500-1000) at a 2:1:1 rate.
-Within each regime, the exact copy number was selected using an appropriately scaled gamma distribution (α = 4, β = 1) truncated to the regime range.
-
-Finally, the effective plasmid relative abundance was determined by multiplying the plasmid copy number with the genome relative abundance.
-The full set of randomly assigned relative abundances and copy numbers can be found in Supplemental Table 3.
-Sequences were then concatenated into a single FASTA file with the appropriate relative abundance.
-MiSeq v3 250bp paired-end reads with a mean fragment length of 1000bp (standard deviation of 50bp) were then simulated using art_illumina (v2016.06.05) [@doi:10.1093/bioinformatics/btr708] resulting in a simulated metagenome of 31,174,411 read pairs.
-The selection of relative abundance and metagenome simulation itself was performed using the "data_simluation/simulate_metagenome.py" script.
-
-### MAG Recovery
-
-Reads were trimmed using sickle (v1.33) [@url:sickle] resulting in 25,682,644 surviving read pairs.
-The trimmed reads were then assembled using 3 different metagenomic assemblers: metaSPAdes (v3.13.0) [@doi:10.1101/gr.213959.116], IDBA-UD (v1.1.3) [@doi:10.1093/bioinformatics/bts174], and megahit (v1.1.3) [@doi:10.1093/bioinformatics/btv033]).
-The resulting assemblies were summarised using metaQUAST (v5.0.2) [@doi:10.1093/bioinformatics/btv697].
-The assemblies were then indexed and reads mapped back using Bowtie 2 (v2.3.4.3) [@doi:10.1038/nmeth.1923].
-
-Samtools (v1.9) was used to sort the read mappings, and the read coverage was calculated using the MetaBAT2 accessory script (jgi\_summarize\_bam\_contig\_depths).
-The three metagenome assemblies were then separately binned using MetaBAT2 (v2.13) [@doi:10.7287/peerj.preprints.27522v1], and MaxBin 2 (v2.2.6) [@doi:10.1093/bioinformatics/btv638]. 
-MAGs were also recovered using CONCOCT (v0.4.2) [@doi:10.1093/bioinformatics/btw290] following the recommended protocol in the user manual.
-Briefly, the supplied CONCOCT accessory scripts were used to cut contigs into 10 kilobase fragments (cut\_up\_fasta.py) and read coverage calculated for the fragments (CONCOCT\_coverage\_table.py).
-These fragment coverages were then used to bin the 10kb fragments before the clustered fragments were merged (merge\_cutup\_clustering.py) to create the final CONCOCT MAG bins (extra\_fasta\_bins.py).
-Finally, for each metagenome assembly the predicted bins from these three binners (Maxbin2, MetaBAT 2, and CONCOCT) were combined using the DAS Tool (v1.1.1) meta-binner [@doi:10.1038/s41564-018-0171-1].
-This resulted in 12 separate sets of MAGs (one set for each assembler and binner pair).
-
-### MAG assessment
-
-#### Chromosomal Coverage
-
-The MAG assessment for chromosomal coverage was performed by creating a BLASTN 2.9.0+ [@doi:10.1186/1471-2105-10-421] database consisting of all the chromosomes of the input reference genomes.
-Each MAG contig was then used as a query against this database and the coverage of the underlying chromosomes tallied by merging the overlapping aligning regions and summing the total length of aligned MAG contigs.
-The most represented genome in each MAG was assigned as the “identity” of that MAG for further analyses.
-Coverage values of less than 5% were filtered out and the number of different genomes that contigs from a given MAG aligned to were tallied.
-Finally, the overall proportion of chromosomes that were not present in any MAG was tallied for each binner and assembler.
-
-In order to investigate the impact of close relatives in the metagenome on ability to bin chromosomes we generated a phylogenetic tree for all the input genomes.
-Specifically, single copy universal bacterial proteins were identified in the reference genomes using BUSCO v4.0.2 with the Bacteria Odb10 data [@doi:10.1093/bioinformatics/btv351].
-The 86 of these proteins that were found in every reference genome were concatenated and aligned using MAFFT v7.427 [@doi:10.1093/bioinformatics/bty121] and masked with trimal v1.4.1-3 [@doi:10.1093/bioinformatics/btp348].
-A maximum-likelihood phylogeny was then inferred with IQ-Tree v1.6.12 [@doi:10.1093/molbev/msu300] with the in-built ModelFinder determined partitioning [@doi:10.1093/molbev/mss020].
-Pairwise branch distances were then extracted from the resulting tree using ETE3 v3.1.1 [@doi:10.1093/molbev/msw046] and regressed using a linear model against coverage and contamination in seaborn v0.10.0 [@doi:10.5281/zenodo.3629446].
-
-#### Plasmid and GI Coverage
-
-Plasmid and GI coverage were assessed in the same way.
-Firstly, a BLASTN database was generated for each set of MAG contigs.
-Then each MAG database was searched for plasmid and GI sequences with greater than 50% coverage.
-All plasmids or GIs which could be found in the unbinned contigs or MAGs were recorded as having been successfully assembled.
-The subset of these that were found in the binned MAGs was then separately tallied.
-Finally, we evaluated the proportion of plasmids or GIs that were correctly assigned to the bin that was maximally composed of chromosomes from the same source genome.
-
-### Antimicrobial Resistance and Virulence Factors Assessment
-
-#### Detection of AMR/VF Genes
-
-For the reference genomes, as well as 12 sets of MAGs, prodigal [@doi:10.1186/1471-2105-11-119] was used to predict open reading frames (ORFs) using the default parameters. 
-AMR genes were predicted using Resistance Gene Identifier (RGI v5.0.0; default parameters) and the Comprehensive Antibiotic Resistance Database (CARD v3.0.3) [@doi:10.1093/nar/gkw1004].
-Virulence factors were predicted using the predicted ORFs and BLASTX 2.9.0+ [@doi:10.1186/1471-2105-10-421] against the Virulence Factor Database (VFDB; obtained on Aug 26, 2019) with an e-value cut-off of 0.001 and a minimum identity of 90% [@doi:10.1093/nar/gky1080].
-Each MAG was then assigned to a reference chromosome using the above mentioned mapping criteria for downstream analysis.
-
-#### AMR/VF Gene Recovery
-
-For each MAG set, we counted the total number of AMR/VF genes recovered in each metagenomic assembly and each MAG and compared this to the number predicted in their assigned reference chromosome and plasmids.
-We then assessed the ability for MAGs to correctly bin AMR/VF genes of chromosomal, plasmid, and GI origin by mapping the location of the reference replicon’s predicted genes to the location of the same genes in the MAGs.
-
-#### Protein subcellular localization predictions
-
-We then sought to assess what the impact of a protein's predicted subcellular localization was on its recovery and binning in MAGs.
-The MAG bins from megahit-DAS Tool assembler-binner combination were selected (as generally best performing) and ORFs predicted using prodigal [@doi:10.1186/1471-2105-11-119] as above.
-Subcellular localisation of these proteins were then predicted using PSORTb v3.0 with default parameters and the appropriate Gram setting for that bin's assigned taxa [@doi:10.1093/bioinformatics/btq249]. 
-
-
 
 
 ## Results {#results}
@@ -403,9 +332,9 @@ This highlighted that genomic components (GIs and plasmids) and plasmids in part
 
 ## Discussion {#discussion}
 
-In this paper, we evaluated the ability of metagenome-assembled genome (MAG) binning methods to correctly recover mobile genetic elements (i.e. genomic islands and plasmids) from metagenomic samples.
-Overall, chromosomal sequences were binned well (up to 94.3% coverage and perfect bin purity by megahit-DASTool) but closely related genomes were consistently cross-contaminated (e.g. _Streptococcus_ species in Fig. @fig:coverphylo, @fig:purityphylo).
-However, given the importance of MGEs in the function and spread of pathogenic traits, it is particularly noteworthy that regardless of MAG binning method plasmids and GIs were disproportionately lost compared to core chromosomal regions. 
+In this paper, we evaluated the ability of metagenome-assembled genome (MAG) binning methods to correctly recover mobile genetic elements (MGEs; i.e. genomic islands and plasmids) from metagenomic samples.
+Overall, chromosomal sequences were binned well (up to 94.3% coverage, with perfect bin purity using megahit-DASTool) however closely related genomes were consistently cross-contaminated with other sequences (e.g. _Streptococcus_ species in Fig. @fig:coverphylo, @fig:purityphylo).
+Given the importance of MGEs in the function and spread of pathogenic traits, it is particularly noteworthy that regardless of MAG binning method, plasmids and GIs were disproportionately lost compared to core chromosomal regions. 
 At best (with metaSPAdes and CONCOCT) 29.2% of plasmids and 44.1% of GIs were identifiable at >50% coverage in the correct bin (i.e. grouped with a bin that was mostly made up of contigs from the same genome). 
 This poor result is congruent with the intuition that the divergent compositional features and repetitive nature of these MGEs is problematic for MAG methods.
 The particularly poor plasmid binning performance is likely attributable to the known difficulties in assembly of plasmids from short-read data [@pmid:29177087].
@@ -422,7 +351,7 @@ Previous studies have observed that ORF predictions in draft genomes are more fr
 
 In general, there are 3 main limitations to this study: the drawbacks of metagenome simulation, the use of a single metagenome, and not evaluating the utility of multiple metagenomic replicates in recovery of these elements.
 Metagenome simulation is unlikely to perfectly emulate all the noise and biases present in real metagenomic sequencing results. 
-However, without a clear known ground truth and in the absence of an MGE/AMR-focused mock metagenomes, simulation represents the most powerful technique for evaluation of bioinformatic analyses. 
+However, assessment with real metagenomic data is even more problematic due to the its lack of a clear known ground truth so in the absence of an MGE/AMR-focused mock metagenomes, simulation represents the most powerful technique for evaluation of bioinformatic analyses. 
 This is why it has been widely adopted in thorough benchmarking experiments such as the CAMI challenges [@doi:10.1093/gigascience/giy069;@doi:10.1186/s40168-019-0633-6].
 In terms of multiple replicates, while there are indications this approach may improve binning of MGEs [@doi:10.1126/sciadv.aax5727], most typical public-health and research MAG studies don't currently utilise this kind of approach.
 Finally, a single simulated metagenome was used in order to keep the binning performance of MGEs as clear as possible.
@@ -438,17 +367,140 @@ As these genes have a much higher propensity for lateral gene transfer between u
 Within public-health metagenomic research it is vital we utilize MAGs in conjunction with other methods (e.g. targeted AMR [@doi:10.1099/mgen.0.000131], plasmid specialised assembly approaches [@doi:10.1101/2020.01.12.903252], and read-based sequence homology search [@doi:10.1038/nmeth.3176]) before drawing biological or epidemiological conclusions.
 
 
-## Supplementals {#supplementals}
+## Materials and Methods {#methods}
+
+In keeping with FAIR principles (Findable, Accessible, Interoperable, Reusable data), all analyses presented in this paper can be reproduced and inspected with the associated github repository [github.com/fmaguire/MAG_gi_plasmid_analysis](github.com/fmaguire/MAG_gi_plasmid_analysis) and data repository [osf.io/nrejs/](osf.io/nrejs/).
+
+### Metagenome Simulation
+
+Thirty RefSeq genomes were selected using IslandPath-DIMOB [@doi:10.1093/bioinformatics/bty095] GI prediction data collated into the IslandViewer database [www.pathogenomics.sfu.ca/islandviewer](www.pathogenomics.sfu.ca/islandviewer) [@doi:10.1093/nar/gkv401] (Supplemental Table 1).
+The selected genomes and associated plasmids (listed in Supplemental Table 2 and desposited at osf.io/nrejs/ under "data/sequences") were manually selected to satisfy the following criteria:
+
+1) 10 genomes with 1-10 plasmids.
+
+2) 10 genomes with >10% of chromosomal DNA predicted to reside in GIs.
+
+3) 10 genomes with <1% of chromosomal DNA predicted to reside in GIs.
+
+In accordance with the recommendation in the CAMI challenge [@doi:10.1038/nmeth.4458] the genomes were randomly assigned a relative abundance following a log-normal distribution (μ = 1, σ = 2).
+Plasmid copy number estimates could not be accurately found for all organisms. Therefore, plasmids were randomly assigned a copy number regime: low (1-20), medium (20-100), or high (500-1000) at a 2:1:1 rate.
+Within each regime, the exact copy number was selected using an appropriately scaled gamma distribution (α = 4, β = 1) truncated to the regime range.
+
+Finally, the effective plasmid relative abundance was determined by multiplying the plasmid copy number with the genome relative abundance.
+The full set of randomly assigned relative abundances and copy numbers can be found in Supplemental Table 3.
+Sequences were then concatenated into a single FASTA file with the appropriate relative abundance.
+MiSeq v3 250bp paired-end reads with a mean fragment length of 1000bp (standard deviation of 50bp) were then simulated using art_illumina (v2016.06.05) [@doi:10.1093/bioinformatics/btr708] resulting in a simulated metagenome of 31,174,411 read pairs.
+The selection of relative abundance and metagenome simulation itself was performed using the "data_simluation/simulate_metagenome.py" script.
+
+### MAG Recovery
+
+Reads were trimmed using sickle (v1.33) [@url:sickle] resulting in 25,682,644 surviving read pairs.
+The trimmed reads were then assembled using 3 different metagenomic assemblers: metaSPAdes (v3.13.0) [@doi:10.1101/gr.213959.116], IDBA-UD (v1.1.3) [@doi:10.1093/bioinformatics/bts174], and megahit (v1.1.3) [@doi:10.1093/bioinformatics/btv033]).
+The resulting assemblies were summarised using metaQUAST (v5.0.2) [@doi:10.1093/bioinformatics/btv697].
+The assemblies were then indexed and reads mapped back using Bowtie 2 (v2.3.4.3) [@doi:10.1038/nmeth.1923].
+
+Samtools (v1.9) was used to sort the read mappings, and the read coverage was calculated using the MetaBAT2 accessory script (jgi\_summarize\_bam\_contig\_depths).
+The three metagenome assemblies were then separately binned using MetaBAT2 (v2.13) [@doi:10.7287/peerj.preprints.27522v1], and MaxBin 2 (v2.2.6) [@doi:10.1093/bioinformatics/btv638]. 
+MAGs were also recovered using CONCOCT (v0.4.2) [@doi:10.1093/bioinformatics/btw290] following the recommended protocol in the user manual.
+Briefly, the supplied CONCOCT accessory scripts were used to cut contigs into 10 kilobase fragments (cut\_up\_fasta.py) and read coverage calculated for the fragments (CONCOCT\_coverage\_table.py).
+These fragment coverages were then used to bin the 10kb fragments before the clustered fragments were merged (merge\_cutup\_clustering.py) to create the final CONCOCT MAG bins (extra\_fasta\_bins.py).
+Finally, for each metagenome assembly the predicted bins from these three binners (Maxbin2, MetaBAT 2, and CONCOCT) were combined using the DAS Tool (v1.1.1) meta-binner [@doi:10.1038/s41564-018-0171-1].
+This resulted in 12 separate sets of MAGs (one set for each assembler and binner pair).
+
+### MAG assessment
+
+#### Chromosomal Coverage
+
+The MAG assessment for chromosomal coverage was performed by creating a BLASTN 2.9.0+ [@doi:10.1186/1471-2105-10-421] database consisting of all the chromosomes of the input reference genomes.
+Each MAG contig was then used as a query against this database and the coverage of the underlying chromosomes tallied by merging the overlapping aligning regions and summing the total length of aligned MAG contigs.
+The most represented genome in each MAG was assigned as the “identity” of that MAG for further analyses.
+Coverage values of less than 5% were filtered out and the number of different genomes that contigs from a given MAG aligned to were tallied.
+Finally, the overall proportion of chromosomes that were not present in any MAG was tallied for each binner and assembler.
+
+In order to investigate the impact of close relatives in the metagenome on ability to bin chromosomes we generated a phylogenetic tree for all the input genomes.
+Specifically, single copy universal bacterial proteins were identified in the reference genomes using BUSCO v4.0.2 with the Bacteria Odb10 data [@doi:10.1093/bioinformatics/btv351].
+The 86 of these proteins that were found in every reference genome were concatenated and aligned using MAFFT v7.427 [@doi:10.1093/bioinformatics/bty121] and masked with trimal v1.4.1-3 [@doi:10.1093/bioinformatics/btp348].
+A maximum-likelihood phylogeny was then inferred with IQ-Tree v1.6.12 [@doi:10.1093/molbev/msu300] with the in-built ModelFinder determined partitioning [@doi:10.1093/molbev/mss020].
+Pairwise branch distances were then extracted from the resulting tree using ETE3 v3.1.1 [@doi:10.1093/molbev/msw046] and regressed using a linear model against coverage and contamination in seaborn v0.10.0 [@doi:10.5281/zenodo.3629446].
+
+#### Plasmid and GI Coverage
+
+Plasmid and GI coverage were assessed in the same way.
+Firstly, a BLASTN database was generated for each set of MAG contigs.
+Then each MAG database was searched for plasmid and GI sequences with greater than 50% coverage.
+All plasmids or GIs which could be found in the unbinned contigs or MAGs were recorded as having been successfully assembled.
+The subset of these that were found in the binned MAGs was then separately tallied.
+Finally, we evaluated the proportion of plasmids or GIs that were correctly assigned to the bin that was maximally composed of chromosomes from the same source genome.
+
+### Antimicrobial Resistance and Virulence Factors Assessment
+
+#### Detection of AMR/VF Genes
+
+For the reference genomes, as well as 12 sets of MAGs, prodigal [@doi:10.1186/1471-2105-11-119] was used to predict open reading frames (ORFs) using the default parameters. 
+AMR genes were predicted using Resistance Gene Identifier (RGI v5.0.0; default parameters) and the Comprehensive Antibiotic Resistance Database (CARD v3.0.3) [@doi:10.1093/nar/gkz935].
+Virulence factors were predicted using the predicted ORFs and BLASTX 2.9.0+ [@doi:10.1186/1471-2105-10-421] against the Virulence Factor Database (VFDB; obtained on Aug 26, 2019) with an e-value cut-off of 0.001 and a minimum identity of 90% [@doi:10.1093/nar/gky1080].
+Each MAG was then assigned to a reference chromosome using the above mentioned mapping criteria for downstream analysis.
+
+#### AMR/VF Gene Recovery
+
+For each MAG set, we counted the total number of AMR/VF genes recovered in each metagenomic assembly and each MAG and compared this to the number predicted in their assigned reference chromosome and plasmids.
+We then assessed the ability for MAGs to correctly bin AMR/VF genes of chromosomal, plasmid, and GI origin by mapping the location of the reference replicon’s predicted genes to the location of the same genes in the MAGs.
+
+#### Protein subcellular localization predictions
+
+We then sought to assess what the impact of a protein's predicted subcellular localization was on its recovery and binning in MAGs.
+The MAG bins from megahit-DAS Tool assembler-binner combination were selected (as generally best performing) and ORFs predicted using prodigal [@doi:10.1186/1471-2105-11-119] as above.
+Subcellular localisation of these proteins were then predicted using PSORTb v3.0 with default parameters and the appropriate Gram setting for that bin's assigned taxa [@doi:10.1093/bioinformatics/btq249]. 
+
+
+
+
+### Data availability
+
+All datasets used or generated in this study are available at osf.io/nrejs/
+
+### Code availability
+
+All code used is available at github.com/fmaguire/MAG_gi_plasmid_analysis
+
+### Acknowledgements
+
+This work was supported primarily by a Donald Hill Family Fellowship held by FM
+Additionally, WYVL and BJ are supported by CIHR-CGSD and SFU graduate scholarships.
+KG is supported by an NSERC-CREATE and SFU graduate scholarship.
+
+### Author Information
+
+#### Affiliations
+
+_Faculty of Computer Science, Dalhousie University, Halifax, NS, Canada_
+Finlay Maguire, & Robert G. Beiko
+
+_Department of Molecular Biology and Biochemistry, Simon Fraser University, Burnaby, BC, Canada_
+Baofeng Jia, Kristen Gray, Wing Yin Venus Lau, & Fiona S.L. Brinkman
+
+#### Contributions
+
+FM and BJ conceived and designed the study, wrote the manuscript, and generated the figures. 
+FM, BJ, WYVL, and KG performed analyses.
+All authors contributed to and approved the manuscript.
+
+#### Corresponding authors
+
+Correspondence to Finlay Maguire or Fiona S.L. Brinkman
+
+
+## Supplementary Information {#supplementals}
 
 ### Recovery of Specific Gene Content
 
 We explored the ability of different approaches to find open reading frames (ORFs) within MAGs.
-Overall, the total number of predicted ORFs in MAGs followed a similar trend (Fig. @fig:geneContent) as the chromosomal coverage (Fig. @fig:chromcover) and purity (Fig. @fig:purity).
+Overall, the total number of predicted ORFs in MAGs followed a similar trend (Fig. @fig:geneContent) as the chromosomal coverage and purity (Fig. @fig:chromcoverpurity).
 Of the four binning tools, CONCOCT performed the worst, finding <30% of the number of ORFs in our reference genomes used to construct the synthetic data.
 MetaBAT2 performed second worst at ~80%.
 DASTool recovered a similar number to our reference and Maxbin2 detected 7-46% more genes.
 The Assembler method did not significantly impact the number of genes predicted with the exception of Maxbin2, in which IDBA_UD was the closest to reference and metaSPAdes predicted 46% more ORFs.
-Given that there is reason to suspect that there are some issues with the ORF calling in the MAGs. i.e. some tools produced more predicted ORFs than reference, it could be the case that some of these sequences are present in the assemblies (with errors/gaps), but are not being identified as ORFs, or are broken into mulpitle ORFs, leading to issues downstream labeling them correctly as AMR/VF genes. 
+Given that there is reason to suspect that there are some issues with the ORF calling in the MAGs. i.e. some tools produced more predicted ORFs than reference, it could be the case that some of these sequences are present in the assemblies (with errors/gaps), but are not being identified as ORFs, or are broken into multiple ORFs, leading to issues downstream labeling them correctly as AMR/VF genes. 
 Regardless of different tools producing a different number of ORFs, the recovery of AMR/VF is pretty consistent regardless of how many ORFs are predicted.
 
 ![Predicted Gene Content. The total number of open reading frames (ORF) predicted followed the same trend as chromosomal coverage and purity. The assemblers (colored bars) did not contribute to variability in the number of ORFs detected. Of the 4 binners, CONCOCT recovered \<30\% of our reference genome ORFs. DASTool and MetaBAT2 predicted a similar number as our reference genomes.](images/number_of_predicted_genes.png){#fig:geneContent}
@@ -466,7 +518,7 @@ In other words, across all methods, a MAG bin was more likely to have multiple g
 
 ### Comparisons of Rates of Loss
 
-Combining the performance metrics for Figs. @fig:plasmids, @fig:gis, @fig:AMRGenePercentRecoveryStage, and @fig:VFGenePercentRecoveryStage to compare the rates of loss of different components emphasises some of the observed patterns (see Fig. @fig:rateofloss).
+Combining the performance metrics for Figs. @fig:plasmids, @fig:gis, @fig:AMRGenePercentRecoveryStageContext, and @fig:VFGenePercentRecoveryStageCombined to compare the rates of loss of different components emphasises some of the observed patterns (see Fig. @fig:rateofloss).
 This highlights that genomic components (GIs and plasmids) and plasmids in particular are lost at a higher rate than individual gene types during MAG recovery.
 
 ![Comparison of rates of loss for different genomic components and gene types across assemblers and binning tools. Each line represents a different component as indicated by the legend with assemblers indicated by row and binning tool by column. This shows that regardless of approach genomic components (GIs and plasmids) are lost at a higher rate than individual VF or AMR genes.](images/rate_of_loss.png){#fig:rateofloss}
