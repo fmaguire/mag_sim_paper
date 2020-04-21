@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/b35bbd85bd2690880a7d447feb2771b72def52fd/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/288f13fa46f6dba35206ecfc173282f4db4f71ef/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/b35bbd85bd2690880a7d447feb2771b72def52fd/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/288f13fa46f6dba35206ecfc173282f4db4f71ef/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/b35bbd85bd2690880a7d447feb2771b72def52fd/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/288f13fa46f6dba35206ecfc173282f4db4f71ef/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/b35bbd85bd2690880a7d447feb2771b72def52fd/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/288f13fa46f6dba35206ecfc173282f4db4f71ef/))
 was automatically generated
-from [fmaguire/mag_sim_paper@b35bbd8](https://github.com/fmaguire/mag_sim_paper/tree/b35bbd85bd2690880a7d447feb2771b72def52fd)
+from [fmaguire/mag_sim_paper@288f13f](https://github.com/fmaguire/mag_sim_paper/tree/288f13fa46f6dba35206ecfc173282f4db4f71ef)
 on April 21, 2020.
 </em></small>
 
@@ -197,7 +197,7 @@ on April 21, 2020.
 
 ## Abstract {#abstract}
 
-Metagenomic methods are a key, and increasingly popular, tool in the life sciences, as they enable simultaneous characterization of all microbes in a community without time-consuming and bias-inducing culturing. 
+Metagenomic methods are a key, and increasingly popular, tool in the life sciences, as they enable simultaneous characterisation of all microbes in a community without time-consuming and bias-inducing culturing. 
 Metagenome-assembled genome (MAG) binning methods have emerged as a promising approach to recover individual resolved genomes from metagenomic data.
 However, MAG binning has not been well assessed for its ability to recover key sequences of clinical/agricultural/environmental significance such as mobile genetic elements (MGEs), like plasmids and genomic islands (GIs). 
 Certain antimicrobial resistance (AMR) genes and virulence factor (VF) genes are noted to be disproportionately associated with mobile sequences, making studying their transmission a public health priority. 
@@ -367,7 +367,7 @@ This study has shown that MAG-based approaches provide a useful tool to study a 
 The majority of these MGEs will either fail to be assembled or be incorrectly binned.
 The consequence of this is the disproportionate loss of key public-health MGE-associated VFs and AMR genes.
 As many of these clinically relevant genes have a high propensity for lateral gene transfer between unrelated bacteria [@doi:10.1371/journal.pone.0008094;@doi:10.3389/fmicb.2016.00173] it is critical to highlight that MAG approaches alone are insufficient to thoroughly profile them.
-Within public-health metagenomic research it is vital we utilize MAGs in conjunction with other methods (e.g. targeted AMR [@doi:10.1099/mgen.0.000131], long-read sequencing, plasmid specialised assembly approaches [@doi:10.1101/2020.01.12.903252], and read-based sequence homology search [@doi:10.1038/nmeth.3176]) before drawing biological or epidemiological conclusions.
+Within public-health metagenomic research it is vital we utilise MAGs in conjunction with other methods (e.g. targeted AMR [@doi:10.1099/mgen.0.000131], long-read sequencing, plasmid specialised assembly approaches [@doi:10.1101/2020.01.12.903252], and read-based sequence homology search [@doi:10.1038/nmeth.3176]) before drawing biological or epidemiological conclusions.
 
 
 ## Materials and Methods {#methods}
@@ -449,9 +449,9 @@ Each MAG was then assigned to a reference chromosome using the above mentioned m
 For each MAG set, we counted the total number of AMR/VF genes recovered in each metagenomic assembly and each MAG and compared this to the number predicted in their assigned reference chromosome and plasmids.
 We then assessed the ability for MAGs to correctly bin AMR/VF genes of chromosomal, plasmid, and GI origin by mapping the location of the reference replicon’s predicted genes to the location of the same genes in the MAGs.
 
-#### Protein subcellular localization predictions
+#### Protein subcellular localisation predictions
 
-We then sought to assess what the impact of a protein's predicted subcellular localization was on its recovery and binning in MAGs.
+We then sought to assess what the impact of a protein's predicted subcellular localisation was on its recovery and binning in MAGs.
 The MAG bins from megahit-DAS Tool assembler-binner combination were selected (as generally best performing) and ORFs predicted using prodigal [@doi:10.1186/1471-2105-11-119] as above.
 Subcellular localisation of these proteins were then predicted using PSORTb v3.0 with default parameters and the appropriate Gram setting for that bin's assigned taxa [@doi:10.1093/bioinformatics/btq249]. 
 
@@ -493,7 +493,7 @@ Baofeng Jia, Kristen Gray, Wing Yin Venus Lau, & Fiona S.L. Brinkman
 ### Contributions
 
 F.M. and B.J. conceived and designed the study, performed MAG analyses, generated the figures, and wrote the manuscript.
-W.Y.V.L. and K.G. provided key input on genomic island and subcellular localization analyses, respectively.
+W.Y.V.L. and K.G. provided key input on genomic island and subcellular localisation analyses, respectively.
 All authors contributed to and approved the manuscript.
 
 ### Corresponding authors
