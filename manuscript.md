@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/46725eb7bfb69cde1fed9e3d78fa65e5e4018e9a/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/27d1aafa2cd6f2dfd80705d953c07d172cc2884d/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/46725eb7bfb69cde1fed9e3d78fa65e5e4018e9a/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/27d1aafa2cd6f2dfd80705d953c07d172cc2884d/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/46725eb7bfb69cde1fed9e3d78fa65e5e4018e9a/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/27d1aafa2cd6f2dfd80705d953c07d172cc2884d/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/46725eb7bfb69cde1fed9e3d78fa65e5e4018e9a/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/27d1aafa2cd6f2dfd80705d953c07d172cc2884d/))
 was automatically generated
-from [fmaguire/mag_sim_paper@46725eb](https://github.com/fmaguire/mag_sim_paper/tree/46725eb7bfb69cde1fed9e3d78fa65e5e4018e9a)
+from [fmaguire/mag_sim_paper@27d1aaf](https://github.com/fmaguire/mag_sim_paper/tree/27d1aafa2cd6f2dfd80705d953c07d172cc2884d)
 on April 21, 2020.
 </em></small>
 
@@ -241,7 +241,7 @@ Plasmids are also of high interest as a major source of the lateral disseminatio
 These varying composition and relative abundance features mean that GIs and plasmids pose significant challenges in MAG recovery.
 As these MGEs are key to the function and spread of pathogenic traits such as AMR and virulence, and with MAG approaches becoming increasingly popular within microbial and public-health research, it is both timely and vital that we assess the impact of metagenome assembly and binning on the recovery of these elements. 
 Therefore, to address this issue we performed an analysis of GI and plasmid (and associated AMR/VF genes) recovery accuracy across a set of 12 state-of-the-art methods for short-read metagenome assemblies.
-We show that short-read MAG-based analyses are not suitable for trhe study of mobile sequences, and find that unassembled read-based methods perform significantly better.
+We show that short-read MAG-based analyses are not suitable for the study of mobile sequences, and find that unassembled read-based methods perform significantly better.
 
 
 ## Results {#results}
@@ -317,7 +317,7 @@ The binning process further reduced the number of recovered VFs by 4-26% with DA
 Unlike AMR genes, the majority of VF genes assigned to a bin were assigned to the correct bin (i.e. that bin largely made up of contigs from the same input genome).
 Overall, CONCOCT-metaSPAdes again performed best with 43% of all VFs correctly assigned.
 
-![Recovery of VF genes across assemblers, binners, and genomic context. **(A)** Percent of reference virulence factor (VF) genes recovered across assemblers and binners. The proportion of reference VF genes recovered (y-axis) exhibited a similar trend as AMR genes. Recovery was greatest after the assembling stage (blue), with megahit performing best. Binning tools resulted in a larger reduction in VF genes recovered (orange) compared to AMR genes. However, in majority of cases, VF genes that are binned are correctly binned (green). metaSPAdes-CONCOCT was again the best performing pair. **(B)** Percent of correctly binned VF genes recovered in each genomic region. Metagenome assembled genomes (MAGs) were again best at recovering chromosomally located VF genes (light blue), able to correctly bin majority of chromosomally located VFs. GIs recovered again performed very poorly (light green) and again none of the plasmid located AMR genes (orange) was correctly binned.](images/vf_recovery_combined.png){#fig:VFGenePercentRecoveryStageCombined}
+![Recovery of VF genes across assemblers, binners, and genomic context. **(A)** Percent of reference virulence factor (VF) genes recovered across assemblers and binners. The proportion of reference VF genes recovered (y-axis) exhibited a similar trend as AMR genes. Recovery was greatest after the assembling stage (blue), with megahit performing best. Binning tools resulted in a larger reduction in VF genes recovered (orange) compared to AMR genes. However, in the majority of cases, VF genes that are binned are correctly binned (green). metaSPAdes-CONCOCT was again the best performing pair. **(B)** Percent of correctly binned VF genes recovered in each genomic region. Metagenome assembled genomes (MAGs) were again best at recovering chromosomally located VF genes (light blue), able to correctly bin majority of chromosomally located VFs. GIs recovered again performed very poorly (light green) and again none of the plasmid located AMR genes (orange) was correctly binned.](images/vf_recovery_combined.png){#fig:VFGenePercentRecoveryStageCombined}
 
 As with AMR genes, the genomic context (chromosome, plasmid, GI) of a given VF largely determined how well it was binned (Fig. @fig:VFGenePercentRecoveryStageCombined B).
 The majority (73%-98%) of all chromosomally located VF genes (n=757) were correctly binned.
@@ -353,7 +353,7 @@ Previous studies have observed that ORF predictions in draft genomes are more fr
 
 In general, there are 3 main limitations to this study: the drawbacks of metagenome simulation, the use of a single metagenome, and not evaluating the utility of multiple metagenomic replicates in recovery of these elements.
 Metagenome simulation is unlikely to perfectly emulate all the noise and biases present in real metagenomic sequencing results. 
-However, assessment with real metagenomic data is even more problematic due to the its lack of a clear known ground truth so in the absence of an MGE/AMR-focused mock metagenomes, simulation represents the most powerful technique for evaluation of bioinformatic analyses. 
+However, assessment with real metagenomic data is even more problematic due to the lack of a clear known ground truth, so in the absence of an MGE/AMR-focused mock metagenomes, simulation represents the most powerful technique for evaluation of bioinformatic analyses. 
 This is why it has been widely adopted in thorough benchmarking experiments such as the CAMI challenges [@doi:10.1093/gigascience/giy069;@doi:10.1186/s40168-019-0633-6].
 In terms of multiple replicates, while there are indications this approach may improve binning of MGEs [@doi:10.1126/sciadv.aax5727], most typical public-health and research MAG studies don't currently utilise this kind of approach.
 Finally, a single simulated metagenome was used in order to keep the binning performance of MGEs as clear as possible.
@@ -376,7 +376,7 @@ In keeping with FAIR principles (Findable, Accessible, Interoperable, Reusable d
 ### Metagenome Simulation
 
 Thirty RefSeq genomes were selected using IslandPath-DIMOB [@doi:10.1093/bioinformatics/bty095] GI prediction data collated into the IslandViewer database [www.pathogenomics.sfu.ca/islandviewer](www.pathogenomics.sfu.ca/islandviewer) [@doi:10.1093/nar/gkv401] (Supplemental Table 1).
-The selected genomes and associated plasmids (listed in Supplemental Table 2 and desposited at osf.io/nrejs/ under "data/sequences") were manually selected to satisfy the following criteria:
+The selected genomes and associated plasmids (listed in Supplemental Table 2 and deposited at osf.io/nrejs/ under "data/sequences") were manually selected to satisfy the following criteria:
 
 1) 10 genomes with 1-10 plasmids.
 
@@ -460,11 +460,11 @@ Subcellular localisation of these proteins were then predicted using PSORTb v3.0
 
 ## Data availability
 
-All datasets used or generated in this study are available at osf.io/nrejs/
+All datasets used or generated in this study are available at [osf.io/nrejs](osf.io/nrejs/)
 
 ## Code availability
 
-All analysis and plotting code used is available at github.com/fmaguire/MAG_gi_plasmid_analysis
+All analysis and plotting code used is available at [github.com/fmaguire/MAG_gi_plasmid_analysis](github.com/fmaguire/MAG_gi_plasmid_analysis)
 
 ## Acknowledgements
 
