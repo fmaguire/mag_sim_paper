@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/1beacdec03569c835a7e45eb86f847b6a25c8149/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/6dc03bcd883eb9901c2e20a838887cf7e2ffcdf6/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/1beacdec03569c835a7e45eb86f847b6a25c8149/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/6dc03bcd883eb9901c2e20a838887cf7e2ffcdf6/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/1beacdec03569c835a7e45eb86f847b6a25c8149/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/6dc03bcd883eb9901c2e20a838887cf7e2ffcdf6/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/1beacdec03569c835a7e45eb86f847b6a25c8149/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/6dc03bcd883eb9901c2e20a838887cf7e2ffcdf6/))
 was automatically generated
-from [fmaguire/mag_sim_paper@1beacde](https://github.com/fmaguire/mag_sim_paper/tree/1beacdec03569c835a7e45eb86f847b6a25c8149)
+from [fmaguire/mag_sim_paper@6dc03bc](https://github.com/fmaguire/mag_sim_paper/tree/6dc03bcd883eb9901c2e20a838887cf7e2ffcdf6)
 on April 22, 2020.
 </em></small>
 
@@ -544,7 +544,3 @@ This highlights that genomic components (GIs and plasmids) and plasmids in parti
 
 
 ## References {#references}
-
-
-
-[@tag:deep-review]: doi:10.1098/rsif.2017.0387
