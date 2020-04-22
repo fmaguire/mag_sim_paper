@@ -8,7 +8,7 @@ author-meta:
 - Fiona S.L. Brinkman
 bibliography:
 - content/manual-references.json
-date-meta: '2020-04-21'
+date-meta: '2020-04-22'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta name="dc.date" content="2020-04-21" />
+  <meta name="dc.date" content="2020-04-22" />
 
-  <meta name="citation_publication_date" content="2020-04-21" />
+  <meta name="citation_publication_date" content="2020-04-22" />
 
   <meta name="dc.language" content="en-CA" />
 
@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/ed25800a9c5861afbd75a392c73e0d0f71f11614/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/d43a788cf1e3d17807532049f417cc4e89e3383f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/ed25800a9c5861afbd75a392c73e0d0f71f11614/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/d43a788cf1e3d17807532049f417cc4e89e3383f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/ed25800a9c5861afbd75a392c73e0d0f71f11614/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/d43a788cf1e3d17807532049f417cc4e89e3383f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,10 +131,10 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/ed25800a9c5861afbd75a392c73e0d0f71f11614/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/d43a788cf1e3d17807532049f417cc4e89e3383f/))
 was automatically generated
-from [fmaguire/mag_sim_paper@ed25800](https://github.com/fmaguire/mag_sim_paper/tree/ed25800a9c5861afbd75a392c73e0d0f71f11614)
-on April 21, 2020.
+from [fmaguire/mag_sim_paper@d43a788](https://github.com/fmaguire/mag_sim_paper/tree/d43a788cf1e3d17807532049f417cc4e89e3383f)
+on April 22, 2020.
 </em></small>
 
 ## Authors
@@ -470,7 +470,7 @@ All analysis and plotting code used is available at [github.com/fmaguire/MAG_gi_
 ## Acknowledgements
 
 This work was supported primarily by a Donald Hill Family Fellowship held by F.M.
-W.Y.V.L. and B.J. hold Canadian Institute of Health Research (CIHR) doctoral scholarships.
+W.Y.V.L. and B.J. hold Canadian Institutes of Health Research (CIHR) doctoral scholarships.
 K.G. was supported by a Natural Sciences and Engineering Research Council of Canada (NSERC) Collaborative Research and Training Experience (CREATE) Bioinformatics scholarship.
 B.J, W.Y.V.L., and K.G. also held Simon Fraser University (SFU) Omics and Data Sciences fellowships.
 F.S.L.B. holds an SFU Distinguished Professorship and R.G.B. is a Professor and Associate Dean Research at Dalhousie University.
