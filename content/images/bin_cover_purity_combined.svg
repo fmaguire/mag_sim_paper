@@ -16,7 +16,7 @@
    height="796.93677"
    viewBox="0 0 864 796.93677"
    sodipodi:docname="bin_cover_purity_combined.svg"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    inkscape:export-filename="/home/fin/Documents/research/bioinformatics/mag_sim_paper/content/images/bin_cover_purity_combined.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
@@ -28,7 +28,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -51,16 +51,23 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="0.77257964"
-     inkscape:cx="790.97878"
-     inkscape:cy="603.56027"
+     inkscape:zoom="0.5462963"
+     inkscape:cx="1319.5792"
+     inkscape:cy="710.95327"
      inkscape:window-x="1920"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg885" />
+     inkscape:current-layer="g1531" />
   <g
      id="g1531"
      transform="translate(0,13.377457)">
+    <rect
+       style="fill:#ffffff;fill-opacity:0.91878171;stroke-width:13.74645615"
+       id="rect6449"
+       width="864.45764"
+       height="797.6441"
+       x="-0.45762712"
+       y="-14.084749" />
     <image
        y="399.55933"
        x="0"
@@ -81,12 +88,12 @@
        width="864" />
     <text
        id="text1474"
-       y="4.1186371"
+       y="6.4067726"
        x="6.3728256"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:justify;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          style="font-weight:normal;font-size:24px"
-         y="4.1186371"
+         y="6.4067726"
          x="6.3728256"
          id="tspan1472"
          sodipodi:role="line">A</tspan></text>
