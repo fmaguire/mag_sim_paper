@@ -8,7 +8,7 @@ author-meta:
 - Fiona S.L. Brinkman
 bibliography:
 - content/manual-references.json
-date-meta: '2020-04-22'
+date-meta: '2020-04-23'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta name="dc.date" content="2020-04-22" />
+  <meta name="dc.date" content="2020-04-23" />
 
-  <meta name="citation_publication_date" content="2020-04-22" />
+  <meta name="citation_publication_date" content="2020-04-23" />
 
   <meta name="dc.language" content="en-CA" />
 
@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/6dc03bcd883eb9901c2e20a838887cf7e2ffcdf6/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/abc2c97fe9c8129e67a8a3a6a58731aefd39ebf3/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/6dc03bcd883eb9901c2e20a838887cf7e2ffcdf6/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/abc2c97fe9c8129e67a8a3a6a58731aefd39ebf3/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/6dc03bcd883eb9901c2e20a838887cf7e2ffcdf6/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/abc2c97fe9c8129e67a8a3a6a58731aefd39ebf3/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,10 +131,10 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/6dc03bcd883eb9901c2e20a838887cf7e2ffcdf6/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/abc2c97fe9c8129e67a8a3a6a58731aefd39ebf3/))
 was automatically generated
-from [fmaguire/mag_sim_paper@6dc03bc](https://github.com/fmaguire/mag_sim_paper/tree/6dc03bcd883eb9901c2e20a838887cf7e2ffcdf6)
-on April 22, 2020.
+from [fmaguire/mag_sim_paper@abc2c97](https://github.com/fmaguire/mag_sim_paper/tree/abc2c97fe9c8129e67a8a3a6a58731aefd39ebf3)
+on April 23, 2020.
 </em></small>
 
 ## Authors
@@ -344,23 +344,20 @@ Therefore, binning efficiency might improve with use of long-read sequencing or 
 Incorporating long-read sequencing has been shown to improve overall MAG binning [@doi:10.1101/2020.04.08.032540] and facilitate metagenomic characterisation of plasmids [@doi:10.1186/s40168-019-0737-z].
 Further research is needed to fully characterise the performance of different long-read protocols on the accuracy of recovering MGEs in metagenomic samples.
 
-Given the growing use of MAG methods in infectious disease research (e.g., [@doi:10.1099/mgen.0.000293; @doi:10.1016/j.envint.2019.05.036; @doi:10.1111/1462-2920.14989; @doi:10.3389/fmicb.2017.02036; @doi:10.1128/AEM.02577-16]) and the public-health importance of the LGT of AMR and VF genes, we also specifically evaluated the binning of these gene classes.
+With the growing use of MAG methods in infectious disease research (e.g., [@doi:10.1099/mgen.0.000293; @doi:10.1016/j.envint.2019.05.036; @doi:10.1111/1462-2920.14989; @doi:10.3389/fmicb.2017.02036; @doi:10.1128/AEM.02577-16]) and the public-health importance of the LGT of AMR and VF genes, we also specifically evaluated the binning of these gene classes.
 The majority of these genes were correctly assembled across assemblers but were either not assigned or incorrectly assigned to MAG bins during binning.
 At best across all binners, 40% of all AMR genes and ~63% of VF genes (CONCOCT-metaSPAdes) present in the reference genomes were assigned to the correct MAG.
 While a majority of chromosomally located VF genes (73-98%) and AMR genes (53%) were binned correctly, only 16% of GI VFs (n=809), 45% of GI AMR genes (n=11), and not a single plasmid associated VF (n=3) or AMR gene (n=20) were correctly binned.
 This included critical high-threat MGE-associated AMR genes such as the KPC and OXA carbapenemases. 
 One potential caveat of this is that some AMR genes and VFs may no longer be detectable in MAGs due to issues with ORF prediction (see suppl. discussion & Fig. [S3](#fig:geneContent)). 
 Previous studies have observed that ORF predictions in draft genomes are more fragmented, which can lead to downstream over- or under-annotation with functional labels depending on the approach used [@doi:10.1186/1471-2164-13-14]. 
+Although not yet developed, methods that combine the assembly/binning pipelines tested here with read-based inference would give a better sense of which functions are potentially being missed by the MAG reconstructions.
 
-In general, there are 3 main limitations to this study that could direct future work: the drawbacks of metagenome simulation, the use of a single metagenome, and not evaluating the utility of multiple metagenomic replicates in recovery of these elements.
-Metagenome simulation is unlikely to perfectly emulate all the noise and biases present in real metagenomic sequencing results. 
-However, assessment with real metagenomic data is more problematic due to the lack of a known ground truth. 
-This problem could be solved through the development of an MGE/AMR-focused mock metagenome in a similar manner as the mockrobiota initative [@doi:10.1128/mSystems.00062-16].
-In the absence of this important resource, simulation represents the most powerful technique for evaluation of bioinformatic analyses. 
-This is why simulation has been widely adopted in large-scale benchmarking experiments such as the CAMI challenges [@doi:10.1093/gigascience/giy069;@doi:10.1186/s40168-019-0633-6].
-In terms of multiple technical replicates, while there are indications this approach may improve binning of MGEs [@doi:10.1126/sciadv.aax5727], most typical public-health and research MAG studies don't currently utilise this kind of approach (e.g., [@doi:10.1016/j.envint.2019.05.036; @doi:10.1111/1462-2920.14989]).
-Finally, while future work should assess the impact of metagenome complexity and sequencing depth on MAG recovery of MGEs, a single simulated metagenome was used in this study to keep the binning performance of MGEs as clear as possible.
-Given the importance of this issue, there was a pragmatic decision to use this relatively low-complexity (30 species) metagenome as a "best-case" evaluation, i.e., failure to recover elements for this dataset strongly suggests they would not be recovered in a more complex metagenome.
+Our simulated metagenomic community comprised 30 distinct bacterial genomes with varying degrees of relatedness. 
+While this diversity can be representative of certain clinical samples [@doi:10.1186/s12879-017-2727-8; @doi:10.1128/JCM.42.11.5176-5183.2004; @doi:10.1038/s41598-017-07790-9], other environments with relevance to public health such as the human gut, soil, and livestock can have 100-1000s of species [@doi:10.1007/s00248-013-0344-7; @doi:10.1128/AEM.00592-09; @doi:10.1371/journal.pone.0006669; @doi:10.1038/s41598-017-12481-6].
+Consequently our analysis likely over-represents the effectiveness of the methods tested in a public-health setting. 
+Metagenomic simulation is also unlikely to perfectly represent the noise and biases in real metagenomic sequencing but it does provide the ground-truth necessary for evaluation [@doi:10.1093/gigascience/giy069; @doi:10.1186/s40168-019-0633-6].
+This simulation approach combined with the development of an MGE/AMR-focused mock metagenome (similarly to the mockrobiota initative [@doi:10.1128/mSystems.00062-16]) could provide a key resource to develop and validate new binning approaches and different sequencing strategies, such as cross-linking [@doi:10.1101/198713] or long reads with lower effective sequencing depth and higher error rates. 
 
 
 ## Conclusions {#conclusions}
