@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/e26fcb92b7bfc9716a8c8591ba0dd956c94fc493/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/c1bc6bf547d6e9ef8854c53697b518df9e638432/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/e26fcb92b7bfc9716a8c8591ba0dd956c94fc493/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/c1bc6bf547d6e9ef8854c53697b518df9e638432/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/e26fcb92b7bfc9716a8c8591ba0dd956c94fc493/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/c1bc6bf547d6e9ef8854c53697b518df9e638432/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/e26fcb92b7bfc9716a8c8591ba0dd956c94fc493/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/c1bc6bf547d6e9ef8854c53697b518df9e638432/))
 was automatically generated
-from [fmaguire/mag_sim_paper@e26fcb9](https://github.com/fmaguire/mag_sim_paper/tree/e26fcb92b7bfc9716a8c8591ba0dd956c94fc493)
+from [fmaguire/mag_sim_paper@c1bc6bf](https://github.com/fmaguire/mag_sim_paper/tree/c1bc6bf547d6e9ef8854c53697b518df9e638432)
 on April 23, 2020.
 </em></small>
 
@@ -207,7 +207,7 @@ MAGs were then recovered using 12 current prediction pipelines and evaluated for
 Here we show that while 82-94% of chromosomes could be correctly recovered and binned, only 38-44% of GIs were recovered and, even more notably, only 1-29% of plasmid sequences were found. 
 Most strikingly, no plasmid-borne VF or AMR genes were recovered and within GIs, only between 0-45% of AMR or VF genes were identified. 
 We conclude that short-read MAGs are largely ineffective for the analysis of mobile genes, including those of public-health importance like AMR and VF genes. 
-We propose that microbiome researchers should instead utilise unassembled read-based and/or long-read approaches to more accurately analyse metagenomic data.
+We propose that microbiome researchers should instead primarily utilise unassembled short reads and/or long-read approaches to more accurately analyse metagenomic data
 
 
 ## Main {#main}
@@ -341,7 +341,7 @@ While some MGEs were likely recovered in more partial forms (<50% coverage), use
 This poor result is congruent with the intuition that the divergent compositional features and repetitive nature of these MGEs is problematic for MAG methods.
 The particularly poor plasmid binning performance is likely attributable to the known difficulties in assembly of plasmids from short-read data [@doi:10.1099/mgen.0.000128].
 Therefore, binning efficiency might improve with use of long-read sequencing or assembly methods optimised for recovering plasmids [@doi:10.1099/mgen.0.000128] (such as SCAPP [@doi:10.1101/2020.01.12.903252]).
-Incorporating long-read sequencing has been shown to improve overall MAG binning [@doi:10.1101/2020.04.08.032540] and facilitate metagenomic characterisation of plasmids [@doi:10.1186/s40168-019-0737-z].
+Despite its lower effective sequencing depth and higher error rates, incorporating long-read sequencing has been shown to improve overall MAG binning [@doi:10.1101/2020.04.08.032540] and facilitate metagenomic characterisation of plasmids [@doi:10.1186/s40168-019-0737-z].
 Further research is needed to fully characterise the performance of different long-read protocols on the accuracy of recovering MGEs in metagenomic samples.
 
 With the growing use of MAG methods in infectious disease research (e.g., [@doi:10.1099/mgen.0.000293; @doi:10.1016/j.envint.2019.05.036; @doi:10.1111/1462-2920.14989; @doi:10.3389/fmicb.2017.02036; @doi:10.1128/AEM.02577-16]) and the public-health importance of the LGT of AMR and VF genes, we also specifically evaluated the binning of these gene classes.
@@ -357,7 +357,7 @@ Our simulated metagenomic community comprised 30 distinct bacterial genomes with
 While this diversity can be representative of certain clinical samples [@doi:10.1186/s12879-017-2727-8; @doi:10.1128/JCM.42.11.5176-5183.2004; @doi:10.1038/s41598-017-07790-9], other environments with relevance to public health such as the human gut, soil, and livestock can have 100-1000s of species [@doi:10.1007/s00248-013-0344-7; @doi:10.1128/AEM.00592-09; @doi:10.1371/journal.pone.0006669; @doi:10.1038/s41598-017-12481-6].
 Consequently our analysis likely over-represents the effectiveness of the methods tested in a public-health setting. 
 Metagenomic simulation is also unlikely to perfectly represent the noise and biases in real metagenomic sequencing but it does provide the ground-truth necessary for evaluation [@doi:10.1093/gigascience/giy069; @doi:10.1186/s40168-019-0633-6].
-This simulation approach combined with the development of an MGE/AMR-focused mock metagenome (similarly to the mockrobiota initative [@doi:10.1128/mSystems.00062-16]) could provide a key resource to develop and validate new binning approaches and different sequencing strategies, such as cross-linking [@doi:10.1101/198713] or long reads with lower effective sequencing depth and higher error rates. 
+This simulation approach, combined with the development of an MGE/AMR-focused mock metagenome (similarly to the mockrobiota initiative [@doi:10.1128/mSystems.00062-16]), could provide a key resource to develop and validate new binning approaches and different sequencing strategies.
 
 
 ## Conclusions {#conclusions}
@@ -493,7 +493,7 @@ Baofeng Jia, Kristen Gray, Wing Yin Venus Lau, & Fiona S.L. Brinkman
 
 F.M. and B.J. conceived and designed the study, performed MAG analyses, generated the figures, and wrote the manuscript.
 W.Y.V.L. and K.G. provided key input on genomic island and subcellular localisation analyses, respectively.
-Results and manuscript were discussed with F.S.L.B and R.G.B.
+F.S.L.B and R.G.B. provided advice throughout the project.
 All authors contributed to and approved the manuscript.
 
 ### Corresponding authors
