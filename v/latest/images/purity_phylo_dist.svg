@@ -16,7 +16,10 @@
    width="652.79669pt"
    id="svg5962"
    sodipodi:docname="purity_phylo_dist.svg"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   inkscape:export-filename="/home/fin/Documents/research/bioinformatics/mag_sim_paper/content/images/purity_phylo_dist.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
   <metadata
      id="metadata5966">
     <rdf:RDF>
@@ -25,7 +28,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -38,21 +41,21 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1080"
+     inkscape:window-width="1916"
+     inkscape:window-height="131"
      id="namedview5964"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="0.57943472"
-     inkscape:cx="954.09091"
-     inkscape:cy="441.09206"
+     inkscape:zoom="0.81944444"
+     inkscape:cx="700.26551"
+     inkscape:cy="476.51358"
      inkscape:window-x="1920"
-     inkscape:window-y="0"
+     inkscape:window-y="776"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg5962" />
+     inkscape:current-layer="figure_1" />
   <defs
      id="defs3119"
      style="stroke-linecap:butt;stroke-linejoin:round">
@@ -70,7 +73,8 @@
      inkscape:export-ydpi="300">
     <g
        id="patch_1"
-       style="stroke-linecap:butt;stroke-linejoin:round">
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       transform="scale(1.0084746,1.0010593)">
       <path
          d="M 0,864 H 648 V 0 H 0 Z"
          style="fill:#ffffff;stroke-linecap:butt;stroke-linejoin:round"
