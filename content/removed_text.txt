@@ -1,0 +1,25 @@
+
+## Author Information
+
+These authors contributed equally: Finlay Maguire & Baofeng Jia
+
+### Affiliations
+
+_Faculty of Computer Science, Dalhousie University, Halifax, NS, Canada_
+
+Finlay Maguire, & Robert G. Beiko
+
+_Department of Molecular Biology and Biochemistry, Simon Fraser University, Burnaby, BC, Canada_
+
+Baofeng Jia, Kristen Gray, Wing Yin Venus Lau, & Fiona S.L. Brinkman
+
+### Contributions
+
+F.M. and B.J. conceived and designed the study, performed MAG analyses, generated the figures, and wrote the manuscript.
+W.Y.V.L. and K.G. provided key input on genomic island and subcellular localisation analyses, respectively.
+F.S.L.B and R.G.B. provided advice throughout the project.
+All authors contributed to and approved the manuscript.
+
+### Corresponding authors
+
+Correspondence to Finlay Maguire or Fiona S.L. Brinkman
