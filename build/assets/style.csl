@@ -49,23 +49,28 @@
   </citation>
   <bibliography hanging-indent="true" second-field-align="margin">
     <layout>
-      <text variable="citation-number" suffix=". "/>
-      <group>
-        <text variable="title" font-weight="bold"/>
-      </group>
-      <group display="block">
+        <text variable="citation-number" suffix=". "/>
+
+      <group display="block" delimiter=" ">
         <text macro="author"/>
-      </group>
+    </group>
+
+
+    <group delimiter=" ">
+        <date variable="issued" prefix="(" suffix=")">
+            <date-part name="year">
+        </date>
+    </group>
+
+     <group delimiter=" ">
+        <text variable="title"/>
+    </group>
+
       <group delimiter=" ">
         <text macro="venue" font-style="italic"/>
-        <date variable="issued" prefix="(" suffix=")">
-          <date-part name="year"/>
-          <date-part name="month" form="numeric-leading-zeros" prefix="-"/>
-          <date-part name="day" form="numeric-leading-zeros" prefix="-"/>
-        </date>
         <text variable="URL"/>
       </group>
-      <group display="block" delimiter=" · ">
+      <group display="block" delimiter=" ">
         <text variable="DOI" text-case="lowercase" prefix="DOI: "/>
         <text variable="PMID" prefix="PMID: "/>
         <text variable="PMCID" prefix="PMCID: "/>
