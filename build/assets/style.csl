@@ -50,8 +50,7 @@
   <bibliography hanging-indent="true" second-field-align="margin">
     <layout>
         <text variable="citation-number" suffix=". "/>
-
-      <group display="block">
+      <group delimiter=" ">
         <text macro="author"/>
     </group>
 
@@ -69,8 +68,8 @@
       <group delimiter=" ">
         <text macro="venue" font-style="italic" prefix=" "/>
       </group>
-      <group display="block" delimiter=" ">
-        <text variable="DOI" text-case="lowercase" prefix="DOI: "/>
+      <group delimiter=" ">
+        <text variable="DOI" text-case="lowercase" prefix=" DOI: "/>
         <text variable="PMID" prefix="PMID: "/>
         <text variable="PMCID" prefix="PMCID: "/>
         <text variable="ISBN" prefix="ISBN: "/>
