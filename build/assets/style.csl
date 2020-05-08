@@ -51,24 +51,23 @@
     <layout>
         <text variable="citation-number" suffix=". "/>
 
-      <group display="block" delimiter=" ">
+      <group display="block">
         <text macro="author"/>
     </group>
 
 
     <group delimiter=" ">
-        <date variable="issued" prefix="(" suffix=")">
+        <date variable="issued" prefix=" (" suffix=")">
             <date-part name="year"/>
         </date>
     </group>
 
      <group delimiter=" ">
-        <text variable="title"/>
+        <text variable="title" prefix=" "/>
     </group>
 
       <group delimiter=" ">
-        <text macro="venue" font-style="italic"/>
-        <text variable="URL"/>
+        <text macro="venue" font-style="italic" prefix=" "/>
       </group>
       <group display="block" delimiter=" ">
         <text variable="DOI" text-case="lowercase" prefix="DOI: "/>
