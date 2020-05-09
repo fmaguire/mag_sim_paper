@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/7582f686ba264caf96181cc2646efddb565aa194/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/e20da65d4ecf69cbd288b5b7f5ff0af78f5bfae1/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/7582f686ba264caf96181cc2646efddb565aa194/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/e20da65d4ecf69cbd288b5b7f5ff0af78f5bfae1/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/7582f686ba264caf96181cc2646efddb565aa194/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/e20da65d4ecf69cbd288b5b7f5ff0af78f5bfae1/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/7582f686ba264caf96181cc2646efddb565aa194/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/e20da65d4ecf69cbd288b5b7f5ff0af78f5bfae1/))
 was automatically generated
-from [fmaguire/mag_sim_paper@7582f68](https://github.com/fmaguire/mag_sim_paper/tree/7582f686ba264caf96181cc2646efddb565aa194)
+from [fmaguire/mag_sim_paper@e20da65](https://github.com/fmaguire/mag_sim_paper/tree/e20da65d4ecf69cbd288b5b7f5ff0af78f5bfae1)
 on May 9, 2020.
 </em></small>
 
@@ -198,17 +198,16 @@ on May 9, 2020.
 ## Abstract {#abstract}
 
 Metagenomic methods enable the simultaneous characterisation of microbial communities without time-consuming and bias-inducing culturing. 
-Metagenome-assembled genome (MAG) binning methods are a promising approach to recover individual genomes from this data. 
-However, the recovery of mobile genetic elements (MGEs), such as plasmids and genomic islands (GIs), by MAGs has not be well characterised. 
+Metagenome-assembled genome (MAG) binning methods aim to reassemble individual genomes from this data. 
+However, the recovery of mobile genetic elements (MGEs), such as plasmids and genomic islands (GIs), by MAGs has not been well characterised. 
 Given the association of antimicrobial resistance (AMR) genes and virulence factor (VF) genes with MGEs, studying their transmission is a public health priority. 
-The variable copy number and sequence composition of MGEs makes them potentially problematic for MAG binning methods.  
+The variable copy number and sequence composition of MGEs makes them potentially problematic for MAG binning methods. 
 To systematically investigate this, we simulated a low-complexity metagenome comprising 30 GI-rich and plasmid-containing bacterial genomes. 
-MAGs were then recovered using 12 current methods and evaluated. 
+MAGs were then recovered using 12 current prediction pipelines and evaluated. 
 While 82-94% of chromosomes could be correctly recovered and binned, only 38-44% of GIs and 1-29% of plasmid sequences were found. 
-Strikingly, no plasmid-borne VF or AMR genes were recovered and within GIs, only 0-45% of AMR or VF genes. 
+Strikingly, no plasmid-borne VF or AMR genes were recovered, and only 0-45% of AMR or VF genes within GIs. 
 We conclude that short-read MAGs are largely ineffective for the analysis of mobile genes, including those of public-health importance like AMR and VF genes. 
-We propose that microbiome researchers should utilise unassembled short reads and/or long-read approaches to fully characterise metagenomic data.
-
+We propose that microbiome researchers should utilise unassembled short reads and/or long-read approaches to fully characterise metagenomic data. 
 
 
 ## Main {#main}
@@ -328,7 +327,7 @@ We then assessed the ability for MAGs to correctly bin AMR/VF genes of chromosom
 
 We then sought to assess what the impact of a protein's predicted subcellular localisation was on its recovery and binning in MAGs.
 The MAG bins from megahit-DAS Tool assembler-binner combination were selected (as generally best performing) and ORFs predicted using prodigal [@doi:10.1186/1471-2105-11-119] as above.
-Subcellular localisations of these proteins were then predicted using PSORTb v3.0 with default parameters and the appropriate Gram setting for that bin's assigned taxa [@doi:10.1093/bioinformatics/btq249]. 
+Subcellular localisations of these proteins were then predicted using PSORTb v3.0 with default parameters and the appropriate Gram stain setting for that bin's assigned taxa [@doi:10.1093/bioinformatics/btq249]. 
 
 
 
@@ -424,7 +423,7 @@ This highlighted that genomic components (GIs and plasmids) and plasmids in part
 
 In this paper, we evaluated the ability of metagenome-assembled genome (MAG) binning methods to correctly recover mobile genetic elements (MGEs; i.e. GIs and plasmids) from metagenomic samples.
 Overall, chromosomal sequences were binned well (up to 94.3% coverage, with perfect bin purity using megahit-DASTool) however closely related genomes were consistently cross-contaminated with other sequences (e.g. _Streptococcus_ species in Fig. [S1](#fig:coverphylo), [S2](#fig:purityphylo)).
-Given the importance of MGEs in the function and spread of pathogenic traits, it is particularly noteworthy that regardless of MAG binning method, plasmids and GIs were disproportionately lost compared to core chromosomal regions. 
+Given the importance of MGEs in the function and spread of virulence traits and AMR, it is particularly noteworthy that regardless of MAG binning method, plasmids and GIs were disproportionately lost compared to core chromosomal regions. 
 At best (with metaSPAdes and CONCOCT) 29.2% of plasmids and 44.1% of GIs were identifiable at >50% coverage in the correct bin (i.e. grouped with a bin that was mostly made up of contigs from the same genome). 
 While some MGEs were likely recovered in more partial forms (<50% coverage), use of these by researchers interested in selective pressures and lateral gene transfer could lead to inaccurate inferences. 
 This poor result is congruent with the intuition that the divergent compositional features and repetitive nature of these MGEs is problematic for MAG methods.
@@ -433,14 +432,14 @@ Therefore, binning efficiency might improve with use of long-read sequencing or 
 Despite its lower effective sequencing depth and higher error rates, incorporating long-read sequencing has been shown to improve overall MAG binning [@doi:10.1101/2020.04.08.032540] and facilitate metagenomic characterisation of plasmids [@doi:10.1186/s40168-019-0737-z].
 Further research is needed to fully characterise the performance of different long-read protocols on the accuracy of recovering MGEs in metagenomic samples.
 
-With the growing use of MAG methods in infectious disease research (e.g., [@doi:10.1099/mgen.0.000293; @doi:10.1016/j.envint.2019.05.036; @doi:10.1111/1462-2920.14989; @doi:10.3389/fmicb.2017.02036; @doi:10.1128/AEM.02577-16]) and the public-health importance of the LGT of AMR and VF genes, we also specifically evaluated the binning of these gene classes.
+With the growing use of MAG methods in infectious disease research (e.g., [@doi:10.1099/mgen.0.000293; @doi:10.1016/j.envint.2019.05.036; @doi:10.1111/1462-2920.14989; @doi:10.3389/fmicb.2017.02036; @doi:10.1128/AEM.02577-16]) and the public-health and agri-food importance of the LGT of AMR and VF genes, we also specifically evaluated the binning of these gene classes.
 The majority of these genes were correctly assembled across assemblers but were either not assigned or incorrectly assigned to MAG bins during binning.
 At best across all binners, 40% of all AMR genes and ~63% of VF genes (CONCOCT-metaSPAdes) present in the reference genomes were assigned to the correct MAG.
 While a majority of chromosomally located VF genes (73-98%) and AMR genes (53%) were binned correctly, only 16% of GI VFs (n=809), 45% of GI AMR genes (n=11), and not a single plasmid associated VF (n=3) or AMR gene (n=20) were correctly binned.
 This included critical high-threat MGE-associated AMR genes such as the KPC and OXA carbapenemases. 
 One potential caveat of this is that some AMR genes and VFs may no longer be detectable in MAGs due to issues with ORF prediction (see suppl. discussion & Fig. [S3](#fig:geneContent)). 
 Previous studies have observed that ORF predictions in draft genomes are more fragmented, which can lead to downstream over- or under-annotation with functional labels depending on the approach used [@doi:10.1186/1471-2164-13-14]. 
-Although not yet developed, methods that combine the assembly/binning pipelines tested here with read-based inference would give a better sense of which functions are potentially being missed by the MAG reconstructions.
+Although not yet developed, methods that combine the assembly/binning pipelines tested here with read-based inference would provide a better sense of which functions are potentially being missed by the MAG reconstructions.
 
 Our simulated metagenomic community comprised 30 distinct bacterial genomes with varying degrees of relatedness. 
 While this diversity can be representative of certain clinical samples [@doi:10.1186/s12879-017-2727-8; @doi:10.1128/JCM.42.11.5176-5183.2004; @doi:10.1038/s41598-017-07790-9], other environments with relevance to public health such as the human gut, soil, and livestock can have 100-1000s of species [@doi:10.1007/s00248-013-0344-7; @doi:10.1128/AEM.00592-09; @doi:10.1371/journal.pone.0006669; @doi:10.1038/s41598-017-12481-6].
@@ -452,12 +451,12 @@ This study has shown that MAG-based approaches provide a useful tool to study a 
 The majority of these MGEs will either fail to be assembled or be incorrectly binned.
 The consequence of this is the disproportionate loss of key public-health MGE-associated VFs and AMR genes.
 As many of these clinically relevant genes have a high propensity for lateral gene transfer between unrelated bacteria [@doi:10.1371/journal.pone.0008094;@doi:10.3389/fmicb.2016.00173] it is critical to highlight that MAG approaches alone are insufficient to thoroughly profile them.
-Within public-health metagenomic research it is vital we utilise MAGs in conjunction with other methods (e.g. targeted AMR [@doi:10.1099/mgen.0.000131], long-read sequencing, plasmid specialised assembly approaches [@doi:10.1101/2020.01.12.903252], and read-based sequence homology search [@doi:10.1038/nmeth.3176]) before drawing biological or epidemiological conclusions.
+Within public-health metagenomic research, as well as other research areas that study MGEs, it is vital we utilise MAGs in conjunction with other methods (e.g. targeted AMR [@doi:10.1099/mgen.0.000131], long-read sequencing, plasmid specialised assembly approaches [@doi:10.1101/2020.01.12.903252], and read-based sequence homology search [@doi:10.1038/nmeth.3176]) before drawing biological or epidemiological conclusions.
 
-## Data availability
+## Availability
 
-All datasets used or generated in this study are available at [osf.io/nrejs](osf.io/nrejs/)
-All analysis and plotting code used is available at [github.com/fmaguire/MAG_gi_plasmid_analysis](github.com/fmaguire/MAG_gi_plasmid_analysis)
+All datasets used or generated in this study are available at [https://osf.io/nrejs](osf.io/nrejs/)
+All analysis and plotting code used is available at [https://github.com/fmaguire/MAG_gi_plasmid_analysis](github.com/fmaguire/MAG_gi_plasmid_analysis)
 
 
 
