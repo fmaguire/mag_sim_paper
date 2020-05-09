@@ -1,79 +1,129 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" default-locale="en-US">
-  <!-- This style was edited with the Visual CSL Editor (http://editor.citationstyles.org/visualEditor/) -->
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="en-GB">
   <info>
-    <title>Manubot</title>
-    <id>http://www.zotero.org/styles/manubot</id>
-    <link href="http://www.zotero.org/styles/manubot" rel="self"/>
-    <link href="https://github.com/manubot/rootstock" rel="documentation"/>
+    <title>Nucleic Acids Research</title>
+    <id>http://www.zotero.org/styles/nucleic-acids-research</id>
+    <link href="http://www.zotero.org/styles/nucleic-acids-research" rel="self"/>
+    <link href="http://www.oxfordjournals.org/nar/for_authors/msprep_submission.html" rel="documentation"/>
     <author>
-      <name>Daniel Himmelstein</name>
-      <email>daniel.himmelstein@gmail.com</email>
+      <name>Julian Onions</name>
+      <email>julian.onions@gmail.com</email>
     </author>
-    <updated>2018-08-22T19:08:46+00:00</updated>
-    <rights license="https://creativecommons.org/publicdomain/zero/1.0/legalcode">This work is dedicated to the public domain via CC0 1.0</rights>
+    <contributor>
+      <name>Florent Angly</name>
+      <email>florent.angly@gmail.com</email>
+    </contributor>
+    <category citation-format="numeric"/>
+    <category field="biology"/>
+    <issn>0305-1048</issn>
+    <eissn>1362-4962</eissn>
+    <summary>Nucleic Acids Research Journal style.</summary>
+    <updated>2012-09-27T22:06:38+00:00</updated>
+    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
+  <macro name="editor">
+    <names variable="editor" delimiter=", ">
+      <name initialize-with="." name-as-sort-order="all" sort-separator="," delimiter=", " delimiter-precedes-last="always"/>
+      <label form="short" prefix=" (" suffix=")" strip-periods="true"/>
+    </names>
+  </macro>
   <macro name="author">
     <names variable="author">
-      <name initialize="true" initialize-with="." et-al-min="50" et-al-use-first="50" et-al-use-last="true"/>
-      <label form="long" prefix=" (" suffix=")"/>
+      <name name-as-sort-order="all" sort-separator="," initialize-with="." delimiter=", " and="text" delimiter-precedes-last="never"/>
+      <et-al font-style="italic"/>
+      <label form="short" prefix=" "/>
       <substitute>
         <names variable="editor"/>
-        <text macro="venue"/>
+        <text variable="title"/>
       </substitute>
     </names>
   </macro>
-  <macro name="venue">
+  <macro name="title">
+    <text variable="title"/>
+  </macro>
+  <macro name="publisher">
+    <group delimiter=", ">
+      <text variable="publisher"/>
+      <text variable="publisher-place"/>
+    </group>
+  </macro>
+  <macro name="cite-date">
+    <date variable="issued">
+      <date-part name="year"/>
+    </date>
+  </macro>
+  <macro name="edition">
     <choose>
-      <if match="any" variable="container-title">
-        <text variable="container-title"/>
+      <if is-numeric="edition">
+        <group delimiter=" ">
+          <number variable="edition" form="ordinal"/>
+          <text term="edition" form="short"/>
+        </group>
       </if>
-      <else-if match="any" variable="container-title-short">
-        <text variable="container-title-short"/>
-      </else-if>
-      <else-if match="any" variable="publisher">
-        <text variable="publisher"/>
-      </else-if>
-      <else-if match="any" variable="collection-title">
-        <text variable="collection-title"/>
-      </else-if>
+      <else>
+        <text variable="edition" suffix="."/>
+      </else>
     </choose>
   </macro>
-  <citation>
+  <citation collapse="citation-number">
     <sort>
       <key variable="citation-number"/>
     </sort>
-    <layout prefix="[" suffix="]" delimiter=",">
+    <layout prefix="(" suffix=")" delimiter=", ">
       <text variable="citation-number"/>
     </layout>
   </citation>
-  <bibliography hanging-indent="true" second-field-align="margin">
-    <layout>
-        <text variable="citation-number" suffix=". "/>
-      <group delimiter=" ">
-        <text macro="author"/>
-    </group>
-
-
-    <group delimiter=" ">
-        <date variable="issued" prefix=" (" suffix=")">
-            <date-part name="year"/>
-        </date>
-    </group>
-
-     <group delimiter=" ">
-        <text variable="title" prefix=" "/>
-    </group>
-
-      <group delimiter=" ">
-        <text macro="venue" font-style="italic" prefix=" "/>
-      </group>
-      <group delimiter=" ">
-        <text variable="DOI" text-case="lowercase" prefix=" DOI: "/>
-        <text variable="PMID" prefix="PMID: "/>
-        <text variable="PMCID" prefix="PMCID: "/>
-        <text variable="ISBN" prefix="ISBN: "/>
-      </group>
+  <bibliography hanging-indent="true" et-al-min="11" et-al-use-first="10">
+    <layout suffix=".">
+      <text variable="citation-number" suffix=". "/>
+      <text macro="author"/>
+      <text macro="cite-date" prefix=" (" suffix=")"/>
+      <choose>
+        <if type="bill book graphic legal_case legislation motion_picture report song" match="any">
+          <group delimiter=" " prefix=" ">
+            <text macro="title"/>
+            <text macro="edition"/>
+            <text macro="editor"/>
+            <text macro="publisher"/>
+          </group>
+        </if>
+        <else-if type="chapter paper-conference" match="any">
+          <group prefix=" " delimiter=" " suffix=".">
+            <text macro="title" suffix="."/>
+            <text term="in" text-case="capitalize-first"/>
+            <group delimiter=", ">
+              <text macro="editor"/>
+              <text variable="container-title" font-style="italic"/>
+              <text variable="collection-title" prefix=" " suffix="."/>
+            </group>
+          </group>
+          <group suffix="." delimiter=", ">
+            <text macro="publisher" prefix=" "/>
+            <text variable="volume" prefix="Vol. "/>
+            <group>
+              <label variable="page" suffix=" " form="short"/>
+              <text variable="page"/>
+            </group>
+          </group>
+        </else-if>
+        <else>
+          <text macro="title" prefix=" " suffix="."/>
+          <group delimiter=", " prefix=" " suffix=".">
+            <text variable="container-title" form="short" font-style="italic"/>
+            <choose>
+              <if variable="volume">
+                <!-- The final version of a paper -->
+                <text variable="volume" font-weight="bold"/>
+                <text variable="page"/>
+              </if>
+              <else>
+                <!-- The initial version of a paper -->
+                <text variable="DOI"/>
+              </else>
+            </choose>
+          </group>
+        </else>
+      </choose>
     </layout>
   </bibliography>
 </style>
