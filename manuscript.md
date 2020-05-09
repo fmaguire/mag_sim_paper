@@ -8,7 +8,7 @@ author-meta:
 - Fiona S.L. Brinkman
 bibliography:
 - content/manual-references.json
-date-meta: '2020-05-08'
+date-meta: '2020-05-09'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta name="dc.date" content="2020-05-08" />
+  <meta name="dc.date" content="2020-05-09" />
 
-  <meta name="citation_publication_date" content="2020-05-08" />
+  <meta name="citation_publication_date" content="2020-05-09" />
 
   <meta name="dc.language" content="en-CA" />
 
@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/7e42db94a26f0b2e82cc8ce4414dfc27cdaf44d1/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/7582f686ba264caf96181cc2646efddb565aa194/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/7e42db94a26f0b2e82cc8ce4414dfc27cdaf44d1/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/7582f686ba264caf96181cc2646efddb565aa194/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/7e42db94a26f0b2e82cc8ce4414dfc27cdaf44d1/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/7582f686ba264caf96181cc2646efddb565aa194/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,10 +131,10 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/7e42db94a26f0b2e82cc8ce4414dfc27cdaf44d1/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/7582f686ba264caf96181cc2646efddb565aa194/))
 was automatically generated
-from [fmaguire/mag_sim_paper@7e42db9](https://github.com/fmaguire/mag_sim_paper/tree/7e42db94a26f0b2e82cc8ce4414dfc27cdaf44d1)
-on May 8, 2020.
+from [fmaguire/mag_sim_paper@7582f68](https://github.com/fmaguire/mag_sim_paper/tree/7582f686ba264caf96181cc2646efddb565aa194)
+on May 9, 2020.
 </em></small>
 
 ## Authors
