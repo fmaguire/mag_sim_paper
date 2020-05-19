@@ -10,7 +10,7 @@
   <meta name="author" content="Wing Yin Venus Lau" />
   <meta name="author" content="Robert G. Beiko" />
   <meta name="author" content="Fiona S.L. Brinkman" />
-  <meta name="dcterms.date" content="2020-05-09" />
+  <meta name="dcterms.date" content="2020-05-19" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands</title>
   <style>
@@ -33,8 +33,8 @@
   <meta name="citation_title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
   <meta property="og:title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
-  <meta name="dc.date" content="2020-05-09" />
-  <meta name="citation_publication_date" content="2020-05-09" />
+  <meta name="dc.date" content="2020-05-19" />
+  <meta name="citation_publication_date" content="2020-05-19" />
   <meta name="dc.language" content="en-CA" />
   <meta name="citation_language" content="en-CA" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@
   <meta name="citation_fulltext_html_url" content="https://fmaguire.github.io/mag_sim_paper/" />
   <meta name="citation_pdf_url" content="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/e20da65d4ecf69cbd288b5b7f5ff0af78f5bfae1/" />
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/e20da65d4ecf69cbd288b5b7f5ff0af78f5bfae1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/e20da65d4ecf69cbd288b5b7f5ff0af78f5bfae1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/62ab1041f149234520b8a6c94210e9ccea1ca88a/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/62ab1041f149234520b8a6c94210e9ccea1ca88a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/62ab1041f149234520b8a6c94210e9ccea1ca88a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -83,10 +83,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://fmaguire.github.io/mag_sim_paper/v/e20da65d4ecf69cbd288b5b7f5ff0af78f5bfae1/">permalink</a>)
+(<a href="https://fmaguire.github.io/mag_sim_paper/v/62ab1041f149234520b8a6c94210e9ccea1ca88a/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/fmaguire/mag_sim_paper/tree/e20da65d4ecf69cbd288b5b7f5ff0af78f5bfae1">fmaguire/mag_sim_paper@e20da65</a>
-on May 9, 2020.
+from <a href="https://github.com/fmaguire/mag_sim_paper/tree/62ab1041f149234520b8a6c94210e9ccea1ca88a">fmaguire/mag_sim_paper@62ab104</a>
+on May 19, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -136,19 +136,28 @@ Department of Molecular Biology and Biochemistry, Simon Fraser University
 </small></p></li>
 </ul>
 <p>* authors contributed equally.</p>
+<h2 id="keywords">Keywords</h2>
+<p>Metagenomics, metagenome-assembled genomes, Antimicrobial resistance, Mobile genetic elements, Genomic islands.</p>
 <h2 id="abstract">Abstract</h2>
-<p>Metagenomic methods enable the simultaneous characterisation of microbial communities without time-consuming and bias-inducing culturing.
+<p>###Introduction
+Metagenomic methods enable the simultaneous characterisation of microbial communities without time-consuming and bias-inducing culturing.
 Metagenome-assembled genome (MAG) binning methods aim to reassemble individual genomes from this data.
 However, the recovery of mobile genetic elements (MGEs), such as plasmids and genomic islands (GIs), by MAGs has not been well characterised.
 Given the association of antimicrobial resistance (AMR) genes and virulence factor (VF) genes with MGEs, studying their transmission is a public health priority.
-The variable copy number and sequence composition of MGEs makes them potentially problematic for MAG binning methods.
-To systematically investigate this, we simulated a low-complexity metagenome comprising 30 GI-rich and plasmid-containing bacterial genomes.
+###Aims
+The variable copy number and sequence composition of MGEs makes them potentially problematic for MAG binning methods and needs to be evaluated.
+###Methodology
+To systematically investigate this issue, we simulated a low-complexity metagenome comprising 30 GI-rich and plasmid-containing bacterial genomes.
 MAGs were then recovered using 12 current prediction pipelines and evaluated.
+###Results
 While 82-94% of chromosomes could be correctly recovered and binned, only 38-44% of GIs and 1-29% of plasmid sequences were found.
 Strikingly, no plasmid-borne VF or AMR genes were recovered, and only 0-45% of AMR or VF genes within GIs.
+###Conclusion
 We conclude that short-read MAGs are largely ineffective for the analysis of mobile genes, including those of public-health importance like AMR and VF genes.
 We propose that microbiome researchers should utilise unassembled short reads and/or long-read approaches to fully characterise metagenomic data.</p>
-<h2 id="main">Main</h2>
+<h2 id="data-summary">Data Summary</h2>
+<p>In keeping with FAIR principles (Findable, Accessible, Interoperable, Reusable data), all analyses presented in this paper can be reproduced and inspected with the associated github repository <a href="github.com/fmaguire/MAG_gi_plasmid_analysis">github.com/fmaguire/MAG_gi_plasmid_analysis</a> and data repository <a href="osf.io/nrejs/">osf.io/nrejs/</a>.</p>
+<h2 id="main">Introduction</h2>
 <p>Metagenomics, the sequencing of DNA from within an environmental sample, is widely used to characterise the functional potential and identity of microbial communities <span class="citation" data-cites="8PLOeAH6 7RV1Ygsv">(<a href="#ref-8PLOeAH6" role="doc-biblioref">1</a>, <a href="#ref-7RV1Ygsv" role="doc-biblioref">2</a>)</span>.
 These approaches have been instrumental in developing our understanding of the distribution and evolutionary history of AMR genes <span class="citation" data-cites="rwhLEYRY QSe5BqFk 2xaXclNM">(<a href="#ref-rwhLEYRY" role="doc-biblioref">3</a>–<a href="#ref-2xaXclNM" role="doc-biblioref">5</a>)</span>, as well as tracking pathogen outbreaks <span class="citation" data-cites="khJQfjDf">(<a href="#ref-khJQfjDf" role="doc-biblioref">6</a>)</span>.
 Although long-read DNA technologies (e.g., Oxford Nanopore <span class="citation" data-cites="19dz2SKIf">(<a href="#ref-19dz2SKIf" role="doc-biblioref">7</a>)</span>, PacBio <span class="citation" data-cites="QbXTukk0">(<a href="#ref-QbXTukk0" role="doc-biblioref">8</a>)</span>) are now being used for metagenomic sequencing <span class="citation" data-cites="U4vhNZoB 1759XyDVi">(<a href="#ref-U4vhNZoB" role="doc-biblioref">9</a>, <a href="#ref-1759XyDVi" role="doc-biblioref">10</a>)</span>, high-throughput sequencing of relatively short reads (150-250bp) in platforms such as the Illumina MiSeq still dominates metagenomics.
@@ -175,8 +184,7 @@ Plasmids are also of high interest as a major source of the lateral disseminatio
 As these MGEs are key to the function and spread of pathogenic traits such as AMR and virulence, and with MAG approaches becoming increasingly popular within microbial and public-health research, it is both timely and vital that we assess the impact of metagenome assembly and binning on the recovery of these elements.
 Therefore, to address this issue we performed an analysis of GI and plasmid, and associated AMR/VF genes, recovery accuracy across a set of 12 state-of-the-art methods for short-read metagenome assemblies.
 We show that short-read MAG-based analyses are not suitable for the study of mobile sequences, including those of public-health importance.</p>
-<h2 id="methods">Material and Methods</h2>
-<p>In keeping with FAIR principles (Findable, Accessible, Interoperable, Reusable data), all analyses presented in this paper can be reproduced and inspected with the associated github repository <a href="github.com/fmaguire/MAG_gi_plasmid_analysis">github.com/fmaguire/MAG_gi_plasmid_analysis</a> and data repository <a href="osf.io/nrejs/">osf.io/nrejs/</a>.</p>
+<h2 id="methods">Methods</h2>
 <h3 id="metagenome-simulation">Metagenome Simulation</h3>
 <p>Thirty RefSeq genomes were selected using IslandPath-DIMOB <span class="citation" data-cites="M1pdcdMy">(<a href="#ref-M1pdcdMy" role="doc-biblioref">39</a>)</span> GI prediction data collated into the IslandViewer database <a href="www.pathogenomics.sfu.ca/islandviewer">www.pathogenomics.sfu.ca/islandviewer</a> <span class="citation" data-cites="4eEyIkDg">(<a href="#ref-4eEyIkDg" role="doc-biblioref">40</a>)</span> (Supplemental Table 1).
 The selected genomes and associated plasmids (listed in Supplemental Table 2 and deposited at osf.io/nrejs/ under “data/sequences”) were manually selected to satisfy the following criteria:</p>
@@ -391,15 +399,22 @@ This highlights that genomic components (GIs and plasmids) and plasmids in parti
 <img src="images/S4_rate_of_loss.png" data-tag="S4" alt="" /><figcaption><span>Figure S4:</span> Comparison of rates of loss for different genomic components and gene types across assemblers and binning tools. Each line represents a different component as indicated by the legend with assemblers indicated by row and binning tool by column. This shows that regardless of approach genomic components (GIs and plasmids) are lost at a higher rate than individual VF or AMR genes.</figcaption>
 </figure>
 </div>
-<h2 id="funding">Funding</h2>
+<h2 id="author-statements">Author Statements</h2>
+<p>F.M. and B.J. conceptualised and designed the methodologies for the study, performed MAG related formal analyses, generated the figures, and drafted the manuscript.
+W.Y.V.L. and K.G. provided key input on genomic island and subcellular localisation analyses, respectively and revieweded and edited the manuscript.
+F.S.L.B and R.G.B. provided project administration and advice throughout the project.
+All authors contributed to and approved the manuscript.</p>
+<h2 id="conflict-of-interest">Conflict of Interest</h2>
+<p>The authors declare no competing interests.</p>
+<h2 id="funding-information">Funding Information</h2>
 <p>This work was supported primarily by a Donald Hill Family Fellowship held by F.M.
 W.Y.V.L. and B.J. hold Canadian Institutes of Health Research (CIHR) doctoral scholarships.
 K.G. was supported by a Natural Sciences and Engineering Research Council of Canada (NSERC) Collaborative Research and Training Experience (CREATE) Bioinformatics scholarship.
 B.J, W.Y.V.L., and K.G. also held Simon Fraser University (SFU) Omics and Data Sciences fellowships.
 F.S.L.B. holds an SFU Distinguished Professorship and R.G.B. is a Professor and Associate Dean Research at Dalhousie University.
-Additionally, this work was partially supported by Genome Canada and NSERC grants to R.G.B. and F.S.L.B.[grant number XXXXX, yyyyy], and the authors thank the SFU Research Computing Group and Compute Canada for compute resource support.</p>
-<h2 id="conflict-of-interest">Conflict of Interest</h2>
-<p>The authors declare no competing interests.</p>
+Additionally, this work was partially supported by Genome Canada and NSERC grants to R.G.B. and F.S.L.B.</p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>The authors would like to thank their funders and the Simon Fraser University (SFU) Research Computing Group and Compute Canada for compute resource support.</p>
 <h2 class="unnumbered" id="references">References</h2>
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
 <div id="ref-8PLOeAH6">
