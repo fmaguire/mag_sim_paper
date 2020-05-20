@@ -23,3 +23,10 @@ All authors contributed to and approved the manuscript.
 ### Corresponding authors
 
 Correspondence to Finlay Maguire or Fiona S.L. Brinkman
+
+## Author contributions
+
+F.M. and B.J. conceptualised and designed the methodologies for the study, performed MAG related formal analyses, generated the figures, and drafted the manuscript.
+W.Y.V.L. and K.G. provided key input on genomic island and subcellular localisation analyses, respectively and revieweded and edited the manuscript.
+F.S.L.B and R.G.B. provided project administration and advice throughout the project.
+All authors contributed to and approved the manuscript.
