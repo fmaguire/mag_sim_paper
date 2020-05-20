@@ -8,7 +8,7 @@ author-meta:
 - Fiona S.L. Brinkman
 bibliography:
 - content/manual-references.json
-date-meta: '2020-05-19'
+date-meta: '2020-05-20'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta name="dc.date" content="2020-05-19" />
+  <meta name="dc.date" content="2020-05-20" />
 
-  <meta name="citation_publication_date" content="2020-05-19" />
+  <meta name="citation_publication_date" content="2020-05-20" />
 
   <meta name="dc.language" content="en-CA" />
 
@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/62ab1041f149234520b8a6c94210e9ccea1ca88a/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/821ec8634cdbe879883bb6468e60a43d2daea59f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/62ab1041f149234520b8a6c94210e9ccea1ca88a/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/821ec8634cdbe879883bb6468e60a43d2daea59f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/62ab1041f149234520b8a6c94210e9ccea1ca88a/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/821ec8634cdbe879883bb6468e60a43d2daea59f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,10 +131,10 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/62ab1041f149234520b8a6c94210e9ccea1ca88a/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/821ec8634cdbe879883bb6468e60a43d2daea59f/))
 was automatically generated
-from [fmaguire/mag_sim_paper@62ab104](https://github.com/fmaguire/mag_sim_paper/tree/62ab1041f149234520b8a6c94210e9ccea1ca88a)
-on May 19, 2020.
+from [fmaguire/mag_sim_paper@821ec86](https://github.com/fmaguire/mag_sim_paper/tree/821ec8634cdbe879883bb6468e60a43d2daea59f)
+on May 20, 2020.
 </em></small>
 
 ## Authors
@@ -193,29 +193,35 @@ on May 19, 2020.
 
 
 
-\* authors contributed equally.
-
-## Keywords
-Metagenomics, metagenome-assembled genomes, Antimicrobial resistance, Mobile genetic elements, Genomic islands.
-
 ## Abstract {#abstract}
 
-###Introduction
 Metagenomic methods enable the simultaneous characterisation of microbial communities without time-consuming and bias-inducing culturing. 
 Metagenome-assembled genome (MAG) binning methods aim to reassemble individual genomes from this data. 
 However, the recovery of mobile genetic elements (MGEs), such as plasmids and genomic islands (GIs), by MAGs has not been well characterised. 
 Given the association of antimicrobial resistance (AMR) genes and virulence factor (VF) genes with MGEs, studying their transmission is a public health priority. 
-###Aims
 The variable copy number and sequence composition of MGEs makes them potentially problematic for MAG binning methods and needs to be evaluated. 
-###Methodology
 To systematically investigate this issue, we simulated a low-complexity metagenome comprising 30 GI-rich and plasmid-containing bacterial genomes. 
 MAGs were then recovered using 12 current prediction pipelines and evaluated. 
-###Results
 While 82-94% of chromosomes could be correctly recovered and binned, only 38-44% of GIs and 1-29% of plasmid sequences were found. 
 Strikingly, no plasmid-borne VF or AMR genes were recovered, and only 0-45% of AMR or VF genes within GIs. 
-###Conclusion
 We conclude that short-read MAGs are largely ineffective for the analysis of mobile genes, including those of public-health importance like AMR and VF genes. 
 We propose that microbiome researchers should utilise unassembled short reads and/or long-read approaches to fully characterise metagenomic data. 
+
+## Keywords
+Metagenomics, metagenome-assembled genomes, Antimicrobial resistance, Mobile genetic elements, Genomic islands.
+
+## Author Notes
+\* authors contributed equally.
+All supporting data, code and protocols have been provided within the article or through supplementary data files. Four supplementary figures and three supplementary tables are available with the online version of this article.
+
+##Abbreviations
+MAG, Metagenome assembled genome. MGE, mobile genetic element. GI, genomic island. AMR, antimicrobial resistance. VF, virulence factor. ICE, integrative and conjugative element. 
+
+## Impact Statement
+Metagenome assembled genomes (MAGs) with short read sequences are becoming increasingly common as microbiome methods increase in popularity with decreasing sequencing costs. 
+By examining 12 different combination of widely available MAG tools, we demonstrated that, despite MAG’s high potential, it is not be suitable for all research domains. 
+This is especially true for the analysis of mobile genetic sequences, such as genomic islands and plasmids, which are especially of concern in one health due to antimicrobial resistance and virulence gene transmission. 
+We suggests a fundamental shift should occur to utilized both unassembled-read based and long read based approaches to more accurately analyze metagenomic data.
 
 ## Data Summary
 In keeping with FAIR principles (Findable, Accessible, Interoperable, Reusable data), all analyses presented in this paper can be reproduced and inspected with the associated github repository [github.com/fmaguire/MAG_gi_plasmid_analysis](github.com/fmaguire/MAG_gi_plasmid_analysis) and data repository [osf.io/nrejs/](osf.io/nrejs/).
@@ -461,11 +467,6 @@ The consequence of this is the disproportionate loss of key public-health MGE-as
 As many of these clinically relevant genes have a high propensity for lateral gene transfer between unrelated bacteria [@doi:10.1371/journal.pone.0008094;@doi:10.3389/fmicb.2016.00173] it is critical to highlight that MAG approaches alone are insufficient to thoroughly profile them.
 Within public-health metagenomic research, as well as other research areas that study MGEs, it is vital we utilise MAGs in conjunction with other methods (e.g. targeted AMR [@doi:10.1099/mgen.0.000131], long-read sequencing, plasmid specialised assembly approaches [@doi:10.1101/2020.01.12.903252], and read-based sequence homology search [@doi:10.1038/nmeth.3176]) before drawing biological or epidemiological conclusions.
 
-## Availability
-
-All datasets used or generated in this study are available at [https://osf.io/nrejs](osf.io/nrejs/)
-All analysis and plotting code used is available at [https://github.com/fmaguire/MAG_gi_plasmid_analysis](github.com/fmaguire/MAG_gi_plasmid_analysis)
-
 
 
 
@@ -505,16 +506,11 @@ This highlights that genomic components (GIs and plasmids) and plasmids in parti
 
 
 
-## Author Statements
 
-F.M. and B.J. conceptualised and designed the methodologies for the study, performed MAG related formal analyses, generated the figures, and drafted the manuscript.
-W.Y.V.L. and K.G. provided key input on genomic island and subcellular localisation analyses, respectively and revieweded and edited the manuscript.
-F.S.L.B and R.G.B. provided project administration and advice throughout the project.
-All authors contributed to and approved the manuscript.
+## Data Bibliography
 
-## Conflict of Interest
-
-The authors declare no competing interests.
+All datasets used or generated in this study are available at [https://osf.io/nrejs](osf.io/nrejs/)
+All analysis and plotting code used is available at [https://github.com/fmaguire/MAG_gi_plasmid_analysis](github.com/fmaguire/MAG_gi_plasmid_analysis)
 
 ## Funding Information
 
@@ -528,5 +524,15 @@ Additionally, this work was partially supported by Genome Canada and NSERC grant
 ## Acknowledgements
 The authors would like to thank their funders and the Simon Fraser University (SFU) Research Computing Group and Compute Canada for compute resource support.
 
+## Author contributions
+
+F.M. and B.J.: conceptualization, investigation, validation, formal analysis, data curation, writing (original draft preparation; review and editing), visualization. 
+W.Y.V.L. and K.G.: investivation, data curation writing (review and editing). 
+F.S.L.B and R.G.B.: Supervision, Project administration, funding, writing (review and editing).
+All authors contributed to and approved the manuscript.
+
+## Conflict of Interest
+
+The authors declare no competing interests.
 
 ## References {#references}
