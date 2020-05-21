@@ -8,7 +8,7 @@ author-meta:
 - Fiona S.L. Brinkman
 bibliography:
 - content/manual-references.json
-date-meta: '2020-05-20'
+date-meta: '2020-05-21'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta name="dc.date" content="2020-05-20" />
+  <meta name="dc.date" content="2020-05-21" />
 
-  <meta name="citation_publication_date" content="2020-05-20" />
+  <meta name="citation_publication_date" content="2020-05-21" />
 
   <meta name="dc.language" content="en-CA" />
 
@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/821ec8634cdbe879883bb6468e60a43d2daea59f/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/195029564e9641e9ba18c976e1297fb9db9faa67/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/821ec8634cdbe879883bb6468e60a43d2daea59f/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/195029564e9641e9ba18c976e1297fb9db9faa67/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/821ec8634cdbe879883bb6468e60a43d2daea59f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/195029564e9641e9ba18c976e1297fb9db9faa67/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,10 +131,10 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/821ec8634cdbe879883bb6468e60a43d2daea59f/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/195029564e9641e9ba18c976e1297fb9db9faa67/))
 was automatically generated
-from [fmaguire/mag_sim_paper@821ec86](https://github.com/fmaguire/mag_sim_paper/tree/821ec8634cdbe879883bb6468e60a43d2daea59f)
-on May 20, 2020.
+from [fmaguire/mag_sim_paper@1950295](https://github.com/fmaguire/mag_sim_paper/tree/195029564e9641e9ba18c976e1297fb9db9faa67)
+on May 21, 2020.
 </em></small>
 
 ## Authors
@@ -214,17 +214,18 @@ Metagenomics, metagenome-assembled genomes, Antimicrobial resistance, Mobile gen
 \* authors contributed equally.
 All supporting data, code and protocols have been provided within the article or through supplementary data files. Four supplementary figures and three supplementary tables are available with the online version of this article.
 
-##Abbreviations
+## Abbreviations
 MAG, Metagenome assembled genome. MGE, mobile genetic element. GI, genomic island. AMR, antimicrobial resistance. VF, virulence factor. ICE, integrative and conjugative element. 
 
 ## Impact Statement
-Metagenome assembled genomes (MAGs) with short read sequences are becoming increasingly common as microbiome methods increase in popularity with decreasing sequencing costs. 
-By examining 12 different combination of widely available MAG tools, we demonstrated that, despite MAG’s high potential, it is not be suitable for all research domains. 
-This is especially true for the analysis of mobile genetic sequences, such as genomic islands and plasmids, which are especially of concern in one health due to antimicrobial resistance and virulence gene transmission. 
-We suggests a fundamental shift should occur to utilized both unassembled-read based and long read based approaches to more accurately analyze metagenomic data.
+Metagenome assembled genome (MAG) binning has become an increasingly common approach in environmental, microbiome, and public health studies that make use of short-read metagenomic data.
+By examining 12 widely-used MAG binning workflows, we demonstrate that these methods are not suitable for the analysis of mobile genetic elements.
+Given the potential human and animal health implications of antimicrobial resistance and virulence genes associated with these elements, inappropriate use of short-read MAGs has the potential to be misleading at best and harmful at worst.
+This result will hopefully stimulate a fundamental shift in MAG methods to incorporate additional read-based and long-read analyses.
 
 ## Data Summary
 In keeping with FAIR principles (Findable, Accessible, Interoperable, Reusable data), all analyses presented in this paper can be reproduced and inspected with the associated github repository [github.com/fmaguire/MAG_gi_plasmid_analysis](github.com/fmaguire/MAG_gi_plasmid_analysis) and data repository [osf.io/nrejs/](osf.io/nrejs/).
+
 
 ## Introduction {#main}
 
