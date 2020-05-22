@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/b212fd3170a0ea4dd8d3563361ab2ef635955c1a/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/72dab212177c03949c7abfa4a82ab4d21551330f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/b212fd3170a0ea4dd8d3563361ab2ef635955c1a/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/72dab212177c03949c7abfa4a82ab4d21551330f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/b212fd3170a0ea4dd8d3563361ab2ef635955c1a/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/72dab212177c03949c7abfa4a82ab4d21551330f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/b212fd3170a0ea4dd8d3563361ab2ef635955c1a/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/72dab212177c03949c7abfa4a82ab4d21551330f/))
 was automatically generated
-from [fmaguire/mag_sim_paper@b212fd3](https://github.com/fmaguire/mag_sim_paper/tree/b212fd3170a0ea4dd8d3563361ab2ef635955c1a)
+from [fmaguire/mag_sim_paper@72dab21](https://github.com/fmaguire/mag_sim_paper/tree/72dab212177c03949c7abfa4a82ab4d21551330f)
 on May 22, 2020.
 </em></small>
 
@@ -398,7 +398,7 @@ For the CONCOCT and maxbin2 binning tools, all GIs that were assembled were assi
 DASTool, MetaBAT2 and CONCOCT did not display the same precipitous drop between those assembled and those correctly binned as was observed for plasmids.
 In terms of overall correct binning with the chromosomes from the same genome the metaSPAdes assembly with CONCOCT (44.1%) and maxbin2 (43.3%) binners performed best.
 
-![Impact of metagenomic assembly and MAG binning on recovery of GIs. GIs were recovered in a similarly poor fashion to plasmids. Generally, \<40% were correctly assigned to the same bin majorly comprised of chromosomal contigs from the same source genome regardless of binning (x-axis) and assembly (panel) methods at >50% coverage. metaSPAdes performed the best at assembling GIs (blue). Maxbin2 and CONCOCT placed GIs in a bin majority of the time (orange) however a very small fraction was correctly binned (green). Generally, GIs were correctly binned better than plasmids with DASTool, MetaBAT2 and CONCOCT.](images/F4_GI_recovery.png){#fig:gis}
+![Impact of metagenomic assembly and MAG binning on recovery of GIs. GIs were recovered in a similarly poor fashion to plasmids. Generally, \<40% were correctly assigned to the same bin majorly comprised of chromosomal contigs from the same source genome regardless of binning (x-axis) and assembly (panel) methods at >50% coverage. metaSPAdes performed the best at assembling GIs (blue). Maxbin2 and CONCOCT placed GIs in a bin majority of the time (orange) however a very small fraction was correctly binned (green). Generally, GIs were correctly binned better than plasmids with DASTool, MetaBAT2 and CONCOCT.](images/F4_gi_recovery.png){#fig:gis}
 
 #### AMR Genes
 
