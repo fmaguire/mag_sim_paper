@@ -17,9 +17,9 @@
    viewBox="0 0 864 794.26691"
    sodipodi:docname="vf_recovery_combined.svg"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   inkscape:export-filename="/home/fin/Documents/research/bioinformatics/mag_sim_paper/content/images/vf_recovery_combined.png"
-   inkscape:export-xdpi="300"
-   inkscape:export-ydpi="300">
+   inkscape:export-filename="/home/fin/Documents/research/bioinformatics/mag_sim_paper/content/images/F6_vf_recovery_combined.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600">
   <metadata
      id="metadata5926">
     <rdf:RDF>
@@ -43,21 +43,28 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1080"
+     inkscape:window-width="476"
+     inkscape:window-height="1040"
      id="namedview5922"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="0.55488241"
-     inkscape:cx="221.74377"
-     inkscape:cy="416.10752"
-     inkscape:window-x="1920"
-     inkscape:window-y="0"
+     inkscape:zoom="0.78472222"
+     inkscape:cx="434.31864"
+     inkscape:cy="674.10213"
+     inkscape:window-x="1440"
+     inkscape:window-y="18"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg5920" />
+  <rect
+     style="fill:#ffffff;fill-opacity:1"
+     id="rect1441"
+     width="864.1593"
+     height="794.23004"
+     x="-0.15929204"
+     y="0.036820635" />
   <rect
      style="fill:#ffffff;fill-opacity:0.91878171"
      id="rect823"
