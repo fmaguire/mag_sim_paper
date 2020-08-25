@@ -8,7 +8,7 @@ author-meta:
 - Fiona S.L. Brinkman
 bibliography:
 - content/manual-references.json
-date-meta: '2020-08-17'
+date-meta: '2020-08-25'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta name="dc.date" content="2020-08-17" />
+  <meta name="dc.date" content="2020-08-25" />
 
-  <meta name="citation_publication_date" content="2020-08-17" />
+  <meta name="citation_publication_date" content="2020-08-25" />
 
   <meta name="dc.language" content="en-CA" />
 
@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/b294fdf1d630ab9a1e3539465e602390d58c3e07/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/489c2be42935fc79bd11ecf5d2da642c00782543/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/b294fdf1d630ab9a1e3539465e602390d58c3e07/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/489c2be42935fc79bd11ecf5d2da642c00782543/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/b294fdf1d630ab9a1e3539465e602390d58c3e07/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/489c2be42935fc79bd11ecf5d2da642c00782543/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,10 +131,10 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/b294fdf1d630ab9a1e3539465e602390d58c3e07/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/489c2be42935fc79bd11ecf5d2da642c00782543/))
 was automatically generated
-from [fmaguire/mag_sim_paper@b294fdf](https://github.com/fmaguire/mag_sim_paper/tree/b294fdf1d630ab9a1e3539465e602390d58c3e07)
-on August 17, 2020.
+from [fmaguire/mag_sim_paper@489c2be](https://github.com/fmaguire/mag_sim_paper/tree/489c2be42935fc79bd11ecf5d2da642c00782543)
+on August 25, 2020.
 </em></small>
 
 ## Authors
@@ -256,7 +256,13 @@ Plasmids are circular or linear extrachromosomal self-replicating pieces of DNA 
 Similar to GIs, the sequence composition and G+C content of plasmids are often markedly different from the genome with which they are associated [@doi:10.1093/bioinformatics/btq299; @doi:10.1093/molbev/msp281, @doi:10.1186/gb-2003-4-9-r57]. 
 Plasmids are also of high interest as a major source of the lateral dissemination of AMR genes throughout microbial ecosystems [@pmid:26603922; @doi:10.3389/fmicb.2016.00173]. 
 
-These varying composition and relative abundance features mean that GIs and plasmids pose significant challenges in MAG recovery.
+GIs and plasmids have proven particularly difficult to assemble from short-read sequencing data.
+Due to the history of their integration at specific insertion sites, GIs are commonly flanked by direct repeats [@doi:10.1093/nar/30.4.866; @doi:10.1128/CMR.17.1.14-56.2004].
+Repetitive sequences are known to complicate assembly from short reads, with repeats often found at contig break sites [@doi:10.1186/s12864-017-4429-4].
+Given that assembly of closely related genomes in a metagenome is already challenging [@doi:10.1038/nmeth.4458], the polymorphic nature of GIs and known presence of flanking repeats would be expected to compound these separate assembly issues.
+Repeats also inhibit the assembly of plasmids from short read sequencing data, particularly for longer plasmid sequences [@doi:10.1099/mgen.0.000128].
+Additionally, the varying composition and relative abundance features mean that GIs and plasmids pose significant challenges in MAG recovery.
+
 As these MGEs are key to the function and spread of pathogenic traits such as AMR and virulence, and with MAG approaches becoming increasingly popular within microbial and public-health research, it is both timely and vital that we assess the impact of metagenome assembly and binning on the recovery of these elements. 
 Therefore, to address this issue we performed an analysis of GI and plasmid, and associated AMR/VF genes, recovery accuracy across a set of 12 state-of-the-art methods for short-read metagenome assemblies.
 We show that short-read MAG-based analyses are not suitable for the study of mobile sequences, including those of public-health importance.
@@ -449,6 +455,8 @@ Although not yet developed, methods that combine the assembly/binning pipelines 
 
 Our simulated metagenomic community comprised 30 distinct bacterial genomes with varying degrees of relatedness. 
 While this diversity can be representative of certain clinical samples [@doi:10.1186/s12879-017-2727-8; @doi:10.1128/JCM.42.11.5176-5183.2004; @doi:10.1038/s41598-017-07790-9], other environments with relevance to public health such as the human gut, soil, and livestock can have 100-1000s of species [@doi:10.1007/s00248-013-0344-7; @doi:10.1128/AEM.00592-09; @doi:10.1371/journal.pone.0006669; @doi:10.1038/s41598-017-12481-6].
+In addition, MGEs such as GIs and plasmids are known to recombine, producing closely related variants [@doi:10.1016/j.micinf.2005.12.028; @doi:10.1128/JB.186.7.2115-2122.2004; @doi:10.1038/s41467-020-17278-2] that could further complicate assembly from a metagenomic sample.
+Polymorphic MGEs were not deliberately introduced in our simulated metagenome.
 Consequently, our analysis likely over-represents the effectiveness of the methods tested in a public-health setting. 
 Metagenomic simulation is also unlikely to perfectly represent the noise and biases in real metagenomic sequencing but it does provide the ground-truth necessary for evaluation [@doi:10.1093/gigascience/giy069; @doi:10.1186/s40168-019-0633-6].
 This simulation approach, combined with the development of an MGE/AMR-focused mock metagenome (similarly to the mockrobiota initiative [@doi:10.1128/mSystems.00062-16]), could provide a key resource to develop and validate new binning approaches and different sequencing strategies.
