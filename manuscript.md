@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/9ddcfc309f0c37f1a60876b10ccf77fb865cf970/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/a87d073cfe3868d1c01627bc38dccfbc86ff3aea/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/9ddcfc309f0c37f1a60876b10ccf77fb865cf970/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/a87d073cfe3868d1c01627bc38dccfbc86ff3aea/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/9ddcfc309f0c37f1a60876b10ccf77fb865cf970/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/a87d073cfe3868d1c01627bc38dccfbc86ff3aea/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/9ddcfc309f0c37f1a60876b10ccf77fb865cf970/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/a87d073cfe3868d1c01627bc38dccfbc86ff3aea/))
 was automatically generated
-from [fmaguire/mag_sim_paper@9ddcfc3](https://github.com/fmaguire/mag_sim_paper/tree/9ddcfc309f0c37f1a60876b10ccf77fb865cf970)
+from [fmaguire/mag_sim_paper@a87d073](https://github.com/fmaguire/mag_sim_paper/tree/a87d073cfe3868d1c01627bc38dccfbc86ff3aea)
 on August 25, 2020.
 </em></small>
 
@@ -448,7 +448,7 @@ With the growing use of MAG methods in infectious disease research (e.g., [@doi:
 The majority of these genes were correctly assembled across assemblers but were either not assigned or incorrectly assigned to MAG bins during binning.
 At best across all binners, 40% of all AMR genes and ~63% of VF genes (CONCOCT-metaSPAdes) present in the reference genomes were assigned to the correct MAG.
 While a majority of chromosomally located VF genes (73-98%) and AMR genes (53%) were binned correctly, only 16% of GI VFs (n=809), 45% of GI AMR genes (n=11), and not a single plasmid associated VF (n=3) or AMR gene (n=20) were correctly binned.
-This included critical high-threat MGE-associated AMR genes such as the Klebsiella pneumoniae carbapenemase (KPC) and oxacillinase (OXA). 
+This included critical high-threat MGE-associated AMR genes such as oxacillinases (OXA) and _Klebsiella pneumoniae_ carbapenemases (KPC). 
 One potential caveat of this is that some AMR genes and VFs may no longer be detectable in MAGs due to issues with ORF prediction (see suppl. discussion & Fig. [S3](#fig:geneContent)). 
 Previous studies have observed that ORF predictions in draft genomes are more fragmented, which can lead to downstream over- or under-annotation with functional labels depending on the approach used [@doi:10.1186/1471-2164-13-14]. 
 Although not yet developed, methods that combine the assembly/binning pipelines tested here with read-based inference would provide a better sense of which functions are potentially being missed by the MAG reconstructions.
