@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/489c2be42935fc79bd11ecf5d2da642c00782543/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/9ddcfc309f0c37f1a60876b10ccf77fb865cf970/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/489c2be42935fc79bd11ecf5d2da642c00782543/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/9ddcfc309f0c37f1a60876b10ccf77fb865cf970/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/489c2be42935fc79bd11ecf5d2da642c00782543/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/9ddcfc309f0c37f1a60876b10ccf77fb865cf970/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/489c2be42935fc79bd11ecf5d2da642c00782543/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/9ddcfc309f0c37f1a60876b10ccf77fb865cf970/))
 was automatically generated
-from [fmaguire/mag_sim_paper@489c2be](https://github.com/fmaguire/mag_sim_paper/tree/489c2be42935fc79bd11ecf5d2da642c00782543)
+from [fmaguire/mag_sim_paper@9ddcfc3](https://github.com/fmaguire/mag_sim_paper/tree/9ddcfc309f0c37f1a60876b10ccf77fb865cf970)
 on August 25, 2020.
 </em></small>
 
@@ -231,7 +231,7 @@ In keeping with FAIR principles (Findable, Accessible, Interoperable, Reusable d
 
 Metagenomics, the sequencing of DNA from within an environmental sample, is widely used to characterise the functional potential and identity of microbial communities [@doi:10.1073/pnas.202488399; @doi:10.1038/nbt.3935]. 
 These approaches have been instrumental in developing our understanding of the distribution and evolutionary history of AMR genes [@doi:10.1016/j.cell.2014.08.032; @doi:10.1016/j.mib.2007.08.009; @doi:10.1038/nature10388], as well as tracking pathogen outbreaks [@doi:10.1001/jama.2013.3231].
-Although long-read DNA technologies (e.g., Oxford Nanopore Technologies's (ONT) nanopore sequencing [@:doi =>10.1111/1755-0998.12324] and Pacific Biosciences' (PacBio) single-molecule real-time sequencing [@:doi =>10.1126/science.1162986] platforms) are now being used for metagenomic sequencing [@doi:10.1093/gigascience/giz043; @doi:10.1186/s12866-019-1500-0],  high-throughput sequencing of relatively short reads (150-250bp) in platforms such as the Illumina MiSeq still dominates metagenomics.
+Although long-read DNA technologies (e.g., Oxford Nanopore Technologies's (ONT) nanopore sequencing [@doi:10.1111/1755-0998.12324] and Pacific Biosciences' (PacBio) single-molecule real-time sequencing [@doi:10.1126/science.1162986] platforms) are now being used for metagenomic sequencing [@doi:10.1093/gigascience/giz043; @doi:10.1186/s12866-019-1500-0],  high-throughput sequencing of relatively short reads (150-250bp) in platforms such as the Illumina MiSeq still dominates metagenomics.
 These reads can be directly analysed using reference databases and a variety of homology search tools (e.g., [@doi:10.1038/nmeth.3176; @doi:10.1038/nmeth.1923; @doi:10.1093/bioinformatics/btt403; @doi:10.1186/s12864-015-1419-2]).
 Since these reads are shorter than most genes, however, read-based methods provide very little information about their genomic organisation.
 This lack of contextual information is particularly problematic in the study of AMR genes and VFs as the genomic context plays a role in function [@doi:10.1128/AAC.01710-09], selective pressures [@doi:10.1016/j.tim.2006.02.006], and likelihood of lateral gene transfer (LGT) [@doi:10.1111/j.1574-6976.2011.00273.x].
