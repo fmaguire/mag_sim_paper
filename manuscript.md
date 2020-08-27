@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/b070c58bc1802d3b662c9bb00e261413cfec0b05/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/608a9eb7b1950e11159effbcf7b8bc1b2dd10a0b/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/b070c58bc1802d3b662c9bb00e261413cfec0b05/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/608a9eb7b1950e11159effbcf7b8bc1b2dd10a0b/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/b070c58bc1802d3b662c9bb00e261413cfec0b05/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/608a9eb7b1950e11159effbcf7b8bc1b2dd10a0b/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/b070c58bc1802d3b662c9bb00e261413cfec0b05/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/608a9eb7b1950e11159effbcf7b8bc1b2dd10a0b/))
 was automatically generated
-from [fmaguire/mag_sim_paper@b070c58](https://github.com/fmaguire/mag_sim_paper/tree/b070c58bc1802d3b662c9bb00e261413cfec0b05)
+from [fmaguire/mag_sim_paper@608a9eb](https://github.com/fmaguire/mag_sim_paper/tree/608a9eb7b1950e11159effbcf7b8bc1b2dd10a0b)
 on August 27, 2020.
 </em></small>
 
@@ -429,7 +429,10 @@ However, 0-16% of GI-localised VF genes (n=809) and again none of the plasmid-as
 ### Comparisons of Rates of Loss
 
 We combined the performance metrics for Figs. @fig:plasmids, @fig:gis, @fig:AMRGenePercentRecoveryStageContext, and @fig:VFGenePercentRecoveryStageCombined to compare the rates of loss of different components (see Fig. [S4](#fig:rateofloss)).
-This highlighted that genomic components (GIs and plasmids) and plasmids in particular are lost at a disproportionately higher rate than individual gene types during MAG recovery.
+This highlighted that genomic components (GIs and plasmids) and plasmids in particular are lost at a disproportionately higher rate than individual gene types during MAG recovery. 
+Moreover, by analysing the distribution of our synthetically generated reads to chromosomes, genomic islands and plasmids, we found that the coverage of our synthetic metagenome reads achieved >96% on average across all reference genomes. Plasmids had the highest coverage and sequencing depth (98.4%) while GIs had the lowest (95.8%), however GIs and plasmids exhibited a higher variability in coverage and depth. (Fig. @fig:avgcoverage and Sup. Fig. [S5] @fig:DepthBySpp and [S6] @fig:PerBaseDepthBySpp)
+
+![Average Coverage By Genomic Region. The average coverage of our synthetic reads to their source genome is plotted by their genomic region. Chromosome (blue) and GI (green) exihibited a similar average coverage of ~96.5%. Plasmids (orange) had a higher average coverage at ~98%. The per-genome coverage variability of plasmids and GI is higher than chromosomes. Diamond dot indicates the mean coverage of a region and black dots indicates outliers.](images/AvgCoverage.png){#fig:avgcoverage}
 
 
 
@@ -450,7 +453,7 @@ At best across all binners, 40% of all AMR genes and ~63% of VF genes (CONCOCT-m
 While a majority of chromosomally located VF genes (73-98%) and AMR genes (53%) were binned correctly, only 16% of GI VFs (n=809), 45% of GI AMR genes (n=11), and not a single plasmid associated VF (n=3) or AMR gene (n=20) were correctly binned.
 This included critical high-threat MGE-associated AMR genes such as oxacillinases (OXA) and _Klebsiella pneumoniae_ carbapenemases (KPC). 
 One potential caveat of this is that some AMR genes and VFs may no longer be detectable in MAGs due to issues with ORF prediction (see suppl. discussion & Fig. [S3](#fig:geneContent)). 
-Previous studies have observed that ORF predictions in draft genomes are more fragmented, which can lead to downstream over- or under-annotation with functional labels depending on the approach used [@doi:10.1186/1471-2164-13-14]. 
+We observed a higher variability in both the read depth and read coverage in MGEs regions (Fig. @fig:avgcoverage and Sup. Fig. [S5] @fig:DepthBySpp and [S6] @fig:PerBaseDepthBySpp). This, combined with previous studies observing fragmented ORG predictions in draft genomes, can lead to downstream over- or under-annotation with functional labels depending on the approach used [@doi:10.1186/1471-2164-13-14]. 
 Although not yet developed, methods that combine the assembly/binning pipelines tested here with read-based inference would provide a better sense of which functions are potentially being missed by the MAG reconstructions.
 
 Our simulated metagenomic community comprised 30 distinct bacterial genomes with varying degrees of relatedness. 
@@ -506,7 +509,11 @@ This highlights that genomic components (GIs and plasmids) and plasmids in parti
 
 ![Comparison of rates of loss for different genomic components and gene types across assemblers and binning tools. Each line represents a different component as indicated by the legend with assemblers indicated by row and binning tool by column. This shows that regardless of approach genomic components (GIs and plasmids) are lost at a higher rate than individual VF or AMR genes.](images/S5_rate_of_loss.png){#fig:rateofloss, tag="S5"}
 
+![Predicted Gene Content. The total number of open reading frames (ORF) predicted followed the same trend as chromosomal coverage and purity. The assemblers (colored bars) did not contribute to variability in the number of ORFs detected. Of the 4 binners, CONCOCT recovered \<30\% of our reference genome ORFs. DASTool and MetaBAT2 predicted a similar number as our reference genomes.](images/S3_number_of_predicted_genes.png){#fig:geneContent, tag="S3"}
 
+![Average Read Depth Per Species. Across all of the reference species (facet), the read depth of plasmids (orange) is considerability higher compared to chromosomes (blue), likely due to the copy number regime we used. Genomic islands (GIs; green) exhibited a relatively lower depth compared to chromosomes. The variability in depth is also higher in GIs and plasmids.](images/DepthBySpp.png){#fig:geneContent, tag="S4"}
+
+![Per Base Read Depth Per Species. The per base (x-axis) read depth (y-axis) of each species is plotted individually. Overall, the read depth of chromosomes (blue boxes) is much lower than depth of plasmids (orange boxes), likely due to the copy number regime used. Genomic islands within the chromosome is highlighted in green. At a per base level, we not a much lower depth at the beginning and the end of each replicon as well as a higher depth variability in GIs and plasmids.](images/PerBaseDepthBySpp.png){#fig:geneContent, tag="S5"}
 
 
 ## Data Bibliography
