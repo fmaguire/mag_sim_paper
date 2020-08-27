@@ -8,7 +8,7 @@ author-meta:
 - Fiona S.L. Brinkman
 bibliography:
 - content/manual-references.json
-date-meta: '2020-08-25'
+date-meta: '2020-08-27'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta name="dc.date" content="2020-08-25" />
+  <meta name="dc.date" content="2020-08-27" />
 
-  <meta name="citation_publication_date" content="2020-08-25" />
+  <meta name="citation_publication_date" content="2020-08-27" />
 
   <meta name="dc.language" content="en-CA" />
 
@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/a87d073cfe3868d1c01627bc38dccfbc86ff3aea/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/b070c58bc1802d3b662c9bb00e261413cfec0b05/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/a87d073cfe3868d1c01627bc38dccfbc86ff3aea/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/b070c58bc1802d3b662c9bb00e261413cfec0b05/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/a87d073cfe3868d1c01627bc38dccfbc86ff3aea/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/b070c58bc1802d3b662c9bb00e261413cfec0b05/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,10 +131,10 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/a87d073cfe3868d1c01627bc38dccfbc86ff3aea/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/b070c58bc1802d3b662c9bb00e261413cfec0b05/))
 was automatically generated
-from [fmaguire/mag_sim_paper@a87d073](https://github.com/fmaguire/mag_sim_paper/tree/a87d073cfe3868d1c01627bc38dccfbc86ff3aea)
-on August 25, 2020.
+from [fmaguire/mag_sim_paper@b070c58](https://github.com/fmaguire/mag_sim_paper/tree/b070c58bc1802d3b662c9bb00e261413cfec0b05)
+on August 27, 2020.
 </em></small>
 
 ## Authors
@@ -474,35 +474,37 @@ Within public-health metagenomic research, as well as other research areas that 
 
 ### Impact of Related Genomes on MAG binning
 
-By generating a phylogeny of universal single copy genes in our input genomes we analysed the relationship between the presence of closely related genomes and the ability of the different MAG-recovery methods to bin chromosomal sequences.
-Specifically, we regressed phylogenetic distance on this phylogeny with per-bin chromosomal coverage (Fig. [S1](#fig:coverphylo)) and bin purity (Fig. [S2](#fig:purityphylo)).
-This identified no clear relationship between chromosomal coverage and the phylogenetic distance to the nearest relative in the metagenome (Fig. [S1](#fig:coverphylo)), however, there did seem to be a negative correlation between phylogenetic distance to closest relative and the purity of a MAG bin (Fig. [S2](#fig:purityphylo)).
+By generating a phylogeny of universal single copy genes in our input genomes (Fig. [S1](#fig:phylo)) we analysed the relationship between the presence of closely related genomes and the ability of the different MAG-recovery methods to bin chromosomal sequences.
+Specifically, we regressed phylogenetic distance on this phylogeny with per-bin chromosomal coverage (Fig. [S2](#fig:coverphylo)) and bin purity (Fig. [S3](#fig:purityphylo)).
+This identified no clear relationship between chromosomal coverage and the phylogenetic distance to the nearest relative in the metagenome (Fig. [S2](#fig:coverphylo)), however, there did seem to be a negative correlation between phylogenetic distance to closest relative and the purity of a MAG bin (Fig. [S2](#fig:purityphylo)).
 In other words, across all methods, a MAG bin was more likely to have multiple genomes present if there were close relatives.
 
-![Relationship between phylogenetic distance to closest neighbour input genome on genomic coverage in MAG majority comprised of that taxa. Each dot represents the genomic coverage of a particular taxa and the branch distance on an 86-protein concatenated phylogeny between that taxa and its nearest neighbour. Rows indicate the binning software and columns the metagenomic assembler. Regression line is a simple linear model fitted in seaborn. ](images/S1_best_coverage_phylo_dist.png){#fig:coverphylo, tag="S1"}
+![Unrooted universal single-copy gene concatenation maximum-likelihood (IQ-TREE) phylogeny. Percentage of ultrafast-bootstraps (n=1000) supporting each bifurcation are annotated on each node. Phylogeny was visualised using iToL.](images/S1_busco_phylogeny.png){#fig:phylo, tag="S1}
 
-![Relationship between phylogenetic distance to closest neighbour input genome on bin purity.  Each dot shows the number of other input genomes detectable in a given MAG bin in relation to the branch distance on an 86-protein concatenated phylogeny between the majority taxa in that bin and its nearest neighbour.](images/S2_purity_phylo_dist.png){#fig:purityphylo, tag="S2"}
+![Relationship between phylogenetic distance to closest neighbour input genome on genomic coverage in MAG majority comprised of that taxa. Each dot represents the genomic coverage of a particular taxa and the branch distance on an 86-protein concatenated phylogeny between that taxa and its nearest neighbour. Rows indicate the binning software and columns the metagenomic assembler. Regression line is a simple linear model fitted in seaborn. ](images/S2_best_coverage_phylo_dist.png){#fig:coverphylo, tag="S2"}
+
+![Relationship between phylogenetic distance to closest neighbour input genome on bin purity.  Each dot shows the number of other input genomes detectable in a given MAG bin in relation to the branch distance on an 86-protein concatenated phylogeny between the majority taxa in that bin and its nearest neighbour.](images/S3_purity_phylo_dist.png){#fig:purityphylo, tag="S3"}
 
 ### Recovery of Specific Gene Content
 
 We explored the ability of different approaches to find open reading frames (ORFs) within MAGs.
-Overall, the total number of predicted ORFs in MAGs followed a similar trend (Fig. [S3](#fig:geneContent)) as the chromosomal coverage and purity (Fig. @fig:chromcoverpurity).
+Overall, the total number of predicted ORFs in MAGs followed a similar trend (Fig. [S4](#fig:geneContent)) as the chromosomal coverage and purity (Fig. @fig:chromcoverpurity).
 Of the four binning tools, CONCOCT performed the worst, finding <30% of the number of ORFs in our reference genomes used to construct the synthetic data.
 MetaBAT2 performed second worst at ~80%.
 DASTool recovered a similar number to our reference and Maxbin2 detected 7-46% more genes.
-The Assembler method did not significantly impact the number of genes predicted with the exception of Maxbin2, in which IDBA_UD was the closest to reference and metaSPAdes predicted 46% more ORFs.
+The Assembler method did not significantly impact the number of genes predicted with the exception of Maxbin2, in which IDBA\_UD was the closest to reference and metaSPAdes predicted 46% more ORFs.
 Given that there is reason to suspect that there are some issues with the ORF calling in the MAGs. i.e. some tools produced more predicted ORFs than reference, it could be the case that some of these sequences are present in the assemblies (with errors/gaps), but are not being identified as ORFs, or are broken into multiple ORFs, leading to issues downstream labeling them correctly as AMR/VF genes. 
 Regardless of different tools producing a different number of ORFs, the recovery of AMR/VF is pretty consistent regardless of how many ORFs are predicted.
 
-![Predicted Gene Content. The total number of open reading frames (ORF) predicted followed the same trend as chromosomal coverage and purity. The assemblers (colored bars) did not contribute to variability in the number of ORFs detected. Of the 4 binners, CONCOCT recovered \<30\% of our reference genome ORFs. DASTool and MetaBAT2 predicted a similar number as our reference genomes.](images/S3_number_of_predicted_genes.png){#fig:geneContent, tag="S3"}
+![Predicted Gene Content. The total number of open reading frames (ORF) predicted followed the same trend as chromosomal coverage and purity. The assemblers (colored bars) did not contribute to variability in the number of ORFs detected. Of the 4 binners, CONCOCT recovered \<30\% of our reference genome ORFs. DASTool and MetaBAT2 predicted a similar number as our reference genomes.](images/S4_number_of_predicted_genes.png){#fig:geneContent, tag="S4"}
 
 
 ### Comparisons of Rates of Loss
 
-Combining the performance metrics for Figs. @fig:plasmids, @fig:gis, @fig:AMRGenePercentRecoveryStageContext, and @fig:VFGenePercentRecoveryStageCombined to compare the rates of loss of different components emphasises some of the observed patterns (see Fig. [S4](#fig:rateofloss)).
+Combining the performance metrics for Figs. @fig:plasmids, @fig:gis, @fig:AMRGenePercentRecoveryStageContext, and @fig:VFGenePercentRecoveryStageCombined to compare the rates of loss of different components emphasises some of the observed patterns (see Fig. [S5](#fig:rateofloss)).
 This highlights that genomic components (GIs and plasmids) and plasmids in particular are lost at a higher rate than individual gene types during MAG recovery.
 
-![Comparison of rates of loss for different genomic components and gene types across assemblers and binning tools. Each line represents a different component as indicated by the legend with assemblers indicated by row and binning tool by column. This shows that regardless of approach genomic components (GIs and plasmids) are lost at a higher rate than individual VF or AMR genes.](images/S4_rate_of_loss.png){#fig:rateofloss, tag="S4"}
+![Comparison of rates of loss for different genomic components and gene types across assemblers and binning tools. Each line represents a different component as indicated by the legend with assemblers indicated by row and binning tool by column. This shows that regardless of approach genomic components (GIs and plasmids) are lost at a higher rate than individual VF or AMR genes.](images/S5_rate_of_loss.png){#fig:rateofloss, tag="S5"}
 
 
 
