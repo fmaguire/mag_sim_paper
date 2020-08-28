@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/c472dde149c189ada7c81993aee04bcd2a9fb0a2/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/684658761a210fd0851ebea325dee2318b057221/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/c472dde149c189ada7c81993aee04bcd2a9fb0a2/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/684658761a210fd0851ebea325dee2318b057221/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/c472dde149c189ada7c81993aee04bcd2a9fb0a2/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/684658761a210fd0851ebea325dee2318b057221/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/c472dde149c189ada7c81993aee04bcd2a9fb0a2/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/684658761a210fd0851ebea325dee2318b057221/))
 was automatically generated
-from [fmaguire/mag_sim_paper@c472dde](https://github.com/fmaguire/mag_sim_paper/tree/c472dde149c189ada7c81993aee04bcd2a9fb0a2)
+from [fmaguire/mag_sim_paper@6846587](https://github.com/fmaguire/mag_sim_paper/tree/684658761a210fd0851ebea325dee2318b057221)
 on August 28, 2020.
 </em></small>
 
@@ -224,7 +224,7 @@ Given the potential human and animal health implications of antimicrobial resist
 This result will hopefully stimulate a fundamental shift in MAG methods to focus on incorporating improved methods as well as additional read-based and long-read analyses.
 
 ## Data Summary
-In keeping with FAIR principles (Findable, Accessible, Interoperable, Reusable data), all analyses presented in this paper can be reproduced and inspected with the associated github repository [https://github.com/fmaguire/MAG_gi_plasmid_analysis](github.com/fmaguire/MAG_gi_plasmid_analysis) and data repository [https://osf.io/nrejs/](osf.io/nrejs/).
+In keeping with FAIR principles (Findable, Accessible, Interoperable, Reusable data), all analyses presented in this paper can be reproduced and inspected with the associated github repository [https://github.com/fmaguire/MAG_gi_plasmid_analysis](github.com/fmaguire/MAG_gi_plasmid_analysis) (10.5281/zenodo.4005062) and data repository [https://osf.io/nrejs/](osf.io/nrejs/) (10.17605/OSF.IO/NREJS)
 
 
 ## Introduction {#main}
