@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/4b50dc71c7e9dc39d4969515e0a16d871bb42a50/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/6e5089472e5a424ac5e05bab1383c8bb72644560/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/4b50dc71c7e9dc39d4969515e0a16d871bb42a50/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/6e5089472e5a424ac5e05bab1383c8bb72644560/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/4b50dc71c7e9dc39d4969515e0a16d871bb42a50/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/6e5089472e5a424ac5e05bab1383c8bb72644560/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/4b50dc71c7e9dc39d4969515e0a16d871bb42a50/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/6e5089472e5a424ac5e05bab1383c8bb72644560/))
 was automatically generated
-from [fmaguire/mag_sim_paper@4b50dc7](https://github.com/fmaguire/mag_sim_paper/tree/4b50dc71c7e9dc39d4969515e0a16d871bb42a50)
+from [fmaguire/mag_sim_paper@6e50894](https://github.com/fmaguire/mag_sim_paper/tree/6e5089472e5a424ac5e05bab1383c8bb72644560)
 on August 28, 2020.
 </em></small>
 
@@ -523,9 +523,9 @@ This highlights that genomic components (GIs and plasmids) and plasmids in parti
 
 ### Detailed Simulated Read Depth Analysis
 
-![Average Read Depth Per Species. Across all of the reference species (facet), the read depth of plasmids (orange) is considerability higher compared to chromosomes (blue), likely due to the copy number regime we used. Genomic islands (GIs; green) exhibited a relatively lower depth compared to chromosomes. The variability in depth is also higher in GIs and plasmids.](images/DepthBySpp.png){#fig:depthbyspp, tag="S7"}
+![Average Read Depth Per Species. Across all of the reference species (facet), the read depth of plasmids (orange) is considerably higher relative to chromosomes (blue), likely due to the copy number regime randomly assigned. Genomic islands (GIs; green) exhibited a relatively lower depth compared to chromosomes. The variability in depth is notably higher in and around GIs and plasmids.](images/DepthBySpp.png){#fig:depthbyspp, tag="S7"}
 
-![Per Base Read Depth Per Species. The per base (x-axis) read depth (y-axis) of each species is plotted individually. Overall, the read depth of chromosomes (blue boxes) is much lower than depth of plasmids (orange boxes), likely due to the copy number regime used. Genomic islands within the chromosome is highlighted in green. At a per base level, we not a much lower depth at the beginning and the end of each replicon as well as a higher depth variability in GIs and plasmids.](images/PerBaseDepthBySpp.png){#fig:perbasedepth, tag="S8"}
+![Per Base Read Depth Per Species. The per base (x-axis) read depth (y-axis) of each species is plotted individually. Overall, the read depth of chromosomes (blue boxes) is much lower than depth of plasmids (orange boxes), likely due to the copy number regime randomly assigned. Genomic islands within the chromosome are highlighted in green. At a per base level, we see a much lower depth at the beginning and the end of each replicon as well as a higher depth variability in GIs and plasmids.](images/PerBaseDepthBySpp.png){#fig:perbasedepth, tag="S8"}
 
 
 
