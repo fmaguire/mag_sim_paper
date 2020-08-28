@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/10ececfb42a980ed8142260f48d79fc9d52bcc59/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/39740202e0f3f5e355b88d3733ebb894df513cad/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/10ececfb42a980ed8142260f48d79fc9d52bcc59/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/39740202e0f3f5e355b88d3733ebb894df513cad/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/10ececfb42a980ed8142260f48d79fc9d52bcc59/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/39740202e0f3f5e355b88d3733ebb894df513cad/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/10ececfb42a980ed8142260f48d79fc9d52bcc59/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/39740202e0f3f5e355b88d3733ebb894df513cad/))
 was automatically generated
-from [fmaguire/mag_sim_paper@10ececf](https://github.com/fmaguire/mag_sim_paper/tree/10ececfb42a980ed8142260f48d79fc9d52bcc59)
+from [fmaguire/mag_sim_paper@3974020](https://github.com/fmaguire/mag_sim_paper/tree/39740202e0f3f5e355b88d3733ebb894df513cad)
 on August 28, 2020.
 </em></small>
 
@@ -305,7 +305,7 @@ This resulted in 12 separate sets of MAGs (one set for each assembler and binner
 #### Synthetic Read Coverage and Depth
 The trimmed synthetic reads was mapped back to each reference replicon using bowtie2 (v2.4.1), and sorted and indexed using samtools (v1.10). 
 The coverage of each reference replicon is calculated using `samtools coverage` and the per base sequencing depth calculated using `samtools depth`. 
-The average and per base depth are then plotted using R(v.3.4.2). 
+The average and per base depth are then plotted using R (v.3.4.2). 
 
 #### Chromosomal Coverage
 
