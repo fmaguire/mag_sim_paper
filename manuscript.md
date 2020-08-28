@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/36c3356065b445bf4b93b0edfac4e5f135ccbd39/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/dc13b93ed3cc4348871d79238dfdc884e20609a8/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/36c3356065b445bf4b93b0edfac4e5f135ccbd39/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/dc13b93ed3cc4348871d79238dfdc884e20609a8/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/36c3356065b445bf4b93b0edfac4e5f135ccbd39/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/dc13b93ed3cc4348871d79238dfdc884e20609a8/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/36c3356065b445bf4b93b0edfac4e5f135ccbd39/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/dc13b93ed3cc4348871d79238dfdc884e20609a8/))
 was automatically generated
-from [fmaguire/mag_sim_paper@36c3356](https://github.com/fmaguire/mag_sim_paper/tree/36c3356065b445bf4b93b0edfac4e5f135ccbd39)
+from [fmaguire/mag_sim_paper@dc13b93](https://github.com/fmaguire/mag_sim_paper/tree/dc13b93ed3cc4348871d79238dfdc884e20609a8)
 on August 28, 2020.
 </em></small>
 
@@ -205,7 +205,7 @@ MAGs were then recovered using 12 current prediction pipelines and evaluated.
 While 82-94% of chromosomes could be correctly recovered and binned, only 38-44% of GIs and 1-29% of plasmid sequences were found. 
 Strikingly, no plasmid-borne VF nor AMR genes were recovered, and only 0-45% of AMR or VF genes within GIs. 
 We conclude that short-read MAG approaches without further optimisation are largely ineffective for the analysis of mobile genes, including those of public-health importance like AMR and VF genes. 
-We propose that researchers should explore developing methods that optimise for this issue and consider using unassembled short reads and/or long-read approaches to more fully characterise metagenomic data. 
+We propose that researchers should explore developing methods that optimise for this issue and consider also using unassembled short reads and/or long-read approaches to more fully characterise metagenomic data. 
 
 ## Keywords
 Metagenomics, metagenome-assembled genomes, Antimicrobial resistance, Mobile genetic elements, Genomic islands.
@@ -441,8 +441,8 @@ Moreover, by analysing the distribution of our synthetically generated reads to 
 ## Discussion {#discussion}
 
 In this paper, we evaluated the ability of metagenome-assembled genome (MAG) binning methods to correctly recover mobile genetic elements (MGEs; i.e. GIs and plasmids) from metagenomic samples.
-Overall, chromosomal sequences were binned well (up to 94.3% coverage, with perfect bin purity using megahit-DASTool) however closely related genomes were consistently cross-contaminated with other sequences (e.g. _Streptococcus_ species in Fig. [S2](#fig:coverphylo), [S3](#fig:purityphylo)).
-Coverage and purity did not necessarily relate to one another across methods with many bins of high coverage but low purity and vice versa observed.
+Overall, chromosomal sequences were binned well (up to 94.3% coverage, with perfect bin purity using megahit-DASTool) however the presence of closely related genomes may have impacted cross-contaminated with other sequences (e.g. _Streptococcus_ species in Fig. [S2](#fig:coverphylo), [S3](#fig:purityphylo)).
+The trade-off between false positives and sensitivity in the binning of closely related sequences is definitely an area in need of further exploration.  
 Given the importance of MGEs in the function and spread of virulence traits and AMR, it is particularly noteworthy that regardless of MAG binning method, plasmids and GIs were disproportionately lost compared to core chromosomal regions. 
 At best (with metaSPAdes and CONCOCT) 29.2% of plasmids and 44.1% of GIs were identifiable at >50% coverage in the correct bin (i.e. grouped with a bin that was mostly made up of contigs from the same genome). 
 While some MGEs were likely recovered in more partial forms (<50% coverage), use of these by researchers interested in selective pressures and lateral gene transfer could lead to inaccurate inferences. 
