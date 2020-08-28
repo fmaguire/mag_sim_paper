@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/7bc0320c9ec30ccf130bd13f13b6717e979efcc8/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/ef8195fb2714268777503a8bba25caa726ea1a60/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/7bc0320c9ec30ccf130bd13f13b6717e979efcc8/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/ef8195fb2714268777503a8bba25caa726ea1a60/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/7bc0320c9ec30ccf130bd13f13b6717e979efcc8/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/ef8195fb2714268777503a8bba25caa726ea1a60/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/7bc0320c9ec30ccf130bd13f13b6717e979efcc8/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/ef8195fb2714268777503a8bba25caa726ea1a60/))
 was automatically generated
-from [fmaguire/mag_sim_paper@7bc0320](https://github.com/fmaguire/mag_sim_paper/tree/7bc0320c9ec30ccf130bd13f13b6717e979efcc8)
+from [fmaguire/mag_sim_paper@ef8195f](https://github.com/fmaguire/mag_sim_paper/tree/ef8195fb2714268777503a8bba25caa726ea1a60)
 on August 28, 2020.
 </em></small>
 
@@ -490,9 +490,9 @@ In other words, across all methods, a MAG bin was more likely to have multiple g
 
 ![Unrooted universal single-copy gene concatenation maximum-likelihood (IQ-TREE) phylogeny. Percentage of ultrafast-bootstraps (n=1000) supporting each bifurcation are annotated on each node. Phylogeny was visualised using iToL.](images/S1_busco_phylogeny.png){#fig:phylo, tag="S1}
 
-![Relationship between phylogenetic distance to closest neighbour input genome on genomic coverage in MAG majority comprised of that taxa. Each dot represents the genomic coverage of a particular taxa and the branch distance on an 86-protein concatenated phylogeny between that taxa and its nearest neighbour. Rows indicate the binning software and columns the metagenomic assembler. Regression line is a simple linear model fitted in seaborn. ](images/S2_best_coverage_phylo_dist.png){#fig:coverphylo, tag="S2"}
+![Relationship between phylogenetic distance to closest neighbour input genome on genomic coverage in MAG majority comprised of that taxon. Each dot represents the genomic coverage of a particular genome and the branch distance on an 86-protein concatenated phylogeny between that genome and its nearest neighbour. Rows indicate the binning software and columns the metagenomic assembler. Regression line is a simple linear model fitted in seaborn. ](images/S2_best_coverage_phylo_dist.png){#fig:coverphylo, tag="S2"}
 
-![Relationship between phylogenetic distance to closest neighbour input genome on bin purity.  Each dot shows the number of other input genomes detectable in a given MAG bin in relation to the branch distance on an 86-protein concatenated phylogeny between the majority taxa in that bin and its nearest neighbour.](images/S3_purity_phylo_dist.png){#fig:purityphylo, tag="S3"}
+![Relationship between phylogenetic distance to closest neighbour input genome on bin purity.  Each dot shows the number of other input genomes detectable in a given MAG bin in relation to the branch distance on an 86-protein concatenated phylogeny between the majority genome in that bin and its nearest neighbour.](images/S3_purity_phylo_dist.png){#fig:purityphylo, tag="S3"}
 
 ### Recovery of Specific Gene Content
 
@@ -520,6 +520,7 @@ This highlights that genomic components (GIs and plasmids) and plasmids in parti
 ![Average Read Depth Per Species. Across all of the reference species (facet), the read depth of plasmids (orange) is considerability higher compared to chromosomes (blue), likely due to the copy number regime we used. Genomic islands (GIs; green) exhibited a relatively lower depth compared to chromosomes. The variability in depth is also higher in GIs and plasmids.](images/DepthBySpp.png){#fig:geneContent, tag="S4"}
 
 ![Per Base Read Depth Per Species. The per base (x-axis) read depth (y-axis) of each species is plotted individually. Overall, the read depth of chromosomes (blue boxes) is much lower than depth of plasmids (orange boxes), likely due to the copy number regime used. Genomic islands within the chromosome is highlighted in green. At a per base level, we not a much lower depth at the beginning and the end of each replicon as well as a higher depth variability in GIs and plasmids.](images/PerBaseDepthBySpp.png){#fig:geneContent, tag="S5"}
+
 
 
 ## Data Bibliography
