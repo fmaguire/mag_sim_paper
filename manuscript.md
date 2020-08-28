@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/08ac7962bce4936108643840bd8dc36ceb1d1f79/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/054274b7f3af64fe7cc8a726acdacbc30ed12265/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/08ac7962bce4936108643840bd8dc36ceb1d1f79/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/054274b7f3af64fe7cc8a726acdacbc30ed12265/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/08ac7962bce4936108643840bd8dc36ceb1d1f79/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/054274b7f3af64fe7cc8a726acdacbc30ed12265/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/08ac7962bce4936108643840bd8dc36ceb1d1f79/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/054274b7f3af64fe7cc8a726acdacbc30ed12265/))
 was automatically generated
-from [fmaguire/mag_sim_paper@08ac796](https://github.com/fmaguire/mag_sim_paper/tree/08ac7962bce4936108643840bd8dc36ceb1d1f79)
+from [fmaguire/mag_sim_paper@054274b](https://github.com/fmaguire/mag_sim_paper/tree/054274b7f3af64fe7cc8a726acdacbc30ed12265)
 on August 28, 2020.
 </em></small>
 
@@ -540,8 +540,8 @@ This highlights that genomic components (GIs and plasmids) and plasmids in parti
 
 ## Data Bibliography
 
-All datasets used or generated in this study are available at [https://osf.io/nrejs](osf.io/nrejs/)
-All analysis and plotting code used is available at [https://github.com/fmaguire/MAG_gi_plasmid_analysis](github.com/fmaguire/MAG_gi_plasmid_analysis)
+All datasets used or generated in this study are available at [https://osf.io/nrejs](osf.io/nrejs/) (10.17605/OSF.IO/NREJS).
+All analysis and plotting code used is available at [https://github.com/fmaguire/MAG_gi_plasmid_analysis](github.com/fmaguire/MAG_gi_plasmid_analysis) (10.5281/zenodo.4005062).
 
 ## Funding Information
 
