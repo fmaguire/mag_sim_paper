@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/14c670bb81f5e7498a53fe45eb0d2cd9a6f91fc6/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/0cff586c20afd5f63f6455ac59ec350cfa0d0aca/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/14c670bb81f5e7498a53fe45eb0d2cd9a6f91fc6/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/0cff586c20afd5f63f6455ac59ec350cfa0d0aca/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/14c670bb81f5e7498a53fe45eb0d2cd9a6f91fc6/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/0cff586c20afd5f63f6455ac59ec350cfa0d0aca/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/14c670bb81f5e7498a53fe45eb0d2cd9a6f91fc6/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/0cff586c20afd5f63f6455ac59ec350cfa0d0aca/))
 was automatically generated
-from [fmaguire/mag_sim_paper@14c670b](https://github.com/fmaguire/mag_sim_paper/tree/14c670bb81f5e7498a53fe45eb0d2cd9a6f91fc6)
+from [fmaguire/mag_sim_paper@0cff586](https://github.com/fmaguire/mag_sim_paper/tree/0cff586c20afd5f63f6455ac59ec350cfa0d0aca)
 on August 28, 2020.
 </em></small>
 
@@ -372,7 +372,7 @@ Across binning tools maxbin2 proved an exception with nearly twice as many bins 
 The remaining binning tools were largely equivalent, producing chimeric bins at approximately the same rates.
 Unlike coverage, purity was potentially affected by the number of close relatives in the metagenome to a given input genome. 
 Specifically, the closer the nearest relative the less pure the bin (Fig. [S3](#fig:purityphylo)), however, the proportion of variance explained by the regressions were very low for both analyses.
-There was not a clear relationship between coverage of a bin and purity with frequent observations of low purity but high coverage bins and pure but low coverage bins. 
+There was also not a clear relationship between coverage of a bin and purity with frequent observations of low purity but high coverage bins and pure but low coverage bins. 
 
 #### Plasmids
 
@@ -387,7 +387,7 @@ Interestingly, the MetaBAT2 and DASTool binners were more conservative in assign
 
 #### Genomic Islands
 
-GIs were poorly assembled and correctly binned across methods (Fig. @fig:gis), although unlike plasmids different methods were generally more equivalent.
+GIs were poorly assembled and correctly binned across methods (Fig. @fig:gis), although unlike plasmids, the performance of different methods were generally less variable.
 Assembly of GIs with >50% coverage was consistently poor (37.8-44.1%) with metaSPAdes outperforming the other two assembly approaches.
 For the CONCOCT and maxbin2 binning tools, all GIs that were assembled were assigned to a bin, although the proportion of binned GIs that were correctly binned was lower than for DASTool and MetaBAT2.
 DASTool, MetaBAT2 and CONCOCT did not display the same precipitous drop between those assembled and those correctly binned as was observed for plasmids.
@@ -427,7 +427,13 @@ However, 0-16% of GI-localised VF genes (n=809) and again none of the plasmid-as
 We combined the performance metrics for Figs. @fig:plasmids, @fig:gis, @fig:AMRGenePercentRecoveryStageContext, and @fig:VFGenePercentRecoveryStageCombined to compare the rates of loss of different components (see Fig. [S5](#fig:rateofloss)).
 This highlighted that genomic components (GIs and plasmids) and plasmids in particular are lost at a disproportionately higher rate than individual gene types during MAG recovery. 
 This also emphasises that better metagenomic assembly doesn't necessarily result in better binning of GIs and plasmids. 
-Moreover, by analysing the distribution of our synthetically generated reads to chromosomes, genomic islands and plasmids, we found that the coverage of our synthetic metagenome reads achieved >96% on average across all reference genomes. Plasmids had the highest coverage and sequencing depth (98.4%) while GIs had the lowest (95.8%), however GIs and plasmids exhibited a higher variability in coverage and depth. (Fig. @fig:avgcoverage and Sup. Fig. [S5] @fig:DepthBySpp and [S6] @fig:PerBaseDepthBySpp)
+
+### Simulated Read Analysis
+
+To further explore the potential causes of poor assembly and binning of MGEs we analysed the resultant coverage distribution from mapping our synthetically generated reads back to the original chromosomes, genomic islands, and plasmids from which they were simulated. 
+This analysis identified that while coverage of our synthetic metagenome reads was >96% on average across all reference genomes, the coverage of GIs and plasmids displayed high levels of variance (Fig @fig:avgcoverage) with huge spikes and falls in read depth (see Fig. [S7](#fig:depthbyspp) and [S8](#fig:perbasedepth).
+This variability in coverage can be attributed to repeated elements and compositional features in and around these MGEs.
+This issue is likely responsible for failures to accurately estimate the read-depth/coverage in these regions, upon which both assembly (in traversal of the assembly graph) and binning rely. 
 
 ![Average Coverage By Genomic Region. The average coverage of our synthetic reads to their source genome is plotted by their genomic region. Chromosome (blue) and GI (green) exihibited a similar average coverage of ~96.5%. Plasmids (orange) had a higher average coverage at ~98%. The per-genome coverage variability of plasmids and GI is higher than chromosomes. Diamond dot indicates the mean coverage of a region and black dots indicates outliers.](images/AvgCoverage.png){#fig:avgcoverage}
 
