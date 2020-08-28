@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/c9cf3a08594e614a5ed045afb2c9d5ad57b79c3e/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/36c3356065b445bf4b93b0edfac4e5f135ccbd39/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/c9cf3a08594e614a5ed045afb2c9d5ad57b79c3e/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/36c3356065b445bf4b93b0edfac4e5f135ccbd39/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/c9cf3a08594e614a5ed045afb2c9d5ad57b79c3e/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/36c3356065b445bf4b93b0edfac4e5f135ccbd39/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/c9cf3a08594e614a5ed045afb2c9d5ad57b79c3e/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/36c3356065b445bf4b93b0edfac4e5f135ccbd39/))
 was automatically generated
-from [fmaguire/mag_sim_paper@c9cf3a0](https://github.com/fmaguire/mag_sim_paper/tree/c9cf3a08594e614a5ed045afb2c9d5ad57b79c3e)
+from [fmaguire/mag_sim_paper@36c3356](https://github.com/fmaguire/mag_sim_paper/tree/36c3356065b445bf4b93b0edfac4e5f135ccbd39)
 on August 28, 2020.
 </em></small>
 
@@ -359,14 +359,14 @@ Some genomes are cleanly and accurately binned regardless of the assembler and b
 Specifically, greater than 90% of _Streptomyces parvulus_ (minimum 91.8%) and _Clostridium baratii_ (minimum 96.4%) chromosomes are represented in individual bins across all methods.
 However, no other genomes were consistently recovered at >30% chromosomal coverage across methods.
 The three _Streptococcus_ genomes were particularly problematic with the best recovery for each ranging from 1.7% to 47.49%.
-Contrary to what might be expected, the number of close relatives to a given genome in the metagenome did not clearly affect the MAG coverage (Fig. [S1](#fig:coverphylo)).
+Contrary to what might be expected, the number of close relatives to a given genome in the metagenome did not clearly affect the MAG coverage (Fig. [S2](#fig:coverphylo)).
 
 
 ![Top genome coverage for input genomes across MAG binners. Each dot represents the coverage of a specified genome when it comprised the plurality of the sequences in a bin. If a genome did not form the plurality of any bin for a specific binner-assembler pair no dot was plotted for that genome and binner-assembler. The binning tool is indicated by the colour of the dot as per the legend. Genomes such as _Clostridium baratti_ were accurately recovered across all binner-assembler combinations whereas genomes such as _Streptococcus macedonicus_ were systematically poorly recovered.](images/F1_top_hits_per_bin.png){#fig:speciescov}
 
 
 In terms of the impact of different metagenome assemblers, megahit resulted in the highest median chromosomal coverage across all binners (81.9%) with metaSPAdes performing worst (76.8%) (Fig. @fig:chromcoverpurity A).
-In terms of binning tools, CONCOCT performed very poorly with a median 26% coverage for top hit per bin, followed by maxbin2 (83.1%), and MetaBAT2 (88.5%).
+Looking at binning tools, CONCOCT performed very poorly with a median 26% coverage for top hit per bin, followed by maxbin2 (83.1%), and MetaBAT2 (88.5%).
 It is perhaps unsurprising that the best-performing binner in terms of bin top hit coverage was the metabinner DASTool that combines predictions from the other 3 binners (94.3% median top hit chromosome coverage per bin; (Fig. @fig:chromcoverpurity A)).
 
 ![Overall binning performance for every combination of metagenome assembler (as indicated by pane titles) and MAG binning tool (x-axis and legend colours). Diamonds in the plots represent outliers (greater or lower than the interquartile range marked by the error bars) and the boxes represent the lower quartile, median, and upper quartile respectively. **(A)** Chromosomal coverage of the most prevalent genome in each bin across binners and metagenome assemblies. Of the 3 assemblers, megahit resulted in the highest median chromosomal coverage (y-axis) across all binners (colored bars) at 81.9% with metaSPAdes performing the worst (76.8%). Of the 4 binners, CONCOCT (red) performed poorly with a median coverage, followed by maxbin2 (blue), MetaBAT2 (purple) and DASTool (green) performing the best. 
@@ -375,8 +375,9 @@ It is perhaps unsurprising that the best-performing binner in terms of bin top h
 Bin purity, i.e. the number of genomes present in a bin at >5% coverage, was largely equivalent across assemblers, with a very marginally higher purity for IDBA.
 Across binning tools maxbin2 proved an exception with nearly twice as many bins containing multiple species as the next binner (Fig. @fig:chromcoverpurity B).
 The remaining binning tools were largely equivalent, producing chimeric bins at approximately the same rates.
-Unlike coverage, purity was strongly affected by the number of close relatives in the metagenome to a given input genome. 
-Specifically, the closer the nearest relative the less pure the bin (Fig. [S2](#fig:purityphylo)).
+Unlike coverage, purity was potentially affected by the number of close relatives in the metagenome to a given input genome. 
+Specifically, the closer the nearest relative the less pure the bin (Fig. [S3](#fig:purityphylo)), however, the proportion of variance explained by the regressions were very low for both analyses.
+There was not a clear relationship between coverage of a bin and purity with frequent observations of low purity but high coverage bins and pure but low coverage bins. 
 
 #### Plasmids
 
@@ -391,7 +392,7 @@ Interestingly, the MetaBAT2 and DASTool binners were more conservative in assign
 
 #### Genomic Islands
 
-GIs displayed a similar pattern of assembly and correct binning performance as plasmids (Fig. @fig:gis).
+GIs were poorly assembled and correctly binned across methods (Fig. @fig:gis), although unlike plasmids different methods were generally more equivalent.
 Assembly of GIs with >50% coverage was consistently poor (37.8-44.1%) with metaSPAdes outperforming the other two assembly approaches.
 For the CONCOCT and maxbin2 binning tools, all GIs that were assembled were assigned to a bin, although the proportion of binned GIs that were correctly binned was lower than for DASTool and MetaBAT2.
 DASTool, MetaBAT2 and CONCOCT did not display the same precipitous drop between those assembled and those correctly binned as was observed for plasmids.
@@ -428,8 +429,9 @@ However, 0-16% of GI-localised VF genes (n=809) and again none of the plasmid-as
 
 ### Comparisons of Rates of Loss
 
-We combined the performance metrics for Figs. @fig:plasmids, @fig:gis, @fig:AMRGenePercentRecoveryStageContext, and @fig:VFGenePercentRecoveryStageCombined to compare the rates of loss of different components (see Fig. [S4](#fig:rateofloss)).
+We combined the performance metrics for Figs. @fig:plasmids, @fig:gis, @fig:AMRGenePercentRecoveryStageContext, and @fig:VFGenePercentRecoveryStageCombined to compare the rates of loss of different components (see Fig. [S5](#fig:rateofloss)).
 This highlighted that genomic components (GIs and plasmids) and plasmids in particular are lost at a disproportionately higher rate than individual gene types during MAG recovery. 
+This also emphasises that better metagenomic assembly doesn't necessarily result in better binning of GIs and plasmids. 
 Moreover, by analysing the distribution of our synthetically generated reads to chromosomes, genomic islands and plasmids, we found that the coverage of our synthetic metagenome reads achieved >96% on average across all reference genomes. Plasmids had the highest coverage and sequencing depth (98.4%) while GIs had the lowest (95.8%), however GIs and plasmids exhibited a higher variability in coverage and depth. (Fig. @fig:avgcoverage and Sup. Fig. [S5] @fig:DepthBySpp and [S6] @fig:PerBaseDepthBySpp)
 
 ![Average Coverage By Genomic Region. The average coverage of our synthetic reads to their source genome is plotted by their genomic region. Chromosome (blue) and GI (green) exihibited a similar average coverage of ~96.5%. Plasmids (orange) had a higher average coverage at ~98%. The per-genome coverage variability of plasmids and GI is higher than chromosomes. Diamond dot indicates the mean coverage of a region and black dots indicates outliers.](images/AvgCoverage.png){#fig:avgcoverage}
@@ -440,6 +442,7 @@ Moreover, by analysing the distribution of our synthetically generated reads to 
 
 In this paper, we evaluated the ability of metagenome-assembled genome (MAG) binning methods to correctly recover mobile genetic elements (MGEs; i.e. GIs and plasmids) from metagenomic samples.
 Overall, chromosomal sequences were binned well (up to 94.3% coverage, with perfect bin purity using megahit-DASTool) however closely related genomes were consistently cross-contaminated with other sequences (e.g. _Streptococcus_ species in Fig. [S2](#fig:coverphylo), [S3](#fig:purityphylo)).
+Coverage and purity did not necessarily relate to one another across methods with many bins of high coverage but low purity and vice versa observed.
 Given the importance of MGEs in the function and spread of virulence traits and AMR, it is particularly noteworthy that regardless of MAG binning method, plasmids and GIs were disproportionately lost compared to core chromosomal regions. 
 At best (with metaSPAdes and CONCOCT) 29.2% of plasmids and 44.1% of GIs were identifiable at >50% coverage in the correct bin (i.e. grouped with a bin that was mostly made up of contigs from the same genome). 
 While some MGEs were likely recovered in more partial forms (<50% coverage), use of these by researchers interested in selective pressures and lateral gene transfer could lead to inaccurate inferences. 
@@ -490,9 +493,9 @@ In other words, across all methods, a MAG bin was more likely to have multiple g
 
 ![Unrooted universal single-copy gene concatenation maximum-likelihood (IQ-TREE) phylogeny. Percentage of ultrafast-bootstraps (n=1000) supporting each bifurcation are annotated on each node. Phylogeny was visualised using iToL.](images/S1_busco_phylogeny.png =400x800){#fig:phylo, tag="S1}
 
-![Relationship between phylogenetic distance to closest neighbour input genome on genomic coverage in MAG majority comprised of that taxon. Each dot represents the genomic coverage of a particular genome and the branch distance on an 86-protein concatenated phylogeny between that genome and its nearest neighbour. Rows indicate the binning software and columns the metagenomic assembler. Regression line is a simple linear model fitted in seaborn. ](images/S2_best_coverage_phylo_dist.png =400x800){#fig:coverphylo, tag="S2"}
+![Relationship between phylogenetic distance to closest neighbour input genome on genomic coverage in MAG majority comprised of that taxon. Each dot represents the genomic coverage of a particular genome and the branch distance on an 86-protein concatenated phylogeny between that genome and its nearest neighbour. Rows indicate the binning software and columns the metagenomic assembler. Regression line is a simple linear model fitted in seaborn with R^2 values calculated and annotated on each plot. ](images/S2_best_coverage_phylo_dist.png =400x800){#fig:coverphylo, tag="S2"}
 
-![Relationship between phylogenetic distance to closest neighbour input genome on bin purity.  Each dot shows the number of other input genomes detectable in a given MAG bin in relation to the branch distance on an 86-protein concatenated phylogeny between the majority genome in that bin and its nearest neighbour.](images/S3_purity_phylo_dist.png =400x800){#fig:purityphylo, tag="S3"}
+![Relationship between phylogenetic distance to closest neighbour input genome on bin purity.  Each dot shows the number of other input genomes detectable in a given MAG bin in relation to the branch distance on an 86-protein concatenated phylogeny between the majority genome in that bin and its nearest neighbour. McFadden's pseudo-R^2 calculated from fitted poisson logistic regression models are annotated on each plot.](images/S3_purity_phylo_dist.png =400x800){#fig:purityphylo, tag="S3"}
 
 ### Recovery of Specific Gene Content
 
