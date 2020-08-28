@@ -8,7 +8,7 @@ author-meta:
 - Fiona S.L. Brinkman
 bibliography:
 - content/manual-references.json
-date-meta: '2020-08-27'
+date-meta: '2020-08-28'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta name="dc.date" content="2020-08-27" />
+  <meta name="dc.date" content="2020-08-28" />
 
-  <meta name="citation_publication_date" content="2020-08-27" />
+  <meta name="citation_publication_date" content="2020-08-28" />
 
   <meta name="dc.language" content="en-CA" />
 
@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/608a9eb7b1950e11159effbcf7b8bc1b2dd10a0b/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/c224c5af13f8849a227fdc127e5b2f84c3afc07a/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/608a9eb7b1950e11159effbcf7b8bc1b2dd10a0b/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/c224c5af13f8849a227fdc127e5b2f84c3afc07a/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/608a9eb7b1950e11159effbcf7b8bc1b2dd10a0b/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/c224c5af13f8849a227fdc127e5b2f84c3afc07a/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,10 +131,10 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/608a9eb7b1950e11159effbcf7b8bc1b2dd10a0b/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/c224c5af13f8849a227fdc127e5b2f84c3afc07a/))
 was automatically generated
-from [fmaguire/mag_sim_paper@608a9eb](https://github.com/fmaguire/mag_sim_paper/tree/608a9eb7b1950e11159effbcf7b8bc1b2dd10a0b)
-on August 27, 2020.
+from [fmaguire/mag_sim_paper@c224c5a](https://github.com/fmaguire/mag_sim_paper/tree/c224c5af13f8849a227fdc127e5b2f84c3afc07a)
+on August 28, 2020.
 </em></small>
 
 ## Authors
@@ -199,13 +199,13 @@ Metagenomic methods enable the simultaneous characterisation of microbial commun
 Metagenome-assembled genome (MAG) binning methods aim to reassemble individual genomes from this data. 
 However, the recovery of mobile genetic elements (MGEs), such as plasmids and genomic islands (GIs), by binning has not been well characterised. 
 Given the association of antimicrobial resistance (AMR) genes and virulence factor (VF) genes with MGEs, studying their transmission is a public health priority. 
-The variable copy number and sequence composition of MGEs makes them potentially problematic for MAG binning methods and needs to be evaluated. 
+The variable copy number and sequence composition of MGEs makes them potentially problematic for MAG binning methods. 
 To systematically investigate this issue, we simulated a low-complexity metagenome comprising 30 GI-rich and plasmid-containing bacterial genomes. 
 MAGs were then recovered using 12 current prediction pipelines and evaluated. 
 While 82-94% of chromosomes could be correctly recovered and binned, only 38-44% of GIs and 1-29% of plasmid sequences were found. 
 Strikingly, no plasmid-borne VF nor AMR genes were recovered, and only 0-45% of AMR or VF genes within GIs. 
-We conclude that short-read MAGs are largely ineffective for the analysis of mobile genes, including those of public-health importance like AMR and VF genes. 
-We propose that microbiome researchers should utilise unassembled short reads and/or long-read approaches to fully characterise metagenomic data. 
+We conclude that short-read MAG approaches without further optimisation are largely ineffective for the analysis of mobile genes, including those of public-health importance like AMR and VF genes. 
+We propose that researchers should explore developing methods that optimise for this issue and consider using unassembled short reads and/or long-read approaches to more fully characterise metagenomic data. 
 
 ## Keywords
 Metagenomics, metagenome-assembled genomes, Antimicrobial resistance, Mobile genetic elements, Genomic islands.
@@ -221,10 +221,10 @@ MAG, Metagenome assembled genome. MGE, mobile genetic element. GI, genomic islan
 Metagenome assembled genome (MAG) binning has become an increasingly common approach in environmental, microbiome, and public health studies that make use of short-read metagenomic data.
 By examining 12 widely-used MAG binning workflows, we demonstrate that these methods are not suitable for the analysis of mobile genetic elements.
 Given the potential human and animal health implications of antimicrobial resistance and virulence genes associated with these elements, inappropriate use of short-read MAGs has the potential to be misleading at best and harmful at worst.
-This result will hopefully stimulate a fundamental shift in MAG methods to incorporate additional read-based and long-read analyses.
+This result will hopefully stimulate a fundamental shift in MAG methods to focus on incorporating improved methods as well as additional read-based and long-read analyses.
 
 ## Data Summary
-In keeping with FAIR principles (Findable, Accessible, Interoperable, Reusable data), all analyses presented in this paper can be reproduced and inspected with the associated github repository [github.com/fmaguire/MAG_gi_plasmid_analysis](github.com/fmaguire/MAG_gi_plasmid_analysis) and data repository [osf.io/nrejs/](osf.io/nrejs/).
+In keeping with FAIR principles (Findable, Accessible, Interoperable, Reusable data), all analyses presented in this paper can be reproduced and inspected with the associated github repository [https://github.com/fmaguire/MAG_gi_plasmid_analysis](github.com/fmaguire/MAG_gi_plasmid_analysis) and data repository [https://osf.io/nrejs/](osf.io/nrejs/).
 
 
 ## Introduction {#main}
