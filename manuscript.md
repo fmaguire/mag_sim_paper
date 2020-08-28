@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/6e5089472e5a424ac5e05bab1383c8bb72644560/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/10ececfb42a980ed8142260f48d79fc9d52bcc59/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/6e5089472e5a424ac5e05bab1383c8bb72644560/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/10ececfb42a980ed8142260f48d79fc9d52bcc59/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/6e5089472e5a424ac5e05bab1383c8bb72644560/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/10ececfb42a980ed8142260f48d79fc9d52bcc59/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/6e5089472e5a424ac5e05bab1383c8bb72644560/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/10ececfb42a980ed8142260f48d79fc9d52bcc59/))
 was automatically generated
-from [fmaguire/mag_sim_paper@6e50894](https://github.com/fmaguire/mag_sim_paper/tree/6e5089472e5a424ac5e05bab1383c8bb72644560)
+from [fmaguire/mag_sim_paper@10ececf](https://github.com/fmaguire/mag_sim_paper/tree/10ececfb42a980ed8142260f48d79fc9d52bcc59)
 on August 28, 2020.
 </em></small>
 
@@ -301,6 +301,11 @@ Finally, for each metagenome assembly the predicted bins from these three binner
 This resulted in 12 separate sets of MAGs (one set for each assembler and binner pair).
 
 ### MAG assessment
+
+#### Synthetic Read Coverage and Depth
+The trimmed synthetic reads was mapped back to each reference replicon using bowtie2 (v2.4.1), and sorted and indexed using samtools (v1.10). 
+The coverage of each reference replicon is calculated using `samtools coverage` and the per base sequencing depth calculated using `samtools depth`. 
+The average and per base depth are then plotted using R(v.3.4.2). 
 
 #### Chromosomal Coverage
 
@@ -525,7 +530,7 @@ This highlights that genomic components (GIs and plasmids) and plasmids in parti
 
 ![Average Read Depth Per Species. Across all of the reference species (facet), the read depth of plasmids (orange) is considerably higher relative to chromosomes (blue), likely due to the copy number regime randomly assigned. Genomic islands (GIs; green) exhibited a relatively lower depth compared to chromosomes. The variability in depth is notably higher in and around GIs and plasmids.](images/DepthBySpp.png){#fig:depthbyspp, tag="S7"}
 
-![Per Base Read Depth Per Species. The per base (x-axis) read depth (y-axis) of each species is plotted individually. Overall, the read depth of chromosomes (blue boxes) is much lower than depth of plasmids (orange boxes), likely due to the copy number regime randomly assigned. Genomic islands within the chromosome are highlighted in green. At a per base level, we see a much lower depth at the beginning and the end of each replicon as well as a higher depth variability in GIs and plasmids.](images/PerBaseDepthBySpp.png){#fig:perbasedepth, tag="S8"}
+![Per Base Read Depth Per Species. The per base (x-axis) read depth (y-axis) of each species is plotted individually. Overall, the read depth of chromosomes (blue boxes) is much lower than depth of plasmids (orange boxes). Genomic islands within the chromosome are highlighted in green. At a per base level, we see a much lower depth at the beginning and the end of each replicon as well as a higher depth variability in GIs and plasmids.](images/PerBaseDepthBySpp.png){#fig:perbasedepth, tag="S8"}
 
 
 
