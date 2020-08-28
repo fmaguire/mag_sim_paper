@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/054274b7f3af64fe7cc8a726acdacbc30ed12265/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/1deea4c833b17bcf51420aca4032bdd2b48f41fc/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/054274b7f3af64fe7cc8a726acdacbc30ed12265/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/1deea4c833b17bcf51420aca4032bdd2b48f41fc/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/054274b7f3af64fe7cc8a726acdacbc30ed12265/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/1deea4c833b17bcf51420aca4032bdd2b48f41fc/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/054274b7f3af64fe7cc8a726acdacbc30ed12265/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/1deea4c833b17bcf51420aca4032bdd2b48f41fc/))
 was automatically generated
-from [fmaguire/mag_sim_paper@054274b](https://github.com/fmaguire/mag_sim_paper/tree/054274b7f3af64fe7cc8a726acdacbc30ed12265)
+from [fmaguire/mag_sim_paper@1deea4c](https://github.com/fmaguire/mag_sim_paper/tree/1deea4c833b17bcf51420aca4032bdd2b48f41fc)
 on August 28, 2020.
 </em></small>
 
@@ -303,7 +303,7 @@ This resulted in 12 separate sets of MAGs (one set for each assembler and binner
 ### MAG assessment
 
 #### Synthetic Read Coverage and Depth
-The trimmed synthetic reads was mapped back to each reference replicon using bowtie2 (v2.4.1), and sorted and indexed using samtools (v1.10). 
+The trimmed synthetic reads were mapped back to each reference replicon using bowtie2 (v2.4.1), and sorted and indexed using samtools (v1.10). 
 The coverage of each reference replicon is calculated using `samtools coverage` and the per base sequencing depth calculated using `samtools depth`. 
 The average and per base depth are then plotted using R (v.3.4.2). 
 
@@ -319,7 +319,7 @@ In order to investigate the impact of the presence of closely related genomes in
 Single copy universal bacterial proteins were identified in the reference genomes using BUSCO v4.0.2 with the Bacteria Odb10 data [@doi:10.1093/bioinformatics/btv351].
 The 86 of these proteins that were found in every reference genome were concatenated and aligned using MAFFT v7.427 [@doi:10.1093/bioinformatics/bty121] and masked with trimal v1.4.1-3 [@doi:10.1093/bioinformatics/btp348].
 A maximum-likelihood phylogeny was then inferred with IQ-Tree v1.6.12 [@doi:10.1093/molbev/msu300] using 1000 ultrafast-bootstraps and the in-built ModelFinder determined partitioning [@doi:10.1093/molbev/mss020]. 
-The phylogeny was then visualised using the interative Tree of Life (iToL) v4 [@doi:10.1093/nar/gkz239].
+The phylogeny was then visualised using the interactive Tree of Life (iToL) v4 [@doi:10.1093/nar/gkz239].
 Pairwise branch distances were extracted from the resulting tree using ETE3 v3.1.1 [@doi:10.1093/molbev/msw046] and regressed using a linear model against coverage (via seaborn v0.10.0 [@doi:10.5281/zenodo.3629446]) and using a poisson logistic regression model (via statsmodel v0.12.0 [@doi:10.25080/MAJORA-92BF1922-011] against contamination.  R^2 and McFadden's pseudo-R^2 were calculated for each model respectively using the statsmodel library.
 
 #### Plasmid and GI Coverage
@@ -405,7 +405,7 @@ In terms of overall correct binning with the chromosomes from the same genome th
 The recovery of AMR genes in MAGs was poor with only ~49-55% of all AMR genes predicted in our reference genomes regardless of the assembly tool used, and metaSPAdes performing marginally better than other assemblers (Fig. @fig:AMRGenePercentRecoveryStageContext A).
 Binning the contigs resulted in a ~1-15% loss in AMR gene recovery with the CONCOCT-metaSPAdes pair performing best at only 1% loss and DASTool-megahit performing the worst at 15% reduction of AMR genes recovered.
 Overall, only 24% - 40% of all AMR genes were correctly binned.
-This was lowest with the maxbin2-IDBA-UDA pair (24%) and highest in the CONCOCT-metaSPAdes pipeline (40%).
+This was lowest with the maxbin2-IDBA-UD pair (24%) and highest in the CONCOCT-metaSPAdes pipeline (40%).
 
 ![Recovery of AMR genes across assemblers, binners, and genomic context. **(A)** The proportion of reference AMR genes recovered (y-axis) was largely similar across assembly tools (panels as indicated by title) at roughly 50% with metaSPAdes performing marginally better overall. Binning tools (x-axis) resulted in a small reduction in AMR genes recovered (orange), however only 24-40% of all AMR genes were correctly binned (green). metaSPAdes-CONCOCT was the best performing MAG binning pipeline. **(B)** Percent of correctly binned AMR genes recovered by genomic context. MAG methods were best at recovering chromosomally located AMR genes (light blue) regardless of metagenomic assembler or binning tool used. Recovery of AMR genes in GIs showed a bigger variation between tools (light green). None of the 12 evaluated MAG recovery methods were able to recover plasmid located AMR genes.](images/F5_amr_recovery_combined.png){#fig:AMRGenePercentRecoveryStageContext}
 
@@ -440,7 +440,7 @@ This analysis identified that while coverage of our synthetic metagenome reads w
 This variability in coverage can be attributed to repeated elements and compositional features in and around these MGEs.
 This issue is likely responsible for failures to accurately estimate the read-depth/coverage in these regions, upon which both assembly (in traversal of the assembly graph) and binning rely. 
 
-![Average Coverage By Genomic Region. The average coverage of our synthetic reads to their source genome is plotted by their genomic region. Chromosome (blue) and GI (green) exihibited a similar average coverage of ~96.5%. Plasmids (orange) had a higher average coverage at ~98%. The per-genome coverage variability of plasmids and GI is higher than chromosomes. Diamond dot indicates the mean coverage of a region and black dots indicates outliers.](images/AvgCoverage.png){#fig:avgcoverage}
+![Average Coverage By Genomic Region. The average coverage of our synthetic reads to their source genome is plotted by their genomic region. Chromosome (blue) and GI (green) displayed a similar average coverage of ~96.5%. Plasmids (orange) had a higher average coverage at ~98%. The per-genome coverage variability of plasmids and GI is higher than chromosomes. Diamond dot indicates the mean coverage of a region and black dots indicates outliers.](images/AvgCoverage.png){#fig:avgcoverage}
 
 
 
