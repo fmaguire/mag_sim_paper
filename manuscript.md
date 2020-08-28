@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/684658761a210fd0851ebea325dee2318b057221/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/c9cf3a08594e614a5ed045afb2c9d5ad57b79c3e/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/684658761a210fd0851ebea325dee2318b057221/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/c9cf3a08594e614a5ed045afb2c9d5ad57b79c3e/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/684658761a210fd0851ebea325dee2318b057221/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/c9cf3a08594e614a5ed045afb2c9d5ad57b79c3e/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/684658761a210fd0851ebea325dee2318b057221/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/c9cf3a08594e614a5ed045afb2c9d5ad57b79c3e/))
 was automatically generated
-from [fmaguire/mag_sim_paper@6846587](https://github.com/fmaguire/mag_sim_paper/tree/684658761a210fd0851ebea325dee2318b057221)
+from [fmaguire/mag_sim_paper@c9cf3a0](https://github.com/fmaguire/mag_sim_paper/tree/c9cf3a08594e614a5ed045afb2c9d5ad57b79c3e)
 on August 28, 2020.
 </em></small>
 
@@ -319,8 +319,8 @@ Finally, the overall proportion of chromosomes that were not present in any MAG 
 In order to investigate the impact of close relatives in the metagenome on ability to bin chromosomes we generated a phylogenetic tree for all the input genomes.
 Specifically, single copy universal bacterial proteins were identified in the reference genomes using BUSCO v4.0.2 with the Bacteria Odb10 data [@doi:10.1093/bioinformatics/btv351].
 The 86 of these proteins that were found in every reference genome were concatenated and aligned using MAFFT v7.427 [@doi:10.1093/bioinformatics/bty121] and masked with trimal v1.4.1-3 [@doi:10.1093/bioinformatics/btp348].
-A maximum-likelihood phylogeny was then inferred with IQ-Tree v1.6.12 [@doi:10.1093/molbev/msu300] with the in-built ModelFinder determined partitioning [@doi:10.1093/molbev/mss020].
-Pairwise branch distances were then extracted from the resulting tree using ETE3 v3.1.1 [@doi:10.1093/molbev/msw046] and regressed using a linear model against coverage and contamination in seaborn v0.10.0 [@doi:10.5281/zenodo.3629446].
+A maximum-likelihood phylogeny was then inferred with IQ-Tree v1.6.12 [@doi:10.1093/molbev/msu300] using the in-built ModelFinder determined partitioning [@doi:10.1093/molbev/mss020] and visualised using the interative Tree of Life (iToL) v4 [@doi:10.1093/nar/gkz239].
+Pairwise branch distances were then extracted from the resulting tree using ETE3 v3.1.1 [@doi:10.1093/molbev/msw046] and regressed using a linear model against coverage (via seaborn v0.10.0 [@doi:10.5281/zenodo.3629446]) and using a poisson logistic regression model (via statsmodel v0.12.0 [@doi:10.25080/MAJORA-92BF1922-011] against contamination.  R^2 and McFadden's pseudo-R^2 were calculated for each model respectively using the statsmodel library.
 
 #### Plasmid and GI Coverage
 
