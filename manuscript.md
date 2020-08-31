@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/cfdb92bd8139aad862d20b3f16d87993fe107e74/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/c21290def7eaa586ff8e523c481f713897a9679a/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/cfdb92bd8139aad862d20b3f16d87993fe107e74/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/c21290def7eaa586ff8e523c481f713897a9679a/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/cfdb92bd8139aad862d20b3f16d87993fe107e74/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/c21290def7eaa586ff8e523c481f713897a9679a/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/cfdb92bd8139aad862d20b3f16d87993fe107e74/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/c21290def7eaa586ff8e523c481f713897a9679a/))
 was automatically generated
-from [fmaguire/mag_sim_paper@cfdb92b](https://github.com/fmaguire/mag_sim_paper/tree/cfdb92bd8139aad862d20b3f16d87993fe107e74)
+from [fmaguire/mag_sim_paper@c21290d](https://github.com/fmaguire/mag_sim_paper/tree/c21290def7eaa586ff8e523c481f713897a9679a)
 on August 31, 2020.
 </em></small>
 
