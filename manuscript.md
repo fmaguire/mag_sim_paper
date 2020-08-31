@@ -8,7 +8,7 @@ author-meta:
 - Fiona S.L. Brinkman
 bibliography:
 - content/manual-references.json
-date-meta: '2020-08-28'
+date-meta: '2020-08-31'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta name="dc.date" content="2020-08-28" />
+  <meta name="dc.date" content="2020-08-31" />
 
-  <meta name="citation_publication_date" content="2020-08-28" />
+  <meta name="citation_publication_date" content="2020-08-31" />
 
   <meta name="dc.language" content="en-CA" />
 
@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/1deea4c833b17bcf51420aca4032bdd2b48f41fc/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/cfdb92bd8139aad862d20b3f16d87993fe107e74/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/1deea4c833b17bcf51420aca4032bdd2b48f41fc/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/cfdb92bd8139aad862d20b3f16d87993fe107e74/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/1deea4c833b17bcf51420aca4032bdd2b48f41fc/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/cfdb92bd8139aad862d20b3f16d87993fe107e74/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,10 +131,10 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/1deea4c833b17bcf51420aca4032bdd2b48f41fc/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/cfdb92bd8139aad862d20b3f16d87993fe107e74/))
 was automatically generated
-from [fmaguire/mag_sim_paper@1deea4c](https://github.com/fmaguire/mag_sim_paper/tree/1deea4c833b17bcf51420aca4032bdd2b48f41fc)
-on August 28, 2020.
+from [fmaguire/mag_sim_paper@cfdb92b](https://github.com/fmaguire/mag_sim_paper/tree/cfdb92bd8139aad862d20b3f16d87993fe107e74)
+on August 31, 2020.
 </em></small>
 
 ## Authors
@@ -246,14 +246,14 @@ The Critical Assessment of Metagenome Interpretation (CAMI) challenge's (https:/
 Similarly, a recent study has also used the AMBER approach to evaluate 15 different binning methods applied to a common metaSPAdes assembly [@doi:10.1186/s12859-020-03667-3].
 However, to the best of our knowledge, there has not been a specific assessment of MAG-based recovery of mobile genetic elements (MGEs) such as genomic islands (GIs) and plasmids, despite their health and research importance.
 
-Genomic islands (GIs) are clusters of chromosomal genes that are known or predicted to have been acquired through LGT events. 
+GIs are clusters of chromosomal genes that are known or predicted to have been acquired through LGT events. 
 GIs can arise following the integration of MGEs, such as integrons, transposons, integrative and conjugative elements (ICEs) and prophages (integrated phages) [@doi:10.1038/nrmicro2350; @doi:10.1038/nrg3962].
 They are of high interest since virulence factors (VFs) are disproportionately associated with mobile sequences [@doi:10.1371/journal.pone.0008094] as well as certain antimicrobial resistance (AMR) genes [@doi:10.3389/fmicb.2016.00173; @doi:10.1016/j.plasmid.2015.01.001]. 
 GIs often have differing nucleotide composition compared to the rest of the genome [@doi:10.1038/nrmicro2350], a trait exploited by GI prediction tools such as SIGI-HMM [@pmid:15113412], IslandPath-DIMOB [@doi:10.1093/bioinformatics/bty095], and integrative tools like IslandViewer [@doi:10.1093/nar/gkv401].
 GIs may also exist as multiple copies within a genome [@doi:10.1093/bib/bby042] leading to potential assembly difficulties and biases in the calculation of coverage statistics.
 
 Plasmids are circular or linear extrachromosomal self-replicating pieces of DNA with variable copy numbers and repetitive sequences [@doi:10.1038/s41559-016-0010; @doi:10.1128/AAC.00235-15].
-Similar to GIs, the sequence composition and G+C content of plasmids are often markedly different from the genome with which they are associated [@doi:10.1093/bioinformatics/btq299; @doi:10.1093/molbev/msp281, @doi:10.1186/gb-2003-4-9-r57]. 
+Similar to GIs, the sequence composition (including G+C content, dinucleotide bias, etc.) of plasmids are often markedly different from the genome with which they are associated [@doi:10.1093/bioinformatics/btq299; @doi:10.1093/molbev/msp281, @doi:10.1186/gb-2003-4-9-r57]. 
 Plasmids are also of high interest as a major source of the lateral dissemination of AMR genes throughout microbial ecosystems [@pmid:26603922; @doi:10.3389/fmicb.2016.00173]. 
 
 GIs and plasmids have proven particularly difficult to assemble from short-read sequencing data.
@@ -261,7 +261,7 @@ Due to the history of their integration at specific insertion sites, GIs are com
 Repetitive sequences are known to complicate assembly from short reads, with repeats often found at contig break sites [@doi:10.1186/s12864-017-4429-4].
 Given that assembly of closely related genomes in a metagenome is already challenging [@doi:10.1038/nmeth.4458], the polymorphic nature of GIs and known presence of flanking repeats would be expected to compound these separate assembly issues.
 Repeats also inhibit the assembly of plasmids from short read sequencing data, particularly for longer plasmid sequences [@doi:10.1099/mgen.0.000128].
-Additionally, the varying composition and relative abundance features mean that GIs and plasmids pose significant challenges in MAG recovery.
+Additionally, the varying sequence composition and relative abundance features mean that GIs and plasmids pose significant challenges in MAG recovery.
 
 As these MGEs are key to the function and spread of pathogenic traits such as AMR and virulence, and with MAG approaches becoming increasingly popular within microbial and public-health research, it is both timely and vital that we assess the impact of metagenome assembly and binning on the recovery of these elements. 
 Therefore, to address this issue we performed an analysis of GI and plasmid, and associated AMR/VF genes, recovery accuracy across a set of 12 state-of-the-art methods for short-read metagenome assemblies.
@@ -377,7 +377,7 @@ Across binning tools maxbin2 proved an exception with nearly twice as many bins 
 The remaining binning tools were largely equivalent, producing chimeric bins at approximately the same rates.
 Unlike coverage, purity was potentially affected by the number of close relatives in the metagenome to a given input genome. 
 Specifically, the closer the nearest relative the less pure the bin (Fig. [S3](#fig:purityphylo)), however, the proportion of variance explained by the regressions were very low for both analyses.
-There was also not a clear relationship between coverage of a bin and purity with frequent observations of low purity but high coverage bins and pure but low coverage bins. 
+There was also not a clear relationship between coverage of a bin and purity, with low purity but high coverage bins observed, as well as high purity but low coverage bins.
 
 #### Plasmids
 
@@ -392,7 +392,8 @@ Interestingly, the MetaBAT2 and DASTool binners were more conservative in assign
 
 #### Genomic Islands
 
-GIs were poorly assembled and correctly binned across methods (Fig. @fig:gis), although unlike plasmids, the performance of different methods were generally less variable.
+GIs were poorly assembled and correctly binned across methods (Fig. @fig:gis). 
+Unlike for plasmids, the performance of different methods was generally less variable, with no clear best-performing method.
 Assembly of GIs with >50% coverage was consistently poor (37.8-44.1%) with metaSPAdes outperforming the other two assembly approaches.
 For the CONCOCT and maxbin2 binning tools, all GIs that were assembled were assigned to a bin, although the proportion of binned GIs that were correctly binned was lower than for DASTool and MetaBAT2.
 DASTool, MetaBAT2 and CONCOCT did not display the same precipitous drop between those assembled and those correctly binned as was observed for plasmids.
@@ -431,13 +432,13 @@ However, 0-16% of GI-localised VF genes (n=809) and again none of the plasmid-as
 
 We combined the performance metrics for Figs. @fig:plasmids, @fig:gis, @fig:AMRGenePercentRecoveryStageContext, and @fig:VFGenePercentRecoveryStageCombined to compare the rates of loss of different components (see Fig. [S5](#fig:rateofloss)).
 This highlighted that genomic components (GIs and plasmids) and plasmids in particular are lost at a disproportionately higher rate than individual gene types during MAG recovery. 
-This also emphasises that better metagenomic assembly doesn't necessarily result in better binning of GIs and plasmids. 
+This also emphasises that better metagenomic assembly doesn't necessarily result in better binning/recovery of GIs and plasmids. 
 
 ### Simulated Read Analysis
 
-To further explore the potential causes of poor assembly and binning of MGEs we analysed the resultant coverage distribution from mapping our synthetically generated reads back to the original chromosomes, genomic islands, and plasmids from which they were simulated. 
-This analysis identified that while coverage of our synthetic metagenome reads was >96% on average across all reference genomes, the coverage of GIs and plasmids displayed high levels of variance (Fig @fig:avgcoverage) with huge spikes and falls in read depth (see Fig. [S7](#fig:depthbyspp) and [S8](#fig:perbasedepth).
-This variability in coverage can be attributed to repeated elements and compositional features in and around these MGEs.
+To further explore the potential causes of poor assembly and binning of MGEs we analysed the resultant coverage distribution from mapping our synthetically generated reads back to the original chromosomes, GIs, and plasmids from which they were simulated. 
+This analysis identified that while coverage of our synthetic metagenomic reads was >96% on average across all reference genomes, the coverage of GIs and plasmids displayed high levels of variance (Fig @fig:avgcoverage) with large spikes and drops in read depth (see Fig. [S7](#fig:depthbyspp) and [S8](#fig:perbasedepth)).
+This variability in coverage can be attributed to repeated elements and sequence composition differences that are commonly associated with MGEs.
 This issue is likely responsible for failures to accurately estimate the read-depth/coverage in these regions, upon which both assembly (in traversal of the assembly graph) and binning rely. 
 
 ![Average Coverage By Genomic Region. The average coverage of our synthetic reads to their source genome is plotted by their genomic region. Chromosome (blue) and GI (green) displayed a similar average coverage of ~96.5%. Plasmids (orange) had a higher average coverage at ~98%. The per-genome coverage variability of plasmids and GI is higher than chromosomes. Diamond dot indicates the mean coverage of a region and black dots indicates outliers.](images/AvgCoverage.png){#fig:avgcoverage}
@@ -448,7 +449,7 @@ This issue is likely responsible for failures to accurately estimate the read-de
 
 In this paper, we evaluated the ability of metagenome-assembled genome (MAG) binning methods to correctly recover mobile genetic elements (MGEs; i.e. GIs and plasmids) from metagenomic samples.
 Overall, chromosomal sequences were binned well (up to 94.3% coverage, with perfect bin purity using megahit-DASTool) however the presence of closely related genomes may have impacted cross-contaminated with other sequences (e.g. _Streptococcus_ species in Fig. [S2](#fig:coverphylo), [S3](#fig:purityphylo)).
-The trade-off between false positives and sensitivity in the binning of closely related sequences is definitely an area in need of further exploration.  
+The trade-off between false positives and sensitivity in the binning of closely related sequences is an area in need of further exploration.  
 Given the importance of MGEs in the function and spread of virulence traits and AMR, it is particularly noteworthy that regardless of MAG binning method, plasmids and GIs were disproportionately lost compared to core chromosomal regions. 
 At best (with metaSPAdes and CONCOCT) 29.2% of plasmids and 44.1% of GIs were identifiable at >50% coverage in the correct bin (i.e. grouped with a bin that was mostly made up of contigs from the same genome). 
 While some MGEs were likely recovered in more partial forms (<50% coverage), use of these by researchers interested in selective pressures and lateral gene transfer could lead to inaccurate inferences. 
@@ -467,7 +468,7 @@ This included critical high-threat MGE-associated AMR genes such as oxacillinase
 One potential caveat of this is that some AMR genes and VFs may no longer be detectable in MAGs due to issues with ORF prediction (see suppl. discussion & [Fig. 
 S3](#fig:geneContent)). 
 We also observed a higher variability in both the read depth and read coverage in MGEs regions (Fig. @fig:avgcoverage, [S7](#fig:depthbyspp), and [S8](#fig:perbasedepth)). 
-This, combined with previous studies observing fragmented ORG predictions in draft genomes, can lead to downstream over- or under-annotation with functional labels depending on the approach used [@doi:10.1186/1471-2164-13-14]. 
+This, combined with previous studies observing fragmented ORF predictions in draft genomes, can lead to downstream over- or under-annotation with functional labels depending on the approach used [@doi:10.1186/1471-2164-13-14]. 
 Although not yet developed, methods that combine the assembly/binning pipelines tested here with read-based inference would provide a better sense of which functions are potentially being missed by the MAG reconstructions.
 
 Our simulated metagenomic community comprised 30 distinct bacterial genomes with varying degrees of relatedness. 
@@ -530,11 +531,11 @@ This highlights that genomic components (GIs and plasmids) and plasmids in parti
 
 ![](images/DepthByspp_A.png){#fig:depthbyspp_A, tag="S7A"}
 
-![Average Read Depth Per Species. Across all of the reference species (facet), the read depth of plasmids (orange) is considerably higher relative to chromosomes (blue), likely due to the copy number regime randomly assigned. Genomic islands (GIs; green) exhibited a relatively lower depth compared to chromosomes. The variability in depth is notably higher in and around GIs and plasmids.](images/DepthByspp_B.png){#fig:depthbyspp, tag="S7"}
+![Average Read Depth Per Species. Across all of the reference species (facet), the read depth of plasmids (orange) is considerably higher relative to chromosomes (blue), likely due to the copy number regime randomly assigned. GIs (green) exhibited relatively lower depth compared to chromosomes. The variability in depth is notably higher in and around GIs and plasmids.](images/DepthByspp_B.png){#fig:depthbyspp, tag="S7"}
 
 ![](images/PerBaseDepthBySpp_A.png){#fig:perbasedepth_A, tag="S8A"}
 
-![Per Base Read Depth Per Species. The per base (x-axis) read depth (y-axis) of each species is plotted individually. Overall, the read depth of chromosomes (blue boxes) is much lower than depth of plasmids (orange boxes). Genomic islands within the chromosome are highlighted in green. At a per base level, we see a much lower depth at the beginning and the end of each replicon as well as a higher depth variability in GIs and plasmids.](images/PerBaseDepthBySpp_B.png){#fig:perbasedepth, tag="S8"}
+![Per Base Read Depth Per Species. The per base (x-axis) read depth (y-axis) of each species is plotted individually. Overall, the read depth of chromosomes (blue boxes) is much lower than depth of plasmids (orange boxes). GIs within the chromosome are highlighted in green. At a per base level, we see a much lower depth at the beginning and the end of each replicon as well as a higher variability in read depth for GIs and plasmids.](images/PerBaseDepthBySpp_B.png){#fig:perbasedepth, tag="S8"}
 
 
 
@@ -558,7 +559,7 @@ The authors would like to thank their funders and the Simon Fraser University (S
 ## Author contributions
 
 F.M. and B.J.: conceptualization, investigation, validation, formal analysis, data curation, writing (original draft preparation; review and editing), visualization. 
-W.Y.V.L. and K.G.: investivation, data curation writing (review and editing). 
+W.Y.V.L. and K.G.: investigation, data curation writing (review and editing). 
 F.S.L.B and R.G.B.: Supervision, Project administration, funding, writing (review and editing).
 All authors contributed to and approved the manuscript.
 
