@@ -8,7 +8,7 @@ author-meta:
 - Fiona S.L. Brinkman
 bibliography:
 - content/manual-references.json
-date-meta: '2020-08-31'
+date-meta: '2020-09-01'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Metagenome-Assembled Genome Binning Methods with Short Reads Disproportionately Fail for Plasmids and Genomic Islands" />
 
-  <meta name="dc.date" content="2020-08-31" />
+  <meta name="dc.date" content="2020-09-01" />
 
-  <meta name="citation_publication_date" content="2020-08-31" />
+  <meta name="citation_publication_date" content="2020-09-01" />
 
   <meta name="dc.language" content="en-CA" />
 
@@ -95,11 +95,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://fmaguire.github.io/mag_sim_paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/c21290def7eaa586ff8e523c481f713897a9679a/" />
+  <link rel="alternate" type="text/html" href="https://fmaguire.github.io/mag_sim_paper/v/1a8f4687da667310e79d65c8a30aec8c8ab3b229/" />
 
-  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/c21290def7eaa586ff8e523c481f713897a9679a/" />
+  <meta name="manubot_html_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/1a8f4687da667310e79d65c8a30aec8c8ab3b229/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/c21290def7eaa586ff8e523c481f713897a9679a/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://fmaguire.github.io/mag_sim_paper/v/1a8f4687da667310e79d65c8a30aec8c8ab3b229/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,10 +131,10 @@ title: Metagenome-Assembled Genome Binning Methods with Short Reads Disproportio
 
 <small><em>
 This manuscript
-([permalink](https://fmaguire.github.io/mag_sim_paper/v/c21290def7eaa586ff8e523c481f713897a9679a/))
+([permalink](https://fmaguire.github.io/mag_sim_paper/v/1a8f4687da667310e79d65c8a30aec8c8ab3b229/))
 was automatically generated
-from [fmaguire/mag_sim_paper@c21290d](https://github.com/fmaguire/mag_sim_paper/tree/c21290def7eaa586ff8e523c481f713897a9679a)
-on August 31, 2020.
+from [fmaguire/mag_sim_paper@1a8f468](https://github.com/fmaguire/mag_sim_paper/tree/1a8f4687da667310e79d65c8a30aec8c8ab3b229)
+on September 1, 2020.
 </em></small>
 
 ## Authors
@@ -320,7 +320,7 @@ Single copy universal bacterial proteins were identified in the reference genome
 The 86 of these proteins that were found in every reference genome were concatenated and aligned using MAFFT v7.427 [@doi:10.1093/bioinformatics/bty121] and masked with trimal v1.4.1-3 [@doi:10.1093/bioinformatics/btp348].
 A maximum-likelihood phylogeny was then inferred with IQ-Tree v1.6.12 [@doi:10.1093/molbev/msu300] using 1000 ultrafast-bootstraps and the in-built ModelFinder determined partitioning [@doi:10.1093/molbev/mss020]. 
 The phylogeny was then visualised using the interactive Tree of Life (iToL) v4 [@doi:10.1093/nar/gkz239].
-Pairwise branch distances were extracted from the resulting tree using ETE3 v3.1.1 [@doi:10.1093/molbev/msw046] and regressed using a linear model against coverage (via seaborn v0.10.0 [@doi:10.5281/zenodo.3629446]) and using a poisson logistic regression model (via statsmodel v0.12.0 [@doi:10.25080/MAJORA-92BF1922-011] against contamination.  R^2 and McFadden's pseudo-R^2 were calculated for each model respectively using the statsmodel library.
+Pairwise branch distances were extracted from the resulting tree using ETE3 v3.1.1 [@doi:10.1093/molbev/msw046] and regressed using a linear model against coverage (via seaborn v0.10.0 [@doi:10.5281/zenodo.3629446]) and using a Poisson logistic regression model (via statsmodel v0.12.0 [@doi:10.25080/MAJORA-92BF1922-011] against contamination.  R^2 and McFadden's pseudo-R^2 were calculated for each model respectively using the statsmodel library.
 
 #### Plasmid and GI Coverage
 
@@ -392,7 +392,7 @@ Interestingly, the MetaBAT2 and DASTool binners were more conservative in assign
 
 #### Genomic Islands
 
-GIs were poorly assembled and correctly binned across methods (Fig. @fig:gis). 
+GIs were poorly assembled and binned across methods (Fig. @fig:gis). 
 Unlike for plasmids, the performance of different methods was generally less variable, with no clear best-performing method.
 Assembly of GIs with >50% coverage was consistently poor (37.8-44.1%) with metaSPAdes outperforming the other two assembly approaches.
 For the CONCOCT and maxbin2 binning tools, all GIs that were assembled were assigned to a bin, although the proportion of binned GIs that were correctly binned was lower than for DASTool and MetaBAT2.
@@ -441,23 +441,24 @@ This analysis identified that while coverage of our synthetic metagenomic reads 
 This variability in coverage can be attributed to repeated elements and sequence composition differences that are commonly associated with MGEs.
 This issue is likely responsible for failures to accurately estimate the read-depth/coverage in these regions, upon which both assembly (in traversal of the assembly graph) and binning rely. 
 
-![Average Coverage By Genomic Region. The average coverage of our synthetic reads to their source genome is plotted by their genomic region. Chromosome (blue) and GI (green) displayed a similar average coverage of ~96.5%. Plasmids (orange) had a higher average coverage at ~98%. The per-genome coverage variability of plasmids and GI is higher than chromosomes. Diamond dot indicates the mean coverage of a region and black dots indicates outliers.](images/AvgCoverage.png){#fig:avgcoverage}
+![Average Coverage By Genomic Region. The average coverage of our synthetic reads to their source genome is plotted by their genomic region. Chromosome (blue) and GI (green) displayed a similar average coverage of ~96.5%. Plasmids (orange) had a higher average coverage at ~98%. The per-genome coverage range of plasmids and GIs are higher than chromosomes. Diamond dot indicates the mean coverage of a region and black dots indicate outliers.](images/AvgCoverage.png){#fig:avgcoverage}
 
 
 
 ## Discussion {#discussion}
 
 In this paper, we evaluated the ability of metagenome-assembled genome (MAG) binning methods to correctly recover mobile genetic elements (MGEs; i.e. GIs and plasmids) from metagenomic samples.
-Overall, chromosomal sequences were binned well (up to 94.3% coverage, with perfect bin purity using megahit-DASTool) however the presence of closely related genomes may have impacted cross-contaminated with other sequences (e.g. _Streptococcus_ species in Fig. [S2](#fig:coverphylo), [S3](#fig:purityphylo)).
-The trade-off between false positives and sensitivity in the binning of closely related sequences is an area in need of further exploration.  
+Overall, chromosomal sequences were binned well (up to 94.3% coverage, with perfect bin purity using megahit-DASTool). 
+The presence of closely related genomes had unclear impacts on coverage and cross-contamination of bins (e.g. _Streptococcus_ species in Fig. [S2](#fig:coverphylo), [S3](#fig:purityphylo)).
+Additionally, the trade-off between false positives and sensitivity in the binning of closely related sequences is an area in need of further exploration.  
 Given the importance of MGEs in the function and spread of virulence traits and AMR, it is particularly noteworthy that regardless of MAG binning method, plasmids and GIs were disproportionately lost compared to core chromosomal regions. 
 At best (with metaSPAdes and CONCOCT) 29.2% of plasmids and 44.1% of GIs were identifiable at >50% coverage in the correct bin (i.e. grouped with a bin that was mostly made up of contigs from the same genome). 
 While some MGEs were likely recovered in more partial forms (<50% coverage), use of these by researchers interested in selective pressures and lateral gene transfer could lead to inaccurate inferences. 
 This poor result is congruent with the intuition that the divergent compositional features and repetitive nature of these MGEs is problematic for MAG methods (a conclusion supported by the observed high coverage variability of MGEs when mapping simulated reads back to the original genomes).
 The particularly poor plasmid binning performance is likely attributable to the known difficulties in assembly of plasmids from short-read data [@doi:10.1099/mgen.0.000128].
-Therefore, binning efficiency might improve with use of long-read sequencing or assembly methods optimised for the assembly and binning of plasmids sequences [@doi:10.1099/mgen.0.000128] (such as SCAPP [@doi:10.1101/2020.01.12.903252]). 
+Therefore, binning efficiency might improve with use of long-read sequencing or assembly methods optimised for the assembly and binning of plasmid sequences [@doi:10.1099/mgen.0.000128] (such as SCAPP [@doi:10.1101/2020.01.12.903252]). 
 Despite its lower effective sequencing depth and higher error rates, incorporating long-read data has been shown to improve overall MAG binning [@doi:10.1101/2020.04.08.032540] and facilitate metagenomic characterisation of plasmids [@doi:10.1186/s40168-019-0737-z].
-However, the lower throughput of long-read technologies and high error rate of long-read methods presents a challenge when characterising MGEs in metagenomes, especially those of greater complexity.
+However, the low throughput and high error rate of current long-read technologies relative to widely used short-read approaches present a challenge when characterising MGEs in metagenomes, especially those of greater complexity.
 Further research is needed to fully characterise the performance of different long-read protocols and analytical approaches (including hybrid approaches with short-reads) on the accuracy of recovering MGEs in metagenomic samples.
 
 With the growing use of MAG methods in infectious disease research (e.g., [@doi:10.1099/mgen.0.000293; @doi:10.1016/j.envint.2019.05.036; @doi:10.1111/1462-2920.14989; @doi:10.3389/fmicb.2017.02036; @doi:10.1128/AEM.02577-16]) and the public-health and agri-food importance of the LGT of AMR and VF genes, we also specifically evaluated the binning of these gene classes.
@@ -465,16 +466,16 @@ The majority of these genes were correctly assembled across assemblers but were 
 At best across all binners, 40% of all AMR genes and ~63% of VF genes (CONCOCT-metaSPAdes) present in the reference genomes were assigned to the correct MAG.
 While a majority of chromosomally located VF genes (73-98%) and AMR genes (53%) were binned correctly, only 16% of GI VFs (n=809), 45% of GI AMR genes (n=11), and not a single plasmid associated VF (n=3) or AMR gene (n=20) were correctly binned.
 This included critical high-threat MGE-associated AMR genes such as oxacillinases (OXA) and _Klebsiella pneumoniae_ carbapenemases (KPC). 
-One potential caveat of this is that some AMR genes and VFs may no longer be detectable in MAGs due to issues with ORF prediction (see suppl. discussion & [Fig. 
+One potential caveat of this is that some AMR genes and VFs may no longer be detectable in MAGs due to issues with ORF prediction (see supplementary information & [Fig. 
 S3](#fig:geneContent)). 
-We also observed a higher variability in both the read depth and read coverage in MGEs regions (Fig. @fig:avgcoverage, [S7](#fig:depthbyspp), and [S8](#fig:perbasedepth)). 
+We also observed a higher variability in both the read depth and read coverage in MGEs (Fig. @fig:avgcoverage, [S7](#fig:depthbyspp), and [S8](#fig:perbasedepth)). 
 This, combined with previous studies observing fragmented ORF predictions in draft genomes, can lead to downstream over- or under-annotation with functional labels depending on the approach used [@doi:10.1186/1471-2164-13-14]. 
 Although not yet developed, methods that combine the assembly/binning pipelines tested here with read-based inference would provide a better sense of which functions are potentially being missed by the MAG reconstructions.
 
 Our simulated metagenomic community comprised 30 distinct bacterial genomes with varying degrees of relatedness. 
 While this diversity can be representative of certain clinical samples [@doi:10.1186/s12879-017-2727-8; @doi:10.1128/JCM.42.11.5176-5183.2004; @doi:10.1038/s41598-017-07790-9], other environments with relevance to public health such as the human gut, soil, and livestock can have 100-1000s of species [@doi:10.1007/s00248-013-0344-7; @doi:10.1128/AEM.00592-09; @doi:10.1371/journal.pone.0006669; @doi:10.1038/s41598-017-12481-6].
 In addition, MGEs such as GIs and plasmids are known to recombine, producing closely related variants [@doi:10.1016/j.micinf.2005.12.028; @doi:10.1128/JB.186.7.2115-2122.2004; @doi:10.1038/s41467-020-17278-2] that could further complicate assembly from a metagenomic sample.
-Polymorphic MGEs were not deliberately introduced in our simulated metagenome.
+Polymorphic MGEs were not explicitly introduced in our simulated metagenome.
 Consequently, our analysis likely over-represents the effectiveness of the methods tested in a public-health setting. 
 Metagenomic simulation is also unlikely to perfectly represent the noise and biases in real metagenomic sequencing but it does provide the ground-truth necessary for evaluation [@doi:10.1093/gigascience/giy069; @doi:10.1186/s40168-019-0633-6].
 This simulation approach, combined with the development of an MGE/AMR-focused mock metagenome (similarly to the mockrobiota initiative [@doi:10.1128/mSystems.00062-16]), could provide a key resource to develop and validate new binning approaches and different sequencing strategies.
@@ -495,8 +496,7 @@ Within public-health metagenomic research, as well as other research areas that 
 
 By generating a phylogeny of universal single copy genes in our input genomes (Fig. [S1](#fig:phylo)) we analysed the relationship between the presence of closely related genomes and the ability of the different MAG-recovery methods to bin chromosomal sequences.
 Specifically, we regressed phylogenetic distance on this phylogeny with per-bin chromosomal coverage (Fig. [S2](#fig:coverphylo)) and bin purity (Fig. [S3](#fig:purityphylo)).
-This identified no clear relationship between chromosomal coverage and the phylogenetic distance to the nearest relative in the metagenome (Fig. [S2](#fig:coverphylo)), however, there did seem to be a weak potential negative correlation between phylogenetic distance to closest relative and the purity of a MAG bin (Fig. [S2](#fig:purityphylo)).
-In other words, across all methods, a MAG bin was more likely to have multiple genomes present if there were close relatives.
+This identified no clear relationship between chromosomal coverage (Fig. [S2](#fig:coverphylo)), or purity (Fig. [S3](#fig:purityphylo)), and the phylogenetic distance to the nearest relative in the metagenome.
 
 ![Unrooted universal single-copy gene concatenation maximum-likelihood (IQ-TREE) phylogeny. Percentage of ultrafast-bootstraps (n=1000) supporting each bifurcation are annotated on each node. Phylogeny was visualised using iToL.](images/S1_busco_phylogeny.png){#fig:phylo, tag="S1"}
 
@@ -531,11 +531,11 @@ This highlights that genomic components (GIs and plasmids) and plasmids in parti
 
 ![](images/DepthByspp_A.png){#fig:depthbyspp_A, tag="S7A"}
 
-![Average Read Depth Per Species. Across all of the reference species (facet), the read depth of plasmids (orange) is considerably higher relative to chromosomes (blue), likely due to the copy number regime randomly assigned. GIs (green) exhibited relatively lower depth compared to chromosomes. The variability in depth is notably higher in and around GIs and plasmids.](images/DepthByspp_B.png){#fig:depthbyspp, tag="S7"}
+![Average Read Depth Per Genome. Across all of the reference species (facet), the read depth of plasmids (orange) is considerably higher relative to chromosomes (blue), likely due to the copy number regime randomly assigned. GIs (green) exhibited relatively lower read depth compared to chromosomes. The variability in read depth is notably higher in and around GIs and plasmids.](images/DepthByspp_B.png){#fig:depthbyspp, tag="S7"}
 
 ![](images/PerBaseDepthBySpp_A.png){#fig:perbasedepth_A, tag="S8A"}
 
-![Per Base Read Depth Per Species. The per base (x-axis) read depth (y-axis) of each species is plotted individually. Overall, the read depth of chromosomes (blue boxes) is much lower than depth of plasmids (orange boxes). GIs within the chromosome are highlighted in green. At a per base level, we see a much lower depth at the beginning and the end of each replicon as well as a higher variability in read depth for GIs and plasmids.](images/PerBaseDepthBySpp_B.png){#fig:perbasedepth, tag="S8"}
+![Per Base Read Depth Per Species. The per base (x-axis) read depth (y-axis) of each species is plotted individually. Overall, the read read depth of chromosomes (blue boxes) is much lower than read depth of plasmids (orange boxes). GIs within the chromosome are highlighted in green. At a per base level, we see a much lower read depth at the beginning and the end of each replicon as well as a higher variability in read depth for GIs and plasmids.](images/PerBaseDepthBySpp_B.png){#fig:perbasedepth, tag="S8"}
 
 
 

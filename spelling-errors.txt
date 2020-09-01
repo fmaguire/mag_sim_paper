@@ -10,7 +10,7 @@ baratti
 Beiko
 bfjia
 binner
-BinnERs
+binners
 Bioinformatics
 Biosciences
 BLASTN
@@ -57,7 +57,7 @@ geneContent
 homology
 IDBA
 identifiably
-illumina
+Illumina
 imasianxd
 integrons
 Interoperable
@@ -77,12 +77,12 @@ localised
 macedonicus
 MAFFT
 Maguire
-maxbin
+Maxbin
 megahit
 MetaBAT
 metabinner
 metagenomes
-Metagenomics
+metagenomics
 metaQUAST
 metaSPAdes
 MGE
